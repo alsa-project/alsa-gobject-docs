@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="ALSACtl Reference Manual" link="index.html" author="" name="alsactl" version="2" language="c">
+  <chapters>
+    <sub name="ALSACtl enumerations" link="alsactl-enumerations.html">
+      <sub name="alsactl-enum-types" link="alsactl-alsactl-enum-types.html"/>
+    </sub>
+    <sub name="ALSACtl global methods" link="alsactl-global-methods.html">
+      <sub name="query" link="alsactl-query.html"/>
+    </sub>
+    <sub name="ALSACtl objects" link="alsactl-objects.html">
+      <sub name="ALSACtlCard" link="ALSACtlCard.html"/>
+      <sub name="alsactl-sigs-marshal" link="alsactl-alsactl-sigs-marshal.html"/>
+      <sub name="ALSACtlCardInfo" link="ALSACtlCardInfo.html"/>
+      <sub name="elem-id" link="alsactl-elem-id.html"/>
+      <sub name="ALSACtlElemInfo" link="ALSACtlElemInfo.html"/>
+      <sub name="ALSACtlElemInfoBool" link="ALSACtlElemInfoBool.html"/>
+      <sub name="ALSACtlElemInfoInt" link="ALSACtlElemInfoInt.html"/>
+      <sub name="ALSACtlElemInfoEnum" link="ALSACtlElemInfoEnum.html"/>
+      <sub name="ALSACtlElemInfoBytes" link="ALSACtlElemInfoBytes.html"/>
+      <sub name="ALSACtlElemInfoIec60958" link="ALSACtlElemInfoIec60958.html"/>
+      <sub name="ALSACtlElemInfoInt64" link="ALSACtlElemInfoInt64.html"/>
+      <sub name="ALSACtlElemValue" link="ALSACtlElemValue.html"/>
+    </sub>
+    <sub name="Index of all symbols" link="index-all.html"/>
+    <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+  </chapters>
+  <functions>
+    <keyword type="enum" name="enum ALSACtlElemType" link="alsactl-alsactl-enum-types.html#ALSACtlElemType"/>
+    <keyword type="enum" name="enum ALSACtlElemIfaceType" link="alsactl-alsactl-enum-types.html#ALSACtlElemIfaceType"/>
+    <keyword type="enum" name="enum ALSACtlElemAccessFlag" link="alsactl-alsactl-enum-types.html#ALSACtlElemAccessFlag"/>
+    <keyword type="enum" name="enum ALSACtlEventType" link="alsactl-alsactl-enum-types.html#ALSACtlEventType"/>
+    <keyword type="enum" name="enum ALSACtlEventMaskFlag" link="alsactl-alsactl-enum-types.html#ALSACtlEventMaskFlag"/>
+    <keyword type="function" name="alsactl_get_card_id_list ()" link="alsactl-query.html#alsactl-get-card-id-list"/>
+    <keyword type="function" name="alsactl_get_card_sysname ()" link="alsactl-query.html#alsactl-get-card-sysname"/>
+    <keyword type="function" name="alsactl_get_control_sysname ()" link="alsactl-query.html#alsactl-get-control-sysname"/>
+    <keyword type="function" name="alsactl_get_control_devnode ()" link="alsactl-query.html#alsactl-get-control-devnode"/>
+    <keyword type="function" name="alsactl_card_new ()" link="ALSACtlCard.html#alsactl-card-new"/>
+    <keyword type="function" name="alsactl_card_open ()" link="ALSACtlCard.html#alsactl-card-open"/>
+    <keyword type="function" name="alsactl_card_get_info ()" link="ALSACtlCard.html#alsactl-card-get-info"/>
+    <keyword type="function" name="alsactl_card_get_elem_id_list ()" link="ALSACtlCard.html#alsactl-card-get-elem-id-list"/>
+    <keyword type="function" name="alsactl_card_lock_elem ()" link="ALSACtlCard.html#alsactl-card-lock-elem"/>
+    <keyword type="function" name="alsactl_card_get_elem_info ()" link="ALSACtlCard.html#alsactl-card-get-elem-info"/>
+    <keyword type="function" name="alsactl_card_write_elem_tlv ()" link="ALSACtlCard.html#alsactl-card-write-elem-tlv"/>
+    <keyword type="function" name="alsactl_card_read_elem_tlv ()" link="ALSACtlCard.html#alsactl-card-read-elem-tlv"/>
+    <keyword type="function" name="alsactl_card_command_elem_tlv ()" link="ALSACtlCard.html#alsactl-card-command-elem-tlv"/>
+    <keyword type="function" name="alsactl_card_add_elems ()" link="ALSACtlCard.html#alsactl-card-add-elems"/>
+    <keyword type="function" name="alsactl_card_replace_elems ()" link="ALSACtlCard.html#alsactl-card-replace-elems"/>
+    <keyword type="function" name="alsactl_card_remove_elems ()" link="ALSACtlCard.html#alsactl-card-remove-elems"/>
+    <keyword type="function" name="alsactl_card_write_elem_value ()" link="ALSACtlCard.html#alsactl-card-write-elem-value"/>
+    <keyword type="function" name="alsactl_card_read_elem_value ()" link="ALSACtlCard.html#alsactl-card-read-elem-value"/>
+    <keyword type="function" name="alsactl_card_create_source ()" link="ALSACtlCard.html#alsactl-card-create-source"/>
+    <keyword type="property" name="The “devnode” property" link="ALSACtlCard.html#ALSACtlCard--devnode"/>
+    <keyword type="property" name="The “subscribed” property" link="ALSACtlCard.html#ALSACtlCard--subscribed"/>
+    <keyword type="signal" name="The “handle-disconnection” signal" link="ALSACtlCard.html#ALSACtlCard-handle-disconnection"/>
+    <keyword type="signal" name="The “handle-elem-event” signal" link="ALSACtlCard.html#ALSACtlCard-handle-elem-event"/>
+    <keyword type="function" name="alsactl_sigs_marshal_VOID__BOXED_FLAGS ()" link="alsactl-alsactl-sigs-marshal.html#alsactl-sigs-marshal-VOID--BOXED-FLAGS"/>
+    <keyword type="property" name="The “card-id” property" link="ALSACtlCardInfo.html#ALSACtlCardInfo--card-id"/>
+    <keyword type="property" name="The “components” property" link="ALSACtlCardInfo.html#ALSACtlCardInfo--components"/>
+    <keyword type="property" name="The “driver” property" link="ALSACtlCardInfo.html#ALSACtlCardInfo--driver"/>
+    <keyword type="property" name="The “id” property" link="ALSACtlCardInfo.html#ALSACtlCardInfo--id"/>
+    <keyword type="property" name="The “long-name” property" link="ALSACtlCardInfo.html#ALSACtlCardInfo--long-name"/>
+    <keyword type="property" name="The “mixer-name” property" link="ALSACtlCardInfo.html#ALSACtlCardInfo--mixer-name"/>
+    <keyword type="property" name="The “name” property" link="ALSACtlCardInfo.html#ALSACtlCardInfo--name"/>
+    <keyword type="function" name="alsactl_elem_id_new_by_numid ()" link="alsactl-elem-id.html#alsactl-elem-id-new-by-numid"/>
+    <keyword type="function" name="alsactl_elem_id_new_by_name ()" link="alsactl-elem-id.html#alsactl-elem-id-new-by-name"/>
+    <keyword type="function" name="alsactl_elem_id_get_numid ()" link="alsactl-elem-id.html#alsactl-elem-id-get-numid"/>
+    <keyword type="function" name="alsactl_elem_id_get_iface ()" link="alsactl-elem-id.html#alsactl-elem-id-get-iface"/>
+    <keyword type="function" name="alsactl_elem_id_get_device_id ()" link="alsactl-elem-id.html#alsactl-elem-id-get-device-id"/>
+    <keyword type="function" name="alsactl_elem_id_get_subdevice_id ()" link="alsactl-elem-id.html#alsactl-elem-id-get-subdevice-id"/>
+    <keyword type="function" name="alsactl_elem_id_get_name ()" link="alsactl-elem-id.html#alsactl-elem-id-get-name"/>
+    <keyword type="function" name="alsactl_elem_id_get_index ()" link="alsactl-elem-id.html#alsactl-elem-id-get-index"/>
+    <keyword type="property" name="The “access” property" link="ALSACtlElemInfo.html#ALSACtlElemInfo--access"/>
+    <keyword type="property" name="The “elem-id” property" link="ALSACtlElemInfo.html#ALSACtlElemInfo--elem-id"/>
+    <keyword type="property" name="The “owner” property" link="ALSACtlElemInfo.html#ALSACtlElemInfo--owner"/>
+    <keyword type="property" name="The “type” property" link="ALSACtlElemInfo.html#ALSACtlElemInfo--type"/>
+    <keyword type="function" name="alsactl_elem_info_bool_new ()" link="ALSACtlElemInfoBool.html#alsactl-elem-info-bool-new"/>
+    <keyword type="property" name="The “value-count” property" link="ALSACtlElemInfoBool.html#ALSACtlElemInfoBool--value-count"/>
+    <keyword type="function" name="alsactl_elem_info_int_new ()" link="ALSACtlElemInfoInt.html#alsactl-elem-info-int-new"/>
+    <keyword type="property" name="The “max” property" link="ALSACtlElemInfoInt.html#ALSACtlElemInfoInt--max"/>
+    <keyword type="property" name="The “min” property" link="ALSACtlElemInfoInt.html#ALSACtlElemInfoInt--min"/>
+    <keyword type="property" name="The “step” property" link="ALSACtlElemInfoInt.html#ALSACtlElemInfoInt--step"/>
+    <keyword type="property" name="The “value-count” property" link="ALSACtlElemInfoInt.html#ALSACtlElemInfoInt--value-count"/>
+    <keyword type="function" name="alsactl_elem_info_enum_new ()" link="ALSACtlElemInfoEnum.html#alsactl-elem-info-enum-new"/>
+    <keyword type="property" name="The “labels” property" link="ALSACtlElemInfoEnum.html#ALSACtlElemInfoEnum--labels"/>
+    <keyword type="property" name="The “value-count” property" link="ALSACtlElemInfoEnum.html#ALSACtlElemInfoEnum--value-count"/>
+    <keyword type="function" name="alsactl_elem_info_bytes_new ()" link="ALSACtlElemInfoBytes.html#alsactl-elem-info-bytes-new"/>
+    <keyword type="property" name="The “value-count” property" link="ALSACtlElemInfoBytes.html#ALSACtlElemInfoBytes--value-count"/>
+    <keyword type="function" name="alsactl_elem_info_iec60958_new ()" link="ALSACtlElemInfoIec60958.html#alsactl-elem-info-iec60958-new"/>
+    <keyword type="function" name="alsactl_elem_info_int64_new ()" link="ALSACtlElemInfoInt64.html#alsactl-elem-info-int64-new"/>
+    <keyword type="property" name="The “max” property" link="ALSACtlElemInfoInt64.html#ALSACtlElemInfoInt64--max"/>
+    <keyword type="property" name="The “min” property" link="ALSACtlElemInfoInt64.html#ALSACtlElemInfoInt64--min"/>
+    <keyword type="property" name="The “step” property" link="ALSACtlElemInfoInt64.html#ALSACtlElemInfoInt64--step"/>
+    <keyword type="property" name="The “value-count” property" link="ALSACtlElemInfoInt64.html#ALSACtlElemInfoInt64--value-count"/>
+    <keyword type="function" name="alsactl_elem_value_new ()" link="ALSACtlElemValue.html#alsactl-elem-value-new"/>
+    <keyword type="function" name="alsactl_elem_value_set_bool ()" link="ALSACtlElemValue.html#alsactl-elem-value-set-bool"/>
+    <keyword type="function" name="alsactl_elem_value_get_bool ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-bool"/>
+    <keyword type="function" name="alsactl_elem_value_set_int ()" link="ALSACtlElemValue.html#alsactl-elem-value-set-int"/>
+    <keyword type="function" name="alsactl_elem_value_get_int ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-int"/>
+    <keyword type="function" name="alsactl_elem_value_set_enum ()" link="ALSACtlElemValue.html#alsactl-elem-value-set-enum"/>
+    <keyword type="function" name="alsactl_elem_value_get_enum ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-enum"/>
+    <keyword type="function" name="alsactl_elem_value_set_bytes ()" link="ALSACtlElemValue.html#alsactl-elem-value-set-bytes"/>
+    <keyword type="function" name="alsactl_elem_value_get_bytes ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-bytes"/>
+    <keyword type="function" name="alsactl_elem_value_set_iec60958 ()" link="ALSACtlElemValue.html#alsactl-elem-value-set-iec60958"/>
+    <keyword type="function" name="alsactl_elem_value_get_iec60958 ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-iec60958"/>
+    <keyword type="function" name="alsactl_elem_value_set_int64 ()" link="ALSACtlElemValue.html#alsactl-elem-value-set-int64"/>
+    <keyword type="function" name="alsactl_elem_value_get_int64 ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-int64"/>
+    <keyword type="property" name="The “elem-id” property" link="ALSACtlElemValue.html#ALSACtlElemValue--elem-id"/>
+    <keyword type="constant" name="ALSACTL_ELEM_TYPE_NONE" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-TYPE-NONE:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_TYPE_BOOLEAN" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-TYPE-BOOLEAN:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_TYPE_INTEGER" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-TYPE-INTEGER:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_TYPE_ENUMERATED" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-TYPE-ENUMERATED:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_TYPE_BYTES" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-TYPE-BYTES:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_TYPE_IEC60958" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-TYPE-IEC60958:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_TYPE_INTEGER64" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-TYPE-INTEGER64:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_IFACE_TYPE_CARD" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-IFACE-TYPE-CARD:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_IFACE_TYPE_HWDEP" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-IFACE-TYPE-HWDEP:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_IFACE_TYPE_MIXER" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-IFACE-TYPE-MIXER:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_IFACE_TYPE_PCM" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-IFACE-TYPE-PCM:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_IFACE_TYPE_RAWMIDI" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-IFACE-TYPE-RAWMIDI:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_IFACE_TYPE_TIMER" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-IFACE-TYPE-TIMER:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_IFACE_TYPE_SEQUENCER" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-IFACE-TYPE-SEQUENCER:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_ACCESS_FLAG_READ" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-ACCESS-FLAG-READ:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_ACCESS_FLAG_WRITE" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-ACCESS-FLAG-WRITE:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_ACCESS_FLAG_VOLATILE" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-ACCESS-FLAG-VOLATILE:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_ACCESS_FLAG_TLV_READ" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-ACCESS-FLAG-TLV-READ:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_ACCESS_FLAG_TLV_WRITE" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-ACCESS-FLAG-TLV-WRITE:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_ACCESS_FLAG_TLV_COMMAND" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-ACCESS-FLAG-TLV-COMMAND:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_ACCESS_FLAG_INACTIVE" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-ACCESS-FLAG-INACTIVE:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_ACCESS_FLAG_LOCK" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-ACCESS-FLAG-LOCK:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_ACCESS_FLAG_OWNER" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-ACCESS-FLAG-OWNER:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_ACCESS_FLAG_TLV_CALLBACK" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-ACCESS-FLAG-TLV-CALLBACK:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_ACCESS_FLAG_USER" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-ACCESS-FLAG-USER:CAPS"/>
+    <keyword type="constant" name="ALSACTL_EVENT_TYPE_ELEM" link="alsactl-alsactl-enum-types.html#ALSACTL-EVENT-TYPE-ELEM:CAPS"/>
+    <keyword type="constant" name="ALSACTL_EVENT_MASK_FLAG_VALUE" link="alsactl-alsactl-enum-types.html#ALSACTL-EVENT-MASK-FLAG-VALUE:CAPS"/>
+    <keyword type="constant" name="ALSACTL_EVENT_MASK_FLAG_INFO" link="alsactl-alsactl-enum-types.html#ALSACTL-EVENT-MASK-FLAG-INFO:CAPS"/>
+    <keyword type="constant" name="ALSACTL_EVENT_MASK_FLAG_ADD" link="alsactl-alsactl-enum-types.html#ALSACTL-EVENT-MASK-FLAG-ADD:CAPS"/>
+    <keyword type="constant" name="ALSACTL_EVENT_MASK_FLAG_TLV" link="alsactl-alsactl-enum-types.html#ALSACTL-EVENT-MASK-FLAG-TLV:CAPS"/>
+    <keyword type="constant" name="ALSACTL_EVENT_MASK_FLAG_REMOVE" link="alsactl-alsactl-enum-types.html#ALSACTL-EVENT-MASK-FLAG-REMOVE:CAPS"/>
+  </functions>
+</book>

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ALSACtlElemInfo: ALSACtl Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="ALSACtl Reference Manual">
+<link rel="up" href="alsactl-objects.html" title="ALSACtl objects">
+<link rel="prev" href="alsactl-elem-id.html" title="elem-id">
+<link rel="next" href="ALSACtlElemInfoBool.html" title="ALSACtlElemInfoBool">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ALSACtlElemInfo.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ALSACtlElemInfo.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ALSACtlElemInfo.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="alsactl-objects.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="alsactl-elem-id.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ALSACtlElemInfoBool.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ALSACtlElemInfo"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ALSACtlElemInfo.top_of_page"></a>ALSACtlElemInfo</span></h2>
+<p>ALSACtlElemInfo</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ALSACtlElemInfo.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a class="link" href="alsactl-alsactl-enum-types.html#ALSACtlElemAccessFlag" title="enum ALSACtlElemAccessFlag"><span class="type">ALSACtlElemAccessFlag</span></a></td>
+<td class="property_name"><a class="link" href="ALSACtlElemInfo.html#ALSACtlElemInfo--access" title="The “access” property">access</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *</td>
+<td class="property_name"><a class="link" href="ALSACtlElemInfo.html#ALSACtlElemInfo--elem-id" title="The “elem-id” property">elem-id</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gint</span></td>
+<td class="property_name"><a class="link" href="ALSACtlElemInfo.html#ALSACtlElemInfo--owner" title="The “owner” property">owner</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="alsactl-alsactl-enum-types.html#ALSACtlElemType" title="enum ALSACtlElemType"><span class="type">ALSACtlElemType</span></a></td>
+<td class="property_name"><a class="link" href="ALSACtlElemInfo.html#ALSACtlElemInfo--type" title="The “type” property">type</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ALSACtlElemInfo.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> ALSACtlElemInfo
+        <span class="lineart">├──</span> <a class="link" href="ALSACtlElemInfoBool.html" title="ALSACtlElemInfoBool">ALSACtlElemInfoBool</a>
+        <span class="lineart">├──</span> <a class="link" href="ALSACtlElemInfoInt.html" title="ALSACtlElemInfoInt">ALSACtlElemInfoInt</a>
+        <span class="lineart">├──</span> <a class="link" href="ALSACtlElemInfoEnum.html" title="ALSACtlElemInfoEnum">ALSACtlElemInfoEnum</a>
+        <span class="lineart">├──</span> <a class="link" href="ALSACtlElemInfoBytes.html" title="ALSACtlElemInfoBytes">ALSACtlElemInfoBytes</a>
+        <span class="lineart">├──</span> <a class="link" href="ALSACtlElemInfoIec60958.html" title="ALSACtlElemInfoIec60958">ALSACtlElemInfoIec60958</a>
+        <span class="lineart">╰──</span> <a class="link" href="ALSACtlElemInfoInt64.html" title="ALSACtlElemInfoInt64">ALSACtlElemInfoInt64</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="ALSACtlElemInfo.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ALSACtlElemInfo.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="ALSACtlElemInfo.other_details"></a><h2>Types and Values</h2>
+</div>
+<div class="refsect1">
+<a name="ALSACtlElemInfo.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ALSACtlElemInfo--access"></a><h3>The <code class="literal">“access”</code> property</h3>
+<pre class="programlisting">  “access”                   <a class="link" href="alsactl-alsactl-enum-types.html#ALSACtlElemAccessFlag" title="enum ALSACtlElemAccessFlag"><span class="type">ALSACtlElemAccessFlag</span></a></pre>
+<p>The access permission for this element with flags of ALSACtlElemAccessFlag.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: ALSACTL_ELEM_ACCESS_FLAG_READ</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSACtlElemInfo--elem-id"></a><h3>The <code class="literal">“elem-id”</code> property</h3>
+<pre class="programlisting">  “elem-id”                  <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *</pre>
+<p>The identifier of the element, one of ALSACtlElemId.</p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSACtlElemInfo--owner"></a><h3>The <code class="literal">“owner”</code> property</h3>
+<pre class="programlisting">  “owner”                    <span class="type">gint</span></pre>
+<p>The value of PID for process to own the element.</p>
+<p>Flags: Read</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSACtlElemInfo--type"></a><h3>The <code class="literal">“type”</code> property</h3>
+<pre class="programlisting">  “type”                     <a class="link" href="alsactl-alsactl-enum-types.html#ALSACtlElemType" title="enum ALSACtlElemType"><span class="type">ALSACtlElemType</span></a></pre>
+<p>The type for this element, one of ALSACtlElemType.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: ALSACTL_ELEM_TYPE_NONE</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>
