@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ALSATimerInstanceParams: ALSATimer Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="ALSATimer Reference Manual">
+<link rel="up" href="alsatimer-objects.html" title="ALSATimer objects">
+<link rel="prev" href="ALSATimerInstanceStatus.html" title="ALSATimerInstanceStatus">
+<link rel="next" href="ALSATimerEventData.html" title="ALSATimerEventData">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ALSATimerInstanceParams.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ALSATimerInstanceParams.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ALSATimerInstanceParams.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="alsatimer-objects.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ALSATimerInstanceStatus.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ALSATimerEventData.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ALSATimerInstanceParams"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ALSATimerInstanceParams.top_of_page"></a>ALSATimerInstanceParams</span></h2>
+<p>ALSATimerInstanceParams</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ALSATimerInstanceParams.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ALSATimerInstanceParams.html" title="ALSATimerInstanceParams"><span class="returnvalue">ALSATimerInstanceParams</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ALSATimerInstanceParams.html#alsatimer-instance-params-new" title="alsatimer_instance_params_new ()">alsatimer_instance_params_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSATimerInstanceParams.html#alsatimer-instance-params-set-event-filter" title="alsatimer_instance_params_set_event_filter ()">alsatimer_instance_params_set_event_filter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSATimerInstanceParams.html#alsatimer-instance-params-get-event-filter" title="alsatimer_instance_params_get_event_filter ()">alsatimer_instance_params_get_event_filter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ALSATimerInstanceParams.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerInstanceParamFlag" title="enum ALSATimerInstanceParamFlag"><span class="type">ALSATimerInstanceParamFlag</span></a></td>
+<td class="property_name"><a class="link" href="ALSATimerInstanceParams.html#ALSATimerInstanceParams--flags" title="The “flags” property">flags</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">guint</span></td>
+<td class="property_name"><a class="link" href="ALSATimerInstanceParams.html#ALSATimerInstanceParams--interval" title="The “interval” property">interval</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">guint</span></td>
+<td class="property_name"><a class="link" href="ALSATimerInstanceParams.html#ALSATimerInstanceParams--queue-size" title="The “queue-size” property">queue-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ALSATimerInstanceParams.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> ALSATimerInstanceParams
+</pre>
+</div>
+<div class="refsect1">
+<a name="ALSATimerInstanceParams.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ALSATimerInstanceParams.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="alsatimer-instance-params-new"></a><h3>alsatimer_instance_params_new ()</h3>
+<pre class="programlisting"><a class="link" href="ALSATimerInstanceParams.html" title="ALSATimerInstanceParams"><span class="returnvalue">ALSATimerInstanceParams</span></a> *
+alsatimer_instance_params_new ();</pre>
+<p>Allocate and return an instance of ALSATimerInstanceParams.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsatimer-instance-params-set-event-filter"></a><h3>alsatimer_instance_params_set_event_filter ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsatimer_instance_params_set_event_filter
+                               (<em class="parameter"><code><a class="link" href="ALSATimerInstanceParams.html" title="ALSATimerInstanceParams"><span class="type">ALSATimerInstanceParams</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerEventType" title="enum ALSATimerEventType"><span class="type">ALSATimerEventType</span></a> *entries</code></em>,
+                                <em class="parameter"><code><span class="type">gsize</span> entry_count</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Set the list of ALSATimerEventType to filter events. This parameter is only
+effective for target instance with ALSATimerEventDataType.TIMESTAMP.</p>
+<div class="refsect3">
+<a name="alsatimer-instance-params-set-event-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSATimerInstanceParams.html" title="ALSATimerInstanceParams"><span class="type">ALSATimerInstanceParams</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>entries</p></td>
+<td class="parameter_description"><p>The array with elements for entries of
+<a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerEventType" title="enum ALSATimerEventType"><span class="type">ALSATimerEventType</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=entry_count]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>entry_count</p></td>
+<td class="parameter_description"><p>The number of elements in the above array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <span class="type">GError</span> at failure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsatimer-instance-params-get-event-filter"></a><h3>alsatimer_instance_params_get_event_filter ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsatimer_instance_params_get_event_filter
+                               (<em class="parameter"><code><a class="link" href="ALSATimerInstanceParams.html" title="ALSATimerInstanceParams"><span class="type">ALSATimerInstanceParams</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerEventType" title="enum ALSATimerEventType"><span class="type">ALSATimerEventType</span></a> **entries</code></em>,
+                                <em class="parameter"><code><span class="type">gsize</span> *entry_count</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Get the list of ALSATimerEventType to filter events. This parameter is only
+effective for target instance with ALSATimerEventDataType.TIMESTAMP.</p>
+<div class="refsect3">
+<a name="alsatimer-instance-params-get-event-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSATimerInstanceParams.html" title="ALSATimerInstanceParams"><span class="type">ALSATimerInstanceParams</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>entries</p></td>
+<td class="parameter_description"><p>The array with elements for
+entries of <a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerEventType" title="enum ALSATimerEventType"><span class="type">ALSATimerEventType</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=entry_count][<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>entry_count</p></td>
+<td class="parameter_description"><p>The number of elements in the above array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <span class="type">GError</span> at failure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ALSATimerInstanceParams.other_details"></a><h2>Types and Values</h2>
+</div>
+<div class="refsect1">
+<a name="ALSATimerInstanceParams.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ALSATimerInstanceParams--flags"></a><h3>The <code class="literal">“flags”</code> property</h3>
+<pre class="programlisting">  “flags”                    <a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerInstanceParamFlag" title="enum ALSATimerInstanceParamFlag"><span class="type">ALSATimerInstanceParamFlag</span></a></pre>
+<p>The flags for user instance, as a set of ALSATimerInstanceParamFlag.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSATimerInstanceParams--interval"></a><h3>The <code class="literal">“interval”</code> property</h3>
+<pre class="programlisting">  “interval”                 <span class="type">guint</span></pre>
+<p>The interval to generate event in tick count.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSATimerInstanceParams--queue-size"></a><h3>The <code class="literal">“queue-size”</code> property</h3>
+<pre class="programlisting">  “queue-size”               <span class="type">guint</span></pre>
+<p>The size of queue.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

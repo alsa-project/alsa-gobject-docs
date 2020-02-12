@@ -233,6 +233,7 @@ alsactl_card_new ();</pre>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_open (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                    <em class="parameter"><code><span class="type">guint</span> card_id</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> open_flag</code></em>,
                    <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
 <p>Open ALSA control character device for the sound card.</p>
 <div class="refsect3">
@@ -252,6 +253,11 @@ alsactl_card_open (<em class="parameter"><code><a class="link" href="ALSACtlCard
 <tr>
 <td class="parameter_name"><p>card_id</p></td>
 <td class="parameter_description"><p>The numerical ID of sound card.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_flag</p></td>
+<td class="parameter_description"><p>The flag of open(2) system call. O_RDONLY is forced to fulfil internally.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -893,7 +899,7 @@ character device.</p>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a>         *self,
                <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a>       *elem_id,
-               <a class="link" href="alsactl-alsactl-enum-types.html#ALSACtlEventMaskFlag" title="enum ALSACtlEventMaskFlag"><span class="type">ALSACtlEventMaskFlag</span></a> events,
+               <a class="link" href="alsactl-alsactl-enum-types.html#ALSACtlElemEventMask" title="enum ALSACtlElemEventMask"><span class="type">ALSACtlElemEventMask</span></a> events,
                <span class="type">gpointer</span>             user_data)</pre>
 <p>When event occurs for any element, this signal is emit.</p>
 <div class="refsect3">
@@ -917,7 +923,7 @@ user_function (<a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span
 </tr>
 <tr>
 <td class="parameter_name"><p>events</p></td>
-<td class="parameter_description"><p>A set of <a class="link" href="alsactl-alsactl-enum-types.html#ALSACtlEventMaskFlag" title="enum ALSACtlEventMaskFlag"><span class="type">ALSACtlEventMaskFlag</span></a>.</p></td>
+<td class="parameter_description"><p>A set of <a class="link" href="alsactl-alsactl-enum-types.html#ALSACtlElemEventMask" title="enum ALSACtlElemEventMask"><span class="type">ALSACtlElemEventMask</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>

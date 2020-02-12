@@ -29,7 +29,7 @@
     <keyword type="enum" name="enum ALSACtlElemIfaceType" link="alsactl-alsactl-enum-types.html#ALSACtlElemIfaceType"/>
     <keyword type="enum" name="enum ALSACtlElemAccessFlag" link="alsactl-alsactl-enum-types.html#ALSACtlElemAccessFlag"/>
     <keyword type="enum" name="enum ALSACtlEventType" link="alsactl-alsactl-enum-types.html#ALSACtlEventType"/>
-    <keyword type="enum" name="enum ALSACtlEventMaskFlag" link="alsactl-alsactl-enum-types.html#ALSACtlEventMaskFlag"/>
+    <keyword type="enum" name="enum ALSACtlElemEventMask" link="alsactl-alsactl-enum-types.html#ALSACtlElemEventMask"/>
     <keyword type="function" name="alsactl_get_card_id_list ()" link="alsactl-query.html#alsactl-get-card-id-list"/>
     <keyword type="function" name="alsactl_get_card_sysname ()" link="alsactl-query.html#alsactl-get-card-sysname"/>
     <keyword type="function" name="alsactl_get_control_sysname ()" link="alsactl-query.html#alsactl-get-control-sysname"/>
@@ -69,6 +69,7 @@
     <keyword type="function" name="alsactl_elem_id_get_subdevice_id ()" link="alsactl-elem-id.html#alsactl-elem-id-get-subdevice-id"/>
     <keyword type="function" name="alsactl_elem_id_get_name ()" link="alsactl-elem-id.html#alsactl-elem-id-get-name"/>
     <keyword type="function" name="alsactl_elem_id_get_index ()" link="alsactl-elem-id.html#alsactl-elem-id-get-index"/>
+    <keyword type="function" name="alsactl_elem_id_equal ()" link="alsactl-elem-id.html#alsactl-elem-id-equal"/>
     <keyword type="property" name="The “access” property" link="ALSACtlElemInfo.html#ALSACtlElemInfo--access"/>
     <keyword type="property" name="The “elem-id” property" link="ALSACtlElemInfo.html#ALSACtlElemInfo--elem-id"/>
     <keyword type="property" name="The “owner” property" link="ALSACtlElemInfo.html#ALSACtlElemInfo--owner"/>
@@ -104,6 +105,7 @@
     <keyword type="function" name="alsactl_elem_value_get_iec60958 ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-iec60958"/>
     <keyword type="function" name="alsactl_elem_value_set_int64 ()" link="ALSACtlElemValue.html#alsactl-elem-value-set-int64"/>
     <keyword type="function" name="alsactl_elem_value_get_int64 ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-int64"/>
+    <keyword type="function" name="alsactl_elem_value_equal ()" link="ALSACtlElemValue.html#alsactl-elem-value-equal"/>
     <keyword type="property" name="The “elem-id” property" link="ALSACtlElemValue.html#ALSACtlElemValue--elem-id"/>
     <keyword type="constant" name="ALSACTL_ELEM_TYPE_NONE" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-TYPE-NONE:CAPS"/>
     <keyword type="constant" name="ALSACTL_ELEM_TYPE_BOOLEAN" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-TYPE-BOOLEAN:CAPS"/>
@@ -131,10 +133,10 @@
     <keyword type="constant" name="ALSACTL_ELEM_ACCESS_FLAG_TLV_CALLBACK" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-ACCESS-FLAG-TLV-CALLBACK:CAPS"/>
     <keyword type="constant" name="ALSACTL_ELEM_ACCESS_FLAG_USER" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-ACCESS-FLAG-USER:CAPS"/>
     <keyword type="constant" name="ALSACTL_EVENT_TYPE_ELEM" link="alsactl-alsactl-enum-types.html#ALSACTL-EVENT-TYPE-ELEM:CAPS"/>
-    <keyword type="constant" name="ALSACTL_EVENT_MASK_FLAG_VALUE" link="alsactl-alsactl-enum-types.html#ALSACTL-EVENT-MASK-FLAG-VALUE:CAPS"/>
-    <keyword type="constant" name="ALSACTL_EVENT_MASK_FLAG_INFO" link="alsactl-alsactl-enum-types.html#ALSACTL-EVENT-MASK-FLAG-INFO:CAPS"/>
-    <keyword type="constant" name="ALSACTL_EVENT_MASK_FLAG_ADD" link="alsactl-alsactl-enum-types.html#ALSACTL-EVENT-MASK-FLAG-ADD:CAPS"/>
-    <keyword type="constant" name="ALSACTL_EVENT_MASK_FLAG_TLV" link="alsactl-alsactl-enum-types.html#ALSACTL-EVENT-MASK-FLAG-TLV:CAPS"/>
-    <keyword type="constant" name="ALSACTL_EVENT_MASK_FLAG_REMOVE" link="alsactl-alsactl-enum-types.html#ALSACTL-EVENT-MASK-FLAG-REMOVE:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_EVENT_MASK_VALUE" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-EVENT-MASK-VALUE:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_EVENT_MASK_INFO" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-EVENT-MASK-INFO:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_EVENT_MASK_ADD" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-EVENT-MASK-ADD:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_EVENT_MASK_TLV" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-EVENT-MASK-TLV:CAPS"/>
+    <keyword type="constant" name="ALSACTL_ELEM_EVENT_MASK_REMOVE" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-EVENT-MASK-REMOVE:CAPS"/>
   </functions>
 </book>
