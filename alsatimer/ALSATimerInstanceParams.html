@@ -83,12 +83,12 @@
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><span class="type">guint</span></td>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
 <td class="property_name"><a class="link" href="ALSATimerInstanceParams.html#ALSATimerInstanceParams--interval" title="The “interval” property">interval</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><span class="type">guint</span></td>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
 <td class="property_name"><a class="link" href="ALSATimerInstanceParams.html#ALSATimerInstanceParams--queue-size" title="The “queue-size” property">queue-size</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -97,7 +97,7 @@
 </div>
 <div class="refsect1">
 <a name="ALSATimerInstanceParams.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GObject
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> ALSATimerInstanceParams
 </pre>
 </div>
@@ -119,8 +119,8 @@ alsatimer_instance_params_new ();</pre>
 alsatimer_instance_params_set_event_filter
                                (<em class="parameter"><code><a class="link" href="ALSATimerInstanceParams.html" title="ALSATimerInstanceParams"><span class="type">ALSATimerInstanceParams</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerEventType" title="enum ALSATimerEventType"><span class="type">ALSATimerEventType</span></a> *entries</code></em>,
-                                <em class="parameter"><code><span class="type">gsize</span> entry_count</code></em>,
-                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> entry_count</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Set the list of ALSATimerEventType to filter events. This parameter is only
 effective for target instance with ALSATimerEventDataType.TIMESTAMP.</p>
 <div class="refsect3">
@@ -150,7 +150,7 @@ effective for target instance with ALSATimerEventDataType.TIMESTAMP.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span> at failure.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> at failure.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -164,8 +164,8 @@ effective for target instance with ALSATimerEventDataType.TIMESTAMP.</p>
 alsatimer_instance_params_get_event_filter
                                (<em class="parameter"><code><a class="link" href="ALSATimerInstanceParams.html" title="ALSATimerInstanceParams"><span class="type">ALSATimerInstanceParams</span></a> *self</code></em>,
                                 <em class="parameter"><code><a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerEventType" title="enum ALSATimerEventType"><span class="type">ALSATimerEventType</span></a> **entries</code></em>,
-                                <em class="parameter"><code><span class="type">gsize</span> *entry_count</code></em>,
-                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *entry_count</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the list of ALSATimerEventType to filter events. This parameter is only
 effective for target instance with ALSATimerEventDataType.TIMESTAMP.</p>
 <div class="refsect3">
@@ -195,7 +195,7 @@ entries of <a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerEv
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span> at failure.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> at failure.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -217,7 +217,7 @@ entries of <a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerEv
 <hr>
 <div class="refsect2">
 <a name="ALSATimerInstanceParams--interval"></a><h3>The <code class="literal">“interval”</code> property</h3>
-<pre class="programlisting">  “interval”                 <span class="type">guint</span></pre>
+<pre class="programlisting">  “interval”                 <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
 <p>The interval to generate event in tick count.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
@@ -225,7 +225,7 @@ entries of <a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerEv
 <hr>
 <div class="refsect2">
 <a name="ALSATimerInstanceParams--queue-size"></a><h3>The <code class="literal">“queue-size”</code> property</h3>
-<pre class="programlisting">  “queue-size”               <span class="type">guint</span></pre>
+<pre class="programlisting">  “queue-size”               <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
 <p>The size of queue.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>

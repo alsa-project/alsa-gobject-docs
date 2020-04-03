@@ -176,12 +176,12 @@
 <tbody>
 <tr>
 <td class="property_type">
-<span class="type">gchar</span> *</td>
+<a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
 <td class="property_name"><a class="link" href="ALSACtlCard.html#ALSACtlCard--devnode" title="The “devnode” property">devnode</a></td>
 <td class="property_flags">Read</td>
 </tr>
 <tr>
-<td class="property_type"><span class="type">gboolean</span></td>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
 <td class="property_name"><a class="link" href="ALSACtlCard.html#ALSACtlCard--subscribed" title="The “subscribed” property">subscribed</a></td>
 <td class="property_flags">Read</td>
 </tr>
@@ -200,19 +200,19 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="ALSACtlCard.html#ALSACtlCard-handle-disconnection" title="The “handle-disconnection” signal">handle-disconnection</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="ALSACtlCard.html#ALSACtlCard-handle-elem-event" title="The “handle-elem-event” signal">handle-elem-event</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="ALSACtlCard.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GObject
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> ALSACtlCard
 </pre>
 </div>
@@ -232,9 +232,9 @@ alsactl_card_new ();</pre>
 <a name="alsactl-card-open"></a><h3>alsactl_card_open ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_open (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
-                   <em class="parameter"><code><span class="type">guint</span> card_id</code></em>,
-                   <em class="parameter"><code><span class="type">gint</span> open_flag</code></em>,
-                   <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> card_id</code></em>,
+                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> open_flag</code></em>,
+                   <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Open ALSA control character device for the sound card.</p>
 <div class="refsect3">
 <a name="alsactl-card-open.parameters"></a><h4>Parameters</h4>
@@ -262,7 +262,7 @@ alsactl_card_open (<em class="parameter"><code><a class="link" href="ALSACtlCard
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -275,7 +275,7 @@ alsactl_card_open (<em class="parameter"><code><a class="link" href="ALSACtlCard
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_get_info (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                        <em class="parameter"><code><a class="link" href="ALSACtlCardInfo.html" title="ALSACtlCardInfo"><span class="type">ALSACtlCardInfo</span></a> **card_info</code></em>,
-                       <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                       <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the information of sound card.</p>
 <div class="refsect3">
 <a name="alsactl-card-get-info.parameters"></a><h4>Parameters</h4>
@@ -298,7 +298,7 @@ alsactl_card_get_info (<em class="parameter"><code><a class="link" href="ALSACtl
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -310,8 +310,8 @@ alsactl_card_get_info (<em class="parameter"><code><a class="link" href="ALSACtl
 <a name="alsactl-card-get-elem-id-list"></a><h3>alsactl_card_get_elem_id_list ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_get_elem_id_list (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
-                               <em class="parameter"><code><span class="type">GList</span> **entries</code></em>,
-                               <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                               <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> **entries</code></em>,
+                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Generate a list of ALSACtlElemId for ALSA control character device
 associated to the sound card.</p>
 <div class="refsect3">
@@ -336,7 +336,7 @@ ALSACtlElemId. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -349,8 +349,8 @@ ALSACtlElemId. </p></td>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_lock_elem (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                         <em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
-                        <em class="parameter"><code><span class="type">gboolean</span> lock</code></em>,
-                        <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> lock</code></em>,
+                        <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Lock/Unlock indicated element not to be written by the other processes.</p>
 <div class="refsect3">
 <a name="alsactl-card-lock-elem.parameters"></a><h4>Parameters</h4>
@@ -378,7 +378,7 @@ alsactl_card_lock_elem (<em class="parameter"><code><a class="link" href="ALSACt
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -392,7 +392,7 @@ alsactl_card_lock_elem (<em class="parameter"><code><a class="link" href="ALSACt
 alsactl_card_get_elem_info (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                             <em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
                             <em class="parameter"><code><a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfo"><span class="type">ALSACtlElemInfo</span></a> **elem_info</code></em>,
-                            <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                            <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get information of element corresponding to given id.</p>
 <div class="refsect3">
 <a name="alsactl-card-get-elem-info.parameters"></a><h4>Parameters</h4>
@@ -420,7 +420,7 @@ alsactl_card_get_elem_info (<em class="parameter"><code><a class="link" href="AL
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -433,9 +433,9 @@ alsactl_card_get_elem_info (<em class="parameter"><code><a class="link" href="AL
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_write_elem_tlv (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                              <em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
-                             <em class="parameter"><code>const <span class="type">gint32</span> *container</code></em>,
-                             <em class="parameter"><code><span class="type">gsize</span> container_count</code></em>,
-                             <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                             <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a> *container</code></em>,
+                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> container_count</code></em>,
+                             <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <div class="refsect3">
 <a name="alsactl-card-write-elem-tlv.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -468,7 +468,7 @@ Type-Length-Value data. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -481,9 +481,9 @@ Type-Length-Value data. </p></td>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_read_elem_tlv (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                             <em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
-                            <em class="parameter"><code><span class="type">gint32</span> *const *container</code></em>,
-                            <em class="parameter"><code><span class="type">gsize</span> *container_count</code></em>,
-                            <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a> *const *container</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *container_count</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <div class="refsect3">
 <a name="alsactl-card-read-elem-tlv.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -516,7 +516,7 @@ for Type-Length-Value data. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -529,9 +529,9 @@ for Type-Length-Value data. </p></td>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_command_elem_tlv (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                                <em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
-                               <em class="parameter"><code><span class="type">gint32</span> *const *container</code></em>,
-                               <em class="parameter"><code><span class="type">gsize</span> *container_count</code></em>,
-                               <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a> *const *container</code></em>,
+                               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *container_count</code></em>,
+                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <div class="refsect3">
 <a name="alsactl-card-command-elem-tlv.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -564,7 +564,7 @@ for Type-Length-Value data. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -577,10 +577,10 @@ for Type-Length-Value data. </p></td>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_add_elems (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                         <em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
-                        <em class="parameter"><code><span class="type">guint</span> elem_count</code></em>,
+                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> elem_count</code></em>,
                         <em class="parameter"><code><a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfo"><span class="type">ALSACtlElemInfo</span></a> *elem_info</code></em>,
-                        <em class="parameter"><code><span class="type">GList</span> **entries</code></em>,
-                        <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                        <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> **entries</code></em>,
+                        <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Add user-defined elements.</p>
 <div class="refsect3">
 <a name="alsactl-card-add-elems.parameters"></a><h4>Parameters</h4>
@@ -618,7 +618,7 @@ alsactl_card_add_elems (<em class="parameter"><code><a class="link" href="ALSACt
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -631,10 +631,10 @@ alsactl_card_add_elems (<em class="parameter"><code><a class="link" href="ALSACt
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_replace_elems (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                             <em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
-                            <em class="parameter"><code><span class="type">guint</span> elem_count</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> elem_count</code></em>,
                             <em class="parameter"><code><a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfo"><span class="type">ALSACtlElemInfo</span></a> *elem_info</code></em>,
-                            <em class="parameter"><code><span class="type">GList</span> **entries</code></em>,
-                            <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                            <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> **entries</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Add user-defined elements instead of given elements.</p>
 <div class="refsect3">
 <a name="alsactl-card-replace-elems.parameters"></a><h4>Parameters</h4>
@@ -672,7 +672,7 @@ alsactl_card_replace_elems (<em class="parameter"><code><a class="link" href="AL
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -685,7 +685,7 @@ alsactl_card_replace_elems (<em class="parameter"><code><a class="link" href="AL
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_remove_elems (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                            <em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
-                           <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                           <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Remove user-defined elements.</p>
 <div class="refsect3">
 <a name="alsactl-card-remove-elems.parameters"></a><h4>Parameters</h4>
@@ -708,7 +708,7 @@ alsactl_card_remove_elems (<em class="parameter"><code><a class="link" href="ALS
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -722,7 +722,7 @@ alsactl_card_remove_elems (<em class="parameter"><code><a class="link" href="ALS
 alsactl_card_write_elem_value (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                                <em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
                                <em class="parameter"><code>const <a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *elem_value</code></em>,
-                               <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Write given value to element indicated by given ID.</p>
 <div class="refsect3">
 <a name="alsactl-card-write-elem-value.parameters"></a><h4>Parameters</h4>
@@ -750,7 +750,7 @@ alsactl_card_write_elem_value (<em class="parameter"><code><a class="link" href=
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -764,7 +764,7 @@ alsactl_card_write_elem_value (<em class="parameter"><code><a class="link" href=
 alsactl_card_read_elem_value (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                               <em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
                               <em class="parameter"><code><a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *const *elem_value</code></em>,
-                              <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                              <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Read given value from element indicated by given ID.</p>
 <div class="refsect3">
 <a name="alsactl-card-read-elem-value.parameters"></a><h4>Parameters</h4>
@@ -792,7 +792,7 @@ alsactl_card_read_elem_value (<em class="parameter"><code><a class="link" href="
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -804,8 +804,8 @@ alsactl_card_read_elem_value (<em class="parameter"><code><a class="link" href="
 <a name="alsactl-card-create-source"></a><h3>alsactl_card_create_source ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_create_source (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
-                            <em class="parameter"><code><span class="type">GSource</span> **gsrc</code></em>,
-                            <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                            <em class="parameter"><code><a href="../glib/glib-The-Main-Event-Loop.html#GSource"><span class="type">GSource</span></a> **gsrc</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Allocate GSource structure to handle events from ALSA control character
 device.</p>
 <div class="refsect3">
@@ -824,12 +824,12 @@ device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>gsrc</p></td>
-<td class="parameter_description"><p>A <span class="type">GSource</span> to handle events from ALSA control character device. </p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-The-Main-Event-Loop.html#GSource"><span class="type">GSource</span></a> to handle events from ALSA control character device. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -844,7 +844,7 @@ device.</p>
 <a name="ALSACtlCard.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ALSACtlCard--devnode"></a><h3>The <code class="literal">“devnode”</code> property</h3>
-<pre class="programlisting">  “devnode”                  <span class="type">gchar</span> *</pre>
+<pre class="programlisting">  “devnode”                  <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The full path of control character device.</p>
 <p>Flags: Read</p>
 <p>Default value: ""</p>
@@ -852,7 +852,7 @@ device.</p>
 <hr>
 <div class="refsect2">
 <a name="ALSACtlCard--subscribed"></a><h3>The <code class="literal">“subscribed”</code> property</h3>
-<pre class="programlisting">  “subscribed”               <span class="type">gboolean</span></pre>
+<pre class="programlisting">  “subscribed”               <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
 <p>Whether to be subscribed for event.</p>
 <p>Flags: Read</p>
 <p>Default value: FALSE</p>
@@ -864,7 +864,7 @@ device.</p>
 <a name="ALSACtlCard-handle-disconnection"></a><h3>The <code class="literal">“handle-disconnection”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self,
-               <span class="type">gpointer</span>     user_data)</pre>
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
 <p>When the sound card is not available anymore due to unbinding driver or
 hot unplugging, this signal is emit. The owner of this object should
 call <code class="function">g_object_free()</code> as quickly as possible to release ALSA control
@@ -891,7 +891,7 @@ character device.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -900,7 +900,7 @@ character device.</p>
 user_function (<a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a>         *self,
                <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a>       *elem_id,
                <a class="link" href="alsactl-alsactl-enum-types.html#ALSACtlElemEventMask" title="enum ALSACtlElemEventMask"><span class="type">ALSACtlElemEventMask</span></a> events,
-               <span class="type">gpointer</span>             user_data)</pre>
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>             user_data)</pre>
 <p>When event occurs for any element, this signal is emit.</p>
 <div class="refsect3">
 <a name="ALSACtlCard-handle-elem-event.parameters"></a><h4>Parameters</h4>
@@ -934,7 +934,7 @@ user_function (<a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 </div>

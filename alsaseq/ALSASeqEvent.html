@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ALSASeqEvent: ALSASeq Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="ALSASeq Reference Manual">
+<link rel="up" href="alsaseq-objects.html" title="ALSASeq objects">
+<link rel="prev" href="ALSASeqSubscribeData.html" title="ALSASeqSubscribeData">
+<link rel="next" href="ALSASeqEventFixed.html" title="ALSASeqEventFixed">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ALSASeqEvent.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ALSASeqEvent.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ALSASeqEvent.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="alsaseq-objects.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ALSASeqSubscribeData.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ALSASeqEventFixed.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ALSASeqEvent"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ALSASeqEvent.top_of_page"></a>ALSASeqEvent</span></h2>
+<p>ALSASeqEvent</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ALSASeqEvent.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a class="link" href="alsaseq-addr.html#ALSASeqAddr"><span class="type">ALSASeqAddr</span></a> *</td>
+<td class="property_name"><a class="link" href="ALSASeqEvent.html#ALSASeqEvent--dst-addr" title="The “dst-addr” property">dst-addr</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqEventLengthMode" title="enum ALSASeqEventLengthMode"><span class="type">ALSASeqEventLengthMode</span></a></td>
+<td class="property_name"><a class="link" href="ALSASeqEvent.html#ALSASeqEvent--length-mode" title="The “length-mode” property">length-mode</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqEventPriorityMode" title="enum ALSASeqEventPriorityMode"><span class="type">ALSASeqEventPriorityMode</span></a></td>
+<td class="property_name"><a class="link" href="ALSASeqEvent.html#ALSASeqEvent--priority-mode" title="The “priority-mode” property">priority-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a></td>
+<td class="property_name"><a class="link" href="ALSASeqEvent.html#ALSASeqEvent--queue-id" title="The “queue-id” property">queue-id</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="alsaseq-addr.html#ALSASeqAddr"><span class="type">ALSASeqAddr</span></a> *</td>
+<td class="property_name"><a class="link" href="ALSASeqEvent.html#ALSASeqEvent--src-addr" title="The “src-addr” property">src-addr</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a></td>
+<td class="property_name"><a class="link" href="ALSASeqEvent.html#ALSASeqEvent--tag" title="The “tag” property">tag</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqEventTimeMode" title="enum ALSASeqEventTimeMode"><span class="type">ALSASeqEventTimeMode</span></a></td>
+<td class="property_name"><a class="link" href="ALSASeqEvent.html#ALSASeqEvent--time-mode" title="The “time-mode” property">time-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqEventTimestampMode" title="enum ALSASeqEventTimestampMode"><span class="type">ALSASeqEventTimestampMode</span></a></td>
+<td class="property_name"><a class="link" href="ALSASeqEvent.html#ALSASeqEvent--timestamp-mode" title="The “timestamp-mode” property">timestamp-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="alsaseq-tstamp.html#ALSASeqTstamp"><span class="type">ALSASeqTstamp</span></a> *</td>
+<td class="property_name"><a class="link" href="ALSASeqEvent.html#ALSASeqEvent--tstamp" title="The “tstamp” property">tstamp</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqEventType" title="enum ALSASeqEventType"><span class="type">ALSASeqEventType</span></a></td>
+<td class="property_name"><a class="link" href="ALSASeqEvent.html#ALSASeqEvent--type" title="The “type” property">type</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ALSASeqEvent.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> ALSASeqEvent
+        <span class="lineart">├──</span> <a class="link" href="ALSASeqEventFixed.html" title="ALSASeqEventFixed">ALSASeqEventFixed</a>
+        <span class="lineart">╰──</span> <a class="link" href="ALSASeqEventVariable.html" title="ALSASeqEventVariable">ALSASeqEventVariable</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="ALSASeqEvent.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ALSASeqEvent.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="ALSASeqEvent.other_details"></a><h2>Types and Values</h2>
+</div>
+<div class="refsect1">
+<a name="ALSASeqEvent.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ALSASeqEvent--dst-addr"></a><h3>The <code class="literal">“dst-addr”</code> property</h3>
+<pre class="programlisting">  “dst-addr”                 <a class="link" href="alsaseq-addr.html#ALSASeqAddr"><span class="type">ALSASeqAddr</span></a> *</pre>
+<p>The address of destination for the event.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSASeqEvent--length-mode"></a><h3>The <code class="literal">“length-mode”</code> property</h3>
+<pre class="programlisting">  “length-mode”              <a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqEventLengthMode" title="enum ALSASeqEventLengthMode"><span class="type">ALSASeqEventLengthMode</span></a></pre>
+<p>The mode of length for the event, one of ALSASeqEventLengthMode.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: ALSASEQ_EVENT_LENGTH_MODE_FIXED</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSASeqEvent--priority-mode"></a><h3>The <code class="literal">“priority-mode”</code> property</h3>
+<pre class="programlisting">  “priority-mode”            <a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqEventPriorityMode" title="enum ALSASeqEventPriorityMode"><span class="type">ALSASeqEventPriorityMode</span></a></pre>
+<p>The mode of priority for the event, one of ALSASeqEventPriorityMode.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: ALSASEQ_EVENT_PRIORITY_MODE_NORMAL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSASeqEvent--queue-id"></a><h3>The <code class="literal">“queue-id”</code> property</h3>
+<pre class="programlisting">  “queue-id”                 <a href="../glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a></pre>
+<p>The numerical ID of queue to deliver the event. One of ALSASeqSpecificQueueId is available as well.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSASeqEvent--src-addr"></a><h3>The <code class="literal">“src-addr”</code> property</h3>
+<pre class="programlisting">  “src-addr”                 <a class="link" href="alsaseq-addr.html#ALSASeqAddr"><span class="type">ALSASeqAddr</span></a> *</pre>
+<p>The address of source for the event.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSASeqEvent--tag"></a><h3>The <code class="literal">“tag”</code> property</h3>
+<pre class="programlisting">  “tag”                      <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a></pre>
+<p>The arbitrary tag associated to the event.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSASeqEvent--time-mode"></a><h3>The <code class="literal">“time-mode”</code> property</h3>
+<pre class="programlisting">  “time-mode”                <a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqEventTimeMode" title="enum ALSASeqEventTimeMode"><span class="type">ALSASeqEventTimeMode</span></a></pre>
+<p>The mode of time for the event, one of ALSASeqEventTimeMode.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: ALSASEQ_EVENT_TIME_MODE_ABS</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSASeqEvent--timestamp-mode"></a><h3>The <code class="literal">“timestamp-mode”</code> property</h3>
+<pre class="programlisting">  “timestamp-mode”           <a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqEventTimestampMode" title="enum ALSASeqEventTimestampMode"><span class="type">ALSASeqEventTimestampMode</span></a></pre>
+<p>The mode of timestamp for the event, one of ALSASeqEventTimestampMode.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: ALSASEQ_EVENT_TIMESTAMP_MODE_TICK</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSASeqEvent--tstamp"></a><h3>The <code class="literal">“tstamp”</code> property</h3>
+<pre class="programlisting">  “tstamp”                   <a class="link" href="alsaseq-tstamp.html#ALSASeqTstamp"><span class="type">ALSASeqTstamp</span></a> *</pre>
+<p>The timestamp for the event. The content is decided according to timestamp-mode property.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSASeqEvent--type"></a><h3>The <code class="literal">“type”</code> property</h3>
+<pre class="programlisting">  “type”                     <a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqEventType" title="enum ALSASeqEventType"><span class="type">ALSASeqEventType</span></a></pre>
+<p>The type of event, one of ALSASeqEventType.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: ALSASEQ_EVENT_TYPE_NONE</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

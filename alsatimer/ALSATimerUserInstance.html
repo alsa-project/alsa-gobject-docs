@@ -152,19 +152,19 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="ALSATimerUserInstance.html#ALSATimerUserInstance-handle-disconnection" title="The “handle-disconnection” signal">handle-disconnection</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="ALSATimerUserInstance.html#ALSATimerUserInstance-handle-event" title="The “handle-event” signal">handle-event</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="ALSATimerUserInstance.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GObject
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> ALSATimerUserInstance
 </pre>
 </div>
@@ -183,8 +183,8 @@ alsatimer_user_instance_new ();</pre>
 <a name="alsatimer-user-instance-open"></a><h3>alsatimer_user_instance_open ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_open (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
-                              <em class="parameter"><code><span class="type">gint</span> open_flag</code></em>,
-                              <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> open_flag</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Open ALSA Timer character device to allocate queue.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-open.parameters"></a><h4>Parameters</h4>
@@ -207,7 +207,7 @@ alsatimer_user_instance_open (<em class="parameter"><code><a class="link" href="
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -221,7 +221,7 @@ alsatimer_user_instance_open (<em class="parameter"><code><a class="link" href="
 alsatimer_user_instance_attach (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
                                 <em class="parameter"><code><a class="link" href="alsatimer-device-id.html#ALSATimerDeviceId"><span class="type">ALSATimerDeviceId</span></a> *device_id</code></em>,
                                 <em class="parameter"><code><a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerEventDataType" title="enum ALSATimerEventDataType"><span class="type">ALSATimerEventDataType</span></a> event_data_type</code></em>,
-                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Attach the instance to the timer device.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-attach.parameters"></a><h4>Parameters</h4>
@@ -249,7 +249,7 @@ alsatimer_user_instance_attach (<em class="parameter"><code><a class="link" href
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -265,7 +265,7 @@ alsatimer_user_instance_attach_as_slave
                                 <em class="parameter"><code><a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerSlaveClass" title="enum ALSATimerSlaveClass"><span class="type">ALSATimerSlaveClass</span></a> slave_class</code></em>,
                                 <em class="parameter"><code><span class="type">int</span> slave_id</code></em>,
                                 <em class="parameter"><code><a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerEventDataType" title="enum ALSATimerEventDataType"><span class="type">ALSATimerEventDataType</span></a> event_data_type</code></em>,
-                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Attach the instance to timer device as an slave to another instance indicated
 by a pair of slave_class and slave_id. If the slave_class is for application
 (=ALSATIMER_SLAVE_CLASS_APPLICATION), the slave_id is for the PID of
@@ -304,7 +304,7 @@ numerical ID of queue bound for timer device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -317,7 +317,7 @@ numerical ID of queue bound for timer device.</p>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_get_info (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
                                   <em class="parameter"><code><a class="link" href="ALSATimerInstanceInfo.html" title="ALSATimerInstanceInfo"><span class="type">ALSATimerInstanceInfo</span></a> **instance_info</code></em>,
-                                  <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                                  <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Return the information of device if attached to the instance.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-get-info.parameters"></a><h4>Parameters</h4>
@@ -340,7 +340,7 @@ alsatimer_user_instance_get_info (<em class="parameter"><code><a class="link" hr
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -353,7 +353,7 @@ alsatimer_user_instance_get_info (<em class="parameter"><code><a class="link" hr
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_set_params (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
                                     <em class="parameter"><code><a class="link" href="ALSATimerInstanceParams.html" title="ALSATimerInstanceParams"><span class="type">ALSATimerInstanceParams</span></a> *const *instance_params</code></em>,
-                                    <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                                    <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Configure the instance with the parameters and return the latest parameters.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-set-params.parameters"></a><h4>Parameters</h4>
@@ -376,7 +376,7 @@ alsatimer_user_instance_set_params (<em class="parameter"><code><a class="link" 
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -389,7 +389,7 @@ alsatimer_user_instance_set_params (<em class="parameter"><code><a class="link" 
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_get_status (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
                                     <em class="parameter"><code><a class="link" href="ALSATimerInstanceStatus.html" title="ALSATimerInstanceStatus"><span class="type">ALSATimerInstanceStatus</span></a> **instance_status</code></em>,
-                                    <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                                    <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the latest status of instance.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-get-status.parameters"></a><h4>Parameters</h4>
@@ -412,7 +412,7 @@ alsatimer_user_instance_get_status (<em class="parameter"><code><a class="link" 
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -424,8 +424,8 @@ alsatimer_user_instance_get_status (<em class="parameter"><code><a class="link" 
 <a name="alsatimer-user-instance-create-source"></a><h3>alsatimer_user_instance_create_source ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_create_source (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
-                                       <em class="parameter"><code><span class="type">GSource</span> **gsrc</code></em>,
-                                       <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                                       <em class="parameter"><code><a href="../glib/glib-The-Main-Event-Loop.html#GSource"><span class="type">GSource</span></a> **gsrc</code></em>,
+                                       <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Allocate GSource structure to handle events from ALSA timer character
 device.</p>
 <div class="refsect3">
@@ -444,12 +444,12 @@ device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>gsrc</p></td>
-<td class="parameter_description"><p>A <span class="type">GSource</span> to handle events from ALSA timer character device. </p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-The-Main-Event-Loop.html#GSource"><span class="type">GSource</span></a> to handle events from ALSA timer character device. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -461,7 +461,7 @@ device.</p>
 <a name="alsatimer-user-instance-start"></a><h3>alsatimer_user_instance_start ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_start (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
-                               <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Start event emission.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-start.parameters"></a><h4>Parameters</h4>
@@ -479,7 +479,7 @@ alsatimer_user_instance_start (<em class="parameter"><code><a class="link" href=
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -491,7 +491,7 @@ alsatimer_user_instance_start (<em class="parameter"><code><a class="link" href=
 <a name="alsatimer-user-instance-stop"></a><h3>alsatimer_user_instance_stop ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_stop (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
-                              <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                              <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Stop event emission.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-stop.parameters"></a><h4>Parameters</h4>
@@ -509,7 +509,7 @@ alsatimer_user_instance_stop (<em class="parameter"><code><a class="link" href="
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -521,7 +521,7 @@ alsatimer_user_instance_stop (<em class="parameter"><code><a class="link" href="
 <a name="alsatimer-user-instance-pause"></a><h3>alsatimer_user_instance_pause ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_pause (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
-                               <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Stop event emission.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-pause.parameters"></a><h4>Parameters</h4>
@@ -539,7 +539,7 @@ alsatimer_user_instance_pause (<em class="parameter"><code><a class="link" href=
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -551,7 +551,7 @@ alsatimer_user_instance_pause (<em class="parameter"><code><a class="link" href=
 <a name="alsatimer-user-instance-continue"></a><h3>alsatimer_user_instance_continue ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_continue (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
-                                  <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                                  <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Stop event emission.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-continue.parameters"></a><h4>Parameters</h4>
@@ -569,7 +569,7 @@ alsatimer_user_instance_continue (<em class="parameter"><code><a class="link" hr
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -586,7 +586,7 @@ alsatimer_user_instance_continue (<em class="parameter"><code><a class="link" hr
 <a name="ALSATimerUserInstance-handle-disconnection"></a><h3>The <code class="literal">“handle-disconnection”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self,
-               <span class="type">gpointer</span>               user_data)</pre>
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)</pre>
 <p>When the attached timer device is not available anymore due to unbinding
 driver or hot unplugging, this signal is emit. The owner of this object
 should call <code class="function">g_object_free()</code> as quickly as possible to release ALSA timer
@@ -613,7 +613,7 @@ character device.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -621,7 +621,7 @@ character device.</p>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self,
                <a class="link" href="ALSATimerEventData.html" title="ALSATimerEventData"><span class="type">ALSATimerEventData</span></a>    *event_data,
-               <span class="type">gpointer</span>               user_data)</pre>
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)</pre>
 <p>When event occurs for any element, this signal is emit.</p>
 <div class="refsect3">
 <a name="ALSATimerUserInstance-handle-event.parameters"></a><h4>Parameters</h4>
@@ -650,7 +650,7 @@ user_function (<a class="link" href="ALSATimerUserInstance.html" title="ALSATime
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 </div>

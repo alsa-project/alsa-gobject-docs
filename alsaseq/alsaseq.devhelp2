@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="ALSASeq Reference Manual" link="index.html" author="" name="alsaseq" version="2" language="c">
+  <chapters>
+    <sub name="ALSASeq enumerations" link="alsaseq-enumerations.html">
+      <sub name="alsaseq-enum-types" link="alsaseq-alsaseq-enum-types.html"/>
+    </sub>
+    <sub name="ALSASeq global methods" link="alsaseq-global-methods.html">
+      <sub name="query" link="alsaseq-query.html"/>
+    </sub>
+    <sub name="ALSASeq objects" link="alsaseq-objects.html">
+      <sub name="ALSASeqSystemInfo" link="ALSASeqSystemInfo.html"/>
+      <sub name="ALSASeqClientInfo" link="ALSASeqClientInfo.html"/>
+      <sub name="ALSASeqUserClient" link="ALSASeqUserClient.html"/>
+      <sub name="ALSASeqClientPool" link="ALSASeqClientPool.html"/>
+      <sub name="addr" link="alsaseq-addr.html"/>
+      <sub name="ALSASeqPortInfo" link="ALSASeqPortInfo.html"/>
+      <sub name="ALSASeqSubscribeData" link="ALSASeqSubscribeData.html"/>
+      <sub name="ALSASeqEvent" link="ALSASeqEvent.html"/>
+      <sub name="ALSASeqEventFixed" link="ALSASeqEventFixed.html"/>
+      <sub name="ALSASeqEventVariable" link="ALSASeqEventVariable.html"/>
+      <sub name="tstamp" link="alsaseq-tstamp.html"/>
+      <sub name="event-data-result" link="alsaseq-event-data-result.html"/>
+      <sub name="event-data-note" link="alsaseq-event-data-note.html"/>
+      <sub name="event-data-ctl" link="alsaseq-event-data-ctl.html"/>
+      <sub name="event-data-queue" link="alsaseq-event-data-queue.html"/>
+      <sub name="event-data-connect" link="alsaseq-event-data-connect.html"/>
+    </sub>
+    <sub name="Index of all symbols" link="index-all.html"/>
+    <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+  </chapters>
+  <functions>
+    <keyword type="enum" name="enum ALSASeqSpecificAddress" link="alsaseq-alsaseq-enum-types.html#ALSASeqSpecificAddress"/>
+    <keyword type="enum" name="enum ALSASeqSpecificClientId" link="alsaseq-alsaseq-enum-types.html#ALSASeqSpecificClientId"/>
+    <keyword type="enum" name="enum ALSASeqClientType" link="alsaseq-alsaseq-enum-types.html#ALSASeqClientType"/>
+    <keyword type="enum" name="enum ALSASeqFilterAttrFlag" link="alsaseq-alsaseq-enum-types.html#ALSASeqFilterAttrFlag"/>
+    <keyword type="enum" name="enum ALSASeqSpecificPortId" link="alsaseq-alsaseq-enum-types.html#ALSASeqSpecificPortId"/>
+    <keyword type="enum" name="enum ALSASeqPortCapFlag" link="alsaseq-alsaseq-enum-types.html#ALSASeqPortCapFlag"/>
+    <keyword type="enum" name="enum ALSASeqPortAttrFlag" link="alsaseq-alsaseq-enum-types.html#ALSASeqPortAttrFlag"/>
+    <keyword type="enum" name="enum ALSASeqEventType" link="alsaseq-alsaseq-enum-types.html#ALSASeqEventType"/>
+    <keyword type="enum" name="enum ALSASeqEventTimestampMode" link="alsaseq-alsaseq-enum-types.html#ALSASeqEventTimestampMode"/>
+    <keyword type="enum" name="enum ALSASeqEventTimeMode" link="alsaseq-alsaseq-enum-types.html#ALSASeqEventTimeMode"/>
+    <keyword type="enum" name="enum ALSASeqEventLengthMode" link="alsaseq-alsaseq-enum-types.html#ALSASeqEventLengthMode"/>
+    <keyword type="enum" name="enum ALSASeqEventPriorityMode" link="alsaseq-alsaseq-enum-types.html#ALSASeqEventPriorityMode"/>
+    <keyword type="enum" name="enum ALSASeqSpecificQueueId" link="alsaseq-alsaseq-enum-types.html#ALSASeqSpecificQueueId"/>
+    <keyword type="enum" name="enum ALSASeqPortSubscribeFlag" link="alsaseq-alsaseq-enum-types.html#ALSASeqPortSubscribeFlag"/>
+    <keyword type="enum" name="enum ALSASeqQuerySubscribeType" link="alsaseq-alsaseq-enum-types.html#ALSASeqQuerySubscribeType"/>
+    <keyword type="function" name="alsaseq_get_seq_sysname ()" link="alsaseq-query.html#alsaseq-get-seq-sysname"/>
+    <keyword type="function" name="alsaseq_get_seq_devnode ()" link="alsaseq-query.html#alsaseq-get-seq-devnode"/>
+    <keyword type="function" name="alsaseq_get_system_info ()" link="alsaseq-query.html#alsaseq-get-system-info"/>
+    <keyword type="function" name="alsaseq_get_client_id_list ()" link="alsaseq-query.html#alsaseq-get-client-id-list"/>
+    <keyword type="function" name="alsaseq_get_client_info ()" link="alsaseq-query.html#alsaseq-get-client-info"/>
+    <keyword type="function" name="alsaseq_get_port_id_list ()" link="alsaseq-query.html#alsaseq-get-port-id-list"/>
+    <keyword type="function" name="alsaseq_get_port_info ()" link="alsaseq-query.html#alsaseq-get-port-info"/>
+    <keyword type="function" name="alsaseq_get_client_pool ()" link="alsaseq-query.html#alsaseq-get-client-pool"/>
+    <keyword type="function" name="alsaseq_get_subscription_list ()" link="alsaseq-query.html#alsaseq-get-subscription-list"/>
+    <keyword type="property" name="The “current-client-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--current-client-count"/>
+    <keyword type="property" name="The “current-queue-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--current-queue-count"/>
+    <keyword type="property" name="The “maximum-channel-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--maximum-channel-count"/>
+    <keyword type="property" name="The “maximum-client-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--maximum-client-count"/>
+    <keyword type="property" name="The “maximum-port-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--maximum-port-count"/>
+    <keyword type="property" name="The “maximum-queue-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--maximum-queue-count"/>
+    <keyword type="function" name="alsaseq_client_info_new ()" link="ALSASeqClientInfo.html#alsaseq-client-info-new"/>
+    <keyword type="function" name="alsaseq_client_info_set_event_filter ()" link="ALSASeqClientInfo.html#alsaseq-client-info-set-event-filter"/>
+    <keyword type="function" name="alsaseq_client_info_get_event_filter ()" link="ALSASeqClientInfo.html#alsaseq-client-info-get-event-filter"/>
+    <keyword type="property" name="The “card-id” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--card-id"/>
+    <keyword type="property" name="The “client-id” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--client-id"/>
+    <keyword type="property" name="The “filter-attributes” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--filter-attributes"/>
+    <keyword type="property" name="The “lost-count” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--lost-count"/>
+    <keyword type="property" name="The “name” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--name"/>
+    <keyword type="property" name="The “port-count” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--port-count"/>
+    <keyword type="property" name="The “process-id” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--process-id"/>
+    <keyword type="property" name="The “type” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--type"/>
+    <keyword type="property" name="The “use-filter” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--use-filter"/>
+    <keyword type="function" name="alsaseq_user_client_new ()" link="ALSASeqUserClient.html#alsaseq-user-client-new"/>
+    <keyword type="function" name="alsaseq_user_client_open ()" link="ALSASeqUserClient.html#alsaseq-user-client-open"/>
+    <keyword type="function" name="alsaseq_user_client_set_info ()" link="ALSASeqUserClient.html#alsaseq-user-client-set-info"/>
+    <keyword type="function" name="alsaseq_user_client_get_info ()" link="ALSASeqUserClient.html#alsaseq-user-client-get-info"/>
+    <keyword type="function" name="alsaseq_user_client_create_port ()" link="ALSASeqUserClient.html#alsaseq-user-client-create-port"/>
+    <keyword type="function" name="alsaseq_user_client_update_port ()" link="ALSASeqUserClient.html#alsaseq-user-client-update-port"/>
+    <keyword type="function" name="alsaseq_user_client_delete_port ()" link="ALSASeqUserClient.html#alsaseq-user-client-delete-port"/>
+    <keyword type="function" name="alsaseq_user_client_set_pool ()" link="ALSASeqUserClient.html#alsaseq-user-client-set-pool"/>
+    <keyword type="function" name="alsaseq_user_client_get_pool ()" link="ALSASeqUserClient.html#alsaseq-user-client-get-pool"/>
+    <keyword type="function" name="alsaseq_user_client_schedule_event ()" link="ALSASeqUserClient.html#alsaseq-user-client-schedule-event"/>
+    <keyword type="function" name="alsaseq_user_client_create_source ()" link="ALSASeqUserClient.html#alsaseq-user-client-create-source"/>
+    <keyword type="function" name="alsaseq_user_client_operate_subscription ()" link="ALSASeqUserClient.html#alsaseq-user-client-operate-subscription"/>
+    <keyword type="property" name="The “client-id” property" link="ALSASeqUserClient.html#ALSASeqUserClient--client-id"/>
+    <keyword type="signal" name="The “handle-event” signal" link="ALSASeqUserClient.html#ALSASeqUserClient-handle-event"/>
+    <keyword type="function" name="alsaseq_client_pool_new ()" link="ALSASeqClientPool.html#alsaseq-client-pool-new"/>
+    <keyword type="property" name="The “client-id” property" link="ALSASeqClientPool.html#ALSASeqClientPool--client-id"/>
+    <keyword type="property" name="The “input-free” property" link="ALSASeqClientPool.html#ALSASeqClientPool--input-free"/>
+    <keyword type="property" name="The “input-pool” property" link="ALSASeqClientPool.html#ALSASeqClientPool--input-pool"/>
+    <keyword type="property" name="The “output-free” property" link="ALSASeqClientPool.html#ALSASeqClientPool--output-free"/>
+    <keyword type="property" name="The “output-pool” property" link="ALSASeqClientPool.html#ALSASeqClientPool--output-pool"/>
+    <keyword type="property" name="The “output-room” property" link="ALSASeqClientPool.html#ALSASeqClientPool--output-room"/>
+    <keyword type="function" name="alsaseq_addr_new ()" link="alsaseq-addr.html#alsaseq-addr-new"/>
+    <keyword type="function" name="alsaseq_addr_get_client_id ()" link="alsaseq-addr.html#alsaseq-addr-get-client-id"/>
+    <keyword type="function" name="alsaseq_addr_get_port_id ()" link="alsaseq-addr.html#alsaseq-addr-get-port-id"/>
+    <keyword type="function" name="alsaseq_port_info_new ()" link="ALSASeqPortInfo.html#alsaseq-port-info-new"/>
+    <keyword type="property" name="The “addr” property" link="ALSASeqPortInfo.html#ALSASeqPortInfo--addr"/>
+    <keyword type="property" name="The “attrs” property" link="ALSASeqPortInfo.html#ALSASeqPortInfo--attrs"/>
+    <keyword type="property" name="The “caps” property" link="ALSASeqPortInfo.html#ALSASeqPortInfo--caps"/>
+    <keyword type="property" name="The “midi-channels” property" link="ALSASeqPortInfo.html#ALSASeqPortInfo--midi-channels"/>
+    <keyword type="property" name="The “midi-voices” property" link="ALSASeqPortInfo.html#ALSASeqPortInfo--midi-voices"/>
+    <keyword type="property" name="The “name” property" link="ALSASeqPortInfo.html#ALSASeqPortInfo--name"/>
+    <keyword type="property" name="The “queue-id” property" link="ALSASeqPortInfo.html#ALSASeqPortInfo--queue-id"/>
+    <keyword type="property" name="The “read-users” property" link="ALSASeqPortInfo.html#ALSASeqPortInfo--read-users"/>
+    <keyword type="property" name="The “synth-voices” property" link="ALSASeqPortInfo.html#ALSASeqPortInfo--synth-voices"/>
+    <keyword type="property" name="The “timestamp-mode” property" link="ALSASeqPortInfo.html#ALSASeqPortInfo--timestamp-mode"/>
+    <keyword type="property" name="The “timestamp-overwrite” property" link="ALSASeqPortInfo.html#ALSASeqPortInfo--timestamp-overwrite"/>
+    <keyword type="property" name="The “write-users” property" link="ALSASeqPortInfo.html#ALSASeqPortInfo--write-users"/>
+    <keyword type="function" name="alsaseq_subscribe_data_new ()" link="ALSASeqSubscribeData.html#alsaseq-subscribe-data-new"/>
+    <keyword type="property" name="The “dest” property" link="ALSASeqSubscribeData.html#ALSASeqSubscribeData--dest"/>
+    <keyword type="property" name="The “flag” property" link="ALSASeqSubscribeData.html#ALSASeqSubscribeData--flag"/>
+    <keyword type="property" name="The “queue-id” property" link="ALSASeqSubscribeData.html#ALSASeqSubscribeData--queue-id"/>
+    <keyword type="property" name="The “sender” property" link="ALSASeqSubscribeData.html#ALSASeqSubscribeData--sender"/>
+    <keyword type="property" name="The “dst-addr” property" link="ALSASeqEvent.html#ALSASeqEvent--dst-addr"/>
+    <keyword type="property" name="The “length-mode” property" link="ALSASeqEvent.html#ALSASeqEvent--length-mode"/>
+    <keyword type="property" name="The “priority-mode” property" link="ALSASeqEvent.html#ALSASeqEvent--priority-mode"/>
+    <keyword type="property" name="The “queue-id” property" link="ALSASeqEvent.html#ALSASeqEvent--queue-id"/>
+    <keyword type="property" name="The “src-addr” property" link="ALSASeqEvent.html#ALSASeqEvent--src-addr"/>
+    <keyword type="property" name="The “tag” property" link="ALSASeqEvent.html#ALSASeqEvent--tag"/>
+    <keyword type="property" name="The “time-mode” property" link="ALSASeqEvent.html#ALSASeqEvent--time-mode"/>
+    <keyword type="property" name="The “timestamp-mode” property" link="ALSASeqEvent.html#ALSASeqEvent--timestamp-mode"/>
+    <keyword type="property" name="The “tstamp” property" link="ALSASeqEvent.html#ALSASeqEvent--tstamp"/>
+    <keyword type="property" name="The “type” property" link="ALSASeqEvent.html#ALSASeqEvent--type"/>
+    <keyword type="function" name="alsaseq_event_fixed_new ()" link="ALSASeqEventFixed.html#alsaseq-event-fixed-new"/>
+    <keyword type="function" name="alsaseq_event_fixed_get_byte_data ()" link="ALSASeqEventFixed.html#alsaseq-event-fixed-get-byte-data"/>
+    <keyword type="function" name="alsaseq_event_fixed_set_byte_data ()" link="ALSASeqEventFixed.html#alsaseq-event-fixed-set-byte-data"/>
+    <keyword type="function" name="alsaseq_event_fixed_get_quadlet_data ()" link="ALSASeqEventFixed.html#alsaseq-event-fixed-get-quadlet-data"/>
+    <keyword type="function" name="alsaseq_event_fixed_set_quadlet_data ()" link="ALSASeqEventFixed.html#alsaseq-event-fixed-set-quadlet-data"/>
+    <keyword type="property" name="The “addr-data” property" link="ALSASeqEventFixed.html#ALSASeqEventFixed--addr-data"/>
+    <keyword type="property" name="The “connect-data” property" link="ALSASeqEventFixed.html#ALSASeqEventFixed--connect-data"/>
+    <keyword type="property" name="The “ctl-data” property" link="ALSASeqEventFixed.html#ALSASeqEventFixed--ctl-data"/>
+    <keyword type="property" name="The “note-data” property" link="ALSASeqEventFixed.html#ALSASeqEventFixed--note-data"/>
+    <keyword type="property" name="The “queue-data” property" link="ALSASeqEventFixed.html#ALSASeqEventFixed--queue-data"/>
+    <keyword type="property" name="The “result-data” property" link="ALSASeqEventFixed.html#ALSASeqEventFixed--result-data"/>
+    <keyword type="property" name="The “tstamp-data” property" link="ALSASeqEventFixed.html#ALSASeqEventFixed--tstamp-data"/>
+    <keyword type="function" name="alsaseq_event_variable_new ()" link="ALSASeqEventVariable.html#alsaseq-event-variable-new"/>
+    <keyword type="function" name="alsaseq_event_variable_get_data ()" link="ALSASeqEventVariable.html#alsaseq-event-variable-get-data"/>
+    <keyword type="function" name="alsaseq_event_variable_set_data ()" link="ALSASeqEventVariable.html#alsaseq-event-variable-set-data"/>
+    <keyword type="function" name="alsaseq_tstamp_get_tick_time ()" link="alsaseq-tstamp.html#alsaseq-tstamp-get-tick-time"/>
+    <keyword type="function" name="alsaseq_tstamp_set_tick_time ()" link="alsaseq-tstamp.html#alsaseq-tstamp-set-tick-time"/>
+    <keyword type="function" name="alsaseq_tstamp_get_real_time ()" link="alsaseq-tstamp.html#alsaseq-tstamp-get-real-time"/>
+    <keyword type="function" name="alsaseq_tstamp_set_real_time ()" link="alsaseq-tstamp.html#alsaseq-tstamp-set-real-time"/>
+    <keyword type="function" name="alsaseq_event_data_result_get_event ()" link="alsaseq-event-data-result.html#alsaseq-event-data-result-get-event"/>
+    <keyword type="function" name="alsaseq_event_data_result_set_event ()" link="alsaseq-event-data-result.html#alsaseq-event-data-result-set-event"/>
+    <keyword type="function" name="alsaseq_event_data_result_get_result ()" link="alsaseq-event-data-result.html#alsaseq-event-data-result-get-result"/>
+    <keyword type="function" name="alsaseq_event_data_result_set_result ()" link="alsaseq-event-data-result.html#alsaseq-event-data-result-set-result"/>
+    <keyword type="function" name="alsaseq_event_data_note_get_channel ()" link="alsaseq-event-data-note.html#alsaseq-event-data-note-get-channel"/>
+    <keyword type="function" name="alsaseq_event_data_note_set_channel ()" link="alsaseq-event-data-note.html#alsaseq-event-data-note-set-channel"/>
+    <keyword type="function" name="alsaseq_event_data_note_get_note ()" link="alsaseq-event-data-note.html#alsaseq-event-data-note-get-note"/>
+    <keyword type="function" name="alsaseq_event_data_note_set_note ()" link="alsaseq-event-data-note.html#alsaseq-event-data-note-set-note"/>
+    <keyword type="function" name="alsaseq_event_data_note_get_velocity ()" link="alsaseq-event-data-note.html#alsaseq-event-data-note-get-velocity"/>
+    <keyword type="function" name="alsaseq_event_data_note_set_velocity ()" link="alsaseq-event-data-note.html#alsaseq-event-data-note-set-velocity"/>
+    <keyword type="function" name="alsaseq_event_data_note_get_off_velocity ()" link="alsaseq-event-data-note.html#alsaseq-event-data-note-get-off-velocity"/>
+    <keyword type="function" name="alsaseq_event_data_note_set_off_velocity ()" link="alsaseq-event-data-note.html#alsaseq-event-data-note-set-off-velocity"/>
+    <keyword type="function" name="alsaseq_event_data_note_get_duration ()" link="alsaseq-event-data-note.html#alsaseq-event-data-note-get-duration"/>
+    <keyword type="function" name="alsaseq_event_data_note_set_duration ()" link="alsaseq-event-data-note.html#alsaseq-event-data-note-set-duration"/>
+    <keyword type="function" name="alsaseq_event_data_ctl_get_channel ()" link="alsaseq-event-data-ctl.html#alsaseq-event-data-ctl-get-channel"/>
+    <keyword type="function" name="alsaseq_event_data_ctl_set_channel ()" link="alsaseq-event-data-ctl.html#alsaseq-event-data-ctl-set-channel"/>
+    <keyword type="function" name="alsaseq_event_data_ctl_get_param ()" link="alsaseq-event-data-ctl.html#alsaseq-event-data-ctl-get-param"/>
+    <keyword type="function" name="alsaseq_event_data_ctl_set_param ()" link="alsaseq-event-data-ctl.html#alsaseq-event-data-ctl-set-param"/>
+    <keyword type="function" name="alsaseq_event_data_ctl_get_value ()" link="alsaseq-event-data-ctl.html#alsaseq-event-data-ctl-get-value"/>
+    <keyword type="function" name="alsaseq_event_data_ctl_set_value ()" link="alsaseq-event-data-ctl.html#alsaseq-event-data-ctl-set-value"/>
+    <keyword type="function" name="alsaseq_event_data_queue_get_queue_id ()" link="alsaseq-event-data-queue.html#alsaseq-event-data-queue-get-queue-id"/>
+    <keyword type="function" name="alsaseq_event_data_queue_set_queue_id ()" link="alsaseq-event-data-queue.html#alsaseq-event-data-queue-set-queue-id"/>
+    <keyword type="function" name="alsaseq_event_data_queue_get_value_param ()" link="alsaseq-event-data-queue.html#alsaseq-event-data-queue-get-value-param"/>
+    <keyword type="function" name="alsaseq_event_data_queue_set_value_param ()" link="alsaseq-event-data-queue.html#alsaseq-event-data-queue-set-value-param"/>
+    <keyword type="function" name="alsaseq_event_data_queue_get_tstamp_param ()" link="alsaseq-event-data-queue.html#alsaseq-event-data-queue-get-tstamp-param"/>
+    <keyword type="function" name="alsaseq_event_data_queue_set_tstamp_param ()" link="alsaseq-event-data-queue.html#alsaseq-event-data-queue-set-tstamp-param"/>
+    <keyword type="function" name="alsaseq_event_data_queue_get_position_param ()" link="alsaseq-event-data-queue.html#alsaseq-event-data-queue-get-position-param"/>
+    <keyword type="function" name="alsaseq_event_data_queue_set_position_param ()" link="alsaseq-event-data-queue.html#alsaseq-event-data-queue-set-position-param"/>
+    <keyword type="function" name="alsaseq_event_data_queue_get_skew_param ()" link="alsaseq-event-data-queue.html#alsaseq-event-data-queue-get-skew-param"/>
+    <keyword type="function" name="alsaseq_event_data_queue_set_skew_param ()" link="alsaseq-event-data-queue.html#alsaseq-event-data-queue-set-skew-param"/>
+    <keyword type="function" name="alsaseq_event_data_queue_get_quadlet_param ()" link="alsaseq-event-data-queue.html#alsaseq-event-data-queue-get-quadlet-param"/>
+    <keyword type="function" name="alsaseq_event_data_queue_set_quadlet_param ()" link="alsaseq-event-data-queue.html#alsaseq-event-data-queue-set-quadlet-param"/>
+    <keyword type="function" name="alsaseq_event_data_queue_get_byte_param ()" link="alsaseq-event-data-queue.html#alsaseq-event-data-queue-get-byte-param"/>
+    <keyword type="function" name="alsaseq_event_data_queue_set_byte_param ()" link="alsaseq-event-data-queue.html#alsaseq-event-data-queue-set-byte-param"/>
+    <keyword type="function" name="alsaseq_event_data_connect_get_src ()" link="alsaseq-event-data-connect.html#alsaseq-event-data-connect-get-src"/>
+    <keyword type="function" name="alsaseq_event_data_connect_set_src ()" link="alsaseq-event-data-connect.html#alsaseq-event-data-connect-set-src"/>
+    <keyword type="function" name="alsaseq_event_data_connect_get_dst ()" link="alsaseq-event-data-connect.html#alsaseq-event-data-connect-get-dst"/>
+    <keyword type="function" name="alsaseq_event_data_connect_set_dst ()" link="alsaseq-event-data-connect.html#alsaseq-event-data-connect-set-dst"/>
+    <keyword type="constant" name="ALSASEQ_SPECIFIC_ADDRESS_UNKNOWN" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-SPECIFIC-ADDRESS-UNKNOWN:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_SPECIFIC_ADDRESS_SUBSCRIBERS" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-SPECIFIC-ADDRESS-SUBSCRIBERS:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_SPECIFIC_ADDRESS_BROADCAST" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-SPECIFIC-ADDRESS-BROADCAST:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_SPECIFIC_CLIENT_ID_SYSTEM" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-SPECIFIC-CLIENT-ID-SYSTEM:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_SPECIFIC_CLIENT_ID_DUMMY" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-SPECIFIC-CLIENT-ID-DUMMY:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_SPECIFIC_CLIENT_ID_OSS" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-SPECIFIC-CLIENT-ID-OSS:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_CLIENT_TYPE_NONE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-CLIENT-TYPE-NONE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_CLIENT_TYPE_USER" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-CLIENT-TYPE-USER:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_CLIENT_TYPE_KERNEL" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-CLIENT-TYPE-KERNEL:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_FILTER_ATTR_FLAG_BROADCAST" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-FILTER-ATTR-FLAG-BROADCAST:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_FILTER_ATTR_FLAG_MULTICAST" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-FILTER-ATTR-FLAG-MULTICAST:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_FILTER_ATTR_FLAG_BOUNCE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-FILTER-ATTR-FLAG-BOUNCE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_SPECIFIC_PORT_ID_SYSTEM_TIMER" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-SPECIFIC-PORT-ID-SYSTEM-TIMER:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_SPECIFIC_PORT_ID_SYSTEM_ANNOUNCE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-SPECIFIC-PORT-ID-SYSTEM-ANNOUNCE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_CAP_FLAG_READ" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-CAP-FLAG-READ:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_CAP_FLAG_WRITE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-CAP-FLAG-WRITE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_CAP_FLAG_DUPLEX" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-CAP-FLAG-DUPLEX:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_CAP_FLAG_SUBS_READ" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-CAP-FLAG-SUBS-READ:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_CAP_FLAG_SUBS_WRITE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-CAP-FLAG-SUBS-WRITE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_CAP_FLAG_NO_EXPORT" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-CAP-FLAG-NO-EXPORT:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_ATTR_FLAG_SPECIFIC" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-ATTR-FLAG-SPECIFIC:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_ATTR_FLAG_MIDI_GENERIC" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-ATTR-FLAG-MIDI-GENERIC:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_ATTR_FLAG_MIDI_GM" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-ATTR-FLAG-MIDI-GM:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_ATTR_FLAG_MIDI_GS" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-ATTR-FLAG-MIDI-GS:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_ATTR_FLAG_MIDI_XG" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-ATTR-FLAG-MIDI-XG:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_ATTR_FLAG_MIDI_MT32" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-ATTR-FLAG-MIDI-MT32:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_ATTR_FLAG_MIDI_GM2" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-ATTR-FLAG-MIDI-GM2:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_ATTR_FLAG_HARDWARE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-ATTR-FLAG-HARDWARE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_ATTR_FLAG_SOFTWARE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-ATTR-FLAG-SOFTWARE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_ATTR_FLAG_SYNTHESIZER" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-ATTR-FLAG-SYNTHESIZER:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_ATTR_FLAG_PORT" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-ATTR-FLAG-PORT:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_ATTR_FLAG_APPLICATION" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-ATTR-FLAG-APPLICATION:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_SYSTEM" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-SYSTEM:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_RESULT" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-RESULT:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_NOTE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-NOTE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_NOTEON" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-NOTEON:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_NOTEOFF" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-NOTEOFF:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_KEYPRESS" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-KEYPRESS:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_CONTROLLER" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-CONTROLLER:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_PGMCHANGE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-PGMCHANGE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_CHANPRESS" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-CHANPRESS:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_PITCHBEND" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-PITCHBEND:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_CONTROL14" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-CONTROL14:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_NONREGPARAM" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-NONREGPARAM:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_REGPARAM" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-REGPARAM:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_SONGPOS" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-SONGPOS:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_SONGSEL" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-SONGSEL:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_QFRAME" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-QFRAME:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_TIMESIGN" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-TIMESIGN:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_KEYSIGN" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-KEYSIGN:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_START" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-START:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_CONTINUE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-CONTINUE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_STOP" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-STOP:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_SETPOS_TICK" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-SETPOS-TICK:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_SETPOS_TIME" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-SETPOS-TIME:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_TEMPO" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-TEMPO:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_CLOCK" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-CLOCK:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_TICK" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-TICK:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_QUEUE_SKEW" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-QUEUE-SKEW:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_TUNE_REQUEST" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-TUNE-REQUEST:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_RESET" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-RESET:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_SENSING" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-SENSING:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_ECHO" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-ECHO:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_OSS" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-OSS:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_CLIENT_START" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-CLIENT-START:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_CLIENT_EXIT" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-CLIENT-EXIT:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_CLIENT_CHANGE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-CLIENT-CHANGE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_PORT_START" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-PORT-START:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_PORT_EXIT" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-PORT-EXIT:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_PORT_CHANGE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-PORT-CHANGE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_PORT_SUBSCRIBED" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-PORT-SUBSCRIBED:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_PORT_UNSUBSCRIBED" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-PORT-UNSUBSCRIBED:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR0" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR0:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR1" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR1:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR2" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR2:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR3" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR3:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR4" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR4:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR5" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR5:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR6" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR6:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR7" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR7:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR8" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR8:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR9" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR9:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_SYSEX" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-SYSEX:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_BOUNCE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-BOUNCE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR_VAR0" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR-VAR0:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR_VAR1" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR-VAR1:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR_VAR2" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR-VAR2:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR_VAR3" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR-VAR3:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_USR_VAR4" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-USR-VAR4:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TYPE_NONE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TYPE-NONE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TIMESTAMP_MODE_TICK" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TIMESTAMP-MODE-TICK:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TIMESTAMP_MODE_REAL" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TIMESTAMP-MODE-REAL:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TIME_MODE_ABS" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TIME-MODE-ABS:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_TIME_MODE_REL" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-TIME-MODE-REL:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_LENGTH_MODE_FIXED" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-LENGTH-MODE-FIXED:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_LENGTH_MODE_VARIABLE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-LENGTH-MODE-VARIABLE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_LENGTH_MODE_POINTER" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-LENGTH-MODE-POINTER:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_PRIORITY_MODE_NORMAL" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-PRIORITY-MODE-NORMAL:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_EVENT_PRIORITY_MODE_HIGH" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-EVENT-PRIORITY-MODE-HIGH:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_SPECIFIC_QUEUE_ID_DIRECT" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-SPECIFIC-QUEUE-ID-DIRECT:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_SUBSCRIBE_FLAG_EXCLUSIVE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-SUBSCRIBE-FLAG-EXCLUSIVE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_SUBSCRIBE_FLAG_TIMESTAMP" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-SUBSCRIBE-FLAG-TIMESTAMP:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_PORT_SUBSCRIBE_FLAG_TIME_REAL" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-SUBSCRIBE-FLAG-TIME-REAL:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_QUERY_SUBSCRIBE_TYPE_READ" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-QUERY-SUBSCRIBE-TYPE-READ:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_QUERY_SUBSCRIBE_TYPE_WRITE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-QUERY-SUBSCRIBE-TYPE-WRITE:CAPS"/>
+  </functions>
+</book>

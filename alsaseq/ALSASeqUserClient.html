@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ALSASeqUserClient: ALSASeq Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="ALSASeq Reference Manual">
+<link rel="up" href="alsaseq-objects.html" title="ALSASeq objects">
+<link rel="prev" href="ALSASeqClientInfo.html" title="ALSASeqClientInfo">
+<link rel="next" href="ALSASeqClientPool.html" title="ALSASeqClientPool">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ALSASeqUserClient.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ALSASeqUserClient.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ALSASeqUserClient.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ALSASeqUserClient.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="alsaseq-objects.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ALSASeqClientInfo.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ALSASeqClientPool.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ALSASeqUserClient"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ALSASeqUserClient.top_of_page"></a>ALSASeqUserClient</span></h2>
+<p>ALSASeqUserClient</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ALSASeqUserClient.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="returnvalue">ALSASeqUserClient</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-new" title="alsaseq_user_client_new ()">alsaseq_user_client_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-open" title="alsaseq_user_client_open ()">alsaseq_user_client_open</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-set-info" title="alsaseq_user_client_set_info ()">alsaseq_user_client_set_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-get-info" title="alsaseq_user_client_get_info ()">alsaseq_user_client_get_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-create-port" title="alsaseq_user_client_create_port ()">alsaseq_user_client_create_port</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-update-port" title="alsaseq_user_client_update_port ()">alsaseq_user_client_update_port</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-delete-port" title="alsaseq_user_client_delete_port ()">alsaseq_user_client_delete_port</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-set-pool" title="alsaseq_user_client_set_pool ()">alsaseq_user_client_set_pool</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-get-pool" title="alsaseq_user_client_get_pool ()">alsaseq_user_client_get_pool</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-schedule-event" title="alsaseq_user_client_schedule_event ()">alsaseq_user_client_schedule_event</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-create-source" title="alsaseq_user_client_create_source ()">alsaseq_user_client_create_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-operate-subscription" title="alsaseq_user_client_operate_subscription ()">alsaseq_user_client_operate_subscription</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ALSASeqUserClient.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a></td>
+<td class="property_name"><a class="link" href="ALSASeqUserClient.html#ALSASeqUserClient--client-id" title="The “client-id” property">client-id</a></td>
+<td class="property_flags">Read</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ALSASeqUserClient.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ALSASeqUserClient.html#ALSASeqUserClient-handle-event" title="The “handle-event” signal">handle-event</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ALSASeqUserClient.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> ALSASeqUserClient
+</pre>
+</div>
+<div class="refsect1">
+<a name="ALSASeqUserClient.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ALSASeqUserClient.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="alsaseq-user-client-new"></a><h3>alsaseq_user_client_new ()</h3>
+<pre class="programlisting"><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="returnvalue">ALSASeqUserClient</span></a> *
+alsaseq_user_client_new ();</pre>
+<p>Allocate and return an instance of ALSASeqUserClient class.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsaseq-user-client-open"></a><h3>alsaseq_user_client_open ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_user_client_open (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
+                          <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> open_flag</code></em>,
+                          <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Open ALSA sequencer character device.</p>
+<div class="refsect3">
+<a name="alsaseq-user-client-open.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_flag</p></td>
+<td class="parameter_description"><p>The flag of open(2) system call. O_RDWR is forced to fulfil internally.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsaseq-user-client-set-info"></a><h3>alsaseq_user_client_set_info ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_user_client_set_info (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
+                              <em class="parameter"><code><a class="link" href="ALSASeqClientInfo.html" title="ALSASeqClientInfo"><span class="type">ALSASeqClientInfo</span></a> *client_info</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Get client information.</p>
+<div class="refsect3">
+<a name="alsaseq-user-client-set-info.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>client_info</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqClientInfo.html" title="ALSASeqClientInfo"><span class="type">ALSASeqClientInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsaseq-user-client-get-info"></a><h3>alsaseq_user_client_get_info ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_user_client_get_info (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
+                              <em class="parameter"><code><a class="link" href="ALSASeqClientInfo.html" title="ALSASeqClientInfo"><span class="type">ALSASeqClientInfo</span></a> *const *client_info</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Set client information.</p>
+<div class="refsect3">
+<a name="alsaseq-user-client-get-info.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>client_info</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqClientInfo.html" title="ALSASeqClientInfo"><span class="type">ALSASeqClientInfo</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsaseq-user-client-create-port"></a><h3>alsaseq_user_client_create_port ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_user_client_create_port (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
+                                 <em class="parameter"><code><a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a> *port_info</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *port_id</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Create a port into the client.</p>
+<div class="refsect3">
+<a name="alsaseq-user-client-create-port.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>port_info</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>port_id</p></td>
+<td class="parameter_description"><p>The numerical ID of port if specified. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsaseq-user-client-update-port"></a><h3>alsaseq_user_client_update_port ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_user_client_update_port (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
+                                 <em class="parameter"><code><a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a> *port_info</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> port_id</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="alsaseq-user-client-update-port.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>port_info</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>port_id</p></td>
+<td class="parameter_description"><p>The numerical ID of port.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsaseq-user-client-delete-port"></a><h3>alsaseq_user_client_delete_port ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_user_client_delete_port (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
+                                 <em class="parameter"><code><a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a> *port_info</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> port_id</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Delete a port from the client.</p>
+<div class="refsect3">
+<a name="alsaseq-user-client-delete-port.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>port_info</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>port_id</p></td>
+<td class="parameter_description"><p>The numerical ID of port.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsaseq-user-client-set-pool"></a><h3>alsaseq_user_client_set_pool ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_user_client_set_pool (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
+                              <em class="parameter"><code><a class="link" href="ALSASeqClientPool.html" title="ALSASeqClientPool"><span class="type">ALSASeqClientPool</span></a> *client_pool</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Configure memory pool in the client.</p>
+<div class="refsect3">
+<a name="alsaseq-user-client-set-pool.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>client_pool</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqClientPool.html" title="ALSASeqClientPool"><span class="type">ALSASeqClientPool</span></a> to be configured for the client.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsaseq-user-client-get-pool"></a><h3>alsaseq_user_client_get_pool ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_user_client_get_pool (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
+                              <em class="parameter"><code><a class="link" href="ALSASeqClientPool.html" title="ALSASeqClientPool"><span class="type">ALSASeqClientPool</span></a> *const *client_pool</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Get information of memory pool in the client.</p>
+<div class="refsect3">
+<a name="alsaseq-user-client-get-pool.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>client_pool</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqClientPool.html" title="ALSASeqClientPool"><span class="type">ALSASeqClientPool</span></a> to be configured for the client. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsaseq-user-client-schedule-event"></a><h3>alsaseq_user_client_schedule_event ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_user_client_schedule_event (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
+                                    <em class="parameter"><code><a class="link" href="ALSASeqEvent.html" title="ALSASeqEvent"><span class="type">ALSASeqEvent</span></a> *event</code></em>,
+                                    <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Deliver the event immediately, or schedule it into memory pool of the client.</p>
+<div class="refsect3">
+<a name="alsaseq-user-client-schedule-event.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>An instance of <a class="link" href="ALSASeqEvent.html" title="ALSASeqEvent"><span class="type">ALSASeqEvent</span></a> to schedule.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsaseq-user-client-create-source"></a><h3>alsaseq_user_client_create_source ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_user_client_create_source (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
+                                   <em class="parameter"><code><a href="../glib/glib-The-Main-Event-Loop.html#GSource"><span class="type">GSource</span></a> **gsrc</code></em>,
+                                   <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Allocate GSource structure to handle events from ALSA seq character device.</p>
+<div class="refsect3">
+<a name="alsaseq-user-client-create-source.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gsrc</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-The-Main-Event-Loop.html#GSource"><span class="type">GSource</span></a> to handle events from ALSA seq character device. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsaseq-user-client-operate-subscription"></a><h3>alsaseq_user_client_operate_subscription ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_user_client_operate_subscription
+                               (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="ALSASeqSubscribeData.html" title="ALSASeqSubscribeData"><span class="type">ALSASeqSubscribeData</span></a> *subs_data</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> establish</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Operate subscription between two ports pointed by the data.</p>
+<div class="refsect3">
+<a name="alsaseq-user-client-operate-subscription.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>subs_data</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqSubscribeData.html" title="ALSASeqSubscribeData"><span class="type">ALSASeqSubscribeData</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>establish</p></td>
+<td class="parameter_description"><p>Whether to establish subscription between two ports, or break it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ALSASeqUserClient.other_details"></a><h2>Types and Values</h2>
+</div>
+<div class="refsect1">
+<a name="ALSASeqUserClient.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ALSASeqUserClient--client-id"></a><h3>The <code class="literal">“client-id”</code> property</h3>
+<pre class="programlisting">  “client-id”                <a href="../glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a></pre>
+<p>The numerical ID of the client.</p>
+<p>Flags: Read</p>
+<p>Default value: 0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ALSASeqUserClient.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ALSASeqUserClient-handle-event"></a><h3>The <code class="literal">“handle-event”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self,
+               <a class="link" href="ALSASeqEvent.html" title="ALSASeqEvent"><span class="type">ALSASeqEvent</span></a>      *event,
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>           user_data)</pre>
+<p>When event occurs, this signal is emit with an object for the event.</p>
+<div class="refsect3">
+<a name="ALSASeqUserClient-handle-event.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqEvent.html" title="ALSASeqEvent"><span class="type">ALSASeqEvent</span></a> or derived objects. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

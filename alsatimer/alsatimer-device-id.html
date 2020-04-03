@@ -98,9 +98,9 @@
 <a name="alsatimer-device-id-new"></a><h3>alsatimer_device_id_new ()</h3>
 <pre class="programlisting"><a class="link" href="alsatimer-device-id.html#ALSATimerDeviceId"><span class="returnvalue">ALSATimerDeviceId</span></a> *
 alsatimer_device_id_new (<em class="parameter"><code><a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerClass" title="enum ALSATimerClass"><span class="type">ALSATimerClass</span></a> class</code></em>,
-                         <em class="parameter"><code><span class="type">gint</span> card_id</code></em>,
-                         <em class="parameter"><code><span class="type">gint</span> device_id</code></em>,
-                         <em class="parameter"><code><span class="type">gint</span> subdevice_id</code></em>);</pre>
+                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> card_id</code></em>,
+                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> device_id</code></em>,
+                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> subdevice_id</code></em>);</pre>
 <p>Allocate and return an instance of ALSATimerDeviceId.</p>
 <div class="refsect3">
 <a name="alsatimer-device-id-new.parameters"></a><h4>Parameters</h4>
@@ -175,7 +175,7 @@ alsatimer_device_id_get_class (<em class="parameter"><code>const <a class="link"
 <a name="alsatimer-device-id-get-card-id"></a><h3>alsatimer_device_id_get_card_id ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_device_id_get_card_id (<em class="parameter"><code>const <a class="link" href="alsatimer-device-id.html#ALSATimerDeviceId"><span class="type">ALSATimerDeviceId</span></a> *self</code></em>,
-                                 <em class="parameter"><code><span class="type">gint</span> *card_id</code></em>);</pre>
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *card_id</code></em>);</pre>
 <p>Get the numerical ID of sound card to which the device belongs.</p>
 <div class="refsect3">
 <a name="alsatimer-device-id-get-card-id.parameters"></a><h4>Parameters</h4>
@@ -205,7 +205,7 @@ alsatimer_device_id_get_card_id (<em class="parameter"><code>const <a class="lin
 <a name="alsatimer-device-id-get-device-id"></a><h3>alsatimer_device_id_get_device_id ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_device_id_get_device_id (<em class="parameter"><code>const <a class="link" href="alsatimer-device-id.html#ALSATimerDeviceId"><span class="type">ALSATimerDeviceId</span></a> *self</code></em>,
-                                   <em class="parameter"><code><span class="type">gint</span> *device_id</code></em>);</pre>
+                                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *device_id</code></em>);</pre>
 <p>Get the numerical ID of device to which the timer belongs.</p>
 <div class="refsect3">
 <a name="alsatimer-device-id-get-device-id.parameters"></a><h4>Parameters</h4>
@@ -235,7 +235,7 @@ alsatimer_device_id_get_device_id (<em class="parameter"><code>const <a class="l
 <a name="alsatimer-device-id-get-subdevice-id"></a><h3>alsatimer_device_id_get_subdevice_id ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_device_id_get_subdevice_id (<em class="parameter"><code>const <a class="link" href="alsatimer-device-id.html#ALSATimerDeviceId"><span class="type">ALSATimerDeviceId</span></a> *self</code></em>,
-                                      <em class="parameter"><code><span class="type">gint</span> *subdevice_id</code></em>);</pre>
+                                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *subdevice_id</code></em>);</pre>
 <p>Get the numerical ID of subdevice to which the timer belongs.</p>
 <div class="refsect3">
 <a name="alsatimer-device-id-get-subdevice-id.parameters"></a><h4>Parameters</h4>

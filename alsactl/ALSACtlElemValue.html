@@ -147,7 +147,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">gboolean</span>
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="ALSACtlElemValue.html#alsactl-elem-value-equal" title="alsactl_elem_value_equal ()">alsactl_elem_value_equal</a> <span class="c_punctuation">()</span>
@@ -174,7 +174,7 @@
 </div>
 <div class="refsect1">
 <a name="ALSACtlElemValue.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GObject
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> ALSACtlElemValue
 </pre>
 </div>
@@ -199,8 +199,8 @@ alsactl_elem_value_new ();</pre>
 <a name="alsactl-elem-value-set-bool"></a><h3>alsactl_elem_value_set_bool ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_value_set_bool (<em class="parameter"><code><a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *self</code></em>,
-                             <em class="parameter"><code>const <span class="type">gboolean</span> *values</code></em>,
-                             <em class="parameter"><code><span class="type">gsize</span> value_count</code></em>);</pre>
+                             <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *values</code></em>,
+                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> value_count</code></em>);</pre>
 <p>Copy the array for values of boolean type into internal data.</p>
 <div class="refsect3">
 <a name="alsactl-elem-value-set-bool.parameters"></a><h4>Parameters</h4>
@@ -235,8 +235,8 @@ alsactl_elem_value_set_bool (<em class="parameter"><code><a class="link" href="A
 <a name="alsactl-elem-value-get-bool"></a><h3>alsactl_elem_value_get_bool ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_value_get_bool (<em class="parameter"><code><a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *self</code></em>,
-                             <em class="parameter"><code><span class="type">gboolean</span> *const *values</code></em>,
-                             <em class="parameter"><code><span class="type">gsize</span> *value_count</code></em>);</pre>
+                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *const *values</code></em>,
+                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *value_count</code></em>);</pre>
 <p>Copy the array for values of boolean type from internal data.</p>
 <div class="refsect3">
 <a name="alsactl-elem-value-get-bool.parameters"></a><h4>Parameters</h4>
@@ -272,8 +272,8 @@ type. </p></td>
 <a name="alsactl-elem-value-set-int"></a><h3>alsactl_elem_value_set_int ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_value_set_int (<em class="parameter"><code><a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *self</code></em>,
-                            <em class="parameter"><code>const <span class="type">gint32</span> *values</code></em>,
-                            <em class="parameter"><code><span class="type">gsize</span> value_count</code></em>);</pre>
+                            <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a> *values</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> value_count</code></em>);</pre>
 <p>Copy the array for values of integer type into internal storage.</p>
 <div class="refsect3">
 <a name="alsactl-elem-value-set-int.parameters"></a><h4>Parameters</h4>
@@ -308,8 +308,8 @@ alsactl_elem_value_set_int (<em class="parameter"><code><a class="link" href="AL
 <a name="alsactl-elem-value-get-int"></a><h3>alsactl_elem_value_get_int ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_value_get_int (<em class="parameter"><code><a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *self</code></em>,
-                            <em class="parameter"><code><span class="type">gint32</span> *const *values</code></em>,
-                            <em class="parameter"><code><span class="type">gsize</span> *value_count</code></em>);</pre>
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a> *const *values</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *value_count</code></em>);</pre>
 <p>Copy the array for values of integer type from internal storage.</p>
 <div class="refsect3">
 <a name="alsactl-elem-value-get-int.parameters"></a><h4>Parameters</h4>
@@ -345,8 +345,8 @@ type. </p></td>
 <a name="alsactl-elem-value-set-enum"></a><h3>alsactl_elem_value_set_enum ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_value_set_enum (<em class="parameter"><code><a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *self</code></em>,
-                             <em class="parameter"><code>const <span class="type">guint32</span> *values</code></em>,
-                             <em class="parameter"><code><span class="type">gsize</span> value_count</code></em>);</pre>
+                             <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *values</code></em>,
+                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> value_count</code></em>);</pre>
 <p>Copy the array for values of enumeration index into internal storage.</p>
 <div class="refsect3">
 <a name="alsactl-elem-value-set-enum.parameters"></a><h4>Parameters</h4>
@@ -382,8 +382,8 @@ index. </p></td>
 <a name="alsactl-elem-value-get-enum"></a><h3>alsactl_elem_value_get_enum ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_value_get_enum (<em class="parameter"><code><a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *self</code></em>,
-                             <em class="parameter"><code><span class="type">guint32</span> *const *values</code></em>,
-                             <em class="parameter"><code><span class="type">gsize</span> *value_count</code></em>);</pre>
+                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *const *values</code></em>,
+                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *value_count</code></em>);</pre>
 <p>Copy the array for values of enumeration index from internal storage.</p>
 <div class="refsect3">
 <a name="alsactl-elem-value-get-enum.parameters"></a><h4>Parameters</h4>
@@ -419,8 +419,8 @@ enumeration index. </p></td>
 <a name="alsactl-elem-value-set-bytes"></a><h3>alsactl_elem_value_set_bytes ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_value_set_bytes (<em class="parameter"><code><a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *self</code></em>,
-                              <em class="parameter"><code>const <span class="type">guint8</span> *values</code></em>,
-                              <em class="parameter"><code><span class="type">gsize</span> value_count</code></em>);</pre>
+                              <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *values</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> value_count</code></em>);</pre>
 <p>Copy the array for values of bytes type into internal storage.</p>
 <div class="refsect3">
 <a name="alsactl-elem-value-set-bytes.parameters"></a><h4>Parameters</h4>
@@ -455,8 +455,8 @@ alsactl_elem_value_set_bytes (<em class="parameter"><code><a class="link" href="
 <a name="alsactl-elem-value-get-bytes"></a><h3>alsactl_elem_value_get_bytes ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_value_get_bytes (<em class="parameter"><code><a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *self</code></em>,
-                              <em class="parameter"><code><span class="type">guint8</span> *const *values</code></em>,
-                              <em class="parameter"><code><span class="type">gsize</span> *value_count</code></em>);</pre>
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *const *values</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *value_count</code></em>);</pre>
 <p>Copy the array for values of bytes type into internal storage.</p>
 <div class="refsect3">
 <a name="alsactl-elem-value-get-bytes.parameters"></a><h4>Parameters</h4>
@@ -491,10 +491,10 @@ alsactl_elem_value_get_bytes (<em class="parameter"><code><a class="link" href="
 <a name="alsactl-elem-value-set-iec60958"></a><h3>alsactl_elem_value_set_iec60958 ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_value_set_iec60958 (<em class="parameter"><code><a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *self</code></em>,
-                                 <em class="parameter"><code>const <span class="type">guint8</span> *channel_status</code></em>,
-                                 <em class="parameter"><code><span class="type">gsize</span> channel_status_length</code></em>,
-                                 <em class="parameter"><code>const <span class="type">guint8</span> *user_data</code></em>,
-                                 <em class="parameter"><code><span class="type">gsize</span> user_data_length</code></em>);</pre>
+                                 <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *channel_status</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> channel_status_length</code></em>,
+                                 <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *user_data</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> user_data_length</code></em>);</pre>
 <p>Copy a pair of array for channel status and user data of IEC 60958 into
 internal storage.</p>
 <div class="refsect3">
@@ -543,10 +543,10 @@ for user data bits in IEC 60958. </p></td>
 <a name="alsactl-elem-value-get-iec60958"></a><h3>alsactl_elem_value_get_iec60958 ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_value_get_iec60958 (<em class="parameter"><code><a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *self</code></em>,
-                                 <em class="parameter"><code><span class="type">guint8</span> *const *channel_status</code></em>,
-                                 <em class="parameter"><code><span class="type">gsize</span> *channel_status_length</code></em>,
-                                 <em class="parameter"><code><span class="type">guint8</span> *const *user_data</code></em>,
-                                 <em class="parameter"><code><span class="type">gsize</span> *user_data_length</code></em>);</pre>
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *const *channel_status</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *channel_status_length</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *const *user_data</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *user_data_length</code></em>);</pre>
 <p>Copy a pair of array for channel status and user data of IEC 60958 from
 internal storage.</p>
 <div class="refsect3">
@@ -595,8 +595,8 @@ byte data for user data bits in IEC 60958. </p></td>
 <a name="alsactl-elem-value-set-int64"></a><h3>alsactl_elem_value_set_int64 ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_value_set_int64 (<em class="parameter"><code><a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *self</code></em>,
-                              <em class="parameter"><code>const <span class="type">gint64</span> *values</code></em>,
-                              <em class="parameter"><code><span class="type">gsize</span> value_count</code></em>);</pre>
+                              <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a> *values</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> value_count</code></em>);</pre>
 <p>Copy the array for values of integer64 type into internal storage.</p>
 <div class="refsect3">
 <a name="alsactl-elem-value-set-int64.parameters"></a><h4>Parameters</h4>
@@ -631,8 +631,8 @@ alsactl_elem_value_set_int64 (<em class="parameter"><code><a class="link" href="
 <a name="alsactl-elem-value-get-int64"></a><h3>alsactl_elem_value_get_int64 ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_value_get_int64 (<em class="parameter"><code><a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *self</code></em>,
-                              <em class="parameter"><code><span class="type">gint64</span> *const *values</code></em>,
-                              <em class="parameter"><code><span class="type">gsize</span> *value_count</code></em>);</pre>
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a> *const *values</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *value_count</code></em>);</pre>
 <p>Copy the array for values of integer64 type from internal storage.</p>
 <div class="refsect3">
 <a name="alsactl-elem-value-get-int64.parameters"></a><h4>Parameters</h4>
@@ -666,7 +666,7 @@ type. </p></td>
 <hr>
 <div class="refsect2">
 <a name="alsactl-elem-value-equal"></a><h3>alsactl_elem_value_equal ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 alsactl_elem_value_equal (<em class="parameter"><code>const <a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *self</code></em>,
                           <em class="parameter"><code>const <a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *target</code></em>);</pre>
 <div class="refsect3">

@@ -106,7 +106,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">gboolean</span>
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="alsactl-elem-id.html#alsactl-elem-id-equal" title="alsactl_elem_id_equal ()">alsactl_elem_id_equal</a> <span class="c_punctuation">()</span>
@@ -129,7 +129,7 @@
 <div class="refsect2">
 <a name="alsactl-elem-id-new-by-numid"></a><h3>alsactl_elem_id_new_by_numid ()</h3>
 <pre class="programlisting"><a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="returnvalue">ALSACtlElemId</span></a> *
-alsactl_elem_id_new_by_numid (<em class="parameter"><code><span class="type">guint</span> numid</code></em>);</pre>
+alsactl_elem_id_new_by_numid (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> numid</code></em>);</pre>
 <p>Allocates and return an instance of ALSACtlElemId by the numerical ID.</p>
 <div class="refsect3">
 <a name="alsactl-elem-id-new-by-numid.parameters"></a><h4>Parameters</h4>
@@ -157,10 +157,10 @@ alsactl_elem_id_new_by_numid (<em class="parameter"><code><span class="type">gui
 <a name="alsactl-elem-id-new-by-name"></a><h3>alsactl_elem_id_new_by_name ()</h3>
 <pre class="programlisting"><a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="returnvalue">ALSACtlElemId</span></a> *
 alsactl_elem_id_new_by_name (<em class="parameter"><code><a class="link" href="alsactl-alsactl-enum-types.html#ALSACtlElemIfaceType" title="enum ALSACtlElemIfaceType"><span class="type">ALSACtlElemIfaceType</span></a> iface</code></em>,
-                             <em class="parameter"><code><span class="type">guint</span> device_id</code></em>,
-                             <em class="parameter"><code><span class="type">guint</span> subdevice_id</code></em>,
-                             <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
-                             <em class="parameter"><code><span class="type">guint</span> index</code></em>);</pre>
+                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> device_id</code></em>,
+                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> subdevice_id</code></em>,
+                             <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> index</code></em>);</pre>
 <p>Allocates and return an instance of ALSACtlElemId by the name.</p>
 <div class="refsect3">
 <a name="alsactl-elem-id-new-by-name.parameters"></a><h4>Parameters</h4>
@@ -211,7 +211,7 @@ alsactl_elem_id_new_by_name (<em class="parameter"><code><a class="link" href="a
 <a name="alsactl-elem-id-get-numid"></a><h3>alsactl_elem_id_get_numid ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_id_get_numid (<em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *self</code></em>,
-                           <em class="parameter"><code><span class="type">guint</span> *numid</code></em>);</pre>
+                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *numid</code></em>);</pre>
 <p>Get the numerical ID of element.</p>
 <div class="refsect3">
 <a name="alsactl-elem-id-get-numid.parameters"></a><h4>Parameters</h4>
@@ -271,7 +271,7 @@ alsactl_elem_id_get_iface (<em class="parameter"><code>const <a class="link" hre
 <a name="alsactl-elem-id-get-device-id"></a><h3>alsactl_elem_id_get_device_id ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_id_get_device_id (<em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *self</code></em>,
-                               <em class="parameter"><code><span class="type">guint</span> *device_id</code></em>);</pre>
+                               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *device_id</code></em>);</pre>
 <p>Get the numerical ID of device to which the element belongs.</p>
 <div class="refsect3">
 <a name="alsactl-elem-id-get-device-id.parameters"></a><h4>Parameters</h4>
@@ -301,7 +301,7 @@ alsactl_elem_id_get_device_id (<em class="parameter"><code>const <a class="link"
 <a name="alsactl-elem-id-get-subdevice-id"></a><h3>alsactl_elem_id_get_subdevice_id ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_id_get_subdevice_id (<em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *self</code></em>,
-                                  <em class="parameter"><code><span class="type">guint</span> *subdevice_id</code></em>);</pre>
+                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *subdevice_id</code></em>);</pre>
 <p>Get the numerical ID of element.</p>
 <div class="refsect3">
 <a name="alsactl-elem-id-get-subdevice-id.parameters"></a><h4>Parameters</h4>
@@ -331,7 +331,7 @@ alsactl_elem_id_get_subdevice_id (<em class="parameter"><code>const <a class="li
 <a name="alsactl-elem-id-get-name"></a><h3>alsactl_elem_id_get_name ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_id_get_name (<em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *self</code></em>,
-                          <em class="parameter"><code>const <span class="type">gchar</span> **name</code></em>);</pre>
+                          <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **name</code></em>);</pre>
 <p>Get the name of element.</p>
 <div class="refsect3">
 <a name="alsactl-elem-id-get-name.parameters"></a><h4>Parameters</h4>
@@ -361,7 +361,7 @@ alsactl_elem_id_get_name (<em class="parameter"><code>const <a class="link" href
 <a name="alsactl-elem-id-get-index"></a><h3>alsactl_elem_id_get_index ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_elem_id_get_index (<em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *self</code></em>,
-                           <em class="parameter"><code><span class="type">guint</span> *index</code></em>);</pre>
+                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *index</code></em>);</pre>
 <p>Get the index of element.</p>
 <div class="refsect3">
 <a name="alsactl-elem-id-get-index.parameters"></a><h4>Parameters</h4>
@@ -389,7 +389,7 @@ alsactl_elem_id_get_index (<em class="parameter"><code>const <a class="link" hre
 <hr>
 <div class="refsect2">
 <a name="alsactl-elem-id-equal"></a><h3>alsactl_elem_id_equal ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 alsactl_elem_id_equal (<em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *self</code></em>,
                        <em class="parameter"><code>const <a class="link" href="alsactl-elem-id.html#ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *target</code></em>);</pre>
 <div class="refsect3">
