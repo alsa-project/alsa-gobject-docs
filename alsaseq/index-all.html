@@ -6,7 +6,7 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="ALSASeq Reference Manual">
 <link rel="up" href="index.html" title="ALSASeq Reference Manual">
-<link rel="prev" href="alsaseq-event-data-connect.html" title="event-data-connect">
+<link rel="prev" href="alsaseq-remove-filter.html" title="remove-filter">
 <link rel="next" href="annotation-glossary.html" title="Annotation Glossary">
 <meta name="generator" content="GTK-Doc V1.28 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
@@ -27,6 +27,8 @@
                      <span class="dim">|</span> 
                   <a class="shortcut" href="#idxQ">Q</a>
                      <span class="dim">|</span> 
+                  <a class="shortcut" href="#idxR">R</a>
+                     <span class="dim">|</span> 
                   <a class="shortcut" href="#idxS">S</a>
                      <span class="dim">|</span> 
                   <a class="shortcut" href="#idxT">T</a>
@@ -34,7 +36,7 @@
                   <a class="shortcut" href="#idxU">U</a></span></td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
 <td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
-<td><a accesskey="p" href="alsaseq-event-data-connect.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="p" href="alsaseq-remove-filter.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
 <td><a accesskey="n" href="annotation-glossary.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
 <div class="index">
@@ -434,6 +436,22 @@
 </dt>
 <dd></dd>
 <dt>
+<a class="link" href="alsaseq-query.html#alsaseq-get-queue-id-list" title="alsaseq_get_queue_id_list ()">alsaseq_get_queue_id_list</a>, function in <a class="link" href="alsaseq-query.html" title="query">query</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="alsaseq-query.html#alsaseq-get-queue-info-by-id" title="alsaseq_get_queue_info_by_id ()">alsaseq_get_queue_info_by_id</a>, function in <a class="link" href="alsaseq-query.html" title="query">query</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="alsaseq-query.html#alsaseq-get-queue-info-by-name" title="alsaseq_get_queue_info_by_name ()">alsaseq_get_queue_info_by_name</a>, function in <a class="link" href="alsaseq-query.html" title="query">query</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="alsaseq-query.html#alsaseq-get-queue-status" title="alsaseq_get_queue_status ()">alsaseq_get_queue_status</a>, function in <a class="link" href="alsaseq-query.html" title="query">query</a>
+</dt>
+<dd></dd>
+<dt>
 <a class="link" href="alsaseq-query.html#alsaseq-get-seq-devnode" title="alsaseq_get_seq_devnode ()">alsaseq_get_seq_devnode</a>, function in <a class="link" href="alsaseq-query.html" title="query">query</a>
 </dt>
 <dd></dd>
@@ -517,6 +535,127 @@
 <a name="idxQ"></a><h3 class="title">Q</h3>
 <dt>
 <a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqQuerySubscribeType" title="enum ALSASeqQuerySubscribeType">ALSASeqQuerySubscribeType</a>, enum in <a class="link" href="alsaseq-alsaseq-enum-types.html" title="alsaseq-enum-types">alsaseq-enum-types</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueInfo.html#ALSASeqQueueInfo--client-id" title="The “client-id” property">ALSASeqQueueInfo:client-id</a>, object property in <a class="link" href="ALSASeqQueueInfo.html" title="ALSASeqQueueInfo">ALSASeqQueueInfo</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueInfo.html#ALSASeqQueueInfo--locked" title="The “locked” property">ALSASeqQueueInfo:locked</a>, object property in <a class="link" href="ALSASeqQueueInfo.html" title="ALSASeqQueueInfo">ALSASeqQueueInfo</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueInfo.html#ALSASeqQueueInfo--name" title="The “name” property">ALSASeqQueueInfo:name</a>, object property in <a class="link" href="ALSASeqQueueInfo.html" title="ALSASeqQueueInfo">ALSASeqQueueInfo</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueInfo.html#ALSASeqQueueInfo--queue-id" title="The “queue-id” property">ALSASeqQueueInfo:queue-id</a>, object property in <a class="link" href="ALSASeqQueueInfo.html" title="ALSASeqQueueInfo">ALSASeqQueueInfo</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueStatus.html#ALSASeqQueueStatus--event-count" title="The “event-count” property">ALSASeqQueueStatus:event-count</a>, object property in <a class="link" href="ALSASeqQueueStatus.html" title="ALSASeqQueueStatus">ALSASeqQueueStatus</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueStatus.html#ALSASeqQueueStatus--queue-id" title="The “queue-id” property">ALSASeqQueueStatus:queue-id</a>, object property in <a class="link" href="ALSASeqQueueStatus.html" title="ALSASeqQueueStatus">ALSASeqQueueStatus</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueStatus.html#ALSASeqQueueStatus--running" title="The “running” property">ALSASeqQueueStatus:running</a>, object property in <a class="link" href="ALSASeqQueueStatus.html" title="ALSASeqQueueStatus">ALSASeqQueueStatus</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueTempo.html#ALSASeqQueueTempo--queue-id" title="The “queue-id” property">ALSASeqQueueTempo:queue-id</a>, object property in <a class="link" href="ALSASeqQueueTempo.html" title="ALSASeqQueueTempo">ALSASeqQueueTempo</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueTempo.html#ALSASeqQueueTempo--resolution" title="The “resolution” property">ALSASeqQueueTempo:resolution</a>, object property in <a class="link" href="ALSASeqQueueTempo.html" title="ALSASeqQueueTempo">ALSASeqQueueTempo</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueTempo.html#ALSASeqQueueTempo--tempo" title="The “tempo” property">ALSASeqQueueTempo:tempo</a>, object property in <a class="link" href="ALSASeqQueueTempo.html" title="ALSASeqQueueTempo">ALSASeqQueueTempo</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueTimer.html#ALSASeqQueueTimer--queue-id" title="The “queue-id” property">ALSASeqQueueTimer:queue-id</a>, object property in <a class="link" href="ALSASeqQueueTimer.html" title="ALSASeqQueueTimer">ALSASeqQueueTimer</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueTimer.html#ALSASeqQueueTimer--type" title="The “type” property">ALSASeqQueueTimer:type</a>, object property in <a class="link" href="ALSASeqQueueTimer.html" title="ALSASeqQueueTimer">ALSASeqQueueTimer</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueTimerAlsa.html#ALSASeqQueueTimerAlsa--resolution" title="The “resolution” property">ALSASeqQueueTimerAlsa:resolution</a>, object property in <a class="link" href="ALSASeqQueueTimerAlsa.html" title="ALSASeqQueueTimerAlsa">ALSASeqQueueTimerAlsa</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueTimerAlsa.html#ALSASeqQueueTimerAlsa--timer-device-id" title="The “timer-device-id” property">ALSASeqQueueTimerAlsa:timer-device-id</a>, object property in <a class="link" href="ALSASeqQueueTimerAlsa.html" title="ALSASeqQueueTimerAlsa">ALSASeqQueueTimerAlsa</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqQueueTimerType" title="enum ALSASeqQueueTimerType">ALSASeqQueueTimerType</a>, enum in <a class="link" href="alsaseq-alsaseq-enum-types.html" title="alsaseq-enum-types">alsaseq-enum-types</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueInfo.html#alsaseq-queue-info-new" title="alsaseq_queue_info_new ()">alsaseq_queue_info_new</a>, function in <a class="link" href="ALSASeqQueueInfo.html" title="ALSASeqQueueInfo">ALSASeqQueueInfo</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueStatus.html#alsaseq-queue-status-get-real-time" title="alsaseq_queue_status_get_real_time ()">alsaseq_queue_status_get_real_time</a>, function in <a class="link" href="ALSASeqQueueStatus.html" title="ALSASeqQueueStatus">ALSASeqQueueStatus</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueStatus.html#alsaseq-queue-status-get-tick-time" title="alsaseq_queue_status_get_tick_time ()">alsaseq_queue_status_get_tick_time</a>, function in <a class="link" href="ALSASeqQueueStatus.html" title="ALSASeqQueueStatus">ALSASeqQueueStatus</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueTempo.html#alsaseq-queue-tempo-get-skew" title="alsaseq_queue_tempo_get_skew ()">alsaseq_queue_tempo_get_skew</a>, function in <a class="link" href="ALSASeqQueueTempo.html" title="ALSASeqQueueTempo">ALSASeqQueueTempo</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueTempo.html#alsaseq-queue-tempo-new" title="alsaseq_queue_tempo_new ()">alsaseq_queue_tempo_new</a>, function in <a class="link" href="ALSASeqQueueTempo.html" title="ALSASeqQueueTempo">ALSASeqQueueTempo</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueTempo.html#alsaseq-queue-tempo-set-skew" title="alsaseq_queue_tempo_set_skew ()">alsaseq_queue_tempo_set_skew</a>, function in <a class="link" href="ALSASeqQueueTempo.html" title="ALSASeqQueueTempo">ALSASeqQueueTempo</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqQueueTimerAlsa.html#alsaseq-queue-timer-alsa-new" title="alsaseq_queue_timer_alsa_new ()">alsaseq_queue_timer_alsa_new</a>, function in <a class="link" href="ALSASeqQueueTimerAlsa.html" title="ALSASeqQueueTimerAlsa">ALSASeqQueueTimerAlsa</a>
+</dt>
+<dd></dd>
+<a name="idxR"></a><h3 class="title">R</h3>
+<dt>
+<a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqRemoveFilterFlag" title="enum ALSASeqRemoveFilterFlag">ALSASeqRemoveFilterFlag</a>, enum in <a class="link" href="alsaseq-alsaseq-enum-types.html" title="alsaseq-enum-types">alsaseq-enum-types</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="alsaseq-remove-filter.html#alsaseq-remove-filter-new-with-dest-addr" title="alsaseq_remove_filter_new_with_dest_addr ()">alsaseq_remove_filter_new_with_dest_addr</a>, function in <a class="link" href="alsaseq-remove-filter.html" title="remove-filter">remove-filter</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="alsaseq-remove-filter.html#alsaseq-remove-filter-new-with-event-type" title="alsaseq_remove_filter_new_with_event_type ()">alsaseq_remove_filter_new_with_event_type</a>, function in <a class="link" href="alsaseq-remove-filter.html" title="remove-filter">remove-filter</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="alsaseq-remove-filter.html#alsaseq-remove-filter-new-with-note" title="alsaseq_remove_filter_new_with_note ()">alsaseq_remove_filter_new_with_note</a>, function in <a class="link" href="alsaseq-remove-filter.html" title="remove-filter">remove-filter</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="alsaseq-remove-filter.html#alsaseq-remove-filter-new-with-note-channel" title="alsaseq_remove_filter_new_with_note_channel ()">alsaseq_remove_filter_new_with_note_channel</a>, function in <a class="link" href="alsaseq-remove-filter.html" title="remove-filter">remove-filter</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="alsaseq-remove-filter.html#alsaseq-remove-filter-new-with-real-time" title="alsaseq_remove_filter_new_with_real_time ()">alsaseq_remove_filter_new_with_real_time</a>, function in <a class="link" href="alsaseq-remove-filter.html" title="remove-filter">remove-filter</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="alsaseq-remove-filter.html#alsaseq-remove-filter-new-with-tag" title="alsaseq_remove_filter_new_with_tag ()">alsaseq_remove_filter_new_with_tag</a>, function in <a class="link" href="alsaseq-remove-filter.html" title="remove-filter">remove-filter</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="alsaseq-remove-filter.html#alsaseq-remove-filter-new-with-tick-time" title="alsaseq_remove_filter_new_with_tick_time ()">alsaseq_remove_filter_new_with_tick_time</a>, function in <a class="link" href="alsaseq-remove-filter.html" title="remove-filter">remove-filter</a>
 </dt>
 <dd></dd>
 <a name="idxS"></a><h3 class="title">S</h3>
@@ -611,6 +750,10 @@
 </dt>
 <dd></dd>
 <dt>
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-create-queue" title="alsaseq_user_client_create_queue ()">alsaseq_user_client_create_queue</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
+</dt>
+<dd></dd>
+<dt>
 <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-create-source" title="alsaseq_user_client_create_source ()">alsaseq_user_client_create_source</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
 </dt>
 <dd></dd>
@@ -619,11 +762,27 @@
 </dt>
 <dd></dd>
 <dt>
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-delete-queue" title="alsaseq_user_client_delete_queue ()">alsaseq_user_client_delete_queue</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
+</dt>
+<dd></dd>
+<dt>
 <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-get-info" title="alsaseq_user_client_get_info ()">alsaseq_user_client_get_info</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
 </dt>
 <dd></dd>
 <dt>
 <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-get-pool" title="alsaseq_user_client_get_pool ()">alsaseq_user_client_get_pool</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-get-queue-tempo" title="alsaseq_user_client_get_queue_tempo ()">alsaseq_user_client_get_queue_tempo</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-get-queue-timer" title="alsaseq_user_client_get_queue_timer ()">alsaseq_user_client_get_queue_timer</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-get-queue-usage" title="alsaseq_user_client_get_queue_usage ()">alsaseq_user_client_get_queue_usage</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
 </dt>
 <dd></dd>
 <dt>
@@ -639,6 +798,10 @@
 </dt>
 <dd></dd>
 <dt>
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-remove-events" title="alsaseq_user_client_remove_events ()">alsaseq_user_client_remove_events</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
+</dt>
+<dd></dd>
+<dt>
 <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-schedule-event" title="alsaseq_user_client_schedule_event ()">alsaseq_user_client_schedule_event</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
 </dt>
 <dd></dd>
@@ -651,7 +814,23 @@
 </dt>
 <dd></dd>
 <dt>
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-set-queue-tempo" title="alsaseq_user_client_set_queue_tempo ()">alsaseq_user_client_set_queue_tempo</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-set-queue-timer" title="alsaseq_user_client_set_queue_timer ()">alsaseq_user_client_set_queue_timer</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-set-queue-usage" title="alsaseq_user_client_set_queue_usage ()">alsaseq_user_client_set_queue_usage</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
+</dt>
+<dd></dd>
+<dt>
 <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-update-port" title="alsaseq_user_client_update_port ()">alsaseq_user_client_update_port</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
+</dt>
+<dd></dd>
+<dt>
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-update-queue" title="alsaseq_user_client_update_queue ()">alsaseq_user_client_update_queue</a>, function in <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient">ALSASeqUserClient</a>
 </dt>
 <dd></dd>
 </div>

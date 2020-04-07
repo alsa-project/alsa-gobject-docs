@@ -24,6 +24,12 @@
       <sub name="event-data-ctl" link="alsaseq-event-data-ctl.html"/>
       <sub name="event-data-queue" link="alsaseq-event-data-queue.html"/>
       <sub name="event-data-connect" link="alsaseq-event-data-connect.html"/>
+      <sub name="ALSASeqQueueInfo" link="ALSASeqQueueInfo.html"/>
+      <sub name="ALSASeqQueueStatus" link="ALSASeqQueueStatus.html"/>
+      <sub name="ALSASeqQueueTempo" link="ALSASeqQueueTempo.html"/>
+      <sub name="ALSASeqQueueTimer" link="ALSASeqQueueTimer.html"/>
+      <sub name="ALSASeqQueueTimerAlsa" link="ALSASeqQueueTimerAlsa.html"/>
+      <sub name="remove-filter" link="alsaseq-remove-filter.html"/>
     </sub>
     <sub name="Index of all symbols" link="index-all.html"/>
     <sub name="Annotation Glossary" link="annotation-glossary.html"/>
@@ -44,6 +50,8 @@
     <keyword type="enum" name="enum ALSASeqSpecificQueueId" link="alsaseq-alsaseq-enum-types.html#ALSASeqSpecificQueueId"/>
     <keyword type="enum" name="enum ALSASeqPortSubscribeFlag" link="alsaseq-alsaseq-enum-types.html#ALSASeqPortSubscribeFlag"/>
     <keyword type="enum" name="enum ALSASeqQuerySubscribeType" link="alsaseq-alsaseq-enum-types.html#ALSASeqQuerySubscribeType"/>
+    <keyword type="enum" name="enum ALSASeqQueueTimerType" link="alsaseq-alsaseq-enum-types.html#ALSASeqQueueTimerType"/>
+    <keyword type="enum" name="enum ALSASeqRemoveFilterFlag" link="alsaseq-alsaseq-enum-types.html#ALSASeqRemoveFilterFlag"/>
     <keyword type="function" name="alsaseq_get_seq_sysname ()" link="alsaseq-query.html#alsaseq-get-seq-sysname"/>
     <keyword type="function" name="alsaseq_get_seq_devnode ()" link="alsaseq-query.html#alsaseq-get-seq-devnode"/>
     <keyword type="function" name="alsaseq_get_system_info ()" link="alsaseq-query.html#alsaseq-get-system-info"/>
@@ -53,6 +61,10 @@
     <keyword type="function" name="alsaseq_get_port_info ()" link="alsaseq-query.html#alsaseq-get-port-info"/>
     <keyword type="function" name="alsaseq_get_client_pool ()" link="alsaseq-query.html#alsaseq-get-client-pool"/>
     <keyword type="function" name="alsaseq_get_subscription_list ()" link="alsaseq-query.html#alsaseq-get-subscription-list"/>
+    <keyword type="function" name="alsaseq_get_queue_id_list ()" link="alsaseq-query.html#alsaseq-get-queue-id-list"/>
+    <keyword type="function" name="alsaseq_get_queue_info_by_id ()" link="alsaseq-query.html#alsaseq-get-queue-info-by-id"/>
+    <keyword type="function" name="alsaseq_get_queue_info_by_name ()" link="alsaseq-query.html#alsaseq-get-queue-info-by-name"/>
+    <keyword type="function" name="alsaseq_get_queue_status ()" link="alsaseq-query.html#alsaseq-get-queue-status"/>
     <keyword type="property" name="The “current-client-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--current-client-count"/>
     <keyword type="property" name="The “current-queue-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--current-queue-count"/>
     <keyword type="property" name="The “maximum-channel-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--maximum-channel-count"/>
@@ -83,6 +95,16 @@
     <keyword type="function" name="alsaseq_user_client_schedule_event ()" link="ALSASeqUserClient.html#alsaseq-user-client-schedule-event"/>
     <keyword type="function" name="alsaseq_user_client_create_source ()" link="ALSASeqUserClient.html#alsaseq-user-client-create-source"/>
     <keyword type="function" name="alsaseq_user_client_operate_subscription ()" link="ALSASeqUserClient.html#alsaseq-user-client-operate-subscription"/>
+    <keyword type="function" name="alsaseq_user_client_create_queue ()" link="ALSASeqUserClient.html#alsaseq-user-client-create-queue"/>
+    <keyword type="function" name="alsaseq_user_client_delete_queue ()" link="ALSASeqUserClient.html#alsaseq-user-client-delete-queue"/>
+    <keyword type="function" name="alsaseq_user_client_update_queue ()" link="ALSASeqUserClient.html#alsaseq-user-client-update-queue"/>
+    <keyword type="function" name="alsaseq_user_client_get_queue_usage ()" link="ALSASeqUserClient.html#alsaseq-user-client-get-queue-usage"/>
+    <keyword type="function" name="alsaseq_user_client_set_queue_usage ()" link="ALSASeqUserClient.html#alsaseq-user-client-set-queue-usage"/>
+    <keyword type="function" name="alsaseq_user_client_set_queue_tempo ()" link="ALSASeqUserClient.html#alsaseq-user-client-set-queue-tempo"/>
+    <keyword type="function" name="alsaseq_user_client_get_queue_tempo ()" link="ALSASeqUserClient.html#alsaseq-user-client-get-queue-tempo"/>
+    <keyword type="function" name="alsaseq_user_client_set_queue_timer ()" link="ALSASeqUserClient.html#alsaseq-user-client-set-queue-timer"/>
+    <keyword type="function" name="alsaseq_user_client_get_queue_timer ()" link="ALSASeqUserClient.html#alsaseq-user-client-get-queue-timer"/>
+    <keyword type="function" name="alsaseq_user_client_remove_events ()" link="ALSASeqUserClient.html#alsaseq-user-client-remove-events"/>
     <keyword type="property" name="The “client-id” property" link="ALSASeqUserClient.html#ALSASeqUserClient--client-id"/>
     <keyword type="signal" name="The “handle-event” signal" link="ALSASeqUserClient.html#ALSASeqUserClient-handle-event"/>
     <keyword type="function" name="alsaseq_client_pool_new ()" link="ALSASeqClientPool.html#alsaseq-client-pool-new"/>
@@ -180,6 +202,34 @@
     <keyword type="function" name="alsaseq_event_data_connect_set_src ()" link="alsaseq-event-data-connect.html#alsaseq-event-data-connect-set-src"/>
     <keyword type="function" name="alsaseq_event_data_connect_get_dst ()" link="alsaseq-event-data-connect.html#alsaseq-event-data-connect-get-dst"/>
     <keyword type="function" name="alsaseq_event_data_connect_set_dst ()" link="alsaseq-event-data-connect.html#alsaseq-event-data-connect-set-dst"/>
+    <keyword type="function" name="alsaseq_queue_info_new ()" link="ALSASeqQueueInfo.html#alsaseq-queue-info-new"/>
+    <keyword type="property" name="The “client-id” property" link="ALSASeqQueueInfo.html#ALSASeqQueueInfo--client-id"/>
+    <keyword type="property" name="The “locked” property" link="ALSASeqQueueInfo.html#ALSASeqQueueInfo--locked"/>
+    <keyword type="property" name="The “name” property" link="ALSASeqQueueInfo.html#ALSASeqQueueInfo--name"/>
+    <keyword type="property" name="The “queue-id” property" link="ALSASeqQueueInfo.html#ALSASeqQueueInfo--queue-id"/>
+    <keyword type="function" name="alsaseq_queue_status_get_tick_time ()" link="ALSASeqQueueStatus.html#alsaseq-queue-status-get-tick-time"/>
+    <keyword type="function" name="alsaseq_queue_status_get_real_time ()" link="ALSASeqQueueStatus.html#alsaseq-queue-status-get-real-time"/>
+    <keyword type="property" name="The “event-count” property" link="ALSASeqQueueStatus.html#ALSASeqQueueStatus--event-count"/>
+    <keyword type="property" name="The “queue-id” property" link="ALSASeqQueueStatus.html#ALSASeqQueueStatus--queue-id"/>
+    <keyword type="property" name="The “running” property" link="ALSASeqQueueStatus.html#ALSASeqQueueStatus--running"/>
+    <keyword type="function" name="alsaseq_queue_tempo_new ()" link="ALSASeqQueueTempo.html#alsaseq-queue-tempo-new"/>
+    <keyword type="function" name="alsaseq_queue_tempo_get_skew ()" link="ALSASeqQueueTempo.html#alsaseq-queue-tempo-get-skew"/>
+    <keyword type="function" name="alsaseq_queue_tempo_set_skew ()" link="ALSASeqQueueTempo.html#alsaseq-queue-tempo-set-skew"/>
+    <keyword type="property" name="The “queue-id” property" link="ALSASeqQueueTempo.html#ALSASeqQueueTempo--queue-id"/>
+    <keyword type="property" name="The “resolution” property" link="ALSASeqQueueTempo.html#ALSASeqQueueTempo--resolution"/>
+    <keyword type="property" name="The “tempo” property" link="ALSASeqQueueTempo.html#ALSASeqQueueTempo--tempo"/>
+    <keyword type="property" name="The “queue-id” property" link="ALSASeqQueueTimer.html#ALSASeqQueueTimer--queue-id"/>
+    <keyword type="property" name="The “type” property" link="ALSASeqQueueTimer.html#ALSASeqQueueTimer--type"/>
+    <keyword type="function" name="alsaseq_queue_timer_alsa_new ()" link="ALSASeqQueueTimerAlsa.html#alsaseq-queue-timer-alsa-new"/>
+    <keyword type="property" name="The “resolution” property" link="ALSASeqQueueTimerAlsa.html#ALSASeqQueueTimerAlsa--resolution"/>
+    <keyword type="property" name="The “timer-device-id” property" link="ALSASeqQueueTimerAlsa.html#ALSASeqQueueTimerAlsa--timer-device-id"/>
+    <keyword type="function" name="alsaseq_remove_filter_new_with_dest_addr ()" link="alsaseq-remove-filter.html#alsaseq-remove-filter-new-with-dest-addr"/>
+    <keyword type="function" name="alsaseq_remove_filter_new_with_note_channel ()" link="alsaseq-remove-filter.html#alsaseq-remove-filter-new-with-note-channel"/>
+    <keyword type="function" name="alsaseq_remove_filter_new_with_event_type ()" link="alsaseq-remove-filter.html#alsaseq-remove-filter-new-with-event-type"/>
+    <keyword type="function" name="alsaseq_remove_filter_new_with_note ()" link="alsaseq-remove-filter.html#alsaseq-remove-filter-new-with-note"/>
+    <keyword type="function" name="alsaseq_remove_filter_new_with_tag ()" link="alsaseq-remove-filter.html#alsaseq-remove-filter-new-with-tag"/>
+    <keyword type="function" name="alsaseq_remove_filter_new_with_tick_time ()" link="alsaseq-remove-filter.html#alsaseq-remove-filter-new-with-tick-time"/>
+    <keyword type="function" name="alsaseq_remove_filter_new_with_real_time ()" link="alsaseq-remove-filter.html#alsaseq-remove-filter-new-with-real-time"/>
     <keyword type="constant" name="ALSASEQ_SPECIFIC_ADDRESS_UNKNOWN" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-SPECIFIC-ADDRESS-UNKNOWN:CAPS"/>
     <keyword type="constant" name="ALSASEQ_SPECIFIC_ADDRESS_SUBSCRIBERS" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-SPECIFIC-ADDRESS-SUBSCRIBERS:CAPS"/>
     <keyword type="constant" name="ALSASEQ_SPECIFIC_ADDRESS_BROADCAST" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-SPECIFIC-ADDRESS-BROADCAST:CAPS"/>
@@ -285,5 +335,8 @@
     <keyword type="constant" name="ALSASEQ_PORT_SUBSCRIBE_FLAG_TIME_REAL" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-PORT-SUBSCRIBE-FLAG-TIME-REAL:CAPS"/>
     <keyword type="constant" name="ALSASEQ_QUERY_SUBSCRIBE_TYPE_READ" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-QUERY-SUBSCRIBE-TYPE-READ:CAPS"/>
     <keyword type="constant" name="ALSASEQ_QUERY_SUBSCRIBE_TYPE_WRITE" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-QUERY-SUBSCRIBE-TYPE-WRITE:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_QUEUE_TIMER_TYPE_ALSA" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-QUEUE-TIMER-TYPE-ALSA:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_REMOVE_FILTER_FLAG_INPUT" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-REMOVE-FILTER-FLAG-INPUT:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_REMOVE_FILTER_FLAG_OUTPUT" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-REMOVE-FILTER-FLAG-OUTPUT:CAPS"/>
   </functions>
 </book>

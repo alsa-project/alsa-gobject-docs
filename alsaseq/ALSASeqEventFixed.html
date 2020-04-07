@@ -50,7 +50,8 @@
 </td>
 </tr>
 <tr>
-<td class="function_type">const <a href="../glib/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a> *
+<td class="function_type">
+<span class="returnvalue">void</span>
 </td>
 <td class="function_name">
 <a class="link" href="ALSASeqEventFixed.html#alsaseq-event-fixed-get-byte-data" title="alsaseq_event_fixed_get_byte_data ()">alsaseq_event_fixed_get_byte_data</a> <span class="c_punctuation">()</span>
@@ -65,7 +66,8 @@
 </td>
 </tr>
 <tr>
-<td class="function_type">const <a href="../glib/glib-Basic-Types.html#guint32"><span class="returnvalue">guint32</span></a> *
+<td class="function_type">
+<span class="returnvalue">void</span>
 </td>
 <td class="function_name">
 <a class="link" href="ALSASeqEventFixed.html#alsaseq-event-fixed-get-quadlet-data" title="alsaseq_event_fixed_get_quadlet_data ()">alsaseq_event_fixed_get_quadlet_data</a> <span class="c_punctuation">()</span>
@@ -178,15 +180,15 @@ alsaseq_event_fixed_new (<em class="parameter"><code><a class="link" href="alsas
 </div>
 <div class="refsect3">
 <a name="alsaseq-event-fixed-new.returns"></a><h4>Returns</h4>
-<p>A <a class="link" href="ALSASeqEventFixed.html" title="ALSASeqEventFixed"><span class="type">ALSASeqEventFixed</span></a>. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p> A <a class="link" href="ALSASeqEventFixed.html" title="ALSASeqEventFixed"><span class="type">ALSASeqEventFixed</span></a>.</p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="alsaseq-event-fixed-get-byte-data"></a><h3>alsaseq_event_fixed_get_byte_data ()</h3>
-<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a> *
-alsaseq_event_fixed_get_byte_data (<em class="parameter"><code><a class="link" href="ALSASeqEventFixed.html" title="ALSASeqEventFixed"><span class="type">ALSASeqEventFixed</span></a> *self</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_event_fixed_get_byte_data (<em class="parameter"><code><a class="link" href="ALSASeqEventFixed.html" title="ALSASeqEventFixed"><span class="type">ALSASeqEventFixed</span></a> *self</code></em>,
+                                   <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **bytes</code></em>);</pre>
 <p>Refer to the 12 byte data for the event.</p>
 <div class="refsect3">
 <a name="alsaseq-event-fixed-get-byte-data.parameters"></a><h4>Parameters</h4>
@@ -196,18 +198,20 @@ alsaseq_event_fixed_get_byte_data (<em class="parameter"><code><a class="link" h
 <col class="parameters_description">
 <col width="200px" class="parameters_annotations">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="parameter_name"><p>self</p></td>
 <td class="parameter_description"><p>A <a class="link" href="ALSASeqEventFixed.html" title="ALSASeqEventFixed"><span class="type">ALSASeqEventFixed</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
-</tr></tbody>
+</tr>
+<tr>
+<td class="parameter_name"><p>bytes</p></td>
+<td class="parameter_description"><p>The 12 byte data for the
+event. The lifetime of the object is the same as the event itself. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> fixed-size=12][<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+</tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="alsaseq-event-fixed-get-byte-data.returns"></a><h4>Returns</h4>
-<p>The 12 byte data for the
-event. The lifetime of the object is the same as the event itself. </p>
-<p><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> fixed-size=12][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -215,7 +219,7 @@ event. The lifetime of the object is the same as the event itself. </p>
 <a name="alsaseq-event-fixed-set-byte-data"></a><h3>alsaseq_event_fixed_set_byte_data ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsaseq_event_fixed_set_byte_data (<em class="parameter"><code><a class="link" href="ALSASeqEventFixed.html" title="ALSASeqEventFixed"><span class="type">ALSASeqEventFixed</span></a> *self</code></em>,
-                                   <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> data[12]</code></em>);</pre>
+                                   <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> bytes[12]</code></em>);</pre>
 <p>Copy the 12 byte data for the event.</p>
 <div class="refsect3">
 <a name="alsaseq-event-fixed-set-byte-data.parameters"></a><h4>Parameters</h4>
@@ -232,7 +236,7 @@ alsaseq_event_fixed_set_byte_data (<em class="parameter"><code><a class="link" h
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
-<td class="parameter_name"><p>data</p></td>
+<td class="parameter_name"><p>bytes</p></td>
 <td class="parameter_description"><p>The 12 byte data for the event. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> fixed-size=12][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
 </tr>
@@ -243,8 +247,9 @@ alsaseq_event_fixed_set_byte_data (<em class="parameter"><code><a class="link" h
 <hr>
 <div class="refsect2">
 <a name="alsaseq-event-fixed-get-quadlet-data"></a><h3>alsaseq_event_fixed_get_quadlet_data ()</h3>
-<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#guint32"><span class="returnvalue">guint32</span></a> *
-alsaseq_event_fixed_get_quadlet_data (<em class="parameter"><code><a class="link" href="ALSASeqEventFixed.html" title="ALSASeqEventFixed"><span class="type">ALSASeqEventFixed</span></a> *self</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_event_fixed_get_quadlet_data (<em class="parameter"><code><a class="link" href="ALSASeqEventFixed.html" title="ALSASeqEventFixed"><span class="type">ALSASeqEventFixed</span></a> *self</code></em>,
+                                      <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> **quadlets</code></em>);</pre>
 <p>Get the 3 quadlet data for the event.</p>
 <div class="refsect3">
 <a name="alsaseq-event-fixed-get-quadlet-data.parameters"></a><h4>Parameters</h4>
@@ -254,18 +259,21 @@ alsaseq_event_fixed_get_quadlet_data (<em class="parameter"><code><a class="link
 <col class="parameters_description">
 <col width="200px" class="parameters_annotations">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="parameter_name"><p>self</p></td>
 <td class="parameter_description"><p>A <a class="link" href="ALSASeqEventFixed.html" title="ALSASeqEventFixed"><span class="type">ALSASeqEventFixed</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
-</tr></tbody>
+</tr>
+<tr>
+<td class="parameter_name"><p>quadlets</p></td>
+<td class="parameter_description"><p>The 3 quadlet data for
+the event. The lifetime of the object is the same as the event
+itself. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> fixed-size=3][<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+</tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="alsaseq-event-fixed-get-quadlet-data.returns"></a><h4>Returns</h4>
-<p>The 3 quadlet data for the
-event. The lifetime of the object is the same as the event itself. </p>
-<p><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> fixed-size=3][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -273,7 +281,7 @@ event. The lifetime of the object is the same as the event itself. </p>
 <a name="alsaseq-event-fixed-set-quadlet-data"></a><h3>alsaseq_event_fixed_set_quadlet_data ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsaseq_event_fixed_set_quadlet_data (<em class="parameter"><code><a class="link" href="ALSASeqEventFixed.html" title="ALSASeqEventFixed"><span class="type">ALSASeqEventFixed</span></a> *self</code></em>,
-                                      <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> data[3]</code></em>);</pre>
+                                      <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> quadlets[3]</code></em>);</pre>
 <p>Copy the 3 quadlet data for the event.</p>
 <div class="refsect3">
 <a name="alsaseq-event-fixed-set-quadlet-data.parameters"></a><h4>Parameters</h4>
@@ -290,8 +298,9 @@ alsaseq_event_fixed_set_quadlet_data (<em class="parameter"><code><a class="link
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
-<td class="parameter_name"><p>data</p></td>
-<td class="parameter_description"><p>The 3 quadlet data for the event. </p></td>
+<td class="parameter_name"><p>quadlets</p></td>
+<td class="parameter_description"><p>The 3 quadlet data for the
+event. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> fixed-size=3][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
 </tr>
 </tbody>

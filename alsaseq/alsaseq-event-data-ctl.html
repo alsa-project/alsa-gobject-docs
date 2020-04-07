@@ -42,7 +42,7 @@
 <tbody>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a>
+<span class="returnvalue">void</span>
 </td>
 <td class="function_name">
 <a class="link" href="alsaseq-event-data-ctl.html#alsaseq-event-data-ctl-get-channel" title="alsaseq_event_data_ctl_get_channel ()">alsaseq_event_data_ctl_get_channel</a> <span class="c_punctuation">()</span>
@@ -58,7 +58,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+<span class="returnvalue">void</span>
 </td>
 <td class="function_name">
 <a class="link" href="alsaseq-event-data-ctl.html#alsaseq-event-data-ctl-get-param" title="alsaseq_event_data_ctl_get_param ()">alsaseq_event_data_ctl_get_param</a> <span class="c_punctuation">()</span>
@@ -74,7 +74,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+<span class="returnvalue">void</span>
 </td>
 <td class="function_name">
 <a class="link" href="alsaseq-event-data-ctl.html#alsaseq-event-data-ctl-get-value" title="alsaseq_event_data_ctl_get_value ()">alsaseq_event_data_ctl_get_value</a> <span class="c_punctuation">()</span>
@@ -104,8 +104,9 @@
 <a name="alsaseq-event-data-ctl.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
 <a name="alsaseq-event-data-ctl-get-channel"></a><h3>alsaseq_event_data_ctl_get_channel ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a>
-alsaseq_event_data_ctl_get_channel (<em class="parameter"><code><a class="link" href="alsaseq-event-data-ctl.html#ALSASeqEventDataCtl"><span class="type">ALSASeqEventDataCtl</span></a> *self</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_event_data_ctl_get_channel (<em class="parameter"><code><a class="link" href="alsaseq-event-data-ctl.html#ALSASeqEventDataCtl"><span class="type">ALSASeqEventDataCtl</span></a> *self</code></em>,
+                                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *channel</code></em>);</pre>
 <p>Get the value of channel for the control event.</p>
 <div class="refsect3">
 <a name="alsaseq-event-data-ctl-get-channel.parameters"></a><h4>Parameters</h4>
@@ -115,16 +116,19 @@ alsaseq_event_data_ctl_get_channel (<em class="parameter"><code><a class="link" 
 <col class="parameters_description">
 <col width="200px" class="parameters_annotations">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="parameter_name"><p>self</p></td>
 <td class="parameter_description"><p>A <a class="link" href="alsaseq-event-data-ctl.html#ALSASeqEventDataCtl"><span class="type">ALSASeqEventDataCtl</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
-</tr></tbody>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>The value of channel for the control event. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="alsaseq-event-data-ctl-get-channel.returns"></a><h4>Returns</h4>
-<p> the value of channel for the control event.</p>
 </div>
 </div>
 <hr>
@@ -160,8 +164,9 @@ alsaseq_event_data_ctl_set_channel (<em class="parameter"><code><a class="link" 
 <hr>
 <div class="refsect2">
 <a name="alsaseq-event-data-ctl-get-param"></a><h3>alsaseq_event_data_ctl_get_param ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
-alsaseq_event_data_ctl_get_param (<em class="parameter"><code><a class="link" href="alsaseq-event-data-ctl.html#ALSASeqEventDataCtl"><span class="type">ALSASeqEventDataCtl</span></a> *self</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_event_data_ctl_get_param (<em class="parameter"><code><a class="link" href="alsaseq-event-data-ctl.html#ALSASeqEventDataCtl"><span class="type">ALSASeqEventDataCtl</span></a> *self</code></em>,
+                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *param</code></em>);</pre>
 <p>Get the parameter for the control event.</p>
 <div class="refsect3">
 <a name="alsaseq-event-data-ctl-get-param.parameters"></a><h4>Parameters</h4>
@@ -171,16 +176,19 @@ alsaseq_event_data_ctl_get_param (<em class="parameter"><code><a class="link" hr
 <col class="parameters_description">
 <col width="200px" class="parameters_annotations">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="parameter_name"><p>self</p></td>
 <td class="parameter_description"><p>A <a class="link" href="alsaseq-event-data-ctl.html#ALSASeqEventDataCtl"><span class="type">ALSASeqEventDataCtl</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
-</tr></tbody>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>The parameter for the control event. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="alsaseq-event-data-ctl-get-param.returns"></a><h4>Returns</h4>
-<p> the parameter for the control event.</p>
 </div>
 </div>
 <hr>
@@ -216,8 +224,9 @@ alsaseq_event_data_ctl_set_param (<em class="parameter"><code><a class="link" hr
 <hr>
 <div class="refsect2">
 <a name="alsaseq-event-data-ctl-get-value"></a><h3>alsaseq_event_data_ctl_get_value ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
-alsaseq_event_data_ctl_get_value (<em class="parameter"><code><a class="link" href="alsaseq-event-data-ctl.html#ALSASeqEventDataCtl"><span class="type">ALSASeqEventDataCtl</span></a> *self</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_event_data_ctl_get_value (<em class="parameter"><code><a class="link" href="alsaseq-event-data-ctl.html#ALSASeqEventDataCtl"><span class="type">ALSASeqEventDataCtl</span></a> *self</code></em>,
+                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *value</code></em>);</pre>
 <p>Get the value for the control event.</p>
 <div class="refsect3">
 <a name="alsaseq-event-data-ctl-get-value.parameters"></a><h4>Parameters</h4>
@@ -227,16 +236,19 @@ alsaseq_event_data_ctl_get_value (<em class="parameter"><code><a class="link" hr
 <col class="parameters_description">
 <col width="200px" class="parameters_annotations">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="parameter_name"><p>self</p></td>
 <td class="parameter_description"><p>A <a class="link" href="alsaseq-event-data-ctl.html#ALSASeqEventDataCtl"><span class="type">ALSASeqEventDataCtl</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
-</tr></tbody>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>The value for the control event. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="alsaseq-event-data-ctl-get-value.returns"></a><h4>Returns</h4>
-<p> the value for the control event.</p>
 </div>
 </div>
 <hr>
