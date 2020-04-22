@@ -1,0 +1,608 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ALSARawmidiStreamPair: ALSARawmidi Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="ALSARawmidi Reference Manual">
+<link rel="up" href="alsarawmidi-objects.html" title="ALSARawmidi objects">
+<link rel="prev" href="alsarawmidi-objects.html" title="ALSARawmidi objects">
+<link rel="next" href="ALSARawmidiSubstreamInfo.html" title="ALSARawmidiSubstreamInfo">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ALSARawmidiStreamPair.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#ALSARawmidiStreamPair.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#ALSARawmidiStreamPair.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#ALSARawmidiStreamPair.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="alsarawmidi-objects.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="alsarawmidi-objects.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ALSARawmidiSubstreamInfo.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ALSARawmidiStreamPair"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ALSARawmidiStreamPair.top_of_page"></a>ALSARawmidiStreamPair</span></h2>
+<p>ALSARawmidiStreamPair</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ALSARawmidiStreamPair.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="returnvalue">ALSARawmidiStreamPair</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-new" title="alsarawmidi_stream_pair_new ()">alsarawmidi_stream_pair_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-open" title="alsarawmidi_stream_pair_open ()">alsarawmidi_stream_pair_open</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-get-substream-info" title="alsarawmidi_stream_pair_get_substream_info ()">alsarawmidi_stream_pair_get_substream_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-set-substream-params" title="alsarawmidi_stream_pair_set_substream_params ()">alsarawmidi_stream_pair_set_substream_params</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-get-substream-status" title="alsarawmidi_stream_pair_get_substream_status ()">alsarawmidi_stream_pair_get_substream_status</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-read-from-substream" title="alsarawmidi_stream_pair_read_from_substream ()">alsarawmidi_stream_pair_read_from_substream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-write-to-substream" title="alsarawmidi_stream_pair_write_to_substream ()">alsarawmidi_stream_pair_write_to_substream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-drain-substream" title="alsarawmidi_stream_pair_drain_substream ()">alsarawmidi_stream_pair_drain_substream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-drop-substream" title="alsarawmidi_stream_pair_drop_substream ()">alsarawmidi_stream_pair_drop_substream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-create-source" title="alsarawmidi_stream_pair_create_source ()">alsarawmidi_stream_pair_create_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ALSARawmidiStreamPair.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="ALSARawmidiStreamPair.html#ALSARawmidiStreamPair--devnode" title="The “devnode” property">devnode</a></td>
+<td class="property_flags">Read</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ALSARawmidiStreamPair.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ALSARawmidiStreamPair.html#ALSARawmidiStreamPair-handle-disconnection" title="The “handle-disconnection” signal">handle-disconnection</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="ALSARawmidiStreamPair.html#ALSARawmidiStreamPair-handle-messages" title="The “handle-messages” signal">handle-messages</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ALSARawmidiStreamPair.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> ALSARawmidiStreamPair
+</pre>
+</div>
+<div class="refsect1">
+<a name="ALSARawmidiStreamPair.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="ALSARawmidiStreamPair.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="alsarawmidi-stream-pair-new"></a><h3>alsarawmidi_stream_pair_new ()</h3>
+<pre class="programlisting"><a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="returnvalue">ALSARawmidiStreamPair</span></a> *
+alsarawmidi_stream_pair_new ();</pre>
+<p>Allocate and return an instance of ALSARawmidiStreamPair class.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsarawmidi-stream-pair-open"></a><h3>alsarawmidi_stream_pair_open ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsarawmidi_stream_pair_open (<em class="parameter"><code><a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a> *self</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> card_id</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> device_id</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> subdevice_id</code></em>,
+                              <em class="parameter"><code><a class="link" href="alsarawmidi-alsarawmidi-enum-types.html#ALSARawmidiStreamPairInfoFlag" title="enum ALSARawmidiStreamPairInfoFlag"><span class="type">ALSARawmidiStreamPairInfoFlag</span></a> access_modes</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> open_flag</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Open file descriptor for a pair of streams to attach input/output substreams
+corresponding to the given subdevice.</p>
+<div class="refsect3">
+<a name="alsarawmidi-stream-pair-open.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>card_id</p></td>
+<td class="parameter_description"><p>The numerical ID of sound card.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>device_id</p></td>
+<td class="parameter_description"><p>The numerical ID of rawmidi device for the sound card.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>subdevice_id</p></td>
+<td class="parameter_description"><p>The numerical ID of subdevice for the rawmidi device.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>access_modes</p></td>
+<td class="parameter_description"><p>Access flags for stream direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_flag</p></td>
+<td class="parameter_description"><p>The flag of open(2) system call. O_RDWR, O_WRONLY and O_RDONLY
+are forced to fulfil internally according to the access_modes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsarawmidi-stream-pair-get-substream-info"></a><h3>alsarawmidi_stream_pair_get_substream_info ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsarawmidi_stream_pair_get_substream_info
+                               (<em class="parameter"><code><a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="alsarawmidi-alsarawmidi-enum-types.html#ALSARawmidiStreamDirection" title="enum ALSARawmidiStreamDirection"><span class="type">ALSARawmidiStreamDirection</span></a> direction</code></em>,
+                                <em class="parameter"><code><a class="link" href="ALSARawmidiSubstreamInfo.html" title="ALSARawmidiSubstreamInfo"><span class="type">ALSARawmidiSubstreamInfo</span></a> **substream_info</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Get information of substream attached to the stream pair.</p>
+<div class="refsect3">
+<a name="alsarawmidi-stream-pair-get-substream-info.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>The direction of substream attached to the stream pair.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>substream_info</p></td>
+<td class="parameter_description"><p>The information for requested substream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsarawmidi-stream-pair-set-substream-params"></a><h3>alsarawmidi_stream_pair_set_substream_params ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsarawmidi_stream_pair_set_substream_params
+                               (<em class="parameter"><code><a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="alsarawmidi-alsarawmidi-enum-types.html#ALSARawmidiStreamDirection" title="enum ALSARawmidiStreamDirection"><span class="type">ALSARawmidiStreamDirection</span></a> direction</code></em>,
+                                <em class="parameter"><code><a class="link" href="ALSARawmidiSubstreamParams.html" title="ALSARawmidiSubstreamParams"><span class="type">ALSARawmidiSubstreamParams</span></a> *substream_params</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Set parameters of substream for given direction, which is attached to the
+pair of streams.</p>
+<div class="refsect3">
+<a name="alsarawmidi-stream-pair-set-substream-params.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>The direction of substream attached to the stream pair.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>substream_params</p></td>
+<td class="parameter_description"><p>The parameters of substream.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsarawmidi-stream-pair-get-substream-status"></a><h3>alsarawmidi_stream_pair_get_substream_status ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsarawmidi_stream_pair_get_substream_status
+                               (<em class="parameter"><code><a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="alsarawmidi-alsarawmidi-enum-types.html#ALSARawmidiStreamDirection" title="enum ALSARawmidiStreamDirection"><span class="type">ALSARawmidiStreamDirection</span></a> direction</code></em>,
+                                <em class="parameter"><code><a class="link" href="ALSARawmidiSubstreamStatus.html" title="ALSARawmidiSubstreamStatus"><span class="type">ALSARawmidiSubstreamStatus</span></a> *const *substream_status</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Retrieve status of substream for given direction, which is attached to the
+pair of streams.</p>
+<div class="refsect3">
+<a name="alsarawmidi-stream-pair-get-substream-status.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>The direction of substream attached to the stream pair.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>substream_status</p></td>
+<td class="parameter_description"><p>The status of substream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsarawmidi-stream-pair-read-from-substream"></a><h3>alsarawmidi_stream_pair_read_from_substream ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsarawmidi_stream_pair_read_from_substream
+                               (<em class="parameter"><code><a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a> *self</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *const *buf</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *buf_size</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Copy data from intermediate buffer to given buffer for substream attached to
+the pair of streams. In a case that the instance is opened without
+O_NONBLOCK flag and the intermediate buffer has no data, call of the API
+is blocked till any data is available.</p>
+<div class="refsect3">
+<a name="alsarawmidi-stream-pair-read-from-substream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>The buffer to copy data. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=buf_size][<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf_size</p></td>
+<td class="parameter_description"><p>The size of buffer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsarawmidi-stream-pair-write-to-substream"></a><h3>alsarawmidi_stream_pair_write_to_substream ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsarawmidi_stream_pair_write_to_substream
+                               (<em class="parameter"><code><a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *buf</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> buf_size</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Copy data from given buffer to intermediate buffer for substream attached to
+the pair of streams. In a case that the instance is opened without
+O_NONBLOCK flag and the intermediate buffer is full, call of the API is
+blocked till the buffer has space for the data.</p>
+<div class="refsect3">
+<a name="alsarawmidi-stream-pair-write-to-substream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>The buffer to copy data. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=buf_size]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf_size</p></td>
+<td class="parameter_description"><p>The size of buffer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsarawmidi-stream-pair-drain-substream"></a><h3>alsarawmidi_stream_pair_drain_substream ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsarawmidi_stream_pair_drain_substream
+                               (<em class="parameter"><code><a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="alsarawmidi-alsarawmidi-enum-types.html#ALSARawmidiStreamDirection" title="enum ALSARawmidiStreamDirection"><span class="type">ALSARawmidiStreamDirection</span></a> direction</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsarawmidi-stream-pair-drop-substream"></a><h3>alsarawmidi_stream_pair_drop_substream ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsarawmidi_stream_pair_drop_substream
+                               (<em class="parameter"><code><a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="alsarawmidi-alsarawmidi-enum-types.html#ALSARawmidiStreamDirection" title="enum ALSARawmidiStreamDirection"><span class="type">ALSARawmidiStreamDirection</span></a> direction</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsarawmidi-stream-pair-create-source"></a><h3>alsarawmidi_stream_pair_create_source ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsarawmidi_stream_pair_create_source (<em class="parameter"><code><a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a> *self</code></em>,
+                                       <em class="parameter"><code><a href="../glib/glib-The-Main-Event-Loop.html#GSource"><span class="type">GSource</span></a> **gsrc</code></em>,
+                                       <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Allocate GSource structure to handle events from ALSA rawmidi character
+device for input substream.</p>
+<div class="refsect3">
+<a name="alsarawmidi-stream-pair-create-source.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gsrc</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-The-Main-Event-Loop.html#GSource"><span class="type">GSource</span></a> to handle events from ALSA rawmidi character device. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ALSARawmidiStreamPair.other_details"></a><h2>Types and Values</h2>
+</div>
+<div class="refsect1">
+<a name="ALSARawmidiStreamPair.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ALSARawmidiStreamPair--devnode"></a><h3>The <code class="literal">“devnode”</code> property</h3>
+<pre class="programlisting">  “devnode”                  <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The full path of rawmidi character device.</p>
+<p>Flags: Read</p>
+<p>Default value: ""</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ALSARawmidiStreamPair.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ALSARawmidiStreamPair-handle-disconnection"></a><h3>The <code class="literal">“handle-disconnection”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a> *self,
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)</pre>
+<p>When the sound card is not available anymore due to unbinding driver or
+hot unplugging, this signal is emit. The owner of this object should
+call <code class="function">g_object_free()</code> as quickly as possible to release ALSA rawmidi
+character device.</p>
+<div class="refsect3">
+<a name="ALSARawmidiStreamPair-handle-disconnection.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSARawmidiStreamPair-handle-messages"></a><h3>The <code class="literal">“handle-messages”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a> *self,
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)</pre>
+<p>When any input message is available, this event is emit.</p>
+<div class="refsect3">
+<a name="ALSARawmidiStreamPair-handle-messages.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="type">ALSARawmidiStreamPair</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

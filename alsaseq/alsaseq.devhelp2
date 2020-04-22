@@ -117,6 +117,7 @@
     <keyword type="function" name="alsaseq_addr_new ()" link="alsaseq-addr.html#alsaseq-addr-new"/>
     <keyword type="function" name="alsaseq_addr_get_client_id ()" link="alsaseq-addr.html#alsaseq-addr-get-client-id"/>
     <keyword type="function" name="alsaseq_addr_get_port_id ()" link="alsaseq-addr.html#alsaseq-addr-get-port-id"/>
+    <keyword type="function" name="alsaseq_addr_equal ()" link="alsaseq-addr.html#alsaseq-addr-equal"/>
     <keyword type="function" name="alsaseq_port_info_new ()" link="ALSASeqPortInfo.html#alsaseq-port-info-new"/>
     <keyword type="property" name="The “addr” property" link="ALSASeqPortInfo.html#ALSASeqPortInfo--addr"/>
     <keyword type="property" name="The “attrs” property" link="ALSASeqPortInfo.html#ALSASeqPortInfo--attrs"/>

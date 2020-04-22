@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="ALSARawmidi Reference Manual" link="index.html" author="" name="alsarawmidi" version="2" language="c">
+  <chapters>
+    <sub name="ALSARawmidi enumerations" link="alsarawmidi-enumerations.html">
+      <sub name="alsarawmidi-enum-types" link="alsarawmidi-alsarawmidi-enum-types.html"/>
+    </sub>
+    <sub name="ALSARawmidi global methods" link="alsarawmidi-global-methods.html">
+      <sub name="query" link="alsarawmidi-query.html"/>
+    </sub>
+    <sub name="ALSARawmidi objects" link="alsarawmidi-objects.html">
+      <sub name="ALSARawmidiStreamPair" link="ALSARawmidiStreamPair.html"/>
+      <sub name="ALSARawmidiSubstreamInfo" link="ALSARawmidiSubstreamInfo.html"/>
+      <sub name="ALSARawmidiSubstreamParams" link="ALSARawmidiSubstreamParams.html"/>
+      <sub name="ALSARawmidiSubstreamStatus" link="ALSARawmidiSubstreamStatus.html"/>
+    </sub>
+    <sub name="Index of all symbols" link="index-all.html"/>
+    <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+  </chapters>
+  <functions>
+    <keyword type="enum" name="enum ALSARawmidiStreamDirection" link="alsarawmidi-alsarawmidi-enum-types.html#ALSARawmidiStreamDirection"/>
+    <keyword type="enum" name="enum ALSARawmidiStreamPairInfoFlag" link="alsarawmidi-alsarawmidi-enum-types.html#ALSARawmidiStreamPairInfoFlag"/>
+    <keyword type="function" name="alsarawmidi_get_device_id_list ()" link="alsarawmidi-query.html#alsarawmidi-get-device-id-list"/>
+    <keyword type="function" name="alsarawmidi_get_rawmidi_sysname ()" link="alsarawmidi-query.html#alsarawmidi-get-rawmidi-sysname"/>
+    <keyword type="function" name="alsarawmidi_get_rawmidi_devnode ()" link="alsarawmidi-query.html#alsarawmidi-get-rawmidi-devnode"/>
+    <keyword type="function" name="alsarawmidi_get_subdevice_id_list ()" link="alsarawmidi-query.html#alsarawmidi-get-subdevice-id-list"/>
+    <keyword type="function" name="alsarawmidi_get_substream_info ()" link="alsarawmidi-query.html#alsarawmidi-get-substream-info"/>
+    <keyword type="function" name="alsarawmidi_stream_pair_new ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-new"/>
+    <keyword type="function" name="alsarawmidi_stream_pair_open ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-open"/>
+    <keyword type="function" name="alsarawmidi_stream_pair_get_substream_info ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-get-substream-info"/>
+    <keyword type="function" name="alsarawmidi_stream_pair_set_substream_params ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-set-substream-params"/>
+    <keyword type="function" name="alsarawmidi_stream_pair_get_substream_status ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-get-substream-status"/>
+    <keyword type="function" name="alsarawmidi_stream_pair_read_from_substream ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-read-from-substream"/>
+    <keyword type="function" name="alsarawmidi_stream_pair_write_to_substream ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-write-to-substream"/>
+    <keyword type="function" name="alsarawmidi_stream_pair_drain_substream ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-drain-substream"/>
+    <keyword type="function" name="alsarawmidi_stream_pair_drop_substream ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-drop-substream"/>
+    <keyword type="function" name="alsarawmidi_stream_pair_create_source ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-create-source"/>
+    <keyword type="property" name="The “devnode” property" link="ALSARawmidiStreamPair.html#ALSARawmidiStreamPair--devnode"/>
+    <keyword type="signal" name="The “handle-disconnection” signal" link="ALSARawmidiStreamPair.html#ALSARawmidiStreamPair-handle-disconnection"/>
+    <keyword type="signal" name="The “handle-messages” signal" link="ALSARawmidiStreamPair.html#ALSARawmidiStreamPair-handle-messages"/>
+    <keyword type="property" name="The “card-id” property" link="ALSARawmidiSubstreamInfo.html#ALSARawmidiSubstreamInfo--card-id"/>
+    <keyword type="property" name="The “device-id” property" link="ALSARawmidiSubstreamInfo.html#ALSARawmidiSubstreamInfo--device-id"/>
+    <keyword type="property" name="The “direction” property" link="ALSARawmidiSubstreamInfo.html#ALSARawmidiSubstreamInfo--direction"/>
+    <keyword type="property" name="The “flags” property" link="ALSARawmidiSubstreamInfo.html#ALSARawmidiSubstreamInfo--flags"/>
+    <keyword type="property" name="The “id” property" link="ALSARawmidiSubstreamInfo.html#ALSARawmidiSubstreamInfo--id"/>
+    <keyword type="property" name="The “name” property" link="ALSARawmidiSubstreamInfo.html#ALSARawmidiSubstreamInfo--name"/>
+    <keyword type="property" name="The “subdevice-id” property" link="ALSARawmidiSubstreamInfo.html#ALSARawmidiSubstreamInfo--subdevice-id"/>
+    <keyword type="property" name="The “subdevice-name” property" link="ALSARawmidiSubstreamInfo.html#ALSARawmidiSubstreamInfo--subdevice-name"/>
+    <keyword type="property" name="The “subdevices-avail” property" link="ALSARawmidiSubstreamInfo.html#ALSARawmidiSubstreamInfo--subdevices-avail"/>
+    <keyword type="property" name="The “subdevices-count” property" link="ALSARawmidiSubstreamInfo.html#ALSARawmidiSubstreamInfo--subdevices-count"/>
+    <keyword type="function" name="alsarawmidi_substream_params_new ()" link="ALSARawmidiSubstreamParams.html#alsarawmidi-substream-params-new"/>
+    <keyword type="property" name="The “active-sensing” property" link="ALSARawmidiSubstreamParams.html#ALSARawmidiSubstreamParams--active-sensing"/>
+    <keyword type="property" name="The “avail-min” property" link="ALSARawmidiSubstreamParams.html#ALSARawmidiSubstreamParams--avail-min"/>
+    <keyword type="property" name="The “buffer-size” property" link="ALSARawmidiSubstreamParams.html#ALSARawmidiSubstreamParams--buffer-size"/>
+    <keyword type="function" name="alsarawmidi_substream_status_new ()" link="ALSARawmidiSubstreamStatus.html#alsarawmidi-substream-status-new"/>
+    <keyword type="property" name="The “avail” property" link="ALSARawmidiSubstreamStatus.html#ALSARawmidiSubstreamStatus--avail"/>
+    <keyword type="property" name="The “xruns” property" link="ALSARawmidiSubstreamStatus.html#ALSARawmidiSubstreamStatus--xruns"/>
+    <keyword type="constant" name="ALSARAWMIDI_STREAM_DIRECTION_OUTPUT" link="alsarawmidi-alsarawmidi-enum-types.html#ALSARAWMIDI-STREAM-DIRECTION-OUTPUT:CAPS"/>
+    <keyword type="constant" name="ALSARAWMIDI_STREAM_DIRECTION_INPUT" link="alsarawmidi-alsarawmidi-enum-types.html#ALSARAWMIDI-STREAM-DIRECTION-INPUT:CAPS"/>
+    <keyword type="constant" name="ALSARAWMIDI_STREAM_PAIR_INFO_FLAG_OUTPUT" link="alsarawmidi-alsarawmidi-enum-types.html#ALSARAWMIDI-STREAM-PAIR-INFO-FLAG-OUTPUT:CAPS"/>
+    <keyword type="constant" name="ALSARAWMIDI_STREAM_PAIR_INFO_FLAG_INPUT" link="alsarawmidi-alsarawmidi-enum-types.html#ALSARAWMIDI-STREAM-PAIR-INFO-FLAG-INPUT:CAPS"/>
+    <keyword type="constant" name="ALSARAWMIDI_STREAM_PAIR_INFO_FLAG_DUPLEX" link="alsarawmidi-alsarawmidi-enum-types.html#ALSARAWMIDI-STREAM-PAIR-INFO-FLAG-DUPLEX:CAPS"/>
+  </functions>
+</book>
