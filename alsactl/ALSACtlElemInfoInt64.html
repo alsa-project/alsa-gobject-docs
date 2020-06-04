@@ -8,7 +8,7 @@
 <link rel="up" href="alsactl-objects.html" title="ALSACtl objects">
 <link rel="prev" href="ALSACtlElemInfoIec60958.html" title="ALSACtlElemInfoIec60958">
 <link rel="next" href="ALSACtlElemValue.html" title="ALSACtlElemValue">
-<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -29,7 +29,8 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="ALSACtlElemInfoInt64.top_of_page"></a>ALSACtlElemInfoInt64</span></h2>
-<p>ALSACtlElemInfoInt64</p>
+<p>ALSACtlElemInfoInt64 — A GObject-derived object to represent the information
+of integer64 type of element</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -37,8 +38,8 @@
 <a name="ALSACtlElemInfoInt64.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="function_type">
@@ -85,12 +86,17 @@
 <div class="refsect1">
 <a name="ALSACtlElemInfoInt64.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfo">ALSACtlElemInfo</a>
+    <span class="lineart">╰──</span> <a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfoInt">ALSACtlElemInfo</a>
         <span class="lineart">╰──</span> ALSACtlElemInfoInt64
 </pre>
 </div>
 <div class="refsect1">
 <a name="ALSACtlElemInfoInt64.description"></a><h2>Description</h2>
+<p>A <a class="link" href="ALSACtlElemInfoInt64.html" title="ALSACtlElemInfoInt64"><span class="type">ALSACtlElemInfoInt64</span></a> is a GObject-derived object to represent the
+information of integer type of element, which contains 64 bit integer values.
+The object inherits methods and properties of <a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfoInt"><span class="type">ALSACtlElemInfo</span></a>. A call of
+<a class="link" href="ALSACtlCard.html#alsactl-card-get-elem-info" title="alsactl_card_get_elem_info ()"><code class="function">alsactl_card_get_elem_info()</code></a> can returns the instance of object, or a call
+of <a class="link" href="ALSACtlCard.html#alsactl-card-add-elems" title="alsactl_card_add_elems ()"><code class="function">alsactl_card_add_elems()</code></a> requires the instance of object as argument.</p>
 </div>
 <div class="refsect1">
 <a name="ALSACtlElemInfoInt64.functions_details"></a><h2>Functions</h2>
@@ -106,14 +112,12 @@ alsactl_elem_info_int64_new ();</pre>
 </div>
 </div>
 <div class="refsect1">
-<a name="ALSACtlElemInfoInt64.other_details"></a><h2>Types and Values</h2>
-</div>
-<div class="refsect1">
 <a name="ALSACtlElemInfoInt64.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ALSACtlElemInfoInt64--max"></a><h3>The <code class="literal">“max”</code> property</h3>
 <pre class="programlisting">  “max”                      <a href="../glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></pre>
 <p>The maximum value for data of this element.</p>
+<p>Owner: ALSACtlElemInfoInt64</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
 </div>
@@ -122,6 +126,7 @@ alsactl_elem_info_int64_new ();</pre>
 <a name="ALSACtlElemInfoInt64--min"></a><h3>The <code class="literal">“min”</code> property</h3>
 <pre class="programlisting">  “min”                      <a href="../glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></pre>
 <p>The minimum value for data of this element.</p>
+<p>Owner: ALSACtlElemInfoInt64</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
 </div>
@@ -130,6 +135,7 @@ alsactl_elem_info_int64_new ();</pre>
 <a name="ALSACtlElemInfoInt64--step"></a><h3>The <code class="literal">“step”</code> property</h3>
 <pre class="programlisting">  “step”                     <a href="../glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></pre>
 <p>The gap of value for data of this element.</p>
+<p>Owner: ALSACtlElemInfoInt64</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
 </div>
@@ -138,12 +144,13 @@ alsactl_elem_info_int64_new ();</pre>
 <a name="ALSACtlElemInfoInt64--value-count"></a><h3>The <code class="literal">“value-count”</code> property</h3>
 <pre class="programlisting">  “value-count”              <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
 <p>The number of members as value of this element.</p>
+<p>Owner: ALSACtlElemInfoInt64</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.28</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>

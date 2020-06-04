@@ -5,8 +5,8 @@
 <title>ALSACtl Reference Manual: ALSACtl Reference Manual</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="ALSACtl Reference Manual">
-<link rel="next" href="alsactl-enumerations.html" title="ALSACtl enumerations">
-<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="next" href="introduction.html" title="Introduction">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -21,51 +21,61 @@
 <hr>
 </div>
 <div class="toc"><dl class="toc">
+<dt><span class="chapter"><a href="introduction.html">Introduction</a></span></dt>
 <dt><span class="chapter"><a href="alsactl-enumerations.html">ALSACtl enumerations</a></span></dt>
 <dd><dl><dt>
 <span class="refentrytitle"><a href="alsactl-alsactl-enum-types.html">alsactl-enum-types</a></span><span class="refpurpose"></span>
 </dt></dl></dd>
 <dt><span class="chapter"><a href="alsactl-global-methods.html">ALSACtl global methods</a></span></dt>
 <dd><dl><dt>
-<span class="refentrytitle"><a href="alsactl-query.html">query</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="alsactl-Global-functions-in-ALSACtl.html">Global functions in ALSACtl</a></span><span class="refpurpose"> — Global functions in ALSACtl</span>
 </dt></dl></dd>
 <dt><span class="chapter"><a href="alsactl-objects.html">ALSACtl objects</a></span></dt>
 <dd><dl>
 <dt>
-<span class="refentrytitle"><a href="ALSACtlCard.html">ALSACtlCard</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSACtlCard.html">ALSACtlCard</a></span><span class="refpurpose"> — An GObject-derived object to represent sound card</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ALSACtlCardInfo.html">ALSACtlCardInfo</a></span><span class="refpurpose"> — A GObject-derived object to represent information of
+sound card</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ALSACtlElemId.html">ALSACtlElemId</a></span><span class="refpurpose"> — A boxed object to represent the identifier of element.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ALSACtlElemInfo.html">ALSACtlElemInfoInt</a></span><span class="refpurpose"> — An abstract object to represent the common information
+of any type of element</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ALSACtlElemInfoBool.html">ALSACtlElemInfoBool</a></span><span class="refpurpose"> — A GObject-derived object to represent the information
+of boolean type of element</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ALSACtlElemInfoInt.html">ALSACtlElemInfoInt</a></span><span class="refpurpose"> — A GObject-derived object to represent the information
+of integer type of element</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ALSACtlElemInfoEnum.html">ALSACtlElemInfoEnum</a></span><span class="refpurpose"> — A GObject-derived object to represent the information
+of enumeration type of element</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ALSACtlElemInfoBytes.html">ALSACtlElemInfoBytes</a></span><span class="refpurpose"> — A GObject-derived object to represent the information
+of bytes type of element</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ALSACtlElemInfoIec60958.html">ALSACtlElemInfoIec60958</a></span><span class="refpurpose"> — A GObject-derived object to represent the information
+of IEC 60958 type of element</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ALSACtlElemInfoInt64.html">ALSACtlElemInfoInt64</a></span><span class="refpurpose"> — A GObject-derived object to represent the information
+of integer64 type of element</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="ALSACtlElemValue.html">ALSACtlElemValue</a></span><span class="refpurpose"> — A boxed object to represent the container of array of
+values for any type of element.</span>
 </dt>
 <dt>
 <span class="refentrytitle"><a href="alsactl-alsactl-sigs-marshal.html">alsactl-sigs-marshal</a></span><span class="refpurpose"></span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSACtlCardInfo.html">ALSACtlCardInfo</a></span><span class="refpurpose"></span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="alsactl-elem-id.html">elem-id</a></span><span class="refpurpose"></span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSACtlElemInfo.html">ALSACtlElemInfo</a></span><span class="refpurpose"></span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSACtlElemInfoBool.html">ALSACtlElemInfoBool</a></span><span class="refpurpose"></span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSACtlElemInfoInt.html">ALSACtlElemInfoInt</a></span><span class="refpurpose"></span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSACtlElemInfoEnum.html">ALSACtlElemInfoEnum</a></span><span class="refpurpose"></span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSACtlElemInfoBytes.html">ALSACtlElemInfoBytes</a></span><span class="refpurpose"></span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSACtlElemInfoIec60958.html">ALSACtlElemInfoIec60958</a></span><span class="refpurpose"></span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSACtlElemInfoInt64.html">ALSACtlElemInfoInt64</a></span><span class="refpurpose"></span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSACtlElemValue.html">ALSACtlElemValue</a></span><span class="refpurpose"></span>
 </dt>
 </dl></dd>
 <dt><span class="index"><a href="index-all.html">Index of all symbols</a></span></dt>
@@ -73,6 +83,6 @@
 </dl></div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.28</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>

@@ -6,9 +6,9 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="ALSACtl Reference Manual">
 <link rel="up" href="alsactl-objects.html" title="ALSACtl objects">
-<link rel="prev" href="alsactl-alsactl-sigs-marshal.html" title="alsactl-sigs-marshal">
-<link rel="next" href="alsactl-elem-id.html" title="elem-id">
-<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="prev" href="ALSACtlCard.html" title="ALSACtlCard">
+<link rel="next" href="ALSACtlElemId.html" title="ALSACtlElemId">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -21,15 +21,16 @@
 </td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
 <td><a accesskey="u" href="alsactl-objects.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
-<td><a accesskey="p" href="alsactl-alsactl-sigs-marshal.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
-<td><a accesskey="n" href="alsactl-elem-id.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+<td><a accesskey="p" href="ALSACtlCard.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ALSACtlElemId.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
 <div class="refentry">
 <a name="ALSACtlCardInfo"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="ALSACtlCardInfo.top_of_page"></a>ALSACtlCardInfo</span></h2>
-<p>ALSACtlCardInfo</p>
+<p>ALSACtlCardInfo — A GObject-derived object to represent information of
+sound card</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -94,13 +95,13 @@
 </div>
 <div class="refsect1">
 <a name="ALSACtlCardInfo.description"></a><h2>Description</h2>
+<p>A <a class="link" href="ALSACtlCardInfo.html" title="ALSACtlCardInfo"><span class="type">ALSACtlCardInfo</span></a> is a GObject-derived object to represent information of
+sound card. A call of <a class="link" href="ALSACtlCard.html#alsactl-card-get-info" title="alsactl_card_get_info ()"><code class="function">alsactl_card_get_info()</code></a> returns an instance of the
+object.</p>
 </div>
 <div class="refsect1">
 <a name="ALSACtlCardInfo.functions_details"></a><h2>Functions</h2>
 <p></p>
-</div>
-<div class="refsect1">
-<a name="ALSACtlCardInfo.other_details"></a><h2>Types and Values</h2>
 </div>
 <div class="refsect1">
 <a name="ALSACtlCardInfo.property-details"></a><h2>Property Details</h2>
@@ -108,6 +109,7 @@
 <a name="ALSACtlCardInfo--card-id"></a><h3>The <code class="literal">“card-id”</code> property</h3>
 <pre class="programlisting">  “card-id”                  <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
 <p>The numerical ID of sound card.</p>
+<p>Owner: ALSACtlCardInfo</p>
 <p>Flags: Read</p>
 <p>Default value: -1</p>
 </div>
@@ -116,6 +118,7 @@
 <a name="ALSACtlCardInfo--components"></a><h3>The <code class="literal">“components”</code> property</h3>
 <pre class="programlisting">  “components”               <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The The string with space-separated components for the sound card.</p>
+<p>Owner: ALSACtlCardInfo</p>
 <p>Flags: Read</p>
 <p>Default value: ""</p>
 </div>
@@ -124,6 +127,7 @@
 <a name="ALSACtlCardInfo--driver"></a><h3>The <code class="literal">“driver”</code> property</h3>
 <pre class="programlisting">  “driver”                   <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The name of driver bound to the sound card.</p>
+<p>Owner: ALSACtlCardInfo</p>
 <p>Flags: Read</p>
 <p>Default value: ""</p>
 </div>
@@ -132,6 +136,7 @@
 <a name="ALSACtlCardInfo--id"></a><h3>The <code class="literal">“id”</code> property</h3>
 <pre class="programlisting">  “id”                       <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The string ID of sound card.</p>
+<p>Owner: ALSACtlCardInfo</p>
 <p>Flags: Read</p>
 <p>Default value: ""</p>
 </div>
@@ -140,6 +145,7 @@
 <a name="ALSACtlCardInfo--long-name"></a><h3>The <code class="literal">“long-name”</code> property</h3>
 <pre class="programlisting">  “long-name”                <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The long name of sound card.</p>
+<p>Owner: ALSACtlCardInfo</p>
 <p>Flags: Read</p>
 <p>Default value: ""</p>
 </div>
@@ -148,6 +154,7 @@
 <a name="ALSACtlCardInfo--mixer-name"></a><h3>The <code class="literal">“mixer-name”</code> property</h3>
 <pre class="programlisting">  “mixer-name”               <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The name of mixer for the sound card.</p>
+<p>Owner: ALSACtlCardInfo</p>
 <p>Flags: Read</p>
 <p>Default value: ""</p>
 </div>
@@ -156,12 +163,13 @@
 <a name="ALSACtlCardInfo--name"></a><h3>The <code class="literal">“name”</code> property</h3>
 <pre class="programlisting">  “name”                     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The name of sound card.</p>
+<p>Owner: ALSACtlCardInfo</p>
 <p>Flags: Read</p>
 <p>Default value: ""</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.28</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>
