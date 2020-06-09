@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <book xmlns="http://www.devhelp.net/book" title="ALSAHwdep Reference Manual" link="index.html" author="" name="alsahwdep" version="2" language="c">
   <chapters>
+    <sub name="Introduction" link="introduction.html"/>
     <sub name="ALSAHwdep enumerations" link="alsahwdep-enumerations.html">
       <sub name="alsahwdep-enum-types" link="alsahwdep-alsahwdep-enum-types.html"/>
     </sub>
     <sub name="ALSAHwdep global methods" link="alsahwdep-global-methods.html">
-      <sub name="query" link="alsahwdep-query.html"/>
+      <sub name="Global functions in ALSAHwdep" link="alsahwdep-Global-functions-in-ALSAHwdep.html"/>
     </sub>
     <sub name="ALSAHwdep objects" link="alsahwdep-objects.html">
       <sub name="ALSAHwdepDeviceInfo" link="ALSAHwdepDeviceInfo.html"/>
@@ -15,10 +16,10 @@
   </chapters>
   <functions>
     <keyword type="enum" name="enum ALSAHwdepIfaceType" link="alsahwdep-alsahwdep-enum-types.html#ALSAHwdepIfaceType"/>
-    <keyword type="function" name="alsahwdep_get_device_id_list ()" link="alsahwdep-query.html#alsahwdep-get-device-id-list"/>
-    <keyword type="function" name="alsahwdep_get_hwdep_sysname ()" link="alsahwdep-query.html#alsahwdep-get-hwdep-sysname"/>
-    <keyword type="function" name="alsahwdep_get_hwdep_devnode ()" link="alsahwdep-query.html#alsahwdep-get-hwdep-devnode"/>
-    <keyword type="function" name="alsahwdep_get_device_info ()" link="alsahwdep-query.html#alsahwdep-get-device-info"/>
+    <keyword type="function" name="alsahwdep_get_device_id_list ()" link="alsahwdep-Global-functions-in-ALSAHwdep.html#alsahwdep-get-device-id-list"/>
+    <keyword type="function" name="alsahwdep_get_hwdep_sysname ()" link="alsahwdep-Global-functions-in-ALSAHwdep.html#alsahwdep-get-hwdep-sysname"/>
+    <keyword type="function" name="alsahwdep_get_hwdep_devnode ()" link="alsahwdep-Global-functions-in-ALSAHwdep.html#alsahwdep-get-hwdep-devnode"/>
+    <keyword type="function" name="alsahwdep_get_device_info ()" link="alsahwdep-Global-functions-in-ALSAHwdep.html#alsahwdep-get-device-info"/>
     <keyword type="property" name="The “card-id” property" link="ALSAHwdepDeviceInfo.html#ALSAHwdepDeviceInfo--card-id"/>
     <keyword type="property" name="The “device-id” property" link="ALSAHwdepDeviceInfo.html#ALSAHwdepDeviceInfo--device-id"/>
     <keyword type="property" name="The “id” property" link="ALSAHwdepDeviceInfo.html#ALSAHwdepDeviceInfo--id"/>

@@ -6,9 +6,9 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="ALSASeq Reference Manual">
 <link rel="up" href="index.html" title="ALSASeq Reference Manual">
-<link rel="prev" href="alsaseq-query.html" title="query">
+<link rel="prev" href="alsaseq-Global-functions-in-ALSASeq.html" title="Global functions in ALSASeq">
 <link rel="next" href="ALSASeqSystemInfo.html" title="ALSASeqSystemInfo">
-<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -16,7 +16,7 @@
 <td width="100%" align="left" class="shortcuts"></td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
 <td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
-<td><a accesskey="p" href="alsaseq-query.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="p" href="alsaseq-Global-functions-in-ALSASeq.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
 <td><a accesskey="n" href="ALSASeqSystemInfo.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
 <div class="chapter">
@@ -24,74 +24,77 @@
 <a name="alsaseq-objects"></a>ALSASeq objects</h1></div></div></div>
 <div class="toc"><dl class="toc">
 <dt>
-<span class="refentrytitle"><a href="ALSASeqSystemInfo.html">ALSASeqSystemInfo</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqSystemInfo.html">ALSASeqSystemInfo</a></span><span class="refpurpose"> — A GObject-derived object to represent information of
+ALSA Sequencer</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSASeqClientInfo.html">ALSASeqClientInfo</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqClientInfo.html">ALSASeqClientInfo</a></span><span class="refpurpose"> — A GObject-derived object to represent information of
+client.</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSASeqUserClient.html">ALSASeqUserClient</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqUserClient.html">ALSASeqUserClient</a></span><span class="refpurpose"> — A GObject-derived object to represent user client</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSASeqClientPool.html">ALSASeqClientPool</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqClientPool.html">ALSASeqClientPool</a></span><span class="refpurpose"> — A GObject-derived object to represent information of
+pool owned by client.</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="alsaseq-addr.html">addr</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqAddr.html">ALSASeqAddr</a></span><span class="refpurpose"> — A boxed object to represent address in ALSA Sequencer.</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSASeqPortInfo.html">ALSASeqPortInfo</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqPortInfo.html">ALSASeqPortInfo</a></span><span class="refpurpose"> — A GObject-derived object to represent information of port</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSASeqSubscribeData.html">ALSASeqSubscribeData</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqSubscribeData.html">ALSASeqSubscribeData</a></span><span class="refpurpose"> — A GObject-derived object to represent data for
+subscription between ports.</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSASeqEvent.html">ALSASeqEvent</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqEventCntr.html">ALSASeqEventCntr</a></span><span class="refpurpose"> — A GObject-derived object to represent container for a
+batch of events</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSASeqEventFixed.html">ALSASeqEventFixed</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqTstamp.html">ALSASeqTstamp</a></span><span class="refpurpose"> — A boxed object to represent timestamp</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSASeqEventVariable.html">ALSASeqEventVariable</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqEventDataResult.html">ALSASeqEventDataResult</a></span><span class="refpurpose"> — A boxed object to represent data of result event</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="alsaseq-tstamp.html">tstamp</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqEventDataNote.html">ALSASeqEventDataNote</a></span><span class="refpurpose"> — A boxed object to represent data of note event</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="alsaseq-event-data-result.html">event-data-result</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqEventDataCtl.html">ALSASeqEventDataCtl</a></span><span class="refpurpose"> — A boxed object to represent data of control event</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="alsaseq-event-data-note.html">event-data-note</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqEventDataQueue.html">ALSASeqEventDataQueue</a></span><span class="refpurpose"> — A boxed object to represent data of queue event</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="alsaseq-event-data-ctl.html">event-data-ctl</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqEventDataConnect.html">ALSASeqEventDataConnect</a></span><span class="refpurpose"> — A boxed object to represent data of connect event</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="alsaseq-event-data-queue.html">event-data-queue</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqQueueInfo.html">ALSASeqQueueInfo</a></span><span class="refpurpose"> — A GObject-derived object to represent information of
+queue</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="alsaseq-event-data-connect.html">event-data-connect</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqQueueStatus.html">ALSASeqQueueStatus</a></span><span class="refpurpose"> — A GObject-derived object to represent status of queue</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSASeqQueueInfo.html">ALSASeqQueueInfo</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqQueueTempo.html">ALSASeqQueueTempo</a></span><span class="refpurpose"> — A GObject-derived object to represent tempo of queue</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSASeqQueueStatus.html">ALSASeqQueueStatus</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqQueueTimer.html">ALSASeqQueueTimer</a></span><span class="refpurpose"> — A GObject-derived abstract object to represent timer for
+queue</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSASeqQueueTempo.html">ALSASeqQueueTempo</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSASeqQueueTimerAlsa.html">ALSASeqQueueTimerAlsa</a></span><span class="refpurpose"> — A GObject-derived object to represent timer instance for
+queue</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSASeqQueueTimer.html">ALSASeqQueueTimer</a></span><span class="refpurpose"></span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSASeqQueueTimerAlsa.html">ALSASeqQueueTimerAlsa</a></span><span class="refpurpose"></span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="alsaseq-remove-filter.html">remove-filter</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="alsaseq-ALSASeqRemoveFilter.html">ALSASeqRemoveFilter</a></span><span class="refpurpose"> — A boxed object to represent filter to remove scheduled
+event in queue</span>
 </dt>
 </dl></div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.28</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>

@@ -6,9 +6,9 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="ALSATimer Reference Manual">
 <link rel="up" href="alsatimer-objects.html" title="ALSATimer objects">
-<link rel="prev" href="alsatimer-device-id.html" title="device-id">
+<link rel="prev" href="ALSATimerDeviceId.html" title="ALSATimerDeviceId">
 <link rel="next" href="ALSATimerDeviceStatus.html" title="ALSATimerDeviceStatus">
-<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -21,7 +21,7 @@
 </td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
 <td><a accesskey="u" href="alsatimer-objects.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
-<td><a accesskey="p" href="alsatimer-device-id.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="p" href="ALSATimerDeviceId.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
 <td><a accesskey="n" href="ALSATimerDeviceStatus.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
 <div class="refentry">
@@ -29,7 +29,8 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="ALSATimerDeviceInfo.top_of_page"></a>ALSATimerDeviceInfo</span></h2>
-<p>ALSATimerDeviceInfo</p>
+<p>ALSATimerDeviceInfo — A GObject-derived object to represent information of
+timer device.</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -95,13 +96,14 @@
 </div>
 <div class="refsect1">
 <a name="ALSATimerDeviceInfo.description"></a><h2>Description</h2>
+<p>A <a class="link" href="ALSATimerDeviceInfo.html" title="ALSATimerDeviceInfo"><span class="type">ALSATimerDeviceInfo</span></a> is a GObject-derived object to represent information
+of timer device. The call of <a class="link" href="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-get-device-info" title="alsatimer_get_device_info ()"><code class="function">alsatimer_get_device_info()</code></a> returns an instance
+of the object according to the identifier of timer device.</p>
+<p>The object wraps 'struct snd_timer_ginfo' in UAPI of Linux sound subsystem.</p>
 </div>
 <div class="refsect1">
 <a name="ALSATimerDeviceInfo.functions_details"></a><h2>Functions</h2>
 <p></p>
-</div>
-<div class="refsect1">
-<a name="ALSATimerDeviceInfo.other_details"></a><h2>Types and Values</h2>
 </div>
 <div class="refsect1">
 <a name="ALSATimerDeviceInfo.property-details"></a><h2>Property Details</h2>
@@ -109,6 +111,7 @@
 <a name="ALSATimerDeviceInfo--card-id"></a><h3>The <code class="literal">“card-id”</code> property</h3>
 <pre class="programlisting">  “card-id”                  <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
 <p>The numerical ID of sound card.</p>
+<p>Owner: ALSATimerDeviceInfo</p>
 <p>Flags: Read</p>
 <p>Default value: -1</p>
 </div>
@@ -117,6 +120,7 @@
 <a name="ALSATimerDeviceInfo--flags"></a><h3>The <code class="literal">“flags”</code> property</h3>
 <pre class="programlisting">  “flags”                    <a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerDeviceInfoFlag" title="enum ALSATimerDeviceInfoFlag"><span class="type">ALSATimerDeviceInfoFlag</span></a></pre>
 <p>The flags of timer, one of ALSATimerDeviceInfoFlag.</p>
+<p>Owner: ALSATimerDeviceInfo</p>
 <p>Flags: Read</p>
 </div>
 <hr>
@@ -124,6 +128,7 @@
 <a name="ALSATimerDeviceInfo--id"></a><h3>The <code class="literal">“id”</code> property</h3>
 <pre class="programlisting">  “id”                       <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The string ID of timer.</p>
+<p>Owner: ALSATimerDeviceInfo</p>
 <p>Flags: Read</p>
 <p>Default value: ""</p>
 </div>
@@ -132,6 +137,7 @@
 <a name="ALSATimerDeviceInfo--instance-count"></a><h3>The <code class="literal">“instance-count”</code> property</h3>
 <pre class="programlisting">  “instance-count”           <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
 <p>The number of instances for the timer.</p>
+<p>Owner: ALSATimerDeviceInfo</p>
 <p>Flags: Read</p>
 <p>Default value: 0</p>
 </div>
@@ -140,6 +146,7 @@
 <a name="ALSATimerDeviceInfo--name"></a><h3>The <code class="literal">“name”</code> property</h3>
 <pre class="programlisting">  “name”                     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The name of timer.</p>
+<p>Owner: ALSATimerDeviceInfo</p>
 <p>Flags: Read</p>
 <p>Default value: ""</p>
 </div>
@@ -148,6 +155,7 @@
 <a name="ALSATimerDeviceInfo--resolution"></a><h3>The <code class="literal">“resolution”</code> property</h3>
 <pre class="programlisting">  “resolution”               <a href="../glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
 <p>The resolution in nano seconds.</p>
+<p>Owner: ALSATimerDeviceInfo</p>
 <p>Flags: Read</p>
 <p>Default value: 0</p>
 </div>
@@ -156,6 +164,7 @@
 <a name="ALSATimerDeviceInfo--resolution-max"></a><h3>The <code class="literal">“resolution-max”</code> property</h3>
 <pre class="programlisting">  “resolution-max”           <a href="../glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
 <p>The resolution in nano seconds.</p>
+<p>Owner: ALSATimerDeviceInfo</p>
 <p>Flags: Read</p>
 <p>Default value: 0</p>
 </div>
@@ -164,12 +173,13 @@
 <a name="ALSATimerDeviceInfo--resolution-min"></a><h3>The <code class="literal">“resolution-min”</code> property</h3>
 <pre class="programlisting">  “resolution-min”           <a href="../glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
 <p>The resolution in nano seconds.</p>
+<p>Owner: ALSATimerDeviceInfo</p>
 <p>Flags: Read</p>
 <p>Default value: 0</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.28</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <book xmlns="http://www.devhelp.net/book" title="ALSARawmidi Reference Manual" link="index.html" author="" name="alsarawmidi" version="2" language="c">
   <chapters>
+    <sub name="Introduction" link="introduction.html"/>
     <sub name="ALSARawmidi enumerations" link="alsarawmidi-enumerations.html">
       <sub name="alsarawmidi-enum-types" link="alsarawmidi-alsarawmidi-enum-types.html"/>
     </sub>
     <sub name="ALSARawmidi global methods" link="alsarawmidi-global-methods.html">
-      <sub name="query" link="alsarawmidi-query.html"/>
+      <sub name="Global functions in ALSARawmidi" link="alsarawmidi-Global-functions-in-ALSARawmidi.html"/>
     </sub>
     <sub name="ALSARawmidi objects" link="alsarawmidi-objects.html">
       <sub name="ALSARawmidiStreamPair" link="ALSARawmidiStreamPair.html"/>
@@ -19,11 +20,11 @@
   <functions>
     <keyword type="enum" name="enum ALSARawmidiStreamDirection" link="alsarawmidi-alsarawmidi-enum-types.html#ALSARawmidiStreamDirection"/>
     <keyword type="enum" name="enum ALSARawmidiStreamPairInfoFlag" link="alsarawmidi-alsarawmidi-enum-types.html#ALSARawmidiStreamPairInfoFlag"/>
-    <keyword type="function" name="alsarawmidi_get_device_id_list ()" link="alsarawmidi-query.html#alsarawmidi-get-device-id-list"/>
-    <keyword type="function" name="alsarawmidi_get_rawmidi_sysname ()" link="alsarawmidi-query.html#alsarawmidi-get-rawmidi-sysname"/>
-    <keyword type="function" name="alsarawmidi_get_rawmidi_devnode ()" link="alsarawmidi-query.html#alsarawmidi-get-rawmidi-devnode"/>
-    <keyword type="function" name="alsarawmidi_get_subdevice_id_list ()" link="alsarawmidi-query.html#alsarawmidi-get-subdevice-id-list"/>
-    <keyword type="function" name="alsarawmidi_get_substream_info ()" link="alsarawmidi-query.html#alsarawmidi-get-substream-info"/>
+    <keyword type="function" name="alsarawmidi_get_device_id_list ()" link="alsarawmidi-Global-functions-in-ALSARawmidi.html#alsarawmidi-get-device-id-list"/>
+    <keyword type="function" name="alsarawmidi_get_rawmidi_sysname ()" link="alsarawmidi-Global-functions-in-ALSARawmidi.html#alsarawmidi-get-rawmidi-sysname"/>
+    <keyword type="function" name="alsarawmidi_get_rawmidi_devnode ()" link="alsarawmidi-Global-functions-in-ALSARawmidi.html#alsarawmidi-get-rawmidi-devnode"/>
+    <keyword type="function" name="alsarawmidi_get_subdevice_id_list ()" link="alsarawmidi-Global-functions-in-ALSARawmidi.html#alsarawmidi-get-subdevice-id-list"/>
+    <keyword type="function" name="alsarawmidi_get_substream_info ()" link="alsarawmidi-Global-functions-in-ALSARawmidi.html#alsarawmidi-get-substream-info"/>
     <keyword type="function" name="alsarawmidi_stream_pair_new ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-new"/>
     <keyword type="function" name="alsarawmidi_stream_pair_open ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-open"/>
     <keyword type="function" name="alsarawmidi_stream_pair_get_substream_info ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-get-substream-info"/>

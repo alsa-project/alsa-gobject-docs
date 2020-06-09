@@ -8,7 +8,7 @@
 <link rel="up" href="alsaseq-objects.html" title="ALSASeq objects">
 <link rel="prev" href="ALSASeqClientInfo.html" title="ALSASeqClientInfo">
 <link rel="next" href="ALSASeqClientPool.html" title="ALSASeqClientPool">
-<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -30,7 +30,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="ALSASeqUserClient.top_of_page"></a>ALSASeqUserClient</span></h2>
-<p>ALSASeqUserClient</p>
+<p>ALSASeqUserClient — A GObject-derived object to represent user client</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -38,8 +38,8 @@
 <a name="ALSASeqUserClient.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -240,9 +240,9 @@
 <a name="ALSASeqUserClient.signals"></a><h2>Signals</h2>
 <div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
-<col width="150px" class="signals_return">
-<col width="300px" class="signals_name">
-<col width="200px" class="signals_flags">
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
 </colgroup>
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
@@ -259,6 +259,15 @@
 </div>
 <div class="refsect1">
 <a name="ALSASeqUserClient.description"></a><h2>Description</h2>
+<p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> is a GObject-derived object to represent user client.
+Any port can be added to the client as destination or source for any event.</p>
+<p>When the call of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-open" title="alsaseq_user_client_open ()"><code class="function">alsaseq_user_client_open()</code></a>, the object maintain file
+descriptor till object destruction. The call of
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-create-source" title="alsaseq_user_client_create_source ()"><code class="function">alsaseq_user_client_create_source()</code></a> returns the instance of GSource. Once
+attached to the GSource, GMainContext/GMainLoop is available as event
+dispatcher. The <span class="type">handle-event</span> GObject signal is emitted in the event
+dispatcher to notify the event. The call of
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-schedule-event" title="alsaseq_user_client_schedule_event ()"><code class="function">alsaseq_user_client_schedule_event()</code></a> schedules event with given parameters.</p>
 </div>
 <div class="refsect1">
 <a name="ALSASeqUserClient.functions_details"></a><h2>Functions</h2>
@@ -382,7 +391,7 @@ alsaseq_user_client_get_info (<em class="parameter"><code><a class="link" href="
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsaseq_user_client_create_port (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
                                  <em class="parameter"><code><a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a> *port_info</code></em>,
-                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *port_id</code></em>,
+                                 <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *port_id</code></em>,
                                  <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Create a port into the client.</p>
 <div class="refsect3">
@@ -464,7 +473,6 @@ alsaseq_user_client_update_port (<em class="parameter"><code><a class="link" hre
 <a name="alsaseq-user-client-delete-port"></a><h3>alsaseq_user_client_delete_port ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsaseq_user_client_delete_port (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
-                                 <em class="parameter"><code><a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a> *port_info</code></em>,
                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> port_id</code></em>,
                                  <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Delete a port from the client.</p>
@@ -480,11 +488,6 @@ alsaseq_user_client_delete_port (<em class="parameter"><code><a class="link" hre
 <tr>
 <td class="parameter_name"><p>self</p></td>
 <td class="parameter_description"><p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>port_info</p></td>
-<td class="parameter_description"><p>A <a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -578,7 +581,8 @@ alsaseq_user_client_get_pool (<em class="parameter"><code><a class="link" href="
 <a name="alsaseq-user-client-schedule-event"></a><h3>alsaseq_user_client_schedule_event ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsaseq_user_client_schedule_event (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
-                                    <em class="parameter"><code><a class="link" href="ALSASeqEvent.html" title="ALSASeqEvent"><span class="type">ALSASeqEvent</span></a> *event</code></em>,
+                                    <em class="parameter"><code><a class="link" href="ALSASeqEventCntr.html" title="ALSASeqEventCntr"><span class="type">ALSASeqEventCntr</span></a> *ev_cntr</code></em>,
+                                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> count</code></em>,
                                     <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Deliver the event immediately, or schedule it into memory pool of the client.</p>
 <div class="refsect3">
@@ -596,8 +600,13 @@ alsaseq_user_client_schedule_event (<em class="parameter"><code><a class="link" 
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
-<td class="parameter_name"><p>event</p></td>
-<td class="parameter_description"><p>An instance of <a class="link" href="ALSASeqEvent.html" title="ALSASeqEvent"><span class="type">ALSASeqEvent</span></a> to schedule.</p></td>
+<td class="parameter_name"><p>ev_cntr</p></td>
+<td class="parameter_description"><p>An instance of <a class="link" href="ALSASeqEventCntr.html" title="ALSASeqEventCntr"><span class="type">ALSASeqEventCntr</span></a> pointing to events.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>The number of events in the ev_cntr to write.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1093,14 +1102,12 @@ alsaseq_user_client_remove_events (<em class="parameter"><code><a class="link" h
 </div>
 </div>
 <div class="refsect1">
-<a name="ALSASeqUserClient.other_details"></a><h2>Types and Values</h2>
-</div>
-<div class="refsect1">
 <a name="ALSASeqUserClient.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ALSASeqUserClient--client-id"></a><h3>The <code class="literal">“client-id”</code> property</h3>
 <pre class="programlisting">  “client-id”                <a href="../glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a></pre>
 <p>The numerical ID of the client.</p>
+<p>Owner: ALSASeqUserClient</p>
 <p>Flags: Read</p>
 <p>Default value: 0</p>
 </div>
@@ -1111,9 +1118,12 @@ alsaseq_user_client_remove_events (<em class="parameter"><code><a class="link" h
 <a name="ALSASeqUserClient-handle-event"></a><h3>The <code class="literal">“handle-event”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self,
-               <a class="link" href="ALSASeqEvent.html" title="ALSASeqEvent"><span class="type">ALSASeqEvent</span></a>      *event,
+               <a class="link" href="ALSASeqEventCntr.html" title="ALSASeqEventCntr"><span class="type">ALSASeqEventCntr</span></a>  *ev_cntr,
                <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>           user_data)</pre>
-<p>When event occurs, this signal is emit with an object for the event.</p>
+<p>When event occurs, this signal is emit with the instance of object which
+points to a batch of events. The instance should not be passed directly
+to <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-schedule-event" title="alsaseq_user_client_schedule_event ()"><code class="function">alsaseq_user_client_schedule_event()</code></a> again because its memory
+alignment is different for events with blob data.</p>
 <div class="refsect3">
 <a name="ALSASeqUserClient-handle-event.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1129,8 +1139,9 @@ user_function (<a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserC
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
-<td class="parameter_name"><p>event</p></td>
-<td class="parameter_description"><p>An object derived from <a class="link" href="ALSASeqEvent.html" title="ALSASeqEvent"><span class="type">ALSASeqEvent</span></a>. </p></td>
+<td class="parameter_name"><p>ev_cntr</p></td>
+<td class="parameter_description"><p>The instance of ALSASeqEventCntr which
+points to the batch of events. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -1146,6 +1157,6 @@ user_function (<a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserC
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.28</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>

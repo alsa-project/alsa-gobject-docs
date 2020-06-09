@@ -6,9 +6,9 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="ALSASeq Reference Manual">
 <link rel="up" href="alsaseq-objects.html" title="ALSASeq objects">
-<link rel="prev" href="alsaseq-event-data-connect.html" title="event-data-connect">
+<link rel="prev" href="ALSASeqEventDataConnect.html" title="ALSASeqEventDataConnect">
 <link rel="next" href="ALSASeqQueueStatus.html" title="ALSASeqQueueStatus">
-<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -21,7 +21,7 @@
 </td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
 <td><a accesskey="u" href="alsaseq-objects.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
-<td><a accesskey="p" href="alsaseq-event-data-connect.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="p" href="ALSASeqEventDataConnect.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
 <td><a accesskey="n" href="ALSASeqQueueStatus.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
 <div class="refentry">
@@ -29,7 +29,8 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="ALSASeqQueueInfo.top_of_page"></a>ALSASeqQueueInfo</span></h2>
-<p>ALSASeqQueueInfo</p>
+<p>ALSASeqQueueInfo — A GObject-derived object to represent information of
+queue</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -37,8 +38,8 @@
 <a name="ALSASeqQueueInfo.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="function_type">
@@ -91,6 +92,12 @@
 </div>
 <div class="refsect1">
 <a name="ALSASeqQueueInfo.description"></a><h2>Description</h2>
+<p>A <a class="link" href="ALSASeqQueueInfo.html" title="ALSASeqQueueInfo"><span class="type">ALSASeqQueueInfo</span></a> is a GObject-derived object to represent information of
+queue. The call of <a class="link" href="alsaseq-Global-functions-in-ALSASeq.html#alsaseq-get-queue-info-by-id" title="alsaseq_get_queue_info_by_id ()"><code class="function">alsaseq_get_queue_info_by_id()</code></a> and
+<a class="link" href="alsaseq-Global-functions-in-ALSASeq.html#alsaseq-get-queue-info-by-name" title="alsaseq_get_queue_info_by_name ()"><code class="function">alsaseq_get_queue_info_by_name()</code></a> returns the instance of object. The call of
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-create-queue" title="alsaseq_user_client_create_queue ()"><code class="function">alsaseq_user_client_create_queue()</code></a> and <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-update-queue" title="alsaseq_user_client_update_queue ()"><code class="function">alsaseq_user_client_update_queue()</code></a>
+requires the instance of object.</p>
+<p>The object wraps 'struct snd_seq_queue_info' in UAPI of Linux sound subsystem.</p>
 </div>
 <div class="refsect1">
 <a name="ALSASeqQueueInfo.functions_details"></a><h2>Functions</h2>
@@ -106,14 +113,12 @@ alsaseq_queue_info_new ();</pre>
 </div>
 </div>
 <div class="refsect1">
-<a name="ALSASeqQueueInfo.other_details"></a><h2>Types and Values</h2>
-</div>
-<div class="refsect1">
 <a name="ALSASeqQueueInfo.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ALSASeqQueueInfo--client-id"></a><h3>The <code class="literal">“client-id”</code> property</h3>
 <pre class="programlisting">  “client-id”                <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
 <p>The numerical ID of client which owns the queue, except for one of ALSASeqSpecificClientId.</p>
+<p>Owner: ALSASeqQueueInfo</p>
 <p>Flags: Read / Write</p>
 <p>Default value: -1</p>
 </div>
@@ -122,6 +127,7 @@ alsaseq_queue_info_new ();</pre>
 <a name="ALSASeqQueueInfo--locked"></a><h3>The <code class="literal">“locked”</code> property</h3>
 <pre class="programlisting">  “locked”                   <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
 <p>Whether to be locked by the other queues or not.</p>
+<p>Owner: ALSASeqQueueInfo</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
 </div>
@@ -130,6 +136,7 @@ alsaseq_queue_info_new ();</pre>
 <a name="ALSASeqQueueInfo--name"></a><h3>The <code class="literal">“name”</code> property</h3>
 <pre class="programlisting">  “name”                     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The name of queue.</p>
+<p>Owner: ALSASeqQueueInfo</p>
 <p>Flags: Read / Write</p>
 <p>Default value: ""</p>
 </div>
@@ -138,12 +145,13 @@ alsaseq_queue_info_new ();</pre>
 <a name="ALSASeqQueueInfo--queue-id"></a><h3>The <code class="literal">“queue-id”</code> property</h3>
 <pre class="programlisting">  “queue-id”                 <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
 <p>The numerical ID of queue, except for one of ALSASeqSpecificClientId.</p>
+<p>Owner: ALSASeqQueueInfo</p>
 <p>Flags: Read / Write</p>
 <p>Default value: -1</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.28</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>

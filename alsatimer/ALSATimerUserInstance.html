@@ -8,7 +8,7 @@
 <link rel="up" href="alsatimer-objects.html" title="ALSATimer objects">
 <link rel="prev" href="ALSATimerDeviceParams.html" title="ALSATimerDeviceParams">
 <link rel="next" href="ALSATimerInstanceInfo.html" title="ALSATimerInstanceInfo">
-<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -29,7 +29,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="ALSATimerUserInstance.top_of_page"></a>ALSATimerUserInstance</span></h2>
-<p>ALSATimerUserInstance</p>
+<p>ALSATimerUserInstance — A GObject-derived object to represent user instance</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -37,8 +37,8 @@
 <a name="ALSATimerUserInstance.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -144,9 +144,9 @@
 <a name="ALSATimerUserInstance.signals"></a><h2>Signals</h2>
 <div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
-<col width="150px" class="signals_return">
-<col width="300px" class="signals_name">
-<col width="200px" class="signals_flags">
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
 </colgroup>
 <tbody>
 <tr>
@@ -170,6 +170,13 @@
 </div>
 <div class="refsect1">
 <a name="ALSATimerUserInstance.description"></a><h2>Description</h2>
+<p>A <a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> is a GObject-derived object to represent information
+of user instance attached to any timer device or the other instance as slave.
+After calling <a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-open" title="alsatimer_user_instance_open ()"><code class="function">alsatimer_user_instance_open()</code></a>, the object maintains file
+descriptor till object destruction. After calling
+<a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-attach" title="alsatimer_user_instance_attach ()"><code class="function">alsatimer_user_instance_attach()</code></a> or <a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-attach-as-slave" title="alsatimer_user_instance_attach_as_slave ()"><code class="function">alsatimer_user_instance_attach_as_slave()</code></a>,
+the user instance is attached to any timer device or the other instance as
+slave.</p>
 </div>
 <div class="refsect1">
 <a name="ALSATimerUserInstance.functions_details"></a><h2>Functions</h2>
@@ -219,7 +226,7 @@ alsatimer_user_instance_open (<em class="parameter"><code><a class="link" href="
 <a name="alsatimer-user-instance-attach"></a><h3>alsatimer_user_instance_attach ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_attach (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
-                                <em class="parameter"><code><a class="link" href="alsatimer-device-id.html#ALSATimerDeviceId"><span class="type">ALSATimerDeviceId</span></a> *device_id</code></em>,
+                                <em class="parameter"><code><a class="link" href="ALSATimerDeviceId.html" title="ALSATimerDeviceId"><span class="type">ALSATimerDeviceId</span></a> *device_id</code></em>,
                                 <em class="parameter"><code><a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerEventDataType" title="enum ALSATimerEventDataType"><span class="type">ALSATimerEventDataType</span></a> event_data_type</code></em>,
                                 <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Attach the instance to the timer device.</p>
@@ -239,7 +246,7 @@ alsatimer_user_instance_attach (<em class="parameter"><code><a class="link" href
 </tr>
 <tr>
 <td class="parameter_name"><p>device_id</p></td>
-<td class="parameter_description"><p>A <a class="link" href="alsatimer-device-id.html#ALSATimerDeviceId"><span class="type">ALSATimerDeviceId</span></a> to which the instance is attached.</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSATimerDeviceId.html" title="ALSATimerDeviceId"><span class="type">ALSATimerDeviceId</span></a> to which the instance is attached.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -578,9 +585,6 @@ alsatimer_user_instance_continue (<em class="parameter"><code><a class="link" hr
 </div>
 </div>
 <div class="refsect1">
-<a name="ALSATimerUserInstance.other_details"></a><h2>Types and Values</h2>
-</div>
-<div class="refsect1">
 <a name="ALSATimerUserInstance.signal-details"></a><h2>Signal Details</h2>
 <div class="refsect2">
 <a name="ALSATimerUserInstance-handle-disconnection"></a><h3>The <code class="literal">“handle-disconnection”</code> signal</h3>
@@ -655,6 +659,6 @@ user_function (<a class="link" href="ALSATimerUserInstance.html" title="ALSATime
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.28</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>

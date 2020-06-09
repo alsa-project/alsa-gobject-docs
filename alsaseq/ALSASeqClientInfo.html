@@ -8,7 +8,7 @@
 <link rel="up" href="alsaseq-objects.html" title="ALSASeq objects">
 <link rel="prev" href="ALSASeqSystemInfo.html" title="ALSASeqSystemInfo">
 <link rel="next" href="ALSASeqUserClient.html" title="ALSASeqUserClient">
-<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -29,7 +29,8 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="ALSASeqClientInfo.top_of_page"></a>ALSASeqClientInfo</span></h2>
-<p>ALSASeqClientInfo</p>
+<p>ALSASeqClientInfo — A GObject-derived object to represent information of
+client.</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -37,8 +38,8 @@
 <a name="ALSASeqClientInfo.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -134,6 +135,11 @@
 </div>
 <div class="refsect1">
 <a name="ALSASeqClientInfo.description"></a><h2>Description</h2>
+<p>A <a class="link" href="ALSASeqClientInfo.html" title="ALSASeqClientInfo"><span class="type">ALSASeqClientInfo</span></a> is a GObject-derived object to represent information of
+client. The call of <a class="link" href="alsaseq-Global-functions-in-ALSASeq.html#alsaseq-get-client-info" title="alsaseq_get_client_info ()"><code class="function">alsaseq_get_client_info()</code></a> returns the instance of object.
+The call of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-set-info" title="alsaseq_user_client_set_info ()"><code class="function">alsaseq_user_client_set_info()</code></a> and <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-get-info" title="alsaseq_user_client_get_info ()"><code class="function">alsaseq_user_client_get_info()</code></a>
+require the instance of object.</p>
+<p>The object wraps 'struct snd_seq_client_info' in UAPI of Linux sound subsystem.</p>
 </div>
 <div class="refsect1">
 <a name="ALSASeqClientInfo.functions_details"></a><h2>Functions</h2>
@@ -231,14 +237,12 @@ for the type of event to listen. </p></td>
 </div>
 </div>
 <div class="refsect1">
-<a name="ALSASeqClientInfo.other_details"></a><h2>Types and Values</h2>
-</div>
-<div class="refsect1">
 <a name="ALSASeqClientInfo.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ALSASeqClientInfo--card-id"></a><h3>The <code class="literal">“card-id”</code> property</h3>
 <pre class="programlisting">  “card-id”                  <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
 <p>The numerical ID of sound card.</p>
+<p>Owner: ALSASeqClientInfo</p>
 <p>Flags: Read / Write</p>
 <p>Default value: -1</p>
 </div>
@@ -247,6 +251,7 @@ for the type of event to listen. </p></td>
 <a name="ALSASeqClientInfo--client-id"></a><h3>The <code class="literal">“client-id”</code> property</h3>
 <pre class="programlisting">  “client-id”                <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
 <p>The numerical ID of client. One of ALSASeqSpecificClientId is available as well as any numerical value.</p>
+<p>Owner: ALSASeqClientInfo</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= 0</p>
 <p>Default value: 0</p>
@@ -256,6 +261,7 @@ for the type of event to listen. </p></td>
 <a name="ALSASeqClientInfo--filter-attributes"></a><h3>The <code class="literal">“filter-attributes”</code> property</h3>
 <pre class="programlisting">  “filter-attributes”        <a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqFilterAttrFlag" title="enum ALSASeqFilterAttrFlag"><span class="type">ALSASeqFilterAttrFlag</span></a></pre>
 <p>The attributes for event filter.</p>
+<p>Owner: ALSASeqClientInfo</p>
 <p>Flags: Read / Write</p>
 </div>
 <hr>
@@ -263,6 +269,7 @@ for the type of event to listen. </p></td>
 <a name="ALSASeqClientInfo--lost-count"></a><h3>The <code class="literal">“lost-count”</code> property</h3>
 <pre class="programlisting">  “lost-count”               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
 <p>The number of lost events.</p>
+<p>Owner: ALSASeqClientInfo</p>
 <p>Flags: Read</p>
 <p>Allowed values: &gt;= 0</p>
 <p>Default value: 0</p>
@@ -272,6 +279,7 @@ for the type of event to listen. </p></td>
 <a name="ALSASeqClientInfo--name"></a><h3>The <code class="literal">“name”</code> property</h3>
 <pre class="programlisting">  “name”                     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The name of client.</p>
+<p>Owner: ALSASeqClientInfo</p>
 <p>Flags: Read / Write</p>
 <p>Default value: ""</p>
 </div>
@@ -280,6 +288,7 @@ for the type of event to listen. </p></td>
 <a name="ALSASeqClientInfo--port-count"></a><h3>The <code class="literal">“port-count”</code> property</h3>
 <pre class="programlisting">  “port-count”               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
 <p>The number of ports opened by the client.</p>
+<p>Owner: ALSASeqClientInfo</p>
 <p>Flags: Read</p>
 <p>Allowed values: &gt;= 0</p>
 <p>Default value: 0</p>
@@ -289,6 +298,7 @@ for the type of event to listen. </p></td>
 <a name="ALSASeqClientInfo--process-id"></a><h3>The <code class="literal">“process-id”</code> property</h3>
 <pre class="programlisting">  “process-id”               <a href="../glib/glib-Basic-Types.html#glong"><span class="type">glong</span></a></pre>
 <p>The process ID for user client, otherwise -1.</p>
+<p>Owner: ALSASeqClientInfo</p>
 <p>Flags: Read</p>
 <p>Default value: -1</p>
 </div>
@@ -297,6 +307,7 @@ for the type of event to listen. </p></td>
 <a name="ALSASeqClientInfo--type"></a><h3>The <code class="literal">“type”</code> property</h3>
 <pre class="programlisting">  “type”                     <a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqClientType" title="enum ALSASeqClientType"><span class="type">ALSASeqClientType</span></a></pre>
 <p>The type of client, one of ALSASeqClientType.</p>
+<p>Owner: ALSASeqClientInfo</p>
 <p>Flags: Read / Write</p>
 <p>Default value: ALSASEQ_CLIENT_TYPE_NONE</p>
 </div>
@@ -305,12 +316,13 @@ for the type of event to listen. </p></td>
 <a name="ALSASeqClientInfo--use-filter"></a><h3>The <code class="literal">“use-filter”</code> property</h3>
 <pre class="programlisting">  “use-filter”               <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
 <p>Whether using filter to receive event or not.</p>
+<p>Owner: ALSASeqClientInfo</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.28</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>

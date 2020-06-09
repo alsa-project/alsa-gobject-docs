@@ -5,8 +5,8 @@
 <title>ALSATimer Reference Manual: ALSATimer Reference Manual</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="ALSATimer Reference Manual">
-<link rel="next" href="alsatimer-enumerations.html" title="ALSATimer enumerations">
-<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="next" href="introduction.html" title="Introduction">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -21,48 +21,60 @@
 <hr>
 </div>
 <div class="toc"><dl class="toc">
+<dt><span class="chapter"><a href="introduction.html">Introduction</a></span></dt>
 <dt><span class="chapter"><a href="alsatimer-enumerations.html">ALSATimer enumerations</a></span></dt>
 <dd><dl><dt>
 <span class="refentrytitle"><a href="alsatimer-alsatimer-enum-types.html">alsatimer-enum-types</a></span><span class="refpurpose"></span>
 </dt></dl></dd>
 <dt><span class="chapter"><a href="alsatimer-global-methods.html">ALSATimer global methods</a></span></dt>
 <dd><dl><dt>
-<span class="refentrytitle"><a href="alsatimer-query.html">query</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="alsatimer-Global-functions-in-ALSATimer.html">Global functions in ALSATimer</a></span><span class="refpurpose"> — Global functions available without holding any
+file descriptor</span>
 </dt></dl></dd>
 <dt><span class="chapter"><a href="alsatimer-objects.html">ALSATimer objects</a></span></dt>
 <dd><dl>
 <dt>
-<span class="refentrytitle"><a href="alsatimer-device-id.html">device-id</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSATimerDeviceId.html">ALSATimerDeviceId</a></span><span class="refpurpose"> — A boxed object to represent the identifier of timer
+device.</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSATimerDeviceInfo.html">ALSATimerDeviceInfo</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSATimerDeviceInfo.html">ALSATimerDeviceInfo</a></span><span class="refpurpose"> — A GObject-derived object to represent information of
+timer device.</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSATimerDeviceStatus.html">ALSATimerDeviceStatus</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSATimerDeviceStatus.html">ALSATimerDeviceStatus</a></span><span class="refpurpose"> — A GObject-derived object to represent status of timer
+device.</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSATimerDeviceParams.html">ALSATimerDeviceParams</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSATimerDeviceParams.html">ALSATimerDeviceParams</a></span><span class="refpurpose"> — A GObject-derived object to represent parameter of timer
+device.</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSATimerUserInstance.html">ALSATimerUserInstance</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSATimerUserInstance.html">ALSATimerUserInstance</a></span><span class="refpurpose"> — A GObject-derived object to represent user instance</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSATimerInstanceInfo.html">ALSATimerInstanceInfo</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSATimerInstanceInfo.html">ALSATimerInstanceInfo</a></span><span class="refpurpose"> — A GObject-derived object to represent information of
+user instance</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSATimerInstanceStatus.html">ALSATimerInstanceStatus</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSATimerInstanceStatus.html">ALSATimerInstanceStatus</a></span><span class="refpurpose"> — A GObject-derived object to represent status of user
+instance</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSATimerInstanceParams.html">ALSATimerInstanceParams</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSATimerInstanceParams.html">ALSATimerInstanceParams</a></span><span class="refpurpose"> — A GObject-derived object to represent parameters of user
+instance</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSATimerEventData.html">ALSATimerEventData</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSATimerEventData.html">ALSATimerEventData</a></span><span class="refpurpose"> — A GObject-derived abstract object to represent common
+data of event</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSATimerEventDataTick.html">ALSATimerEventDataTick</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSATimerEventDataTick.html">ALSATimerEventDataTick</a></span><span class="refpurpose"> — A GObject-derived object to represent event of timer with
+tick count</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="ALSATimerEventDataTimestamp.html">ALSATimerEventDataTimestamp</a></span><span class="refpurpose"></span>
+<span class="refentrytitle"><a href="ALSATimerEventDataTimestamp.html">ALSATimerEventDataTimestamp</a></span><span class="refpurpose"> — A GObject-derived object to represent event of timer with
+timestamp</span>
 </dt>
 </dl></dd>
 <dt><span class="index"><a href="index-all.html">Index of all symbols</a></span></dt>
@@ -70,6 +82,6 @@
 </dl></div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.28</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>

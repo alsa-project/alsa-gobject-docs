@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <book xmlns="http://www.devhelp.net/book" title="ALSATimer Reference Manual" link="index.html" author="" name="alsatimer" version="2" language="c">
   <chapters>
+    <sub name="Introduction" link="introduction.html"/>
     <sub name="ALSATimer enumerations" link="alsatimer-enumerations.html">
       <sub name="alsatimer-enum-types" link="alsatimer-alsatimer-enum-types.html"/>
     </sub>
     <sub name="ALSATimer global methods" link="alsatimer-global-methods.html">
-      <sub name="query" link="alsatimer-query.html"/>
+      <sub name="Global functions in ALSATimer" link="alsatimer-Global-functions-in-ALSATimer.html"/>
     </sub>
     <sub name="ALSATimer objects" link="alsatimer-objects.html">
-      <sub name="device-id" link="alsatimer-device-id.html"/>
+      <sub name="ALSATimerDeviceId" link="ALSATimerDeviceId.html"/>
       <sub name="ALSATimerDeviceInfo" link="ALSATimerDeviceInfo.html"/>
       <sub name="ALSATimerDeviceStatus" link="ALSATimerDeviceStatus.html"/>
       <sub name="ALSATimerDeviceParams" link="ALSATimerDeviceParams.html"/>
@@ -31,17 +32,18 @@
     <keyword type="enum" name="enum ALSATimerInstanceParamFlag" link="alsatimer-alsatimer-enum-types.html#ALSATimerInstanceParamFlag"/>
     <keyword type="enum" name="enum ALSATimerEventType" link="alsatimer-alsatimer-enum-types.html#ALSATimerEventType"/>
     <keyword type="enum" name="enum ALSATimerEventDataType" link="alsatimer-alsatimer-enum-types.html#ALSATimerEventDataType"/>
-    <keyword type="function" name="alsatimer_get_sysname ()" link="alsatimer-query.html#alsatimer-get-sysname"/>
-    <keyword type="function" name="alsatimer_get_devnode ()" link="alsatimer-query.html#alsatimer-get-devnode"/>
-    <keyword type="function" name="alsatimer_get_device_id_list ()" link="alsatimer-query.html#alsatimer-get-device-id-list"/>
-    <keyword type="function" name="alsatimer_get_device_info ()" link="alsatimer-query.html#alsatimer-get-device-info"/>
-    <keyword type="function" name="alsatimer_get_device_status ()" link="alsatimer-query.html#alsatimer-get-device-status"/>
-    <keyword type="function" name="alsatimer_set_device_params ()" link="alsatimer-query.html#alsatimer-set-device-params"/>
-    <keyword type="function" name="alsatimer_device_id_new ()" link="alsatimer-device-id.html#alsatimer-device-id-new"/>
-    <keyword type="function" name="alsatimer_device_id_get_class ()" link="alsatimer-device-id.html#alsatimer-device-id-get-class"/>
-    <keyword type="function" name="alsatimer_device_id_get_card_id ()" link="alsatimer-device-id.html#alsatimer-device-id-get-card-id"/>
-    <keyword type="function" name="alsatimer_device_id_get_device_id ()" link="alsatimer-device-id.html#alsatimer-device-id-get-device-id"/>
-    <keyword type="function" name="alsatimer_device_id_get_subdevice_id ()" link="alsatimer-device-id.html#alsatimer-device-id-get-subdevice-id"/>
+    <keyword type="function" name="alsatimer_get_sysname ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-get-sysname"/>
+    <keyword type="function" name="alsatimer_get_devnode ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-get-devnode"/>
+    <keyword type="function" name="alsatimer_get_device_id_list ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-get-device-id-list"/>
+    <keyword type="function" name="alsatimer_get_device_info ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-get-device-info"/>
+    <keyword type="function" name="alsatimer_get_device_status ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-get-device-status"/>
+    <keyword type="function" name="alsatimer_set_device_params ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-set-device-params"/>
+    <keyword type="function" name="alsatimer_get_tstamp_source ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-get-tstamp-source"/>
+    <keyword type="function" name="alsatimer_device_id_new ()" link="ALSATimerDeviceId.html#alsatimer-device-id-new"/>
+    <keyword type="function" name="alsatimer_device_id_get_class ()" link="ALSATimerDeviceId.html#alsatimer-device-id-get-class"/>
+    <keyword type="function" name="alsatimer_device_id_get_card_id ()" link="ALSATimerDeviceId.html#alsatimer-device-id-get-card-id"/>
+    <keyword type="function" name="alsatimer_device_id_get_device_id ()" link="ALSATimerDeviceId.html#alsatimer-device-id-get-device-id"/>
+    <keyword type="function" name="alsatimer_device_id_get_subdevice_id ()" link="ALSATimerDeviceId.html#alsatimer-device-id-get-subdevice-id"/>
     <keyword type="property" name="The “card-id” property" link="ALSATimerDeviceInfo.html#ALSATimerDeviceInfo--card-id"/>
     <keyword type="property" name="The “flags” property" link="ALSATimerDeviceInfo.html#ALSATimerDeviceInfo--flags"/>
     <keyword type="property" name="The “id” property" link="ALSATimerDeviceInfo.html#ALSATimerDeviceInfo--id"/>

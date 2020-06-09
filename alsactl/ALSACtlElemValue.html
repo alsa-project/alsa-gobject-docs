@@ -184,8 +184,9 @@ values for any type of element.</p>
 <p>A <a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> is boxed object to represent the container of values for
 any type of element. The arrays of values for each type of element shares the
 same storage, thus it's important for applications to distinguish the type of
-element in advance of accesing the array. The object is used for the call of
+element in advance of accessing the array. The object is used for the call of
 <a class="link" href="ALSACtlCard.html#alsactl-card-write-elem-value" title="alsactl_card_write_elem_value ()"><code class="function">alsactl_card_write_elem_value()</code></a> and <a class="link" href="ALSACtlCard.html#alsactl-card-read-elem-value" title="alsactl_card_read_elem_value ()"><code class="function">alsactl_card_read_elem_value()</code></a>.</p>
+<p>The object wraps 'struct snd_ctl_elem_value' in UAPI of Linux sound subsystem.</p>
 </div>
 <div class="refsect1">
 <a name="ALSACtlElemValue.functions_details"></a><h2>Functions</h2>

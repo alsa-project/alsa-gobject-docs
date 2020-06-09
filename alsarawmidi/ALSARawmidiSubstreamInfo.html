@@ -8,7 +8,7 @@
 <link rel="up" href="alsarawmidi-objects.html" title="ALSARawmidi objects">
 <link rel="prev" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair">
 <link rel="next" href="ALSARawmidiSubstreamParams.html" title="ALSARawmidiSubstreamParams">
-<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -29,7 +29,8 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="ALSARawmidiSubstreamInfo.top_of_page"></a>ALSARawmidiSubstreamInfo</span></h2>
-<p>ALSARawmidiSubstreamInfo</p>
+<p>ALSARawmidiSubstreamInfo — A GObject-derived object to represent information of
+substream</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -106,13 +107,15 @@
 </div>
 <div class="refsect1">
 <a name="ALSARawmidiSubstreamInfo.description"></a><h2>Description</h2>
+<p>A <a class="link" href="ALSARawmidiSubstreamInfo.html" title="ALSARawmidiSubstreamInfo"><span class="type">ALSARawmidiSubstreamInfo</span></a> is a GObject-derived object to represent
+information of substream attached to the pair of streams. The call of
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-get-substream-info" title="alsarawmidi_stream_pair_get_substream_info ()"><code class="function">alsarawmidi_stream_pair_get_substream_info()</code></a> or
+<a class="link" href="alsarawmidi-Global-functions-in-ALSARawmidi.html#alsarawmidi-get-substream-info" title="alsarawmidi_get_substream_info ()"><code class="function">alsarawmidi_get_substream_info()</code></a> return the instance of object.</p>
+<p>The object wraps 'struct snd_rawmidi_info' in UAPI of Linux sound subsystem.</p>
 </div>
 <div class="refsect1">
 <a name="ALSARawmidiSubstreamInfo.functions_details"></a><h2>Functions</h2>
 <p></p>
-</div>
-<div class="refsect1">
-<a name="ALSARawmidiSubstreamInfo.other_details"></a><h2>Types and Values</h2>
 </div>
 <div class="refsect1">
 <a name="ALSARawmidiSubstreamInfo.property-details"></a><h2>Property Details</h2>
@@ -120,6 +123,7 @@
 <a name="ALSARawmidiSubstreamInfo--card-id"></a><h3>The <code class="literal">“card-id”</code> property</h3>
 <pre class="programlisting">  “card-id”                  <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
 <p>The numerical ID of sound card.</p>
+<p>Owner: ALSARawmidiSubstreamInfo</p>
 <p>Flags: Read</p>
 <p>Default value: -1</p>
 </div>
@@ -128,6 +132,7 @@
 <a name="ALSARawmidiSubstreamInfo--device-id"></a><h3>The <code class="literal">“device-id”</code> property</h3>
 <pre class="programlisting">  “device-id”                <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
 <p>The numerical ID of rawmidi device.</p>
+<p>Owner: ALSARawmidiSubstreamInfo</p>
 <p>Flags: Read</p>
 <p>Allowed values: &lt;= G_MAXINT</p>
 <p>Default value: 0</p>
@@ -137,6 +142,7 @@
 <a name="ALSARawmidiSubstreamInfo--direction"></a><h3>The <code class="literal">“direction”</code> property</h3>
 <pre class="programlisting">  “direction”                <a class="link" href="alsarawmidi-alsarawmidi-enum-types.html#ALSARawmidiStreamDirection" title="enum ALSARawmidiStreamDirection"><span class="type">ALSARawmidiStreamDirection</span></a></pre>
 <p>The direction of stream, one of ALSARawmidiStreamDirection.</p>
+<p>Owner: ALSARawmidiSubstreamInfo</p>
 <p>Flags: Read</p>
 <p>Default value: ALSARAWMIDI_STREAM_DIRECTION_OUTPUT</p>
 </div>
@@ -145,6 +151,7 @@
 <a name="ALSARawmidiSubstreamInfo--flags"></a><h3>The <code class="literal">“flags”</code> property</h3>
 <pre class="programlisting">  “flags”                    <a class="link" href="alsarawmidi-alsarawmidi-enum-types.html#ALSARawmidiStreamPairInfoFlag" title="enum ALSARawmidiStreamPairInfoFlag"><span class="type">ALSARawmidiStreamPairInfoFlag</span></a></pre>
 <p>The information flags of rawmidi device with flags of ALSARawmidiStreamPairInfoFlag.</p>
+<p>Owner: ALSARawmidiSubstreamInfo</p>
 <p>Flags: Read</p>
 </div>
 <hr>
@@ -152,6 +159,7 @@
 <a name="ALSARawmidiSubstreamInfo--id"></a><h3>The <code class="literal">“id”</code> property</h3>
 <pre class="programlisting">  “id”                       <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The string ID of rawmidi device.</p>
+<p>Owner: ALSARawmidiSubstreamInfo</p>
 <p>Flags: Read</p>
 <p>Default value: ""</p>
 </div>
@@ -160,6 +168,7 @@
 <a name="ALSARawmidiSubstreamInfo--name"></a><h3>The <code class="literal">“name”</code> property</h3>
 <pre class="programlisting">  “name”                     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The name of rawmidi device.</p>
+<p>Owner: ALSARawmidiSubstreamInfo</p>
 <p>Flags: Read</p>
 <p>Default value: ""</p>
 </div>
@@ -168,6 +177,7 @@
 <a name="ALSARawmidiSubstreamInfo--subdevice-id"></a><h3>The <code class="literal">“subdevice-id”</code> property</h3>
 <pre class="programlisting">  “subdevice-id”             <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
 <p>The numerical ID of subdevice for rawmidi device..</p>
+<p>Owner: ALSARawmidiSubstreamInfo</p>
 <p>Flags: Read</p>
 <p>Allowed values: &lt;= G_MAXINT</p>
 <p>Default value: 0</p>
@@ -177,6 +187,7 @@
 <a name="ALSARawmidiSubstreamInfo--subdevice-name"></a><h3>The <code class="literal">“subdevice-name”</code> property</h3>
 <pre class="programlisting">  “subdevice-name”           <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The name of subdevice for the direction and the subdevice-id.</p>
+<p>Owner: ALSARawmidiSubstreamInfo</p>
 <p>Flags: Read</p>
 <p>Default value: ""</p>
 </div>
@@ -185,6 +196,7 @@
 <a name="ALSARawmidiSubstreamInfo--subdevices-avail"></a><h3>The <code class="literal">“subdevices-avail”</code> property</h3>
 <pre class="programlisting">  “subdevices-avail”         <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
 <p>The current number of available subdevices on the rawmidi device for the direction.</p>
+<p>Owner: ALSARawmidiSubstreamInfo</p>
 <p>Flags: Read</p>
 <p>Allowed values: &lt;= G_MAXINT</p>
 <p>Default value: 0</p>
@@ -194,6 +206,7 @@
 <a name="ALSARawmidiSubstreamInfo--subdevices-count"></a><h3>The <code class="literal">“subdevices-count”</code> property</h3>
 <pre class="programlisting">  “subdevices-count”         <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
 <p>The number of subdevices on the rawmidi device for the direction.</p>
+<p>Owner: ALSARawmidiSubstreamInfo</p>
 <p>Flags: Read</p>
 <p>Allowed values: &lt;= G_MAXINT</p>
 <p>Default value: 0</p>
@@ -201,6 +214,6 @@
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.28</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>
