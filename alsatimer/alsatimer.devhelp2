@@ -17,9 +17,9 @@
       <sub name="ALSATimerInstanceInfo" link="ALSATimerInstanceInfo.html"/>
       <sub name="ALSATimerInstanceStatus" link="ALSATimerInstanceStatus.html"/>
       <sub name="ALSATimerInstanceParams" link="ALSATimerInstanceParams.html"/>
-      <sub name="ALSATimerEventData" link="ALSATimerEventData.html"/>
+      <sub name="ALSATimerEvent" link="ALSATimerEvent.html"/>
       <sub name="ALSATimerEventDataTick" link="ALSATimerEventDataTick.html"/>
-      <sub name="ALSATimerEventDataTimestamp" link="ALSATimerEventDataTimestamp.html"/>
+      <sub name="ALSATimerEventDataTstamp" link="ALSATimerEventDataTstamp.html"/>
     </sub>
     <sub name="Index of all symbols" link="index-all.html"/>
     <sub name="Annotation Glossary" link="annotation-glossary.html"/>
@@ -77,7 +77,7 @@
     <keyword type="property" name="The “id” property" link="ALSATimerInstanceInfo.html#ALSATimerInstanceInfo--id"/>
     <keyword type="property" name="The “name” property" link="ALSATimerInstanceInfo.html#ALSATimerInstanceInfo--name"/>
     <keyword type="property" name="The “resolution” property" link="ALSATimerInstanceInfo.html#ALSATimerInstanceInfo--resolution"/>
-    <keyword type="function" name="alsatimer_instance_status_get_timestamp ()" link="ALSATimerInstanceStatus.html#alsatimer-instance-status-get-timestamp"/>
+    <keyword type="function" name="alsatimer_instance_status_get_tstamp ()" link="ALSATimerInstanceStatus.html#alsatimer-instance-status-get-tstamp"/>
     <keyword type="property" name="The “interval” property" link="ALSATimerInstanceStatus.html#ALSATimerInstanceStatus--interval"/>
     <keyword type="property" name="The “lost” property" link="ALSATimerInstanceStatus.html#ALSATimerInstanceStatus--lost"/>
     <keyword type="property" name="The “overrun” property" link="ALSATimerInstanceStatus.html#ALSATimerInstanceStatus--overrun"/>
@@ -88,12 +88,13 @@
     <keyword type="property" name="The “flags” property" link="ALSATimerInstanceParams.html#ALSATimerInstanceParams--flags"/>
     <keyword type="property" name="The “interval” property" link="ALSATimerInstanceParams.html#ALSATimerInstanceParams--interval"/>
     <keyword type="property" name="The “queue-size” property" link="ALSATimerInstanceParams.html#ALSATimerInstanceParams--queue-size"/>
-    <keyword type="property" name="The “type” property" link="ALSATimerEventData.html#ALSATimerEventData--type"/>
-    <keyword type="property" name="The “resolution” property" link="ALSATimerEventDataTick.html#ALSATimerEventDataTick--resolution"/>
-    <keyword type="property" name="The “ticks” property" link="ALSATimerEventDataTick.html#ALSATimerEventDataTick--ticks"/>
-    <keyword type="function" name="alsatimer_event_data_timestamp_get_timestamp ()" link="ALSATimerEventDataTimestamp.html#alsatimer-event-data-timestamp-get-timestamp"/>
-    <keyword type="property" name="The “event” property" link="ALSATimerEventDataTimestamp.html#ALSATimerEventDataTimestamp--event"/>
-    <keyword type="property" name="The “value” property" link="ALSATimerEventDataTimestamp.html#ALSATimerEventDataTimestamp--value"/>
+    <keyword type="function" name="alsatimer_event_get_tick_data ()" link="ALSATimerEvent.html#alsatimer-event-get-tick-data"/>
+    <keyword type="function" name="alsatimer_event_get_tstamp_data ()" link="ALSATimerEvent.html#alsatimer-event-get-tstamp-data"/>
+    <keyword type="function" name="alsatimer_event_data_tick_get_resolution ()" link="ALSATimerEventDataTick.html#alsatimer-event-data-tick-get-resolution"/>
+    <keyword type="function" name="alsatimer_event_data_tick_get_ticks ()" link="ALSATimerEventDataTick.html#alsatimer-event-data-tick-get-ticks"/>
+    <keyword type="function" name="alsatimer_event_data_tstamp_get_event ()" link="ALSATimerEventDataTstamp.html#alsatimer-event-data-tstamp-get-event"/>
+    <keyword type="function" name="alsatimer_event_data_tstamp_get_tstamp ()" link="ALSATimerEventDataTstamp.html#alsatimer-event-data-tstamp-get-tstamp"/>
+    <keyword type="function" name="alsatimer_event_data_tstamp_get_val ()" link="ALSATimerEventDataTstamp.html#alsatimer-event-data-tstamp-get-val"/>
     <keyword type="constant" name="ALSATIMER_CLASS_NONE" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-CLASS-NONE:CAPS"/>
     <keyword type="constant" name="ALSATIMER_CLASS_GLOBAL" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-CLASS-GLOBAL:CAPS"/>
     <keyword type="constant" name="ALSATIMER_CLASS_CARD" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-CLASS-CARD:CAPS"/>
@@ -123,6 +124,6 @@
     <keyword type="constant" name="ALSATIMER_EVENT_TYPE_MSUSPEND" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-EVENT-TYPE-MSUSPEND:CAPS"/>
     <keyword type="constant" name="ALSATIMER_EVENT_TYPE_MRESUME" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-EVENT-TYPE-MRESUME:CAPS"/>
     <keyword type="constant" name="ALSATIMER_EVENT_DATA_TYPE_TICK" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-EVENT-DATA-TYPE-TICK:CAPS"/>
-    <keyword type="constant" name="ALSATIMER_EVENT_DATA_TYPE_TIMESTAMP" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-EVENT-DATA-TYPE-TIMESTAMP:CAPS"/>
+    <keyword type="constant" name="ALSATIMER_EVENT_DATA_TYPE_TSTAMP" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-EVENT-DATA-TYPE-TSTAMP:CAPS"/>
   </functions>
 </book>

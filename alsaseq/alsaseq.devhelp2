@@ -27,7 +27,7 @@
       <sub name="ALSASeqQueueStatus" link="ALSASeqQueueStatus.html"/>
       <sub name="ALSASeqQueueTempo" link="ALSASeqQueueTempo.html"/>
       <sub name="ALSASeqQueueTimer" link="ALSASeqQueueTimer.html"/>
-      <sub name="ALSASeqQueueTimerAlsa" link="ALSASeqQueueTimerAlsa.html"/>
+      <sub name="ALSASeqQueueTimerDataAlsa" link="ALSASeqQueueTimerDataAlsa.html"/>
       <sub name="ALSASeqRemoveFilter" link="alsaseq-ALSASeqRemoveFilter.html"/>
     </sub>
     <sub name="Index of all symbols" link="index-all.html"/>
@@ -235,11 +235,15 @@
     <keyword type="property" name="The “queue-id” property" link="ALSASeqQueueTempo.html#ALSASeqQueueTempo--queue-id"/>
     <keyword type="property" name="The “resolution” property" link="ALSASeqQueueTempo.html#ALSASeqQueueTempo--resolution"/>
     <keyword type="property" name="The “tempo” property" link="ALSASeqQueueTempo.html#ALSASeqQueueTempo--tempo"/>
+    <keyword type="function" name="alsaseq_queue_timer_new ()" link="ALSASeqQueueTimer.html#alsaseq-queue-timer-new"/>
+    <keyword type="function" name="alsaseq_queue_timer_get_alsa_data ()" link="ALSASeqQueueTimer.html#alsaseq-queue-timer-get-alsa-data"/>
+    <keyword type="function" name="alsaseq_queue_timer_set_alsa_data ()" link="ALSASeqQueueTimer.html#alsaseq-queue-timer-set-alsa-data"/>
     <keyword type="property" name="The “queue-id” property" link="ALSASeqQueueTimer.html#ALSASeqQueueTimer--queue-id"/>
     <keyword type="property" name="The “type” property" link="ALSASeqQueueTimer.html#ALSASeqQueueTimer--type"/>
-    <keyword type="function" name="alsaseq_queue_timer_alsa_new ()" link="ALSASeqQueueTimerAlsa.html#alsaseq-queue-timer-alsa-new"/>
-    <keyword type="property" name="The “resolution” property" link="ALSASeqQueueTimerAlsa.html#ALSASeqQueueTimerAlsa--resolution"/>
-    <keyword type="property" name="The “timer-device-id” property" link="ALSASeqQueueTimerAlsa.html#ALSASeqQueueTimerAlsa--timer-device-id"/>
+    <keyword type="function" name="alsaseq_queue_timer_data_alsa_get_device_id ()" link="ALSASeqQueueTimerDataAlsa.html#alsaseq-queue-timer-data-alsa-get-device-id"/>
+    <keyword type="function" name="alsaseq_queue_timer_data_alsa_set_device_id ()" link="ALSASeqQueueTimerDataAlsa.html#alsaseq-queue-timer-data-alsa-set-device-id"/>
+    <keyword type="function" name="alsaseq_queue_timer_data_alsa_get_resolution ()" link="ALSASeqQueueTimerDataAlsa.html#alsaseq-queue-timer-data-alsa-get-resolution"/>
+    <keyword type="function" name="alsaseq_queue_timer_data_alsa_set_resolution ()" link="ALSASeqQueueTimerDataAlsa.html#alsaseq-queue-timer-data-alsa-set-resolution"/>
     <keyword type="function" name="alsaseq_remove_filter_new_with_dest_addr ()" link="alsaseq-ALSASeqRemoveFilter.html#alsaseq-remove-filter-new-with-dest-addr"/>
     <keyword type="function" name="alsaseq_remove_filter_new_with_note_channel ()" link="alsaseq-ALSASeqRemoveFilter.html#alsaseq-remove-filter-new-with-note-channel"/>
     <keyword type="function" name="alsaseq_remove_filter_new_with_event_type ()" link="alsaseq-ALSASeqRemoveFilter.html#alsaseq-remove-filter-new-with-event-type"/>

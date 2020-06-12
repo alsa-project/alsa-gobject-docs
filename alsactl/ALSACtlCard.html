@@ -396,7 +396,7 @@ alsactl_card_lock_elem (<em class="parameter"><code><a class="link" href="ALSACt
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_get_elem_info (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                             <em class="parameter"><code>const <a class="link" href="ALSACtlElemId.html" title="ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
-                            <em class="parameter"><code><a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfoInt"><span class="type">ALSACtlElemInfo</span></a> **elem_info</code></em>,
+                            <em class="parameter"><code><a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfo"><span class="type">ALSACtlElemInfo</span></a> **elem_info</code></em>,
                             <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get information of element corresponding to given id.</p>
 <div class="refsect3">
@@ -420,7 +420,7 @@ alsactl_card_get_elem_info (<em class="parameter"><code><a class="link" href="AL
 </tr>
 <tr>
 <td class="parameter_name"><p>elem_info</p></td>
-<td class="parameter_description"><p>A <a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfoInt"><code class="literal">ALSACtlElemInfo</code></a>. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfo"><code class="literal">ALSACtlElemInfo</code></a>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -589,7 +589,7 @@ for Type-Length-Value data. </p></td>
 alsactl_card_add_elems (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                         <em class="parameter"><code>const <a class="link" href="ALSACtlElemId.html" title="ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> elem_count</code></em>,
-                        <em class="parameter"><code><a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfoInt"><span class="type">ALSACtlElemInfo</span></a> *elem_info</code></em>,
+                        <em class="parameter"><code><a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfo"><span class="type">ALSACtlElemInfo</span></a> *elem_info</code></em>,
                         <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> **entries</code></em>,
                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Add the user-defined elements and return the list of their identifier.</p>
@@ -619,7 +619,7 @@ alsactl_card_add_elems (<em class="parameter"><code><a class="link" href="ALSACt
 </tr>
 <tr>
 <td class="parameter_name"><p>elem_info</p></td>
-<td class="parameter_description"><p>A <a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfoInt"><code class="literal">ALSACtlElemInfo</code></a>.</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfo"><code class="literal">ALSACtlElemInfo</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -643,7 +643,7 @@ alsactl_card_add_elems (<em class="parameter"><code><a class="link" href="ALSACt
 alsactl_card_replace_elems (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                             <em class="parameter"><code>const <a class="link" href="ALSACtlElemId.html" title="ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> elem_count</code></em>,
-                            <em class="parameter"><code><a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfoInt"><span class="type">ALSACtlElemInfo</span></a> *elem_info</code></em>,
+                            <em class="parameter"><code><a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfo"><span class="type">ALSACtlElemInfo</span></a> *elem_info</code></em>,
                             <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> **entries</code></em>,
                             <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Add user-defined elements to replace the existent ones.</p>
@@ -673,7 +673,7 @@ alsactl_card_replace_elems (<em class="parameter"><code><a class="link" href="AL
 </tr>
 <tr>
 <td class="parameter_name"><p>elem_info</p></td>
-<td class="parameter_description"><p>A <a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfoInt"><code class="literal">ALSACtlElemInfo</code></a>.</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfo"><code class="literal">ALSACtlElemInfo</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>

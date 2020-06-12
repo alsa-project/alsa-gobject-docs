@@ -624,7 +624,7 @@ character device.</p>
 <a name="ALSATimerUserInstance-handle-event"></a><h3>The <code class="literal">“handle-event”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self,
-               <a class="link" href="ALSATimerEventData.html" title="ALSATimerEventData"><span class="type">ALSATimerEventData</span></a>    *event_data,
+               <a class="link" href="ALSATimerEvent.html" title="ALSATimerEvent"><span class="type">ALSATimerEvent</span></a>        *event,
                <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)</pre>
 <p>When event occurs for any element, this signal is emit.</p>
 <div class="refsect3">
@@ -642,8 +642,8 @@ user_function (<a class="link" href="ALSATimerUserInstance.html" title="ALSATime
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
-<td class="parameter_name"><p>event_data</p></td>
-<td class="parameter_description"><p>An object derived from <a class="link" href="ALSATimerEventData.html" title="ALSATimerEventData"><span class="type">ALSATimerEventData</span></a>. </p></td>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>The instance of <a class="link" href="ALSATimerEvent.html" title="ALSATimerEvent"><span class="type">ALSATimerEvent</span></a>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
 </tr>
 <tr>

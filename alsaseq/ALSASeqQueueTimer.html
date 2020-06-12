@@ -7,7 +7,7 @@
 <link rel="home" href="index.html" title="ALSASeq Reference Manual">
 <link rel="up" href="alsaseq-objects.html" title="ALSASeq objects">
 <link rel="prev" href="ALSASeqQueueTempo.html" title="ALSASeqQueueTempo">
-<link rel="next" href="ALSASeqQueueTimerAlsa.html" title="ALSASeqQueueTimerAlsa">
+<link rel="next" href="ALSASeqQueueTimerDataAlsa.html" title="ALSASeqQueueTimerDataAlsa">
 <meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -22,18 +22,52 @@
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
 <td><a accesskey="u" href="alsaseq-objects.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
 <td><a accesskey="p" href="ALSASeqQueueTempo.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
-<td><a accesskey="n" href="ALSASeqQueueTimerAlsa.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+<td><a accesskey="n" href="ALSASeqQueueTimerDataAlsa.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
 <div class="refentry">
 <a name="ALSASeqQueueTimer"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="ALSASeqQueueTimer.top_of_page"></a>ALSASeqQueueTimer</span></h2>
-<p>ALSASeqQueueTimer — A GObject-derived abstract object to represent timer for
-queue</p>
+<p>ALSASeqQueueTimer — A GObject-derived object to represent timer for queue</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
+<div class="refsect1">
+<a name="ALSASeqQueueTimer.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="ALSASeqQueueTimer.html" title="ALSASeqQueueTimer"><span class="returnvalue">ALSASeqQueueTimer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqQueueTimer.html#alsaseq-queue-timer-new" title="alsaseq_queue_timer_new ()">alsaseq_queue_timer_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqQueueTimer.html#alsaseq-queue-timer-get-alsa-data" title="alsaseq_queue_timer_get_alsa_data ()">alsaseq_queue_timer_get_alsa_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqQueueTimer.html#alsaseq-queue-timer-set-alsa-data" title="alsaseq_queue_timer_set_alsa_data ()">alsaseq_queue_timer_set_alsa_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
 <div class="refsect1">
 <a name="ALSASeqQueueTimer.properties"></a><h2>Properties</h2>
 <div class="informaltable"><table class="informaltable" border="0">
@@ -46,12 +80,12 @@ queue</p>
 <tr>
 <td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
 <td class="property_name"><a class="link" href="ALSASeqQueueTimer.html#ALSASeqQueueTimer--queue-id" title="The “queue-id” property">queue-id</a></td>
-<td class="property_flags">Read / Write</td>
+<td class="property_flags">Read</td>
 </tr>
 <tr>
 <td class="property_type"><a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqQueueTimerType" title="enum ALSASeqQueueTimerType"><span class="type">ALSASeqQueueTimerType</span></a></td>
 <td class="property_name"><a class="link" href="ALSASeqQueueTimer.html#ALSASeqQueueTimer--type" title="The “type” property">type</a></td>
-<td class="property_flags">Read / Write</td>
+<td class="property_flags">Read</td>
 </tr>
 </tbody>
 </table></div>
@@ -60,19 +94,88 @@ queue</p>
 <a name="ALSASeqQueueTimer.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> ALSASeqQueueTimer
-        <span class="lineart">╰──</span> <a class="link" href="ALSASeqQueueTimerAlsa.html" title="ALSASeqQueueTimerAlsa">ALSASeqQueueTimerAlsa</a>
 </pre>
 </div>
 <div class="refsect1">
 <a name="ALSASeqQueueTimer.description"></a><h2>Description</h2>
-<p>A <a class="link" href="ALSASeqQueueTimer.html" title="ALSASeqQueueTimer"><span class="type">ALSASeqQueueTimer</span></a> is a GObject-derived abstract object to represent common
-properties and methods of timer for queue. Applications can use derived
-object; ALSASeqQueueTimerAlsa.</p>
+<p>A <a class="link" href="ALSASeqQueueTimer.html" title="ALSASeqQueueTimer"><span class="type">ALSASeqQueueTimer</span></a> is a GObject-derived object to represent the information
+of timer which drives the queue.</p>
 <p>The object wraps 'struct snd_seq_queue_timer' in UAPI of Linux sound subsystem.</p>
 </div>
 <div class="refsect1">
 <a name="ALSASeqQueueTimer.functions_details"></a><h2>Functions</h2>
-<p></p>
+<div class="refsect2">
+<a name="alsaseq-queue-timer-new"></a><h3>alsaseq_queue_timer_new ()</h3>
+<pre class="programlisting"><a class="link" href="ALSASeqQueueTimer.html" title="ALSASeqQueueTimer"><span class="returnvalue">ALSASeqQueueTimer</span></a> *
+alsaseq_queue_timer_new ();</pre>
+<p>Allocate and return the instance of <a class="link" href="ALSASeqQueueTimer.html" title="ALSASeqQueueTimer"><span class="type">ALSASeqQueueTimer</span></a>.</p>
+<div class="refsect3">
+<a name="alsaseq-queue-timer-new.returns"></a><h4>Returns</h4>
+<p> the instance of <a class="link" href="ALSASeqQueueTimer.html" title="ALSASeqQueueTimer"><span class="type">ALSASeqQueueTimer</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsaseq-queue-timer-get-alsa-data"></a><h3>alsaseq_queue_timer_get_alsa_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_queue_timer_get_alsa_data (<em class="parameter"><code><a class="link" href="ALSASeqQueueTimer.html" title="ALSASeqQueueTimer"><span class="type">ALSASeqQueueTimer</span></a> *self</code></em>,
+                                   <em class="parameter"><code>const <a class="link" href="ALSASeqQueueTimerDataAlsa.html" title="ALSASeqQueueTimerDataAlsa"><span class="type">ALSASeqQueueTimerDataAlsa</span></a> **data</code></em>);</pre>
+<p>Refer to the data of timer for queue in the case that the device in ALSATimer
+drives the timer.</p>
+<div class="refsect3">
+<a name="alsaseq-queue-timer-get-alsa-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqQueueTimer.html" title="ALSASeqQueueTimer"><span class="type">ALSASeqQueueTimer</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqQueueTimerDataAlsa.html" title="ALSASeqQueueTimerDataAlsa"><span class="type">ALSASeqQueueTimerDataAlsa</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="alsaseq-queue-timer-set-alsa-data"></a><h3>alsaseq_queue_timer_set_alsa_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+alsaseq_queue_timer_set_alsa_data (<em class="parameter"><code><a class="link" href="ALSASeqQueueTimer.html" title="ALSASeqQueueTimer"><span class="type">ALSASeqQueueTimer</span></a> *self</code></em>,
+                                   <em class="parameter"><code>const <a class="link" href="ALSASeqQueueTimerDataAlsa.html" title="ALSASeqQueueTimerDataAlsa"><span class="type">ALSASeqQueueTimerDataAlsa</span></a> *data</code></em>);</pre>
+<p>Set the data of timer for queue in the case that the device in ALSATimer
+drives the timer.</p>
+<div class="refsect3">
+<a name="alsaseq-queue-timer-set-alsa-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqQueueTimer.html" title="ALSASeqQueueTimer"><span class="type">ALSASeqQueueTimer</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ALSASeqQueueTimerDataAlsa.html" title="ALSASeqQueueTimerDataAlsa"><span class="type">ALSASeqQueueTimerDataAlsa</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 </div>
 <div class="refsect1">
 <a name="ALSASeqQueueTimer.property-details"></a><h2>Property Details</h2>
@@ -81,7 +184,7 @@ object; ALSASeqQueueTimerAlsa.</p>
 <pre class="programlisting">  “queue-id”                 <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
 <p>The numerical ID of queue, except for one of ALSASeqSpecificClientId.</p>
 <p>Owner: ALSASeqQueueTimer</p>
-<p>Flags: Read / Write</p>
+<p>Flags: Read</p>
 <p>Default value: -1</p>
 </div>
 <hr>
@@ -90,7 +193,7 @@ object; ALSASeqQueueTimerAlsa.</p>
 <pre class="programlisting">  “type”                     <a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqQueueTimerType" title="enum ALSASeqQueueTimerType"><span class="type">ALSASeqQueueTimerType</span></a></pre>
 <p>The type of timer for the queue, one of ALSASeqQueueTimerType.</p>
 <p>Owner: ALSASeqQueueTimer</p>
-<p>Flags: Read / Write</p>
+<p>Flags: Read</p>
 <p>Default value: ALSASEQ_QUEUE_TIMER_TYPE_ALSA</p>
 </div>
 </div>

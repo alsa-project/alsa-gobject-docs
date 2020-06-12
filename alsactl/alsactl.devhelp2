@@ -12,13 +12,7 @@
       <sub name="ALSACtlCard" link="ALSACtlCard.html"/>
       <sub name="ALSACtlCardInfo" link="ALSACtlCardInfo.html"/>
       <sub name="ALSACtlElemId" link="ALSACtlElemId.html"/>
-      <sub name="ALSACtlElemInfoInt" link="ALSACtlElemInfo.html"/>
-      <sub name="ALSACtlElemInfoBool" link="ALSACtlElemInfoBool.html"/>
-      <sub name="ALSACtlElemInfoInt" link="ALSACtlElemInfoInt.html"/>
-      <sub name="ALSACtlElemInfoEnum" link="ALSACtlElemInfoEnum.html"/>
-      <sub name="ALSACtlElemInfoBytes" link="ALSACtlElemInfoBytes.html"/>
-      <sub name="ALSACtlElemInfoIec60958" link="ALSACtlElemInfoIec60958.html"/>
-      <sub name="ALSACtlElemInfoInt64" link="ALSACtlElemInfoInt64.html"/>
+      <sub name="ALSACtlElemInfo" link="ALSACtlElemInfo.html"/>
       <sub name="ALSACtlElemValue" link="ALSACtlElemValue.html"/>
       <sub name="alsactl-sigs-marshal" link="alsactl-alsactl-sigs-marshal.html"/>
     </sub>
@@ -70,28 +64,18 @@
     <keyword type="function" name="alsactl_elem_id_get_name ()" link="ALSACtlElemId.html#alsactl-elem-id-get-name"/>
     <keyword type="function" name="alsactl_elem_id_get_index ()" link="ALSACtlElemId.html#alsactl-elem-id-get-index"/>
     <keyword type="function" name="alsactl_elem_id_equal ()" link="ALSACtlElemId.html#alsactl-elem-id-equal"/>
+    <keyword type="function" name="alsactl_elem_info_new ()" link="ALSACtlElemInfo.html#alsactl-elem-info-new"/>
+    <keyword type="function" name="alsactl_elem_info_get_int_data ()" link="ALSACtlElemInfo.html#alsactl-elem-info-get-int-data"/>
+    <keyword type="function" name="alsactl_elem_info_set_int_data ()" link="ALSACtlElemInfo.html#alsactl-elem-info-set-int-data"/>
+    <keyword type="function" name="alsactl_elem_info_get_int64_data ()" link="ALSACtlElemInfo.html#alsactl-elem-info-get-int64-data"/>
+    <keyword type="function" name="alsactl_elem_info_set_int64_data ()" link="ALSACtlElemInfo.html#alsactl-elem-info-set-int64-data"/>
+    <keyword type="function" name="alsactl_elem_info_get_enum_data ()" link="ALSACtlElemInfo.html#alsactl-elem-info-get-enum-data"/>
+    <keyword type="function" name="alsactl_elem_info_set_enum_data ()" link="ALSACtlElemInfo.html#alsactl-elem-info-set-enum-data"/>
     <keyword type="property" name="The “access” property" link="ALSACtlElemInfo.html#ALSACtlElemInfo--access"/>
     <keyword type="property" name="The “elem-id” property" link="ALSACtlElemInfo.html#ALSACtlElemInfo--elem-id"/>
     <keyword type="property" name="The “owner” property" link="ALSACtlElemInfo.html#ALSACtlElemInfo--owner"/>
     <keyword type="property" name="The “type” property" link="ALSACtlElemInfo.html#ALSACtlElemInfo--type"/>
-    <keyword type="function" name="alsactl_elem_info_bool_new ()" link="ALSACtlElemInfoBool.html#alsactl-elem-info-bool-new"/>
-    <keyword type="property" name="The “value-count” property" link="ALSACtlElemInfoBool.html#ALSACtlElemInfoBool--value-count"/>
-    <keyword type="function" name="alsactl_elem_info_int_new ()" link="ALSACtlElemInfoInt.html#alsactl-elem-info-int-new"/>
-    <keyword type="property" name="The “max” property" link="ALSACtlElemInfoInt.html#ALSACtlElemInfoInt--max"/>
-    <keyword type="property" name="The “min” property" link="ALSACtlElemInfoInt.html#ALSACtlElemInfoInt--min"/>
-    <keyword type="property" name="The “step” property" link="ALSACtlElemInfoInt.html#ALSACtlElemInfoInt--step"/>
-    <keyword type="property" name="The “value-count” property" link="ALSACtlElemInfoInt.html#ALSACtlElemInfoInt--value-count"/>
-    <keyword type="function" name="alsactl_elem_info_enum_new ()" link="ALSACtlElemInfoEnum.html#alsactl-elem-info-enum-new"/>
-    <keyword type="property" name="The “labels” property" link="ALSACtlElemInfoEnum.html#ALSACtlElemInfoEnum--labels"/>
-    <keyword type="property" name="The “value-count” property" link="ALSACtlElemInfoEnum.html#ALSACtlElemInfoEnum--value-count"/>
-    <keyword type="function" name="alsactl_elem_info_bytes_new ()" link="ALSACtlElemInfoBytes.html#alsactl-elem-info-bytes-new"/>
-    <keyword type="property" name="The “value-count” property" link="ALSACtlElemInfoBytes.html#ALSACtlElemInfoBytes--value-count"/>
-    <keyword type="function" name="alsactl_elem_info_iec60958_new ()" link="ALSACtlElemInfoIec60958.html#alsactl-elem-info-iec60958-new"/>
-    <keyword type="function" name="alsactl_elem_info_int64_new ()" link="ALSACtlElemInfoInt64.html#alsactl-elem-info-int64-new"/>
-    <keyword type="property" name="The “max” property" link="ALSACtlElemInfoInt64.html#ALSACtlElemInfoInt64--max"/>
-    <keyword type="property" name="The “min” property" link="ALSACtlElemInfoInt64.html#ALSACtlElemInfoInt64--min"/>
-    <keyword type="property" name="The “step” property" link="ALSACtlElemInfoInt64.html#ALSACtlElemInfoInt64--step"/>
-    <keyword type="property" name="The “value-count” property" link="ALSACtlElemInfoInt64.html#ALSACtlElemInfoInt64--value-count"/>
+    <keyword type="property" name="The “value-count” property" link="ALSACtlElemInfo.html#ALSACtlElemInfo--value-count"/>
     <keyword type="function" name="alsactl_elem_value_new ()" link="ALSACtlElemValue.html#alsactl-elem-value-new"/>
     <keyword type="function" name="alsactl_elem_value_set_bool ()" link="ALSACtlElemValue.html#alsactl-elem-value-set-bool"/>
     <keyword type="function" name="alsactl_elem_value_get_bool ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-bool"/>
