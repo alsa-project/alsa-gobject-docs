@@ -60,6 +60,7 @@
     <keyword type="property" name="The “period-numerator” property" link="ALSATimerDeviceParams.html#ALSATimerDeviceParams--period-numerator"/>
     <keyword type="function" name="alsatimer_user_instance_new ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-new"/>
     <keyword type="function" name="alsatimer_user_instance_open ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-open"/>
+    <keyword type="function" name="alsatimer_user_instance_choose_event_data_type ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-choose-event-data-type"/>
     <keyword type="function" name="alsatimer_user_instance_attach ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-attach"/>
     <keyword type="function" name="alsatimer_user_instance_attach_as_slave ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-attach-as-slave"/>
     <keyword type="function" name="alsatimer_user_instance_get_info ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-get-info"/>
