@@ -85,8 +85,10 @@
     <keyword type="function" name="alsactl_elem_value_get_enum ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-enum"/>
     <keyword type="function" name="alsactl_elem_value_set_bytes ()" link="ALSACtlElemValue.html#alsactl-elem-value-set-bytes"/>
     <keyword type="function" name="alsactl_elem_value_get_bytes ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-bytes"/>
-    <keyword type="function" name="alsactl_elem_value_set_iec60958 ()" link="ALSACtlElemValue.html#alsactl-elem-value-set-iec60958"/>
-    <keyword type="function" name="alsactl_elem_value_get_iec60958 ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-iec60958"/>
+    <keyword type="function" name="alsactl_elem_value_set_iec60958_channel_status ()" link="ALSACtlElemValue.html#alsactl-elem-value-set-iec60958-channel-status"/>
+    <keyword type="function" name="alsactl_elem_value_get_iec60958_channel_status ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-iec60958-channel-status"/>
+    <keyword type="function" name="alsactl_elem_value_set_iec60958_user_data ()" link="ALSACtlElemValue.html#alsactl-elem-value-set-iec60958-user-data"/>
+    <keyword type="function" name="alsactl_elem_value_get_iec60958_user_data ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-iec60958-user-data"/>
     <keyword type="function" name="alsactl_elem_value_set_int64 ()" link="ALSACtlElemValue.html#alsactl-elem-value-set-int64"/>
     <keyword type="function" name="alsactl_elem_value_get_int64 ()" link="ALSACtlElemValue.html#alsactl-elem-value-get-int64"/>
     <keyword type="function" name="alsactl_elem_value_equal ()" link="ALSACtlElemValue.html#alsactl-elem-value-equal"/>

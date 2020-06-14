@@ -110,6 +110,7 @@ file descriptor</p>
 alsatimer_get_sysname (<em class="parameter"><code><span class="type">char</span> **sysname</code></em>,
                        <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Allocate sysname for ALSA Timer and return it when it exists.</p>
+<p>Nodes under sound subsystem in sysfs are used to gather the information.</p>
 <div class="refsect3">
 <a name="alsatimer-get-sysname.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -140,6 +141,7 @@ alsatimer_get_sysname (<em class="parameter"><code><span class="type">char</span
 alsatimer_get_devnode (<em class="parameter"><code><span class="type">char</span> **devnode</code></em>,
                        <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Allocate string of devnode for ALSA Timer and return it if exists.</p>
+<p>Nodes under sound subsystem in sysfs are used to gather the information.</p>
 <div class="refsect3">
 <a name="alsatimer-get-devnode.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -169,6 +171,9 @@ alsatimer_get_devnode (<em class="parameter"><code><span class="type">char</span
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_get_device_id_list (<em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> **entries</code></em>,
                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Get the list of existent timer device.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system call
+with SNDRV_TIMER_IOCTL_NEXT_DEVICE command for ALSA timer character device.</p>
 <div class="refsect3">
 <a name="alsatimer-get-device-id-list.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -200,6 +205,9 @@ entries of ALSATimerId. </p></td>
 alsatimer_get_device_info (<em class="parameter"><code><a class="link" href="ALSATimerDeviceId.html" title="ALSATimerDeviceId"><span class="type">ALSATimerDeviceId</span></a> *device_id</code></em>,
                            <em class="parameter"><code><a class="link" href="ALSATimerDeviceInfo.html" title="ALSATimerDeviceInfo"><span class="type">ALSATimerDeviceInfo</span></a> **device_info</code></em>,
                            <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Get the information of timer device.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system call
+with SNDRV_TIMER_IOCTL_GINFO command for ALSA timer character device.</p>
 <div class="refsect3">
 <a name="alsatimer-get-device-info.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -235,6 +243,9 @@ alsatimer_get_device_info (<em class="parameter"><code><a class="link" href="ALS
 alsatimer_get_device_status (<em class="parameter"><code><a class="link" href="ALSATimerDeviceId.html" title="ALSATimerDeviceId"><span class="type">ALSATimerDeviceId</span></a> *device_id</code></em>,
                              <em class="parameter"><code><a class="link" href="ALSATimerDeviceStatus.html" title="ALSATimerDeviceStatus"><span class="type">ALSATimerDeviceStatus</span></a> **device_status</code></em>,
                              <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Get the status of timer device.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system call
+with SNDRV_TIMER_IOCTL_GSTATUS command for ALSA timer character device.</p>
 <div class="refsect3">
 <a name="alsatimer-get-device-status.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -271,6 +282,8 @@ alsatimer_set_device_params (<em class="parameter"><code><a class="link" href="A
                              <em class="parameter"><code>const <a class="link" href="ALSATimerDeviceParams.html" title="ALSATimerDeviceParams"><span class="type">ALSATimerDeviceParams</span></a> *device_params</code></em>,
                              <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Set the given parameters to the timer indicated by the identifier.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system call
+with SNDRV_TIMER_IOCTL_GPARAMS command for ALSA timer character device.</p>
 <div class="refsect3">
 <a name="alsatimer-set-device-params.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -310,6 +323,8 @@ to receive event with timestamp. The source is selected according to
 parameter of 'snd-timer' kernel module, and the call of function is just to
 refer to it.</p>
 <p>0 means CLOCK_REALTIME is used. 1 means CLOCK_MONOTONIC is used.</p>
+<p>The call of function executes open(2), read(2), close(2) system calls for
+the sysfs node corresponding to 'snd-timer' kernel module.</p>
 <div class="refsect3">
 <a name="alsatimer-get-tstamp-source.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">

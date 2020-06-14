@@ -201,6 +201,8 @@ alsatimer_user_instance_open (<em class="parameter"><code><a class="link" href="
                               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> open_flag</code></em>,
                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Open ALSA Timer character device to allocate queue.</p>
+<p>The call of function executes open(2) system call for ALSA timer character
+device.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-open.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -241,6 +243,8 @@ alsatimer_user_instance_choose_event_data_type
 <p>The call of function is successful just before the instance is not attached
 yet. ALSATIMER_EVENT_DATA_TYPE_TICK is used as a default if the function is
 not called for ALSATIMER_EVENT_DATA_TYPE_TSTAMP explicitly.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_TIMER_IOCTL_TREAD command for ALSA timer character device.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-choose-event-data-type.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -278,6 +282,8 @@ alsatimer_user_instance_attach (<em class="parameter"><code><a class="link" href
                                 <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Attach the instance to the timer device. If the given device_id is for
 absent timer device, the instance can be detached with error.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_TIMER_IOCTL_SELECT command for ALSA timer character device.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-attach.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -323,6 +329,8 @@ for ALSA sequencer (=ALSATIMER_SLAVE_CLASS_SEQUENCER), the slave_id is the
 numerical ID of queue bound for timer device.</p>
 <p>Attach the instance to the timer device. If the given device_id is for
 absent timer device, the instance can be detached with error.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_TIMER_IOCTL_SELECT command for ALSA timer character device.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-attach-as-slave.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -365,6 +373,8 @@ alsatimer_user_instance_get_info (<em class="parameter"><code><a class="link" hr
                                   <em class="parameter"><code><a class="link" href="ALSATimerInstanceInfo.html" title="ALSATimerInstanceInfo"><span class="type">ALSATimerInstanceInfo</span></a> **instance_info</code></em>,
                                   <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Return the information of device if attached to the instance.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_TIMER_IOCTL_INFO command for ALSA timer character device.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-get-info.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -401,6 +411,8 @@ alsatimer_user_instance_set_params (<em class="parameter"><code><a class="link" 
                                     <em class="parameter"><code><a class="link" href="ALSATimerInstanceParams.html" title="ALSATimerInstanceParams"><span class="type">ALSATimerInstanceParams</span></a> *const *instance_params</code></em>,
                                     <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Configure the instance with the parameters and return the latest parameters.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_TIMER_IOCTL_PARAMS command for ALSA timer character device.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-set-params.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -437,6 +449,8 @@ alsatimer_user_instance_get_status (<em class="parameter"><code><a class="link" 
                                     <em class="parameter"><code><a class="link" href="ALSATimerInstanceStatus.html" title="ALSATimerInstanceStatus"><span class="type">ALSATimerInstanceStatus</span></a> **instance_status</code></em>,
                                     <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the latest status of instance.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_TIMER_IOCTL_STATUS command for ALSA timer character device.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-get-status.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -473,7 +487,9 @@ alsatimer_user_instance_create_source (<em class="parameter"><code><a class="lin
                                        <em class="parameter"><code><a href="../glib/glib-The-Main-Event-Loop.html#GSource"><span class="type">GSource</span></a> **gsrc</code></em>,
                                        <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Allocate GSource structure to handle events from ALSA timer character
-device.</p>
+device. In each iteration of GMainContext, the read(2) system call is
+executed to dispatch timer event for 'handle-event' signal, according to
+the result of poll(2) system call.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-create-source.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -508,7 +524,9 @@ device.</p>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_start (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Start event emission.</p>
+<p>Start timer event emission.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_TIMER_IOCTL_START command for ALSA timer character device.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-start.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -538,7 +556,9 @@ alsatimer_user_instance_start (<em class="parameter"><code><a class="link" href=
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_stop (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Stop event emission.</p>
+<p>Stop timer event emission.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_TIMER_IOCTL_STOP command for ALSA timer character device.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-stop.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -568,7 +588,9 @@ alsatimer_user_instance_stop (<em class="parameter"><code><a class="link" href="
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_pause (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Stop event emission.</p>
+<p>Pause timer event emission.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_TIMER_IOCTL_PAUSE command for ALSA timer character device.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-pause.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -598,7 +620,9 @@ alsatimer_user_instance_pause (<em class="parameter"><code><a class="link" href=
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_continue (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
                                   <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Stop event emission.</p>
+<p>Continue timer event emission paused by <a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-pause" title="alsatimer_user_instance_pause ()"><code class="function">alsatimer_user_instance_pause()</code></a>.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_TIMER_IOCTL_CONTINUE command for ALSA timer character device.</p>
 <div class="refsect3">
 <a name="alsatimer-user-instance-continue.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">

@@ -285,6 +285,9 @@ alsaseq_user_client_open (<em class="parameter"><code><a class="link" href="ALSA
                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> open_flag</code></em>,
                           <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Open ALSA sequencer character device.</p>
+<p>The call of function executes open(2) system call, then executes ioctl(2)
+system call with SNDRV_SEQ_IOCTL_CLIENT_ID command for ALSA sequencer
+character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-open.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -321,6 +324,8 @@ alsaseq_user_client_set_info (<em class="parameter"><code><a class="link" href="
                               <em class="parameter"><code><a class="link" href="ALSASeqClientInfo.html" title="ALSASeqClientInfo"><span class="type">ALSASeqClientInfo</span></a> *client_info</code></em>,
                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get client information.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_SET_CLIENT_INFO command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-set-info.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -357,6 +362,8 @@ alsaseq_user_client_get_info (<em class="parameter"><code><a class="link" href="
                               <em class="parameter"><code><a class="link" href="ALSASeqClientInfo.html" title="ALSASeqClientInfo"><span class="type">ALSASeqClientInfo</span></a> *const *client_info</code></em>,
                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Set client information.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_GET_CLIENT_INFO command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-get-info.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -394,6 +401,8 @@ alsaseq_user_client_create_port (<em class="parameter"><code><a class="link" hre
                                  <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *port_id</code></em>,
                                  <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Create a port into the client.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_CREATE_PORT command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-create-port.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -435,6 +444,9 @@ alsaseq_user_client_update_port (<em class="parameter"><code><a class="link" hre
                                  <em class="parameter"><code><a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a> *port_info</code></em>,
                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> port_id</code></em>,
                                  <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Update port information.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_SET_PORT_INFO command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-update-port.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -476,6 +488,8 @@ alsaseq_user_client_delete_port (<em class="parameter"><code><a class="link" hre
                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> port_id</code></em>,
                                  <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Delete a port from the client.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_DELETE_PORT command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-delete-port.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -512,6 +526,8 @@ alsaseq_user_client_set_pool (<em class="parameter"><code><a class="link" href="
                               <em class="parameter"><code><a class="link" href="ALSASeqClientPool.html" title="ALSASeqClientPool"><span class="type">ALSASeqClientPool</span></a> *client_pool</code></em>,
                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Configure memory pool in the client.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_SET_CLIENT_POOL command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-set-pool.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -548,6 +564,8 @@ alsaseq_user_client_get_pool (<em class="parameter"><code><a class="link" href="
                               <em class="parameter"><code><a class="link" href="ALSASeqClientPool.html" title="ALSASeqClientPool"><span class="type">ALSASeqClientPool</span></a> *const *client_pool</code></em>,
                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get information of memory pool in the client.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_GET_CLIENT_POOL command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-get-pool.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -585,6 +603,8 @@ alsaseq_user_client_schedule_event (<em class="parameter"><code><a class="link" 
                                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> count</code></em>,
                                     <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Deliver the event immediately, or schedule it into memory pool of the client.</p>
+<p>The call of function executes write(2) system call for ALSA sequencer
+character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-schedule-event.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -625,7 +645,10 @@ alsaseq_user_client_schedule_event (<em class="parameter"><code><a class="link" 
 alsaseq_user_client_create_source (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
                                    <em class="parameter"><code><a href="../glib/glib-The-Main-Event-Loop.html#GSource"><span class="type">GSource</span></a> **gsrc</code></em>,
                                    <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Allocate GSource structure to handle events from ALSA seq character device.</p>
+<p>Allocate GSource structure to handle events from ALSA seq character device.
+In each iteration of GMainContext, the read(2) system call is exected to
+dispatch sequencer event for 'handle-event' signal, according to the result
+of poll(2) system call.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-create-source.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -664,6 +687,9 @@ alsaseq_user_client_operate_subscription
                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> establish</code></em>,
                                 <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Operate subscription between two ports pointed by the data.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_SUBSCRIBE_PORT and SNDRV_SEQ_IOCTL_UNSUBSCRIBE_PORT commands
+for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-operate-subscription.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -706,6 +732,8 @@ alsaseq_user_client_create_queue (<em class="parameter"><code><a class="link" hr
                                   <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Create a new queue owned by the client. The content of information is updated
 if success.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_CREATE_QUEUE command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-create-queue.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -742,6 +770,8 @@ alsaseq_user_client_delete_queue (<em class="parameter"><code><a class="link" hr
                                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> queue_id</code></em>,
                                   <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Delete the queue owned by the client.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_DELETE_QUEUE command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-delete-queue.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -778,6 +808,8 @@ alsaseq_user_client_update_queue (<em class="parameter"><code><a class="link" hr
                                   <em class="parameter"><code><a class="link" href="ALSASeqQueueInfo.html" title="ALSASeqQueueInfo"><span class="type">ALSASeqQueueInfo</span></a> *queue_info</code></em>,
                                   <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Update owned queue according to the information.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_SET_QUEUE_INFO command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-update-queue.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -815,6 +847,8 @@ alsaseq_user_client_get_queue_usage (<em class="parameter"><code><a class="link"
                                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *use</code></em>,
                                      <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get usage of the queue by the client.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_GET_QUEUE_CLIENT command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-get-queue-usage.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -858,6 +892,8 @@ alsaseq_user_client_set_queue_usage (<em class="parameter"><code><a class="link"
                                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use</code></em>,
                                      <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Start the queue to use or not.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_SET_QUEUE_CLIENT command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-set-queue-usage.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -901,6 +937,8 @@ alsaseq_user_client_set_queue_tempo (<em class="parameter"><code><a class="link"
                                      <em class="parameter"><code><a class="link" href="ALSASeqQueueTempo.html" title="ALSASeqQueueTempo"><span class="type">ALSASeqQueueTempo</span></a> *queue_tempo</code></em>,
                                      <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Set the data of tempo to the queue.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_SET_QUEUE_TEMPO command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-set-queue-tempo.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -944,6 +982,8 @@ alsaseq_user_client_get_queue_tempo (<em class="parameter"><code><a class="link"
                                      <em class="parameter"><code><a class="link" href="ALSASeqQueueTempo.html" title="ALSASeqQueueTempo"><span class="type">ALSASeqQueueTempo</span></a> **queue_tempo</code></em>,
                                      <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the data of tempo for the queue.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_GET_QUEUE_TEMPO command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-get-queue-tempo.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -987,6 +1027,8 @@ alsaseq_user_client_set_queue_timer (<em class="parameter"><code><a class="link"
                                      <em class="parameter"><code><a class="link" href="ALSASeqQueueTimer.html" title="ALSASeqQueueTimer"><span class="type">ALSASeqQueueTimer</span></a> *queue_timer</code></em>,
                                      <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Set the data of timer for the queue.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_SET_QUEUE_TIMER command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-set-queue-timer.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1030,6 +1072,8 @@ alsaseq_user_client_get_queue_timer (<em class="parameter"><code><a class="link"
                                      <em class="parameter"><code><a class="link" href="ALSASeqQueueTimer.html" title="ALSASeqQueueTimer"><span class="type">ALSASeqQueueTimer</span></a> **queue_timer</code></em>,
                                      <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the data of timer for the queue.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_GET_QUEUE_TIMER command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-get-queue-timer.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1072,6 +1116,8 @@ alsaseq_user_client_remove_events (<em class="parameter"><code><a class="link" h
                                    <em class="parameter"><code><span class="type">ALSASeqRemoveFilter</span> *filter</code></em>,
                                    <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Remove queued events according to the filter.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_SEQ_IOCTL_REMOVE_EVENTS command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-user-client-remove-events.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">

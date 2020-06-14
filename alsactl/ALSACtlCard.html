@@ -241,6 +241,8 @@ alsactl_card_open (<em class="parameter"><code><a class="link" href="ALSACtlCard
                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> open_flag</code></em>,
                    <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Open ALSA control character device for the sound card.</p>
+<p>The call of function executes open(2) system call for ALSA control character
+device.</p>
 <div class="refsect3">
 <a name="alsactl-card-open.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -282,6 +284,8 @@ alsactl_card_get_info (<em class="parameter"><code><a class="link" href="ALSACtl
                        <em class="parameter"><code><a class="link" href="ALSACtlCardInfo.html" title="ALSACtlCardInfo"><span class="type">ALSACtlCardInfo</span></a> **card_info</code></em>,
                        <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the information of sound card.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_CTL_IOCTL_CARD_INFO command for ALSA control character device.</p>
 <div class="refsect3">
 <a name="alsactl-card-get-info.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -319,6 +323,8 @@ alsactl_card_get_elem_id_list (<em class="parameter"><code><a class="link" href=
                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Generate a list of ALSACtlElemId for ALSA control character device
 associated to the sound card.</p>
+<p>The call of function executes several ioctl(2) system call with
+SNDRV_CTL_IOCTL_ELEM_LIST command for ALSA control character device.</p>
 <div class="refsect3">
 <a name="alsactl-card-get-elem-id-list.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -357,6 +363,9 @@ alsactl_card_lock_elem (<em class="parameter"><code><a class="link" href="ALSACt
                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> lock</code></em>,
                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Lock/Unlock indicated element not to be written by the other processes.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_CTL_IOCTL_ELEM_LOCK and SNDRV_CTL_IOCTL_ELEM_UNLOCK commands for
+ALSA control character device..</p>
 <div class="refsect3">
 <a name="alsactl-card-lock-elem.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -399,6 +408,10 @@ alsactl_card_get_elem_info (<em class="parameter"><code><a class="link" href="AL
                             <em class="parameter"><code><a class="link" href="ALSACtlElemInfo.html" title="ALSACtlElemInfo"><span class="type">ALSACtlElemInfo</span></a> **elem_info</code></em>,
                             <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get information of element corresponding to given id.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_CTL_IOCTL_ELEM_INFO command for ALSA control character device. For
+enumerated element, it executes the system call for several times to
+retrieve all of enumeration labels.</p>
 <div class="refsect3">
 <a name="alsactl-card-get-elem-info.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -443,6 +456,8 @@ alsactl_card_write_elem_tlv (<em class="parameter"><code><a class="link" href="A
                              <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Write the given array of bytes as Type/Length/Value data for element pointed
 by the identifier.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_CTL_IOCTL_TLV_WRITE command for ALSA control character device.</p>
 <div class="refsect3">
 <a name="alsactl-card-write-elem-tlv.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -493,6 +508,8 @@ alsactl_card_read_elem_tlv (<em class="parameter"><code><a class="link" href="AL
                             <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Read Type/Length/Value data from element pointed by the identifier and fulfil
 the given array of bytes with the data.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_CTL_IOCTL_TLV_READ command for ALSA control character device.</p>
 <div class="refsect3">
 <a name="alsactl-card-read-elem-tlv.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -543,6 +560,8 @@ alsactl_card_command_elem_tlv (<em class="parameter"><code><a class="link" href=
                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Command the given array of bytes as Type/Length/Value data for  element
 pointed by the identifier.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_CTL_IOCTL_TLV_COMMAND command for ALSA control character device.</p>
 <div class="refsect3">
 <a name="alsactl-card-command-elem-tlv.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -593,6 +612,8 @@ alsactl_card_add_elems (<em class="parameter"><code><a class="link" href="ALSACt
                         <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> **entries</code></em>,
                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Add the user-defined elements and return the list of their identifier.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_CTL_IOCTL_ELEM_ADD command for ALSA control character device.</p>
 <div class="refsect3">
 <a name="alsactl-card-add-elems.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -647,6 +668,8 @@ alsactl_card_replace_elems (<em class="parameter"><code><a class="link" href="AL
                             <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> **entries</code></em>,
                             <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Add user-defined elements to replace the existent ones.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_CTL_IOCTL_ELEM_REPLACE command for ALSA control character device.</p>
 <div class="refsect3">
 <a name="alsactl-card-replace-elems.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -698,6 +721,8 @@ alsactl_card_remove_elems (<em class="parameter"><code><a class="link" href="ALS
                            <em class="parameter"><code>const <a class="link" href="ALSACtlElemId.html" title="ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
                            <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Remove user-defined elements pointed by the identifier.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_CTL_IOCTL_ELEM_REMOVE command for ALSA control character device.</p>
 <div class="refsect3">
 <a name="alsactl-card-remove-elems.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -735,6 +760,8 @@ alsactl_card_write_elem_value (<em class="parameter"><code><a class="link" href=
                                <em class="parameter"><code>const <a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *elem_value</code></em>,
                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Write given value to element indicated by given ID.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_CTL_IOCTL_ELEM_WRITE command for ALSA control character device.</p>
 <div class="refsect3">
 <a name="alsactl-card-write-elem-value.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -777,6 +804,8 @@ alsactl_card_read_elem_value (<em class="parameter"><code><a class="link" href="
                               <em class="parameter"><code><a class="link" href="ALSACtlElemValue.html" title="ALSACtlElemValue"><span class="type">ALSACtlElemValue</span></a> *const *elem_value</code></em>,
                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Read given value from element indicated by given ID.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_CTL_IOCTL_ELEM_READ command for ALSA control character device.</p>
 <div class="refsect3">
 <a name="alsactl-card-read-elem-value.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -818,7 +847,9 @@ alsactl_card_create_source (<em class="parameter"><code><a class="link" href="AL
                             <em class="parameter"><code><a href="../glib/glib-The-Main-Event-Loop.html#GSource"><span class="type">GSource</span></a> **gsrc</code></em>,
                             <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Allocate GSource structure to handle events from ALSA control character
-device.</p>
+device. In each iteration of GManContext, the read(2) system call is
+executed to dispatch control event for 'handle-elem-event' signal,
+according to the result of poll(2) system call.</p>
 <div class="refsect3">
 <a name="alsactl-card-create-source.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -877,8 +908,8 @@ user_function (<a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span
                <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
 <p>When the sound card is not available anymore due to unbinding driver or
 hot unplugging, this signal is emit. The owner of this object should
-call <code class="function">g_object_free()</code> as quickly as possible to release ALSA control
-character device.</p>
+call <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> as quickly as possible to be going to release ALSA
+control character device.</p>
 <div class="refsect3">
 <a name="ALSACtlCard-handle-disconnection.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">

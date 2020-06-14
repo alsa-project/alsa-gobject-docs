@@ -89,6 +89,7 @@
     <keyword type="property" name="The “flags” property" link="ALSATimerInstanceParams.html#ALSATimerInstanceParams--flags"/>
     <keyword type="property" name="The “interval” property" link="ALSATimerInstanceParams.html#ALSATimerInstanceParams--interval"/>
     <keyword type="property" name="The “queue-size” property" link="ALSATimerInstanceParams.html#ALSATimerInstanceParams--queue-size"/>
+    <keyword type="function" name="alsatimer_event_new ()" link="ALSATimerEvent.html#alsatimer-event-new"/>
     <keyword type="function" name="alsatimer_event_get_tick_data ()" link="ALSATimerEvent.html#alsatimer-event-get-tick-data"/>
     <keyword type="function" name="alsatimer_event_get_tstamp_data ()" link="ALSATimerEvent.html#alsatimer-event-get-tstamp-data"/>
     <keyword type="function" name="alsatimer_event_data_tick_get_resolution ()" link="ALSATimerEventDataTick.html#alsatimer-event-data-tick-get-resolution"/>

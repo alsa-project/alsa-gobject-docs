@@ -158,6 +158,7 @@ descriptor</p>
 alsaseq_get_seq_sysname (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **sysname</code></em>,
                          <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Allocate sysname string for ALSA sequencer and return it when exists.</p>
+<p>Nodes under sound subsystem in sysfs are used to gather the information.</p>
 <div class="refsect3">
 <a name="alsaseq-get-seq-sysname.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -188,6 +189,7 @@ alsaseq_get_seq_sysname (<em class="parameter"><code><a href="../glib/glib-Basic
 alsaseq_get_seq_devnode (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **devnode</code></em>,
                          <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Allocate devnode string for ALSA Sequencer and return it when exists.</p>
+<p>Nodes under sound subsystem in sysfs are used to gather the information.</p>
 <div class="refsect3">
 <a name="alsaseq-get-seq-devnode.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -218,6 +220,8 @@ alsaseq_get_seq_devnode (<em class="parameter"><code><a href="../glib/glib-Basic
 alsaseq_get_system_info (<em class="parameter"><code><a class="link" href="ALSASeqSystemInfo.html" title="ALSASeqSystemInfo"><span class="type">ALSASeqSystemInfo</span></a> **system_info</code></em>,
                          <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get information of ALSA Sequencer.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system calls
+with SNDRV_SEQ_IOCTL_SYSTEM_INFO command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-get-system-info.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -249,6 +253,10 @@ alsaseq_get_client_id_list (<em class="parameter"><code><a href="../glib/glib-Ba
                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *entry_count</code></em>,
                             <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the list of clients as the numerical ID.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system calls
+with SNDRV_SEQ_IOCTL_CLIENT_ID, SNDRV_SEQ_IOCTL_SYSTEM_INFO, and
+SNDRV_SEQ_IOCTL_QUERY_NEXT_CLIENT command for ALSA sequencer character
+device.</p>
 <div class="refsect3">
 <a name="alsaseq-get-client-id-list.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -287,6 +295,9 @@ alsaseq_get_client_info (<em class="parameter"><code><a href="../glib/glib-Basic
                          <em class="parameter"><code><a class="link" href="ALSASeqClientInfo.html" title="ALSASeqClientInfo"><span class="type">ALSASeqClientInfo</span></a> **client_info</code></em>,
                          <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the information of client according to the numerical ID.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system calls
+with SNDRV_SEQ_IOCTL_GET_CLIENT_INFO command for ALSA sequencer character
+device.</p>
 <div class="refsect3">
 <a name="alsaseq-get-client-info.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -326,6 +337,9 @@ alsaseq_get_port_id_list (<em class="parameter"><code><a href="../glib/glib-Basi
                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *entry_count</code></em>,
                           <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the list of numerical IDs for port added by the client.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system calls
+with SNDRV_SEQ_IOCTL_GET_CLIENT_INFO and SNDRV_SEQ_IOCTL_QUERY_NEXT_PORT
+commands for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-get-port-id-list.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -372,6 +386,9 @@ alsaseq_get_port_info (<em class="parameter"><code><a href="../glib/glib-Basic-T
                        <em class="parameter"><code><a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a> **port_info</code></em>,
                        <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the information of port in client.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system calls
+with SNDRV_SEQ_IOCTL_GET_PORT_INFO command for ALSA sequencer character
+device.</p>
 <div class="refsect3">
 <a name="alsaseq-get-port-info.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -416,6 +433,9 @@ alsaseq_get_client_pool (<em class="parameter"><code><a href="../glib/glib-Basic
                          <em class="parameter"><code><a class="link" href="ALSASeqClientPool.html" title="ALSASeqClientPool"><span class="type">ALSASeqClientPool</span></a> **client_pool</code></em>,
                          <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get statistical information of memory pool for the given client.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system calls
+with SNDRV_SEQ_IOCTL_GET_CLIENT_POOL command for ALSA sequencer character
+device.</p>
 <div class="refsect3">
 <a name="alsaseq-get-client-pool.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -455,6 +475,8 @@ alsaseq_get_subscription_list (<em class="parameter"><code>const <a class="link"
                                <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> **entries</code></em>,
                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the list of subscription for given address and query type.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system calls
+with SNDRV_SEQ_IOCTL_QUERY_SUBS command for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-get-subscription-list.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -497,6 +519,9 @@ alsaseq_get_queue_id_list (<em class="parameter"><code><a href="../glib/glib-Bas
                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *entry_count</code></em>,
                            <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the list of queue in ALSA Sequencer.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system calls
+with SNDRV_SEQ_IOCTL_SYSTEM_INFO and SNDRV_SEQ_IOCTL_GET_QUEUE_INFO commands
+for ALSA sequencer character device.</p>
 <div class="refsect3">
 <a name="alsaseq-get-queue-id-list.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -534,6 +559,9 @@ alsaseq_get_queue_info_by_id (<em class="parameter"><code><a href="../glib/glib-
                               <em class="parameter"><code><a class="link" href="ALSASeqQueueInfo.html" title="ALSASeqQueueInfo"><span class="type">ALSASeqQueueInfo</span></a> **queue_info</code></em>,
                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the information of queue, according to the numerical ID.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system calls
+with SNDRV_SEQ_IOCTL_GET_QUEUE_INFO command for ALSA sequencer character
+device.</p>
 <div class="refsect3">
 <a name="alsaseq-get-queue-info-by-id.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -571,6 +599,9 @@ alsaseq_get_queue_info_by_name (<em class="parameter"><code>const <a href="../gl
                                 <em class="parameter"><code><a class="link" href="ALSASeqQueueInfo.html" title="ALSASeqQueueInfo"><span class="type">ALSASeqQueueInfo</span></a> **queue_info</code></em>,
                                 <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the information of queue, according to the name string.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system calls
+with SNDRV_SEQ_IOCTL_GET_NAMED_QUEUE command for ALSA sequencer character
+device.</p>
 <div class="refsect3">
 <a name="alsaseq-get-queue-info-by-name.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -607,6 +638,9 @@ alsaseq_get_queue_status (<em class="parameter"><code><a href="../glib/glib-Basi
                           <em class="parameter"><code><a class="link" href="ALSASeqQueueStatus.html" title="ALSASeqQueueStatus"><span class="type">ALSASeqQueueStatus</span></a> **queue_status</code></em>,
                           <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get current status of queue.</p>
+<p>The call of function executes open(2), close(2), and ioctl(2) system calls
+with SNDRV_SEQ_IOCTL_GET_QUEUE_STATUS command for ALSA sequencer character
+device.</p>
 <div class="refsect3">
 <a name="alsaseq-get-queue-status.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">

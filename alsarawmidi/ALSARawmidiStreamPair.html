@@ -210,6 +210,8 @@ alsarawmidi_stream_pair_open (<em class="parameter"><code><a class="link" href="
                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Open file descriptor for a pair of streams to attach input/output substreams
 corresponding to the given subdevice.</p>
+<p>The call of function executes open(2) system call for ALSA rawmidi character
+device.</p>
 <div class="refsect3">
 <a name="alsarawmidi-stream-pair-open.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -269,6 +271,8 @@ alsarawmidi_stream_pair_get_substream_info
                                 <em class="parameter"><code><a class="link" href="ALSARawmidiSubstreamInfo.html" title="ALSARawmidiSubstreamInfo"><span class="type">ALSARawmidiSubstreamInfo</span></a> **substream_info</code></em>,
                                 <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get information of substream attached to the stream pair.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_RAWMIDI_IOCTL_INFO command for ALSA rawmidi character device.</p>
 <div class="refsect3">
 <a name="alsarawmidi-stream-pair-get-substream-info.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -313,6 +317,8 @@ alsarawmidi_stream_pair_set_substream_params
                                 <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Set parameters of substream for given direction, which is attached to the
 pair of streams.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_RAWMIDI_IOCTL_PARAMS command for ALSA rawmidi character device.</p>
 <div class="refsect3">
 <a name="alsarawmidi-stream-pair-set-substream-params.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -357,6 +363,8 @@ alsarawmidi_stream_pair_get_substream_status
                                 <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Retrieve status of substream for given direction, which is attached to the
 pair of streams.</p>
+<p>The call of function executes ioctl(2) system call with
+SNDRV_RAWMIDI_IOCTL_STATUS command for ALSA rawmidi character device.</p>
 <div class="refsect3">
 <a name="alsarawmidi-stream-pair-get-substream-status.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -403,6 +411,8 @@ alsarawmidi_stream_pair_read_from_substream
 the pair of streams. In a case that the instance is opened without
 O_NONBLOCK flag and the intermediate buffer has no data, call of the API
 is blocked till any data is available.</p>
+<p>The call of function executes read(2) system for ALSA rawmidi character
+device.</p>
 <div class="refsect3">
 <a name="alsarawmidi-stream-pair-read-from-substream.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -449,6 +459,8 @@ alsarawmidi_stream_pair_write_to_substream
 the pair of streams. In a case that the instance is opened without
 O_NONBLOCK flag and the intermediate buffer is full, call of the API is
 blocked till the buffer has space for the data.</p>
+<p>The call of function executes write(2) system for ALSA rawmidi character
+device.</p>
 <div class="refsect3">
 <a name="alsarawmidi-stream-pair-write-to-substream.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -508,7 +520,9 @@ alsarawmidi_stream_pair_create_source (<em class="parameter"><code><a class="lin
                                        <em class="parameter"><code><a href="../glib/glib-The-Main-Event-Loop.html#GSource"><span class="type">GSource</span></a> **gsrc</code></em>,
                                        <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Allocate GSource structure to handle events from ALSA rawmidi character
-device for input substream.</p>
+device for input substream. In each iteration of GManContext, the read(2)
+system call is executed to dispatch control event for 'handle-message'
+signal, according to the result of poll(2) system call.</p>
 <div class="refsect3">
 <a name="alsarawmidi-stream-pair-create-source.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
