@@ -60,12 +60,12 @@
 </colgroup>
 <tbody>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gulong"><span class="type">gulong</span></a></td>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></td>
 <td class="property_name"><a class="link" href="ALSARawmidiSubstreamStatus.html#ALSARawmidiSubstreamStatus--avail" title="The “avail” property">avail</a></td>
 <td class="property_flags">Read</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gulong"><span class="type">gulong</span></a></td>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></td>
 <td class="property_name"><a class="link" href="ALSARawmidiSubstreamStatus.html#ALSARawmidiSubstreamStatus--xruns" title="The “xruns” property">xruns</a></td>
 <td class="property_flags">Read</td>
 </tr>
@@ -99,18 +99,20 @@ alsarawmidi_substream_status_new ();</pre>
 <a name="ALSARawmidiSubstreamStatus.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ALSARawmidiSubstreamStatus--avail"></a><h3>The <code class="literal">“avail”</code> property</h3>
-<pre class="programlisting">  “avail”                    <a href="../glib/glib-Basic-Types.html#gulong"><span class="type">gulong</span></a></pre>
+<pre class="programlisting">  “avail”                    <a href="../glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
 <p>The size of available space in intermediate buffer.</p>
 <p>Owner: ALSARawmidiSubstreamStatus</p>
 <p>Flags: Read</p>
+<p>Default value: 0</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="ALSARawmidiSubstreamStatus--xruns"></a><h3>The <code class="literal">“xruns”</code> property</h3>
-<pre class="programlisting">  “xruns”                    <a href="../glib/glib-Basic-Types.html#gulong"><span class="type">gulong</span></a></pre>
+<pre class="programlisting">  “xruns”                    <a href="../glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
 <p>The count of XRUNs since the last query of status.</p>
 <p>Owner: ALSARawmidiSubstreamStatus</p>
 <p>Flags: Read</p>
+<p>Default value: 0</p>
 </div>
 </div>
 </div>
