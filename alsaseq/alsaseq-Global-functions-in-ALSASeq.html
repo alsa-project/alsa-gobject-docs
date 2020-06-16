@@ -635,7 +635,7 @@ device.</p>
 <a name="alsaseq-get-queue-status"></a><h3>alsaseq_get_queue_status ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsaseq_get_queue_status (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> queue_id</code></em>,
-                          <em class="parameter"><code><a class="link" href="ALSASeqQueueStatus.html" title="ALSASeqQueueStatus"><span class="type">ALSASeqQueueStatus</span></a> **queue_status</code></em>,
+                          <em class="parameter"><code><a class="link" href="ALSASeqQueueStatus.html" title="ALSASeqQueueStatus"><span class="type">ALSASeqQueueStatus</span></a> *const *queue_status</code></em>,
                           <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get current status of queue.</p>
 <p>The call of function executes open(2), close(2), and ioctl(2) system calls
@@ -659,7 +659,7 @@ ALSASeqSpecificQueueId.</p></td>
 <tr>
 <td class="parameter_name"><p>queue_status</p></td>
 <td class="parameter_description"><p>The current status of queue. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>

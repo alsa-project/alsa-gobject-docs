@@ -87,7 +87,6 @@
     <keyword type="function" name="alsaseq_user_client_set_info ()" link="ALSASeqUserClient.html#alsaseq-user-client-set-info"/>
     <keyword type="function" name="alsaseq_user_client_get_info ()" link="ALSASeqUserClient.html#alsaseq-user-client-get-info"/>
     <keyword type="function" name="alsaseq_user_client_create_port ()" link="ALSASeqUserClient.html#alsaseq-user-client-create-port"/>
-    <keyword type="function" name="alsaseq_user_client_create_port_at ()" link="ALSASeqUserClient.html#alsaseq-user-client-create-port-at"/>
     <keyword type="function" name="alsaseq_user_client_update_port ()" link="ALSASeqUserClient.html#alsaseq-user-client-update-port"/>
     <keyword type="function" name="alsaseq_user_client_delete_port ()" link="ALSASeqUserClient.html#alsaseq-user-client-delete-port"/>
     <keyword type="function" name="alsaseq_user_client_set_pool ()" link="ALSASeqUserClient.html#alsaseq-user-client-set-pool"/>

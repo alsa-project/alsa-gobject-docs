@@ -87,14 +87,6 @@
 <span class="returnvalue">void</span>
 </td>
 <td class="function_name">
-<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-create-port-at" title="alsaseq_user_client_create_port_at ()">alsaseq_user_client_create_port_at</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<span class="returnvalue">void</span>
-</td>
-<td class="function_name">
 <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-update-port" title="alsaseq_user_client_update_port ()">alsaseq_user_client_update_port</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
@@ -428,50 +420,6 @@ SNDRV_SEQ_IOCTL_CREATE_PORT command for ALSA sequencer character device.</p>
 <td class="parameter_name"><p>port_info</p></td>
 <td class="parameter_description"><p>A <a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
-</tr>
-<tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="alsaseq-user-client-create-port-at"></a><h3>alsaseq_user_client_create_port_at ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>
-alsaseq_user_client_create_port_at (<em class="parameter"><code><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a> *self</code></em>,
-                                    <em class="parameter"><code><a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a> *const *port_info</code></em>,
-                                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> port_id</code></em>,
-                                    <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Create a port into the client with the given numerical port ID.</p>
-<p>The call of function executes ioctl(2) system call with
-SNDRV_SEQ_IOCTL_CREATE_PORT command for ALSA sequencer character device.</p>
-<div class="refsect3">
-<a name="alsaseq-user-client-create-port-at.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>A <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="type">ALSASeqUserClient</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>port_info</p></td>
-<td class="parameter_description"><p>A <a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a>. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
-</tr>
-<tr>
-<td class="parameter_name"><p>port_id</p></td>
-<td class="parameter_description"><p>The numerical ID of port to create.</p></td>
-<td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>

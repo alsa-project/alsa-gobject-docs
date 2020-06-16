@@ -446,7 +446,7 @@ SNDRV_TIMER_IOCTL_PARAMS command for ALSA timer character device.</p>
 <a name="alsatimer-user-instance-get-status"></a><h3>alsatimer_user_instance_get_status ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_user_instance_get_status (<em class="parameter"><code><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="type">ALSATimerUserInstance</span></a> *self</code></em>,
-                                    <em class="parameter"><code><a class="link" href="ALSATimerInstanceStatus.html" title="ALSATimerInstanceStatus"><span class="type">ALSATimerInstanceStatus</span></a> **instance_status</code></em>,
+                                    <em class="parameter"><code><a class="link" href="ALSATimerInstanceStatus.html" title="ALSATimerInstanceStatus"><span class="type">ALSATimerInstanceStatus</span></a> *const *instance_status</code></em>,
                                     <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the latest status of instance.</p>
 <p>The call of function executes ioctl(2) system call with
@@ -468,7 +468,7 @@ SNDRV_TIMER_IOCTL_STATUS command for ALSA timer character device.</p>
 <tr>
 <td class="parameter_name"><p>instance_status</p></td>
 <td class="parameter_description"><p>A <a class="link" href="ALSATimerInstanceStatus.html" title="ALSATimerInstanceStatus"><span class="type">ALSATimerInstanceStatus</span></a>. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>

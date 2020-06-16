@@ -241,7 +241,7 @@ with SNDRV_TIMER_IOCTL_GINFO command for ALSA timer character device.</p>
 <a name="alsatimer-get-device-status"></a><h3>alsatimer_get_device_status ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsatimer_get_device_status (<em class="parameter"><code><a class="link" href="ALSATimerDeviceId.html" title="ALSATimerDeviceId"><span class="type">ALSATimerDeviceId</span></a> *device_id</code></em>,
-                             <em class="parameter"><code><a class="link" href="ALSATimerDeviceStatus.html" title="ALSATimerDeviceStatus"><span class="type">ALSATimerDeviceStatus</span></a> **device_status</code></em>,
+                             <em class="parameter"><code><a class="link" href="ALSATimerDeviceStatus.html" title="ALSATimerDeviceStatus"><span class="type">ALSATimerDeviceStatus</span></a> *const *device_status</code></em>,
                              <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the status of timer device.</p>
 <p>The call of function executes open(2), close(2), and ioctl(2) system call
@@ -263,7 +263,7 @@ with SNDRV_TIMER_IOCTL_GSTATUS command for ALSA timer character device.</p>
 <tr>
 <td class="parameter_name"><p>device_status</p></td>
 <td class="parameter_description"><p>The status of timer device. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
