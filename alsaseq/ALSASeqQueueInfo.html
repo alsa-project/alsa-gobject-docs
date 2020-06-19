@@ -61,7 +61,7 @@ queue</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a></td>
 <td class="property_name"><a class="link" href="ALSASeqQueueInfo.html#ALSASeqQueueInfo--client-id" title="The “client-id” property">client-id</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -77,7 +77,7 @@ queue</p>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a></td>
 <td class="property_name"><a class="link" href="ALSASeqQueueInfo.html#ALSASeqQueueInfo--queue-id" title="The “queue-id” property">queue-id</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -116,11 +116,11 @@ alsaseq_queue_info_new ();</pre>
 <a name="ALSASeqQueueInfo.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ALSASeqQueueInfo--client-id"></a><h3>The <code class="literal">“client-id”</code> property</h3>
-<pre class="programlisting">  “client-id”                <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “client-id”                <a href="../glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a></pre>
 <p>The numerical ID of client which owns the queue, except for one of ALSASeqSpecificClientId.</p>
 <p>Owner: ALSASeqQueueInfo</p>
 <p>Flags: Read / Write</p>
-<p>Default value: -1</p>
+<p>Default value: 0</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -143,11 +143,11 @@ alsaseq_queue_info_new ();</pre>
 <hr>
 <div class="refsect2">
 <a name="ALSASeqQueueInfo--queue-id"></a><h3>The <code class="literal">“queue-id”</code> property</h3>
-<pre class="programlisting">  “queue-id”                 <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “queue-id”                 <a href="../glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a></pre>
 <p>The numerical ID of queue, except for one of ALSASeqSpecificClientId.</p>
 <p>Owner: ALSASeqQueueInfo</p>
 <p>Flags: Read / Write</p>
-<p>Default value: -1</p>
+<p>Default value: 0</p>
 </div>
 </div>
 </div>

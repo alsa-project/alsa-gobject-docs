@@ -249,7 +249,7 @@ with SNDRV_SEQ_IOCTL_SYSTEM_INFO command for ALSA sequencer character device.</p
 <div class="refsect2">
 <a name="alsaseq-get-client-id-list"></a><h3>alsaseq_get_client_id_list ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-alsaseq_get_client_id_list (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> **entries</code></em>,
+alsaseq_get_client_id_list (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **entries</code></em>,
                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *entry_count</code></em>,
                             <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the list of clients as the numerical ID.</p>
@@ -291,7 +291,7 @@ included in result as well as any numerical value. </p></td>
 <div class="refsect2">
 <a name="alsaseq-get-client-info"></a><h3>alsaseq_get_client_info ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-alsaseq_get_client_info (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> client_id</code></em>,
+alsaseq_get_client_info (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> client_id</code></em>,
                          <em class="parameter"><code><a class="link" href="ALSASeqClientInfo.html" title="ALSASeqClientInfo"><span class="type">ALSASeqClientInfo</span></a> **client_info</code></em>,
                          <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the information of client according to the numerical ID.</p>
@@ -332,8 +332,8 @@ value.</p></td>
 <div class="refsect2">
 <a name="alsaseq-get-port-id-list"></a><h3>alsaseq_get_port_id_list ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-alsaseq_get_port_id_list (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> client_id</code></em>,
-                          <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> **entries</code></em>,
+alsaseq_get_port_id_list (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> client_id</code></em>,
+                          <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **entries</code></em>,
                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *entry_count</code></em>,
                           <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the list of numerical IDs for port added by the client.</p>
@@ -381,8 +381,8 @@ well as any numerical value. </p></td>
 <div class="refsect2">
 <a name="alsaseq-get-port-info"></a><h3>alsaseq_get_port_info ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-alsaseq_get_port_info (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> client_id</code></em>,
-                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> port_id</code></em>,
+alsaseq_get_port_info (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> client_id</code></em>,
+                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> port_id</code></em>,
                        <em class="parameter"><code><a class="link" href="ALSASeqPortInfo.html" title="ALSASeqPortInfo"><span class="type">ALSASeqPortInfo</span></a> **port_info</code></em>,
                        <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the information of port in client.</p>
@@ -429,7 +429,7 @@ ALSASeqSpecificPortId is available as well as any numerical value.</p></td>
 <div class="refsect2">
 <a name="alsaseq-get-client-pool"></a><h3>alsaseq_get_client_pool ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-alsaseq_get_client_pool (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> client_id</code></em>,
+alsaseq_get_client_pool (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> client_id</code></em>,
                          <em class="parameter"><code><a class="link" href="ALSASeqClientPool.html" title="ALSASeqClientPool"><span class="type">ALSASeqClientPool</span></a> **client_pool</code></em>,
                          <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get statistical information of memory pool for the given client.</p>
@@ -515,7 +515,7 @@ for subscription data. </p></td>
 <div class="refsect2">
 <a name="alsaseq-get-queue-id-list"></a><h3>alsaseq_get_queue_id_list ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-alsaseq_get_queue_id_list (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> **entries</code></em>,
+alsaseq_get_queue_id_list (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> **entries</code></em>,
                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *entry_count</code></em>,
                            <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the list of queue in ALSA Sequencer.</p>
@@ -555,7 +555,7 @@ numerical ID of queue. </p></td>
 <div class="refsect2">
 <a name="alsaseq-get-queue-info-by-id"></a><h3>alsaseq_get_queue_info_by_id ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-alsaseq_get_queue_info_by_id (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> queue_id</code></em>,
+alsaseq_get_queue_info_by_id (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> queue_id</code></em>,
                               <em class="parameter"><code><a class="link" href="ALSASeqQueueInfo.html" title="ALSASeqQueueInfo"><span class="type">ALSASeqQueueInfo</span></a> **queue_info</code></em>,
                               <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get the information of queue, according to the numerical ID.</p>
@@ -634,7 +634,7 @@ device.</p>
 <div class="refsect2">
 <a name="alsaseq-get-queue-status"></a><h3>alsaseq_get_queue_status ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-alsaseq_get_queue_status (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> queue_id</code></em>,
+alsaseq_get_queue_status (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> queue_id</code></em>,
                           <em class="parameter"><code><a class="link" href="ALSASeqQueueStatus.html" title="ALSASeqQueueStatus"><span class="type">ALSASeqQueueStatus</span></a> *const *queue_status</code></em>,
                           <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Get current status of queue.</p>

@@ -52,6 +52,7 @@
     <keyword type="property" name="The “resolution” property" link="ALSATimerDeviceInfo.html#ALSATimerDeviceInfo--resolution"/>
     <keyword type="property" name="The “resolution-max” property" link="ALSATimerDeviceInfo.html#ALSATimerDeviceInfo--resolution-max"/>
     <keyword type="property" name="The “resolution-min” property" link="ALSATimerDeviceInfo.html#ALSATimerDeviceInfo--resolution-min"/>
+    <keyword type="function" name="alsatimer_device_status_new ()" link="ALSATimerDeviceStatus.html#alsatimer-device-status-new"/>
     <keyword type="property" name="The “resolution” property" link="ALSATimerDeviceStatus.html#ALSATimerDeviceStatus--resolution"/>
     <keyword type="property" name="The “resolution-denominator” property" link="ALSATimerDeviceStatus.html#ALSATimerDeviceStatus--resolution-denominator"/>
     <keyword type="property" name="The “resolution-numerator” property" link="ALSATimerDeviceStatus.html#ALSATimerDeviceStatus--resolution-numerator"/>
@@ -78,6 +79,7 @@
     <keyword type="property" name="The “id” property" link="ALSATimerInstanceInfo.html#ALSATimerInstanceInfo--id"/>
     <keyword type="property" name="The “name” property" link="ALSATimerInstanceInfo.html#ALSATimerInstanceInfo--name"/>
     <keyword type="property" name="The “resolution” property" link="ALSATimerInstanceInfo.html#ALSATimerInstanceInfo--resolution"/>
+    <keyword type="function" name="alsatimer_instance_status_new ()" link="ALSATimerInstanceStatus.html#alsatimer-instance-status-new"/>
     <keyword type="function" name="alsatimer_instance_status_get_tstamp ()" link="ALSATimerInstanceStatus.html#alsatimer-instance-status-get-tstamp"/>
     <keyword type="property" name="The “interval” property" link="ALSATimerInstanceStatus.html#ALSATimerInstanceStatus--interval"/>
     <keyword type="property" name="The “lost” property" link="ALSATimerInstanceStatus.html#ALSATimerInstanceStatus--lost"/>

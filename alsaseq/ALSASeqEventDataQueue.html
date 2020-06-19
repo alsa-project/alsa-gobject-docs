@@ -173,7 +173,7 @@ subsystem.</p>
 <div class="refsect2">
 <a name="alsaseq-event-data-queue-get-queue-id"></a><h3>alsaseq_event_data_queue_get_queue_id ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-alsaseq_event_data_queue_get_queue_id (<em class="parameter"><code><a class="link" href="ALSASeqEventDataQueue.html" title="ALSASeqEventDataQueue"><span class="type">ALSASeqEventDataQueue</span></a> *self</code></em>,
+alsaseq_event_data_queue_get_queue_id (<em class="parameter"><code>const <a class="link" href="ALSASeqEventDataQueue.html" title="ALSASeqEventDataQueue"><span class="type">ALSASeqEventDataQueue</span></a> *self</code></em>,
                                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *queue_id</code></em>);</pre>
 <p>Get the numerical ID of queue for the event.</p>
 <div class="refsect3">
@@ -234,7 +234,7 @@ alsaseq_event_data_queue_set_queue_id (<em class="parameter"><code><a class="lin
 <a name="alsaseq-event-data-queue-get-value-param"></a><h3>alsaseq_event_data_queue_get_value_param ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsaseq_event_data_queue_get_value_param
-                               (<em class="parameter"><code><a class="link" href="ALSASeqEventDataQueue.html" title="ALSASeqEventDataQueue"><span class="type">ALSASeqEventDataQueue</span></a> *self</code></em>,
+                               (<em class="parameter"><code>const <a class="link" href="ALSASeqEventDataQueue.html" title="ALSASeqEventDataQueue"><span class="type">ALSASeqEventDataQueue</span></a> *self</code></em>,
                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *value</code></em>);</pre>
 <p>Get the value as param of the queue event.</p>
 <div class="refsect3">
@@ -296,7 +296,7 @@ alsaseq_event_data_queue_set_value_param
 <a name="alsaseq-event-data-queue-get-tstamp-param"></a><h3>alsaseq_event_data_queue_get_tstamp_param ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsaseq_event_data_queue_get_tstamp_param
-                               (<em class="parameter"><code><a class="link" href="ALSASeqEventDataQueue.html" title="ALSASeqEventDataQueue"><span class="type">ALSASeqEventDataQueue</span></a> *self</code></em>,
+                               (<em class="parameter"><code>const <a class="link" href="ALSASeqEventDataQueue.html" title="ALSASeqEventDataQueue"><span class="type">ALSASeqEventDataQueue</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <a class="link" href="ALSASeqTstamp.html" title="ALSASeqTstamp"><span class="type">ALSASeqTstamp</span></a> **tstamp</code></em>);</pre>
 <p>Get the timestamp as param of the queue event.</p>
 <div class="refsect3">
@@ -358,7 +358,7 @@ alsaseq_event_data_queue_set_tstamp_param
 <a name="alsaseq-event-data-queue-get-position-param"></a><h3>alsaseq_event_data_queue_get_position_param ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsaseq_event_data_queue_get_position_param
-                               (<em class="parameter"><code><a class="link" href="ALSASeqEventDataQueue.html" title="ALSASeqEventDataQueue"><span class="type">ALSASeqEventDataQueue</span></a> *self</code></em>,
+                               (<em class="parameter"><code>const <a class="link" href="ALSASeqEventDataQueue.html" title="ALSASeqEventDataQueue"><span class="type">ALSASeqEventDataQueue</span></a> *self</code></em>,
                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *position</code></em>);</pre>
 <p>Get the position as param of the queue event.</p>
 <div class="refsect3">
@@ -420,7 +420,7 @@ alsaseq_event_data_queue_set_position_param
 <a name="alsaseq-event-data-queue-get-skew-param"></a><h3>alsaseq_event_data_queue_get_skew_param ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsaseq_event_data_queue_get_skew_param
-                               (<em class="parameter"><code><a class="link" href="ALSASeqEventDataQueue.html" title="ALSASeqEventDataQueue"><span class="type">ALSASeqEventDataQueue</span></a> *self</code></em>,
+                               (<em class="parameter"><code>const <a class="link" href="ALSASeqEventDataQueue.html" title="ALSASeqEventDataQueue"><span class="type">ALSASeqEventDataQueue</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *skew[2]</code></em>);</pre>
 <p>Refer to numerator and denominator of fraction for skew as the parameter of
 queue event.</p>
@@ -486,7 +486,7 @@ numerator and denominator of fraction for skew. </p></td>
 <a name="alsaseq-event-data-queue-get-quadlet-param"></a><h3>alsaseq_event_data_queue_get_quadlet_param ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsaseq_event_data_queue_get_quadlet_param
-                               (<em class="parameter"><code><a class="link" href="ALSASeqEventDataQueue.html" title="ALSASeqEventDataQueue"><span class="type">ALSASeqEventDataQueue</span></a> *self</code></em>,
+                               (<em class="parameter"><code>const <a class="link" href="ALSASeqEventDataQueue.html" title="ALSASeqEventDataQueue"><span class="type">ALSASeqEventDataQueue</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *quadlets[2]</code></em>);</pre>
 <p>Refer to two quadlets as the parameter of queue event.</p>
 <div class="refsect3">
@@ -550,7 +550,7 @@ for quadlets as the parameter of queue event. </p></td>
 <a name="alsaseq-event-data-queue-get-byte-param"></a><h3>alsaseq_event_data_queue_get_byte_param ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsaseq_event_data_queue_get_byte_param
-                               (<em class="parameter"><code><a class="link" href="ALSASeqEventDataQueue.html" title="ALSASeqEventDataQueue"><span class="type">ALSASeqEventDataQueue</span></a> *self</code></em>,
+                               (<em class="parameter"><code>const <a class="link" href="ALSASeqEventDataQueue.html" title="ALSASeqEventDataQueue"><span class="type">ALSASeqEventDataQueue</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *bytes[8]</code></em>);</pre>
 <p>Refer to eight bytes as the parameter of queue event.</p>
 <div class="refsect3">

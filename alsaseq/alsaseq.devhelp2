@@ -87,6 +87,7 @@
     <keyword type="function" name="alsaseq_user_client_set_info ()" link="ALSASeqUserClient.html#alsaseq-user-client-set-info"/>
     <keyword type="function" name="alsaseq_user_client_get_info ()" link="ALSASeqUserClient.html#alsaseq-user-client-get-info"/>
     <keyword type="function" name="alsaseq_user_client_create_port ()" link="ALSASeqUserClient.html#alsaseq-user-client-create-port"/>
+    <keyword type="function" name="alsaseq_user_client_create_port_at ()" link="ALSASeqUserClient.html#alsaseq-user-client-create-port-at"/>
     <keyword type="function" name="alsaseq_user_client_update_port ()" link="ALSASeqUserClient.html#alsaseq-user-client-update-port"/>
     <keyword type="function" name="alsaseq_user_client_delete_port ()" link="ALSASeqUserClient.html#alsaseq-user-client-delete-port"/>
     <keyword type="function" name="alsaseq_user_client_set_pool ()" link="ALSASeqUserClient.html#alsaseq-user-client-set-pool"/>
@@ -224,6 +225,7 @@
     <keyword type="property" name="The “locked” property" link="ALSASeqQueueInfo.html#ALSASeqQueueInfo--locked"/>
     <keyword type="property" name="The “name” property" link="ALSASeqQueueInfo.html#ALSASeqQueueInfo--name"/>
     <keyword type="property" name="The “queue-id” property" link="ALSASeqQueueInfo.html#ALSASeqQueueInfo--queue-id"/>
+    <keyword type="function" name="alsaseq_queue_status_new ()" link="ALSASeqQueueStatus.html#alsaseq-queue-status-new"/>
     <keyword type="function" name="alsaseq_queue_status_get_tick_time ()" link="ALSASeqQueueStatus.html#alsaseq-queue-status-get-tick-time"/>
     <keyword type="function" name="alsaseq_queue_status_get_real_time ()" link="ALSASeqQueueStatus.html#alsaseq-queue-status-get-real-time"/>
     <keyword type="property" name="The “event-count” property" link="ALSASeqQueueStatus.html#ALSASeqQueueStatus--event-count"/>
