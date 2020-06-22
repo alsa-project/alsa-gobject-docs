@@ -31,6 +31,7 @@
     <keyword type="function" name="alsactl_get_control_devnode ()" link="alsactl-Global-functions-in-ALSACtl.html#alsactl-get-control-devnode"/>
     <keyword type="function" name="alsactl_card_new ()" link="ALSACtlCard.html#alsactl-card-new"/>
     <keyword type="function" name="alsactl_card_open ()" link="ALSACtlCard.html#alsactl-card-open"/>
+    <keyword type="function" name="alsactl_card_get_protocol_version ()" link="ALSACtlCard.html#alsactl-card-get-protocol-version"/>
     <keyword type="function" name="alsactl_card_get_info ()" link="ALSACtlCard.html#alsactl-card-get-info"/>
     <keyword type="function" name="alsactl_card_get_elem_id_list ()" link="ALSACtlCard.html#alsactl-card-get-elem-id-list"/>
     <keyword type="function" name="alsactl_card_lock_elem ()" link="ALSACtlCard.html#alsactl-card-lock-elem"/>

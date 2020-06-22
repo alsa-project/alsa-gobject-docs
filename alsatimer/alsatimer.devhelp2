@@ -9,11 +9,11 @@
       <sub name="Global functions in ALSATimer" link="alsatimer-Global-functions-in-ALSATimer.html"/>
     </sub>
     <sub name="ALSATimer objects" link="alsatimer-objects.html">
+      <sub name="ALSATimerUserInstance" link="ALSATimerUserInstance.html"/>
       <sub name="ALSATimerDeviceId" link="ALSATimerDeviceId.html"/>
       <sub name="ALSATimerDeviceInfo" link="ALSATimerDeviceInfo.html"/>
       <sub name="ALSATimerDeviceStatus" link="ALSATimerDeviceStatus.html"/>
       <sub name="ALSATimerDeviceParams" link="ALSATimerDeviceParams.html"/>
-      <sub name="ALSATimerUserInstance" link="ALSATimerUserInstance.html"/>
       <sub name="ALSATimerInstanceInfo" link="ALSATimerInstanceInfo.html"/>
       <sub name="ALSATimerInstanceStatus" link="ALSATimerInstanceStatus.html"/>
       <sub name="ALSATimerInstanceParams" link="ALSATimerInstanceParams.html"/>
@@ -39,6 +39,22 @@
     <keyword type="function" name="alsatimer_get_device_status ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-get-device-status"/>
     <keyword type="function" name="alsatimer_set_device_params ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-set-device-params"/>
     <keyword type="function" name="alsatimer_get_tstamp_source ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-get-tstamp-source"/>
+    <keyword type="function" name="alsatimer_user_instance_new ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-new"/>
+    <keyword type="function" name="alsatimer_user_instance_open ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-open"/>
+    <keyword type="function" name="alsatimer_user_instance_get_protocol_version ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-get-protocol-version"/>
+    <keyword type="function" name="alsatimer_user_instance_choose_event_data_type ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-choose-event-data-type"/>
+    <keyword type="function" name="alsatimer_user_instance_attach ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-attach"/>
+    <keyword type="function" name="alsatimer_user_instance_attach_as_slave ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-attach-as-slave"/>
+    <keyword type="function" name="alsatimer_user_instance_get_info ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-get-info"/>
+    <keyword type="function" name="alsatimer_user_instance_set_params ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-set-params"/>
+    <keyword type="function" name="alsatimer_user_instance_get_status ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-get-status"/>
+    <keyword type="function" name="alsatimer_user_instance_create_source ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-create-source"/>
+    <keyword type="function" name="alsatimer_user_instance_start ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-start"/>
+    <keyword type="function" name="alsatimer_user_instance_stop ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-stop"/>
+    <keyword type="function" name="alsatimer_user_instance_pause ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-pause"/>
+    <keyword type="function" name="alsatimer_user_instance_continue ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-continue"/>
+    <keyword type="signal" name="The “handle-disconnection” signal" link="ALSATimerUserInstance.html#ALSATimerUserInstance-handle-disconnection"/>
+    <keyword type="signal" name="The “handle-event” signal" link="ALSATimerUserInstance.html#ALSATimerUserInstance-handle-event"/>
     <keyword type="function" name="alsatimer_device_id_new ()" link="ALSATimerDeviceId.html#alsatimer-device-id-new"/>
     <keyword type="function" name="alsatimer_device_id_get_class ()" link="ALSATimerDeviceId.html#alsatimer-device-id-get-class"/>
     <keyword type="function" name="alsatimer_device_id_get_card_id ()" link="ALSATimerDeviceId.html#alsatimer-device-id-get-card-id"/>
@@ -59,21 +75,6 @@
     <keyword type="function" name="alsatimer_device_params_new ()" link="ALSATimerDeviceParams.html#alsatimer-device-params-new"/>
     <keyword type="property" name="The “period-denominator” property" link="ALSATimerDeviceParams.html#ALSATimerDeviceParams--period-denominator"/>
     <keyword type="property" name="The “period-numerator” property" link="ALSATimerDeviceParams.html#ALSATimerDeviceParams--period-numerator"/>
-    <keyword type="function" name="alsatimer_user_instance_new ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-new"/>
-    <keyword type="function" name="alsatimer_user_instance_open ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-open"/>
-    <keyword type="function" name="alsatimer_user_instance_choose_event_data_type ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-choose-event-data-type"/>
-    <keyword type="function" name="alsatimer_user_instance_attach ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-attach"/>
-    <keyword type="function" name="alsatimer_user_instance_attach_as_slave ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-attach-as-slave"/>
-    <keyword type="function" name="alsatimer_user_instance_get_info ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-get-info"/>
-    <keyword type="function" name="alsatimer_user_instance_set_params ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-set-params"/>
-    <keyword type="function" name="alsatimer_user_instance_get_status ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-get-status"/>
-    <keyword type="function" name="alsatimer_user_instance_create_source ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-create-source"/>
-    <keyword type="function" name="alsatimer_user_instance_start ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-start"/>
-    <keyword type="function" name="alsatimer_user_instance_stop ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-stop"/>
-    <keyword type="function" name="alsatimer_user_instance_pause ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-pause"/>
-    <keyword type="function" name="alsatimer_user_instance_continue ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-continue"/>
-    <keyword type="signal" name="The “handle-disconnection” signal" link="ALSATimerUserInstance.html#ALSATimerUserInstance-handle-disconnection"/>
-    <keyword type="signal" name="The “handle-event” signal" link="ALSATimerUserInstance.html#ALSATimerUserInstance-handle-event"/>
     <keyword type="property" name="The “card-id” property" link="ALSATimerInstanceInfo.html#ALSATimerInstanceInfo--card-id"/>
     <keyword type="property" name="The “flags” property" link="ALSATimerInstanceInfo.html#ALSATimerInstanceInfo--flags"/>
     <keyword type="property" name="The “id” property" link="ALSATimerInstanceInfo.html#ALSATimerInstanceInfo--id"/>

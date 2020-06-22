@@ -27,6 +27,7 @@
     <keyword type="function" name="alsarawmidi_get_substream_info ()" link="alsarawmidi-Global-functions-in-ALSARawmidi.html#alsarawmidi-get-substream-info"/>
     <keyword type="function" name="alsarawmidi_stream_pair_new ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-new"/>
     <keyword type="function" name="alsarawmidi_stream_pair_open ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-open"/>
+    <keyword type="function" name="alsarawmidi_stream_pair_get_protocol_version ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-get-protocol-version"/>
     <keyword type="function" name="alsarawmidi_stream_pair_get_substream_info ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-get-substream-info"/>
     <keyword type="function" name="alsarawmidi_stream_pair_set_substream_params ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-set-substream-params"/>
     <keyword type="function" name="alsarawmidi_stream_pair_get_substream_status ()" link="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-get-substream-status"/>

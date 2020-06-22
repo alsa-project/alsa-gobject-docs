@@ -9,9 +9,9 @@
       <sub name="Global functions in ALSASeq" link="alsaseq-Global-functions-in-ALSASeq.html"/>
     </sub>
     <sub name="ALSASeq objects" link="alsaseq-objects.html">
+      <sub name="ALSASeqUserClient" link="ALSASeqUserClient.html"/>
       <sub name="ALSASeqSystemInfo" link="ALSASeqSystemInfo.html"/>
       <sub name="ALSASeqClientInfo" link="ALSASeqClientInfo.html"/>
-      <sub name="ALSASeqUserClient" link="ALSASeqUserClient.html"/>
       <sub name="ALSASeqClientPool" link="ALSASeqClientPool.html"/>
       <sub name="ALSASeqAddr" link="ALSASeqAddr.html"/>
       <sub name="ALSASeqPortInfo" link="ALSASeqPortInfo.html"/>
@@ -64,26 +64,9 @@
     <keyword type="function" name="alsaseq_get_queue_info_by_id ()" link="alsaseq-Global-functions-in-ALSASeq.html#alsaseq-get-queue-info-by-id"/>
     <keyword type="function" name="alsaseq_get_queue_info_by_name ()" link="alsaseq-Global-functions-in-ALSASeq.html#alsaseq-get-queue-info-by-name"/>
     <keyword type="function" name="alsaseq_get_queue_status ()" link="alsaseq-Global-functions-in-ALSASeq.html#alsaseq-get-queue-status"/>
-    <keyword type="property" name="The “current-client-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--current-client-count"/>
-    <keyword type="property" name="The “current-queue-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--current-queue-count"/>
-    <keyword type="property" name="The “maximum-channel-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--maximum-channel-count"/>
-    <keyword type="property" name="The “maximum-client-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--maximum-client-count"/>
-    <keyword type="property" name="The “maximum-port-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--maximum-port-count"/>
-    <keyword type="property" name="The “maximum-queue-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--maximum-queue-count"/>
-    <keyword type="function" name="alsaseq_client_info_new ()" link="ALSASeqClientInfo.html#alsaseq-client-info-new"/>
-    <keyword type="function" name="alsaseq_client_info_set_event_filter ()" link="ALSASeqClientInfo.html#alsaseq-client-info-set-event-filter"/>
-    <keyword type="function" name="alsaseq_client_info_get_event_filter ()" link="ALSASeqClientInfo.html#alsaseq-client-info-get-event-filter"/>
-    <keyword type="property" name="The “card-id” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--card-id"/>
-    <keyword type="property" name="The “client-id” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--client-id"/>
-    <keyword type="property" name="The “filter-attributes” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--filter-attributes"/>
-    <keyword type="property" name="The “lost-count” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--lost-count"/>
-    <keyword type="property" name="The “name” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--name"/>
-    <keyword type="property" name="The “port-count” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--port-count"/>
-    <keyword type="property" name="The “process-id” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--process-id"/>
-    <keyword type="property" name="The “type” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--type"/>
-    <keyword type="property" name="The “use-filter” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--use-filter"/>
     <keyword type="function" name="alsaseq_user_client_new ()" link="ALSASeqUserClient.html#alsaseq-user-client-new"/>
     <keyword type="function" name="alsaseq_user_client_open ()" link="ALSASeqUserClient.html#alsaseq-user-client-open"/>
+    <keyword type="function" name="alsaseq_user_client_get_protocol_version ()" link="ALSASeqUserClient.html#alsaseq-user-client-get-protocol-version"/>
     <keyword type="function" name="alsaseq_user_client_set_info ()" link="ALSASeqUserClient.html#alsaseq-user-client-set-info"/>
     <keyword type="function" name="alsaseq_user_client_get_info ()" link="ALSASeqUserClient.html#alsaseq-user-client-get-info"/>
     <keyword type="function" name="alsaseq_user_client_create_port ()" link="ALSASeqUserClient.html#alsaseq-user-client-create-port"/>
@@ -107,6 +90,24 @@
     <keyword type="function" name="alsaseq_user_client_remove_events ()" link="ALSASeqUserClient.html#alsaseq-user-client-remove-events"/>
     <keyword type="property" name="The “client-id” property" link="ALSASeqUserClient.html#ALSASeqUserClient--client-id"/>
     <keyword type="signal" name="The “handle-event” signal" link="ALSASeqUserClient.html#ALSASeqUserClient-handle-event"/>
+    <keyword type="property" name="The “current-client-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--current-client-count"/>
+    <keyword type="property" name="The “current-queue-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--current-queue-count"/>
+    <keyword type="property" name="The “maximum-channel-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--maximum-channel-count"/>
+    <keyword type="property" name="The “maximum-client-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--maximum-client-count"/>
+    <keyword type="property" name="The “maximum-port-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--maximum-port-count"/>
+    <keyword type="property" name="The “maximum-queue-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--maximum-queue-count"/>
+    <keyword type="function" name="alsaseq_client_info_new ()" link="ALSASeqClientInfo.html#alsaseq-client-info-new"/>
+    <keyword type="function" name="alsaseq_client_info_set_event_filter ()" link="ALSASeqClientInfo.html#alsaseq-client-info-set-event-filter"/>
+    <keyword type="function" name="alsaseq_client_info_get_event_filter ()" link="ALSASeqClientInfo.html#alsaseq-client-info-get-event-filter"/>
+    <keyword type="property" name="The “card-id” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--card-id"/>
+    <keyword type="property" name="The “client-id” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--client-id"/>
+    <keyword type="property" name="The “filter-attributes” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--filter-attributes"/>
+    <keyword type="property" name="The “lost-count” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--lost-count"/>
+    <keyword type="property" name="The “name” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--name"/>
+    <keyword type="property" name="The “port-count” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--port-count"/>
+    <keyword type="property" name="The “process-id” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--process-id"/>
+    <keyword type="property" name="The “type” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--type"/>
+    <keyword type="property" name="The “use-filter” property" link="ALSASeqClientInfo.html#ALSASeqClientInfo--use-filter"/>
     <keyword type="function" name="alsaseq_client_pool_new ()" link="ALSASeqClientPool.html#alsaseq-client-pool-new"/>
     <keyword type="property" name="The “client-id” property" link="ALSASeqClientPool.html#ALSASeqClientPool--client-id"/>
     <keyword type="property" name="The “input-free” property" link="ALSASeqClientPool.html#ALSASeqClientPool--input-free"/>
