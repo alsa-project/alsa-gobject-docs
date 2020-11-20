@@ -45,6 +45,14 @@ stream.</p>
 <tbody>
 <tr>
 <td class="function_type">
+<a href="../glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-error-quark" title="alsarawmidi_stream_pair_error_quark ()">alsarawmidi_stream_pair_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
 <a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="returnvalue">ALSARawmidiStreamPair</span></a> *
 </td>
 <td class="function_name">
@@ -173,6 +181,19 @@ stream.</p>
 </table></div>
 </div>
 <div class="refsect1">
+<a name="ALSARawmidiStreamPair.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="ALSARawmidiStreamPair.html#ALSARAWMIDI-STREAM-PAIR-ERROR:CAPS" title="ALSARAWMIDI_STREAM_PAIR_ERROR">ALSARAWMIDI_STREAM_PAIR_ERROR</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
 <a name="ALSARawmidiStreamPair.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> ALSARawmidiStreamPair
@@ -199,6 +220,17 @@ space in the intermediate buffer according to direction argument.</p>
 </div>
 <div class="refsect1">
 <a name="ALSARawmidiStreamPair.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="alsarawmidi-stream-pair-error-quark"></a><h3>alsarawmidi_stream_pair_error_quark ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+alsarawmidi_stream_pair_error_quark ();</pre>
+<p>Return the GQuark for error domain of GError which has code in <a class="link" href="alsarawmidi-alsarawmidi-enum-types.html#ALSARawmidiStreamPairError" title="enum ALSARawmidiStreamPairError"><span class="type">ALSARawmidiStreamPairError</span></a>.</p>
+<div class="refsect3">
+<a name="alsarawmidi-stream-pair-error-quark.returns"></a><h4>Returns</h4>
+<p> A <a href="../glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a>.</p>
+</div>
+</div>
+<hr>
 <div class="refsect2">
 <a name="alsarawmidi-stream-pair-new"></a><h3>alsarawmidi_stream_pair_new ()</h3>
 <pre class="programlisting"><a class="link" href="ALSARawmidiStreamPair.html" title="ALSARawmidiStreamPair"><span class="returnvalue">ALSARawmidiStreamPair</span></a> *
@@ -262,7 +294,8 @@ are forced to fulfil internally according to the access_modes.</p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with two domains; <code class="function"><GTKDOCLINK HREF="g-file-error-quark"><code class="function">g_file_error_quark()</code></code></GTKDOCLINK>
+and <a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-error-quark" title="alsarawmidi_stream_pair_error_quark ()"><code class="function">alsarawmidi_stream_pair_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -300,6 +333,11 @@ and micro version is 8 bit each.</p>
 <td class="parameter_description"><p>The version of
 protocol currently used. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> fixed-size=3][<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
@@ -343,7 +381,7 @@ SNDRV_RAWMIDI_IOCTL_INFO command for ALSA rawmidi character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-error-quark" title="alsarawmidi_stream_pair_error_quark ()"><span class="type">alsarawmidi_stream_pair_error_quark</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -389,7 +427,7 @@ SNDRV_RAWMIDI_IOCTL_PARAMS command for ALSA rawmidi character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-error-quark" title="alsarawmidi_stream_pair_error_quark ()"><span class="type">alsarawmidi_stream_pair_error_quark</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -435,7 +473,7 @@ SNDRV_RAWMIDI_IOCTL_STATUS command for ALSA rawmidi character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-error-quark" title="alsarawmidi_stream_pair_error_quark ()"><span class="type">alsarawmidi_stream_pair_error_quark</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -483,7 +521,8 @@ device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with two domains; <code class="function"><GTKDOCLINK HREF="g-file-error-quark"><code class="function">g_file_error_quark()</code></code></GTKDOCLINK> and
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-error-quark" title="alsarawmidi_stream_pair_error_quark ()"><code class="function">alsarawmidi_stream_pair_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -531,7 +570,8 @@ device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with two domains; <code class="function"><GTKDOCLINK HREF="g-file-error-quark"><code class="function">g_file_error_quark()</code></code></GTKDOCLINK> and
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-error-quark" title="alsarawmidi_stream_pair_error_quark ()"><code class="function">alsarawmidi_stream_pair_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -588,12 +628,21 @@ signal, according to the result of poll(2) system call.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with two domains; <code class="function"><GTKDOCLINK HREF="g-file-error-quark"><code class="function">g_file_error_quark()</code></code></GTKDOCLINK> and
+<a class="link" href="ALSARawmidiStreamPair.html#alsarawmidi-stream-pair-error-quark" title="alsarawmidi_stream_pair_error_quark ()"><code class="function">alsarawmidi_stream_pair_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ALSARawmidiStreamPair.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ALSARAWMIDI-STREAM-PAIR-ERROR:CAPS"></a><h3>ALSARAWMIDI_STREAM_PAIR_ERROR</h3>
+<pre class="programlisting">#define ALSARAWMIDI_STREAM_PAIR_ERROR           alsarawmidi_stream_pair_error_quark()
+</pre>
 </div>
 </div>
 <div class="refsect1">

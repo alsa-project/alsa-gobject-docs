@@ -43,6 +43,14 @@
 <tbody>
 <tr>
 <td class="function_type">
+<a href="../glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-error-quark" title="alsatimer_user_instance_error_quark ()">alsatimer_user_instance_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
 <a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="returnvalue">ALSATimerUserInstance</span></a> *
 </td>
 <td class="function_name">
@@ -179,6 +187,19 @@
 </table></div>
 </div>
 <div class="refsect1">
+<a name="ALSATimerUserInstance.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="ALSATimerUserInstance.html#ALSATIMER-USER-INSTANCE-ERROR:CAPS" title="ALSATIMER_USER_INSTANCE_ERROR">ALSATIMER_USER_INSTANCE_ERROR</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
 <a name="ALSATimerUserInstance.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> ALSATimerUserInstance
@@ -196,6 +217,17 @@ slave.</p>
 </div>
 <div class="refsect1">
 <a name="ALSATimerUserInstance.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="alsatimer-user-instance-error-quark"></a><h3>alsatimer_user_instance_error_quark ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+alsatimer_user_instance_error_quark ();</pre>
+<p>Return the GQuark for error domain of GError which has code in <a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerUserInstanceError" title="enum ALSATimerUserInstanceError"><span class="type">ALSATimerUserInstanceError</span></a> enumerations.</p>
+<div class="refsect3">
+<a name="alsatimer-user-instance-error-quark.returns"></a><h4>Returns</h4>
+<p> A <a href="../glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a>.</p>
+</div>
+</div>
+<hr>
 <div class="refsect2">
 <a name="alsatimer-user-instance-new"></a><h3>alsatimer_user_instance_new ()</h3>
 <pre class="programlisting"><a class="link" href="ALSATimerUserInstance.html" title="ALSATimerUserInstance"><span class="returnvalue">ALSATimerUserInstance</span></a> *
@@ -232,7 +264,8 @@ device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with two domains; <code class="function"><GTKDOCLINK HREF="g-file-error-quark"><code class="function">g_file_error_quark()</code></code></GTKDOCLINK> and
+<a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-error-quark" title="alsatimer_user_instance_error_quark ()"><code class="function">alsatimer_user_instance_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -315,7 +348,7 @@ SNDRV_TIMER_IOCTL_TREAD command for ALSA timer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-error-quark" title="alsatimer_user_instance_error_quark ()"><code class="function">alsatimer_user_instance_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -354,7 +387,7 @@ SNDRV_TIMER_IOCTL_SELECT command for ALSA timer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-error-quark" title="alsatimer_user_instance_error_quark ()"><span class="type">alsatimer_user_instance_error_quark</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -370,14 +403,12 @@ alsatimer_user_instance_attach_as_slave
                                 <em class="parameter"><code><a class="link" href="alsatimer-alsatimer-enum-types.html#ALSATimerSlaveClass" title="enum ALSATimerSlaveClass"><span class="type">ALSATimerSlaveClass</span></a> slave_class</code></em>,
                                 <em class="parameter"><code><span class="type">int</span> slave_id</code></em>,
                                 <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Attach the instance to timer device as an slave to another instance indicated
-by a pair of slave_class and slave_id. If the slave_class is for application
+<p>Attach the instance as an slave to another instance indicated by a pair of
+slave_class and slave_id. If the slave_class is for application
 (=ALSATIMER_SLAVE_CLASS_APPLICATION), the slave_id is for the PID of
 application process which owns the instance of timer. If the slave_class is
 for ALSA sequencer (=ALSATIMER_SLAVE_CLASS_SEQUENCER), the slave_id is the
 numerical ID of queue bound for timer device.</p>
-<p>Attach the instance to the timer device. If the given device_id is for
-absent timer device, the instance can be detached with error.</p>
 <p>The call of function executes ioctl(2) system call with
 SNDRV_TIMER_IOCTL_SELECT command for ALSA timer character device.</p>
 <div class="refsect3">
@@ -407,7 +438,7 @@ SNDRV_TIMER_IOCTL_SELECT command for ALSA timer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-error-quark" title="alsatimer_user_instance_error_quark ()"><span class="type">alsatimer_user_instance_error_quark</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -445,7 +476,7 @@ SNDRV_TIMER_IOCTL_INFO command for ALSA timer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-error-quark" title="alsatimer_user_instance_error_quark ()"><span class="type">alsatimer_user_instance_error_quark</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -483,7 +514,7 @@ SNDRV_TIMER_IOCTL_PARAMS command for ALSA timer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-error-quark" title="alsatimer_user_instance_error_quark ()"><span class="type">alsatimer_user_instance_error_quark</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -521,7 +552,7 @@ SNDRV_TIMER_IOCTL_STATUS command for ALSA timer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-error-quark" title="alsatimer_user_instance_error_quark ()"><span class="type">alsatimer_user_instance_error_quark</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -592,7 +623,7 @@ SNDRV_TIMER_IOCTL_START command for ALSA timer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-error-quark" title="alsatimer_user_instance_error_quark ()"><span class="type">alsatimer_user_instance_error_quark</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -624,7 +655,7 @@ SNDRV_TIMER_IOCTL_STOP command for ALSA timer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-error-quark" title="alsatimer_user_instance_error_quark ()"><span class="type">alsatimer_user_instance_error_quark</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -656,7 +687,7 @@ SNDRV_TIMER_IOCTL_PAUSE command for ALSA timer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-error-quark" title="alsatimer_user_instance_error_quark ()"><span class="type">alsatimer_user_instance_error_quark</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -688,12 +719,20 @@ SNDRV_TIMER_IOCTL_CONTINUE command for ALSA timer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSATimerUserInstance.html#alsatimer-user-instance-error-quark" title="alsatimer_user_instance_error_quark ()"><span class="type">alsatimer_user_instance_error_quark</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ALSATimerUserInstance.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ALSATIMER-USER-INSTANCE-ERROR:CAPS"></a><h3>ALSATIMER_USER_INSTANCE_ERROR</h3>
+<pre class="programlisting">#define ALSATIMER_USER_INSTANCE_ERROR   alsatimer_user_instance_error_quark()
+</pre>
 </div>
 </div>
 <div class="refsect1">

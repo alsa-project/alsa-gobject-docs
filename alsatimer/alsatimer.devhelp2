@@ -32,6 +32,7 @@
     <keyword type="enum" name="enum ALSATimerInstanceParamFlag" link="alsatimer-alsatimer-enum-types.html#ALSATimerInstanceParamFlag"/>
     <keyword type="enum" name="enum ALSATimerEventType" link="alsatimer-alsatimer-enum-types.html#ALSATimerEventType"/>
     <keyword type="enum" name="enum ALSATimerEventDataType" link="alsatimer-alsatimer-enum-types.html#ALSATimerEventDataType"/>
+    <keyword type="enum" name="enum ALSATimerUserInstanceError" link="alsatimer-alsatimer-enum-types.html#ALSATimerUserInstanceError"/>
     <keyword type="function" name="alsatimer_get_sysname ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-get-sysname"/>
     <keyword type="function" name="alsatimer_get_devnode ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-get-devnode"/>
     <keyword type="function" name="alsatimer_get_device_id_list ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-get-device-id-list"/>
@@ -39,6 +40,7 @@
     <keyword type="function" name="alsatimer_get_device_status ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-get-device-status"/>
     <keyword type="function" name="alsatimer_set_device_params ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-set-device-params"/>
     <keyword type="function" name="alsatimer_get_tstamp_source ()" link="alsatimer-Global-functions-in-ALSATimer.html#alsatimer-get-tstamp-source"/>
+    <keyword type="function" name="alsatimer_user_instance_error_quark ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-error-quark"/>
     <keyword type="function" name="alsatimer_user_instance_new ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-new"/>
     <keyword type="function" name="alsatimer_user_instance_open ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-open"/>
     <keyword type="function" name="alsatimer_user_instance_get_protocol_version ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-get-protocol-version"/>
@@ -53,6 +55,7 @@
     <keyword type="function" name="alsatimer_user_instance_stop ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-stop"/>
     <keyword type="function" name="alsatimer_user_instance_pause ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-pause"/>
     <keyword type="function" name="alsatimer_user_instance_continue ()" link="ALSATimerUserInstance.html#alsatimer-user-instance-continue"/>
+    <keyword type="macro" name="ALSATIMER_USER_INSTANCE_ERROR" link="ALSATimerUserInstance.html#ALSATIMER-USER-INSTANCE-ERROR:CAPS"/>
     <keyword type="signal" name="The “handle-disconnection” signal" link="ALSATimerUserInstance.html#ALSATimerUserInstance-handle-disconnection"/>
     <keyword type="signal" name="The “handle-event” signal" link="ALSATimerUserInstance.html#ALSATimerUserInstance-handle-event"/>
     <keyword type="function" name="alsatimer_device_id_new ()" link="ALSATimerDeviceId.html#alsatimer-device-id-new"/>
@@ -130,5 +133,9 @@
     <keyword type="constant" name="ALSATIMER_EVENT_TYPE_MRESUME" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-EVENT-TYPE-MRESUME:CAPS"/>
     <keyword type="constant" name="ALSATIMER_EVENT_DATA_TYPE_TICK" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-EVENT-DATA-TYPE-TICK:CAPS"/>
     <keyword type="constant" name="ALSATIMER_EVENT_DATA_TYPE_TSTAMP" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-EVENT-DATA-TYPE-TSTAMP:CAPS"/>
+    <keyword type="constant" name="ALSATIMER_USER_INSTANCE_ERROR_FAILED" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-USER-INSTANCE-ERROR-FAILED:CAPS"/>
+    <keyword type="constant" name="ALSATIMER_USER_INSTANCE_ERROR_TIMER_NOT_FOUND" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-USER-INSTANCE-ERROR-TIMER-NOT-FOUND:CAPS"/>
+    <keyword type="constant" name="ALSATIMER_USER_INSTANCE_ERROR_NOT_ATTACHED" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-USER-INSTANCE-ERROR-NOT-ATTACHED:CAPS"/>
+    <keyword type="constant" name="ALSATIMER_USER_INSTANCE_ERROR_ATTACHED" link="alsatimer-alsatimer-enum-types.html#ALSATIMER-USER-INSTANCE-ERROR-ATTACHED:CAPS"/>
   </functions>
 </book>

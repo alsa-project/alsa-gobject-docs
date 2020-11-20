@@ -25,10 +25,12 @@
     <keyword type="enum" name="enum ALSACtlElemAccessFlag" link="alsactl-alsactl-enum-types.html#ALSACtlElemAccessFlag"/>
     <keyword type="enum" name="enum ALSACtlEventType" link="alsactl-alsactl-enum-types.html#ALSACtlEventType"/>
     <keyword type="enum" name="enum ALSACtlElemEventMask" link="alsactl-alsactl-enum-types.html#ALSACtlElemEventMask"/>
+    <keyword type="enum" name="enum ALSACtlCardError" link="alsactl-alsactl-enum-types.html#ALSACtlCardError"/>
     <keyword type="function" name="alsactl_get_card_id_list ()" link="alsactl-Global-functions-in-ALSACtl.html#alsactl-get-card-id-list"/>
     <keyword type="function" name="alsactl_get_card_sysname ()" link="alsactl-Global-functions-in-ALSACtl.html#alsactl-get-card-sysname"/>
     <keyword type="function" name="alsactl_get_control_sysname ()" link="alsactl-Global-functions-in-ALSACtl.html#alsactl-get-control-sysname"/>
     <keyword type="function" name="alsactl_get_control_devnode ()" link="alsactl-Global-functions-in-ALSACtl.html#alsactl-get-control-devnode"/>
+    <keyword type="function" name="alsactl_card_error_quark ()" link="ALSACtlCard.html#alsactl-card-error-quark"/>
     <keyword type="function" name="alsactl_card_new ()" link="ALSACtlCard.html#alsactl-card-new"/>
     <keyword type="function" name="alsactl_card_open ()" link="ALSACtlCard.html#alsactl-card-open"/>
     <keyword type="function" name="alsactl_card_get_protocol_version ()" link="ALSACtlCard.html#alsactl-card-get-protocol-version"/>
@@ -45,6 +47,7 @@
     <keyword type="function" name="alsactl_card_write_elem_value ()" link="ALSACtlCard.html#alsactl-card-write-elem-value"/>
     <keyword type="function" name="alsactl_card_read_elem_value ()" link="ALSACtlCard.html#alsactl-card-read-elem-value"/>
     <keyword type="function" name="alsactl_card_create_source ()" link="ALSACtlCard.html#alsactl-card-create-source"/>
+    <keyword type="macro" name="ALSACTL_CARD_ERROR" link="ALSACtlCard.html#ALSACTL-CARD-ERROR:CAPS"/>
     <keyword type="property" name="The “devnode” property" link="ALSACtlCard.html#ALSACtlCard--devnode"/>
     <keyword type="property" name="The “subscribed” property" link="ALSACtlCard.html#ALSACtlCard--subscribed"/>
     <keyword type="signal" name="The “handle-disconnection” signal" link="ALSACtlCard.html#ALSACtlCard-handle-disconnection"/>
@@ -126,5 +129,11 @@
     <keyword type="constant" name="ALSACTL_ELEM_EVENT_MASK_ADD" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-EVENT-MASK-ADD:CAPS"/>
     <keyword type="constant" name="ALSACTL_ELEM_EVENT_MASK_TLV" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-EVENT-MASK-TLV:CAPS"/>
     <keyword type="constant" name="ALSACTL_ELEM_EVENT_MASK_REMOVE" link="alsactl-alsactl-enum-types.html#ALSACTL-ELEM-EVENT-MASK-REMOVE:CAPS"/>
+    <keyword type="constant" name="ALSACTL_CARD_ERROR_FAILED" link="alsactl-alsactl-enum-types.html#ALSACTL-CARD-ERROR-FAILED:CAPS"/>
+    <keyword type="constant" name="ALSACTL_CARD_ERROR_DISCONNECTED" link="alsactl-alsactl-enum-types.html#ALSACTL-CARD-ERROR-DISCONNECTED:CAPS"/>
+    <keyword type="constant" name="ALSACTL_CARD_ERROR_ELEM_NOT_FOUND" link="alsactl-alsactl-enum-types.html#ALSACTL-CARD-ERROR-ELEM-NOT-FOUND:CAPS"/>
+    <keyword type="constant" name="ALSACTL_CARD_ERROR_ELEM_NOT_SUPPORTED" link="alsactl-alsactl-enum-types.html#ALSACTL-CARD-ERROR-ELEM-NOT-SUPPORTED:CAPS"/>
+    <keyword type="constant" name="ALSACTL_CARD_ERROR_ELEM_OWNED" link="alsactl-alsactl-enum-types.html#ALSACTL-CARD-ERROR-ELEM-OWNED:CAPS"/>
+    <keyword type="constant" name="ALSACTL_CARD_ERROR_ELEM_EXIST" link="alsactl-alsactl-enum-types.html#ALSACTL-CARD-ERROR-ELEM-EXIST:CAPS"/>
   </functions>
 </book>

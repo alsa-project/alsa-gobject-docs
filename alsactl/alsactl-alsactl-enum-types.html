@@ -60,6 +60,10 @@
 <td class="datatype_keyword">enum</td>
 <td class="function_name"><a class="link" href="alsactl-alsactl-enum-types.html#ALSACtlElemEventMask" title="enum ALSACtlElemEventMask">ALSACtlElemEventMask</a></td>
 </tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="alsactl-alsactl-enum-types.html#ALSACtlCardError" title="enum ALSACtlCardError">ALSACtlCardError</a></td>
+</tr>
 </tbody>
 </table></div>
 </div>
@@ -375,6 +379,65 @@
 <td class="enum_member_name"><p><a name="ALSACTL-ELEM-EVENT-MASK-REMOVE:CAPS"></a>ALSACTL_ELEM_EVENT_MASK_REMOVE</p></td>
 <td class="enum_member_description">
 <p>The element notifies removal of the element.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ALSACtlCardError"></a><h3>enum ALSACtlCardError</h3>
+<p>A set of error code for GError with domain which equals to <a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a></p>
+<div class="refsect3">
+<a name="ALSACtlCardError.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="ALSACTL-CARD-ERROR-FAILED:CAPS"></a>ALSACTL_CARD_ERROR_FAILED</p></td>
+<td class="enum_member_description">
+<p>The system call failed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ALSACTL-CARD-ERROR-DISCONNECTED:CAPS"></a>ALSACTL_CARD_ERROR_DISCONNECTED</p></td>
+<td class="enum_member_description">
+<p>The card associated to the instance is in disconnect state.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ALSACTL-CARD-ERROR-ELEM-NOT-FOUND:CAPS"></a>ALSACTL_CARD_ERROR_ELEM_NOT_FOUND</p></td>
+<td class="enum_member_description">
+<p>The control element not found in the card.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ALSACTL-CARD-ERROR-ELEM-NOT-SUPPORTED:CAPS"></a>ALSACTL_CARD_ERROR_ELEM_NOT_SUPPORTED</p></td>
+<td class="enum_member_description">
+<p>The operation is not supported by the control element.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ALSACTL-CARD-ERROR-ELEM-OWNED:CAPS"></a>ALSACTL_CARD_ERROR_ELEM_OWNED</p></td>
+<td class="enum_member_description">
+<p>The control element is owned by the other process.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ALSACTL-CARD-ERROR-ELEM-EXIST:CAPS"></a>ALSACTL_CARD_ERROR_ELEM_EXIST</p></td>
+<td class="enum_member_description">
+<p>The control element already exists.</p>
 </td>
 <td class="enum_member_annotations"> </td>
 </tr>

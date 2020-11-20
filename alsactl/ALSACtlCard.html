@@ -44,6 +44,14 @@
 <tbody>
 <tr>
 <td class="function_type">
+<a href="../glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()">alsactl_card_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
 <a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="returnvalue">ALSACtlCard</span></a> *
 </td>
 <td class="function_name">
@@ -219,6 +227,19 @@
 </table></div>
 </div>
 <div class="refsect1">
+<a name="ALSACtlCard.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="ALSACtlCard.html#ALSACTL-CARD-ERROR:CAPS" title="ALSACTL_CARD_ERROR">ALSACTL_CARD_ERROR</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
 <a name="ALSACtlCard.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> ALSACtlCard
@@ -234,6 +255,17 @@ the object maintains file descriptor till object destruction.</p>
 </div>
 <div class="refsect1">
 <a name="ALSACtlCard.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="alsactl-card-error-quark"></a><h3>alsactl_card_error_quark ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+alsactl_card_error_quark ();</pre>
+<p>Return the GQuark for error domain of GError which has code in <a class="link" href="alsactl-alsactl-enum-types.html#ALSACtlCardError" title="enum ALSACtlCardError"><span class="type">ALSACtlCardError</span></a> enumerations.</p>
+<div class="refsect3">
+<a name="alsactl-card-error-quark.returns"></a><h4>Returns</h4>
+<p> A <a href="../glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a>.</p>
+</div>
+</div>
+<hr>
 <div class="refsect2">
 <a name="alsactl-card-new"></a><h3>alsactl_card_new ()</h3>
 <pre class="programlisting"><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="returnvalue">ALSACtlCard</span></a> *
@@ -277,7 +309,8 @@ device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with two domains; <code class="function"><GTKDOCLINK HREF="g-file-error-quark"><code class="function">g_file_error_quark()</code></code></GTKDOCLINK> and
+<a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -355,7 +388,7 @@ SNDRV_CTL_IOCTL_CARD_INFO command for ALSA control character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -395,7 +428,7 @@ ALSACtlElemId. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -440,7 +473,7 @@ ALSA control character device..</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -486,7 +519,7 @@ retrieve all of enumeration labels.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -499,7 +532,7 @@ retrieve all of enumeration labels.</p>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_write_elem_tlv (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                              <em class="parameter"><code>const <a class="link" href="ALSACtlElemId.html" title="ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
-                             <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a> *container</code></em>,
+                             <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *container</code></em>,
                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> container_count</code></em>,
                              <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Write the given array of bytes as Type/Length/Value data for element pointed
@@ -538,7 +571,7 @@ Type-Length-Value data. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -551,7 +584,7 @@ Type-Length-Value data. </p></td>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_read_elem_tlv (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                             <em class="parameter"><code>const <a class="link" href="ALSACtlElemId.html" title="ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
-                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a> *const *container</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *const *container</code></em>,
                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *container_count</code></em>,
                             <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Read Type/Length/Value data from element pointed by the identifier and fulfil
@@ -590,7 +623,7 @@ for Type-Length-Value data. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -603,7 +636,7 @@ for Type-Length-Value data. </p></td>
 <pre class="programlisting"><span class="returnvalue">void</span>
 alsactl_card_command_elem_tlv (<em class="parameter"><code><a class="link" href="ALSACtlCard.html" title="ALSACtlCard"><span class="type">ALSACtlCard</span></a> *self</code></em>,
                                <em class="parameter"><code>const <a class="link" href="ALSACtlElemId.html" title="ALSACtlElemId"><span class="type">ALSACtlElemId</span></a> *elem_id</code></em>,
-                               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a> *const *container</code></em>,
+                               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *const *container</code></em>,
                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *container_count</code></em>,
                                <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Command the given array of bytes as Type/Length/Value data for  element
@@ -642,7 +675,7 @@ for Type-Length-Value data. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -698,7 +731,7 @@ SNDRV_CTL_IOCTL_ELEM_ADD command for ALSA control character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -754,7 +787,7 @@ SNDRV_CTL_IOCTL_ELEM_REPLACE command for ALSA control character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -792,7 +825,7 @@ SNDRV_CTL_IOCTL_ELEM_REMOVE command for ALSA control character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -836,7 +869,7 @@ SNDRV_CTL_IOCTL_ELEM_WRITE command for ALSA control character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -880,7 +913,7 @@ SNDRV_CTL_IOCTL_ELEM_READ command for ALSA control character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -919,12 +952,20 @@ according to the result of poll(2) system call.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSACtlCard.html#alsactl-card-error-quark" title="alsactl_card_error_quark ()"><code class="function">alsactl_card_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ALSACtlCard.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ALSACTL-CARD-ERROR:CAPS"></a><h3>ALSACTL_CARD_ERROR</h3>
+<pre class="programlisting">#define ALSACTL_CARD_ERROR alsactl_card_error_quark()
+</pre>
 </div>
 </div>
 <div class="refsect1">

@@ -44,6 +44,14 @@
 <tbody>
 <tr>
 <td class="function_type">
+<a href="../glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()">alsaseq_user_client_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
 <a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="returnvalue">ALSASeqUserClient</span></a> *
 </td>
 <td class="function_name">
@@ -268,6 +276,19 @@
 </table></div>
 </div>
 <div class="refsect1">
+<a name="ALSASeqUserClient.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="ALSASeqUserClient.html#ALSASEQ-USER-CLIENT-ERROR:CAPS" title="ALSASEQ_USER_CLIENT_ERROR">ALSASEQ_USER_CLIENT_ERROR</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
 <a name="ALSASeqUserClient.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> ALSASeqUserClient
@@ -287,6 +308,17 @@ dispatcher to notify the event. The call of
 </div>
 <div class="refsect1">
 <a name="ALSASeqUserClient.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="alsaseq-user-client-error-quark"></a><h3>alsaseq_user_client_error_quark ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+alsaseq_user_client_error_quark ();</pre>
+<p>Return the GQuark for error domain of GError which has code in <a class="link" href="alsaseq-alsaseq-enum-types.html#ALSASeqUserClientError" title="enum ALSASeqUserClientError"><span class="type">ALSASeqUserClientError</span></a> enumerations.</p>
+<div class="refsect3">
+<a name="alsaseq-user-client-error-quark.returns"></a><h4>Returns</h4>
+<p> A <a href="../glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a>.</p>
+</div>
+</div>
+<hr>
 <div class="refsect2">
 <a name="alsaseq-user-client-new"></a><h3>alsaseq_user_client_new ()</h3>
 <pre class="programlisting"><a class="link" href="ALSASeqUserClient.html" title="ALSASeqUserClient"><span class="returnvalue">ALSASeqUserClient</span></a> *
@@ -325,7 +357,8 @@ character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with two domains; <code class="function"><GTKDOCLINK HREF="g-file-error-quark"><code class="function">g_file_error_quark()</code></code></GTKDOCLINK> and
+<a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -404,7 +437,7 @@ SNDRV_SEQ_IOCTL_SET_CLIENT_INFO command for ALSA sequencer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -442,7 +475,7 @@ SNDRV_SEQ_IOCTL_GET_CLIENT_INFO command for ALSA sequencer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -480,7 +513,7 @@ SNDRV_SEQ_IOCTL_CREATE_PORT command for ALSA sequencer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -524,7 +557,7 @@ SNDRV_SEQ_IOCTL_CREATE_PORT command for ALSA sequencer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -568,7 +601,7 @@ SNDRV_SEQ_IOCTL_SET_PORT_INFO command for ALSA sequencer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -606,7 +639,7 @@ SNDRV_SEQ_IOCTL_DELETE_PORT command for ALSA sequencer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -644,7 +677,7 @@ SNDRV_SEQ_IOCTL_SET_CLIENT_POOL command for ALSA sequencer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -682,7 +715,7 @@ SNDRV_SEQ_IOCTL_GET_CLIENT_POOL command for ALSA sequencer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -726,7 +759,8 @@ character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with two domains; <code class="function"><GTKDOCLINK HREF="g-file-error-quark"><code class="function">g_file_error_quark()</code></code></GTKDOCLINK>
+and <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -811,7 +845,7 @@ for ALSA sequencer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -850,7 +884,7 @@ SNDRV_SEQ_IOCTL_CREATE_QUEUE command for ALSA sequencer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -888,7 +922,7 @@ SNDRV_SEQ_IOCTL_DELETE_QUEUE command for ALSA sequencer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -926,7 +960,7 @@ SNDRV_SEQ_IOCTL_SET_QUEUE_INFO command for ALSA sequencer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -971,7 +1005,7 @@ ALSASeqSpecificQueueId.</p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1016,7 +1050,7 @@ ALSASeqSpecificQueueId.</p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1061,7 +1095,7 @@ ALSASeqSpecificQueueId.</p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1106,7 +1140,7 @@ ALSASeqSpecificQueueId.</p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1151,7 +1185,7 @@ ALSASeqSpecificQueueId.</p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1196,7 +1230,7 @@ ALSASeqSpecificQueueId.</p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1234,12 +1268,20 @@ SNDRV_SEQ_IOCTL_REMOVE_EVENTS command for ALSA sequencer character device.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>.</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>. Error is generated with domain of <a class="link" href="ALSASeqUserClient.html#alsaseq-user-client-error-quark" title="alsaseq_user_client_error_quark ()"><code class="function">alsaseq_user_client_error_quark()</code></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
+</div>
+</div>
+<div class="refsect1">
+<a name="ALSASeqUserClient.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ALSASEQ-USER-CLIENT-ERROR:CAPS"></a><h3>ALSASEQ_USER_CLIENT_ERROR</h3>
+<pre class="programlisting">#define ALSASEQ_USER_CLIENT_ERROR   alsaseq_user_client_error_quark()
+</pre>
 </div>
 </div>
 <div class="refsect1">

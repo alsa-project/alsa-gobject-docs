@@ -51,6 +51,7 @@
     <keyword type="enum" name="enum ALSASeqQuerySubscribeType" link="alsaseq-alsaseq-enum-types.html#ALSASeqQuerySubscribeType"/>
     <keyword type="enum" name="enum ALSASeqQueueTimerType" link="alsaseq-alsaseq-enum-types.html#ALSASeqQueueTimerType"/>
     <keyword type="enum" name="enum ALSASeqRemoveFilterFlag" link="alsaseq-alsaseq-enum-types.html#ALSASeqRemoveFilterFlag"/>
+    <keyword type="enum" name="enum ALSASeqUserClientError" link="alsaseq-alsaseq-enum-types.html#ALSASeqUserClientError"/>
     <keyword type="function" name="alsaseq_get_seq_sysname ()" link="alsaseq-Global-functions-in-ALSASeq.html#alsaseq-get-seq-sysname"/>
     <keyword type="function" name="alsaseq_get_seq_devnode ()" link="alsaseq-Global-functions-in-ALSASeq.html#alsaseq-get-seq-devnode"/>
     <keyword type="function" name="alsaseq_get_system_info ()" link="alsaseq-Global-functions-in-ALSASeq.html#alsaseq-get-system-info"/>
@@ -64,6 +65,7 @@
     <keyword type="function" name="alsaseq_get_queue_info_by_id ()" link="alsaseq-Global-functions-in-ALSASeq.html#alsaseq-get-queue-info-by-id"/>
     <keyword type="function" name="alsaseq_get_queue_info_by_name ()" link="alsaseq-Global-functions-in-ALSASeq.html#alsaseq-get-queue-info-by-name"/>
     <keyword type="function" name="alsaseq_get_queue_status ()" link="alsaseq-Global-functions-in-ALSASeq.html#alsaseq-get-queue-status"/>
+    <keyword type="function" name="alsaseq_user_client_error_quark ()" link="ALSASeqUserClient.html#alsaseq-user-client-error-quark"/>
     <keyword type="function" name="alsaseq_user_client_new ()" link="ALSASeqUserClient.html#alsaseq-user-client-new"/>
     <keyword type="function" name="alsaseq_user_client_open ()" link="ALSASeqUserClient.html#alsaseq-user-client-open"/>
     <keyword type="function" name="alsaseq_user_client_get_protocol_version ()" link="ALSASeqUserClient.html#alsaseq-user-client-get-protocol-version"/>
@@ -88,6 +90,7 @@
     <keyword type="function" name="alsaseq_user_client_set_queue_timer ()" link="ALSASeqUserClient.html#alsaseq-user-client-set-queue-timer"/>
     <keyword type="function" name="alsaseq_user_client_get_queue_timer ()" link="ALSASeqUserClient.html#alsaseq-user-client-get-queue-timer"/>
     <keyword type="function" name="alsaseq_user_client_remove_events ()" link="ALSASeqUserClient.html#alsaseq-user-client-remove-events"/>
+    <keyword type="macro" name="ALSASEQ_USER_CLIENT_ERROR" link="ALSASeqUserClient.html#ALSASEQ-USER-CLIENT-ERROR:CAPS"/>
     <keyword type="property" name="The “client-id” property" link="ALSASeqUserClient.html#ALSASeqUserClient--client-id"/>
     <keyword type="signal" name="The “handle-event” signal" link="ALSASeqUserClient.html#ALSASeqUserClient-handle-event"/>
     <keyword type="property" name="The “current-client-count” property" link="ALSASeqSystemInfo.html#ALSASeqSystemInfo--current-client-count"/>
@@ -362,5 +365,8 @@
     <keyword type="constant" name="ALSASEQ_QUEUE_TIMER_TYPE_ALSA" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-QUEUE-TIMER-TYPE-ALSA:CAPS"/>
     <keyword type="constant" name="ALSASEQ_REMOVE_FILTER_FLAG_INPUT" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-REMOVE-FILTER-FLAG-INPUT:CAPS"/>
     <keyword type="constant" name="ALSASEQ_REMOVE_FILTER_FLAG_OUTPUT" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-REMOVE-FILTER-FLAG-OUTPUT:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_USER_CLIENT_ERROR_FAILED" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-USER-CLIENT-ERROR-FAILED:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_USER_CLIENT_ERROR_PORT_PERMISSION" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-USER-CLIENT-ERROR-PORT-PERMISSION:CAPS"/>
+    <keyword type="constant" name="ALSASEQ_USER_CLIENT_ERROR_QUEUE_PERMISSION" link="alsaseq-alsaseq-enum-types.html#ALSASEQ-USER-CLIENT-ERROR-QUEUE-PERMISSION:CAPS"/>
   </functions>
 </book>
