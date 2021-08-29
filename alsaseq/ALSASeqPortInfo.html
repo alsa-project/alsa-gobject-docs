@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>ALSASeqPortInfo: ALSASeq Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="ALSASeq Reference Manual">
 <link rel="up" href="alsaseq-objects.html" title="ALSASeq objects">
 <link rel="prev" href="ALSASeqAddr.html" title="ALSASeqAddr">
 <link rel="next" href="ALSASeqSubscribeData.html" title="ALSASeqSubscribeData">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -76,18 +76,18 @@
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ALSASeqPortInfo.html#ALSASeqPortInfo--midi-channels" title="The “midi-channels” property">midi-channels</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ALSASeqPortInfo.html#ALSASeqPortInfo--midi-voices" title="The “midi-voices” property">midi-voices</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="ALSASeqPortInfo.html#ALSASeqPortInfo--name" title="The “name” property">name</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -97,12 +97,12 @@
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ALSASeqPortInfo.html#ALSASeqPortInfo--read-users" title="The “read-users” property">read-users</a></td>
 <td class="property_flags">Read</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ALSASeqPortInfo.html#ALSASeqPortInfo--synth-voices" title="The “synth-voices” property">synth-voices</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -117,7 +117,7 @@
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ALSASeqPortInfo.html#ALSASeqPortInfo--write-users" title="The “write-users” property">write-users</a></td>
 <td class="property_flags">Read</td>
 </tr>
@@ -175,7 +175,7 @@ alsaseq_port_info_new ();</pre>
 <hr>
 <div class="refsect2">
 <a name="ALSASeqPortInfo--midi-channels"></a><h3>The <code class="literal">“midi-channels”</code> property</h3>
-<pre class="programlisting">  “midi-channels”            <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “midi-channels”            <span class="type">int</span></pre>
 <p>The number of channels per MIDI port.</p>
 <p>Owner: ALSASeqPortInfo</p>
 <p>Flags: Read / Write</p>
@@ -185,7 +185,7 @@ alsaseq_port_info_new ();</pre>
 <hr>
 <div class="refsect2">
 <a name="ALSASeqPortInfo--midi-voices"></a><h3>The <code class="literal">“midi-voices”</code> property</h3>
-<pre class="programlisting">  “midi-voices”              <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “midi-voices”              <span class="type">int</span></pre>
 <p>The number of voices per MIDI port.</p>
 <p>Owner: ALSASeqPortInfo</p>
 <p>Flags: Read / Write</p>
@@ -195,7 +195,7 @@ alsaseq_port_info_new ();</pre>
 <hr>
 <div class="refsect2">
 <a name="ALSASeqPortInfo--name"></a><h3>The <code class="literal">“name”</code> property</h3>
-<pre class="programlisting">  “name”                     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “name”                     <span class="type">char</span> *</pre>
 <p>The name of port.</p>
 <p>Owner: ALSASeqPortInfo</p>
 <p>Flags: Read / Write</p>
@@ -213,7 +213,7 @@ alsaseq_port_info_new ();</pre>
 <hr>
 <div class="refsect2">
 <a name="ALSASeqPortInfo--read-users"></a><h3>The <code class="literal">“read-users”</code> property</h3>
-<pre class="programlisting">  “read-users”               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “read-users”               <span class="type">int</span></pre>
 <p>The current number of subscribers to read.</p>
 <p>Owner: ALSASeqPortInfo</p>
 <p>Flags: Read</p>
@@ -223,7 +223,7 @@ alsaseq_port_info_new ();</pre>
 <hr>
 <div class="refsect2">
 <a name="ALSASeqPortInfo--synth-voices"></a><h3>The <code class="literal">“synth-voices”</code> property</h3>
-<pre class="programlisting">  “synth-voices”             <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “synth-voices”             <span class="type">int</span></pre>
 <p>The number of voices per synth port.</p>
 <p>Owner: ALSASeqPortInfo</p>
 <p>Flags: Read / Write</p>
@@ -251,7 +251,7 @@ alsaseq_port_info_new ();</pre>
 <hr>
 <div class="refsect2">
 <a name="ALSASeqPortInfo--write-users"></a><h3>The <code class="literal">“write-users”</code> property</h3>
-<pre class="programlisting">  “write-users”              <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “write-users”              <span class="type">int</span></pre>
 <p>The current number of subscribers to write.</p>
 <p>Owner: ALSASeqPortInfo</p>
 <p>Flags: Read</p>
@@ -261,6 +261,6 @@ alsaseq_port_info_new ();</pre>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>

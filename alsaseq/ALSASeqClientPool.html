@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>ALSASeqClientPool: ALSASeq Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="ALSASeq Reference Manual">
 <link rel="up" href="alsaseq-objects.html" title="ALSASeq objects">
 <link rel="prev" href="ALSASeqClientInfo.html" title="ALSASeqClientInfo">
 <link rel="next" href="ALSASeqAddr.html" title="ALSASeqAddr">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -66,27 +66,27 @@ pool owned by client.</p>
 <td class="property_flags">Read</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ALSASeqClientPool.html#ALSASeqClientPool--input-free" title="The “input-free” property">input-free</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ALSASeqClientPool.html#ALSASeqClientPool--input-pool" title="The “input-pool” property">input-pool</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ALSASeqClientPool.html#ALSASeqClientPool--output-free" title="The “output-free” property">output-free</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ALSASeqClientPool.html#ALSASeqClientPool--output-pool" title="The “output-pool” property">output-pool</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ALSASeqClientPool.html#ALSASeqClientPool--output-room" title="The “output-room” property">output-room</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -129,7 +129,7 @@ alsaseq_client_pool_new ();</pre>
 <hr>
 <div class="refsect2">
 <a name="ALSASeqClientPool--input-free"></a><h3>The <code class="literal">“input-free”</code> property</h3>
-<pre class="programlisting">  “input-free”               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “input-free”               <span class="type">int</span></pre>
 <p>The free number of cells in memory pool for input direction.</p>
 <p>Owner: ALSASeqClientPool</p>
 <p>Flags: Read / Write</p>
@@ -139,7 +139,7 @@ alsaseq_client_pool_new ();</pre>
 <hr>
 <div class="refsect2">
 <a name="ALSASeqClientPool--input-pool"></a><h3>The <code class="literal">“input-pool”</code> property</h3>
-<pre class="programlisting">  “input-pool”               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “input-pool”               <span class="type">int</span></pre>
 <p>The total number of cells in memory pool for input direction.</p>
 <p>Owner: ALSASeqClientPool</p>
 <p>Flags: Read / Write</p>
@@ -149,7 +149,7 @@ alsaseq_client_pool_new ();</pre>
 <hr>
 <div class="refsect2">
 <a name="ALSASeqClientPool--output-free"></a><h3>The <code class="literal">“output-free”</code> property</h3>
-<pre class="programlisting">  “output-free”              <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “output-free”              <span class="type">int</span></pre>
 <p>The free number of cells in memory pool for output direction.</p>
 <p>Owner: ALSASeqClientPool</p>
 <p>Flags: Read / Write</p>
@@ -159,7 +159,7 @@ alsaseq_client_pool_new ();</pre>
 <hr>
 <div class="refsect2">
 <a name="ALSASeqClientPool--output-pool"></a><h3>The <code class="literal">“output-pool”</code> property</h3>
-<pre class="programlisting">  “output-pool”              <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “output-pool”              <span class="type">int</span></pre>
 <p>The total number of cells in memory pool for output direction.</p>
 <p>Owner: ALSASeqClientPool</p>
 <p>Flags: Read / Write</p>
@@ -169,7 +169,7 @@ alsaseq_client_pool_new ();</pre>
 <hr>
 <div class="refsect2">
 <a name="ALSASeqClientPool--output-room"></a><h3>The <code class="literal">“output-room”</code> property</h3>
-<pre class="programlisting">  “output-room”              <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “output-room”              <span class="type">int</span></pre>
 <p>The number of cells in memory pool for output direction to block user process.</p>
 <p>Owner: ALSASeqClientPool</p>
 <p>Flags: Read / Write</p>
@@ -179,6 +179,6 @@ alsaseq_client_pool_new ();</pre>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>
