@@ -1,86 +1,483 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!--
+SPDX-FileCopyrightText: 2021 GNOME Foundation
+
+SPDX-License-Identifier: Apache-2.0 OR GPL-3.0-or-later
+-->
+
+<!--
+SPDX-FileCopyrightText: 2021 GNOME Foundation
+
+SPDX-License-Identifier: Apache-2.0 OR GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>ALSATimer Reference Manual: ALSATimer Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
-<link rel="home" href="index.html" title="ALSATimer Reference Manual">
-<link rel="next" href="introduction.html" title="Introduction">
-<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
-<link rel="stylesheet" href="style.css" type="text/css">
+  <title>ALSATimer &ndash; 0.0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+
+  
+  <meta property="og:title" content="ALSATimer-0.0"/>
+  <meta property="og:description" content="Reference for ALSATimer-0.0"/>
+  <meta name="twitter:title" content="ALSATimer-0.0"/>
+  <meta name="twitter:description" content="Reference for ALSATimer-0.0"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="main.js"></script>
 </head>
-<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<div class="book">
-<div class="titlepage">
-<div>
-<div><table class="navigation" id="top" width="100%" cellpadding="2" cellspacing="0"><tr><th valign="middle"><p class="title">ALSATimer Reference Manual</p></th></tr></table></div>
-<div><p class="releaseinfo">This document is for the ALSATimer library, version 0.2.1
-.
-    </p></div>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      
+      <div class="section namespace">
+        <h3><a href="index.html">ALSATimer</a></h3>
+        <p>API Version: 0.0</p>
+        
+        <p>Library Version: 0.2.2</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Sections</h5>
+  <div class="links">
+  
+
+  
+    <a href="#classes">Classes</a>
+  
+  
+  
+    <a href="#structs">Structs</a>
+  
+  
+    <a href="#unions">Unions</a>
+  
+  
+  
+    <a href="#enums">Enumerations</a>
+  
+  
+    <a href="#bitfields">Bitfields</a>
+  
+  
+    <a href="#domains">Error Domains</a>
+  
+  
+  
+    <a href="#functions">Functions</a>
+  
+  
+  
+  </div>
 </div>
-<hr>
+
+<div class="section">
+  <h5>Dependencies</h5>
+  <div class="links">
+  
+    <a href="https://docs.gtk.org/glib/" class="external">GLib</a>
+  
+    <a href="https://docs.gtk.org/gobject/" class="external">GObject</a>
+  
+  </div>
 </div>
-<div class="toc"><dl class="toc">
-<dt><span class="chapter"><a href="introduction.html">Introduction</a></span></dt>
-<dt><span class="chapter"><a href="alsatimer-enumerations.html">ALSATimer enumerations</a></span></dt>
-<dd><dl><dt>
-<span class="refentrytitle"><a href="alsatimer-alsatimer-enum-types.html">alsatimer-enum-types</a></span><span class="refpurpose"></span>
-</dt></dl></dd>
-<dt><span class="chapter"><a href="alsatimer-global-methods.html">ALSATimer global methods</a></span></dt>
-<dd><dl><dt>
-<span class="refentrytitle"><a href="alsatimer-Global-functions-in-ALSATimer.html">Global functions in ALSATimer</a></span><span class="refpurpose"> — Global functions available without holding any
-file descriptor</span>
-</dt></dl></dd>
-<dt><span class="chapter"><a href="alsatimer-objects.html">ALSATimer objects</a></span></dt>
-<dd><dl>
-<dt>
-<span class="refentrytitle"><a href="ALSATimerUserInstance.html">ALSATimerUserInstance</a></span><span class="refpurpose"> — A GObject-derived object to represent user instance</span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSATimerDeviceId.html">ALSATimerDeviceId</a></span><span class="refpurpose"> — A boxed object to represent the identifier of timer
-device.</span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSATimerDeviceInfo.html">ALSATimerDeviceInfo</a></span><span class="refpurpose"> — A GObject-derived object to represent information of
-timer device.</span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSATimerDeviceStatus.html">ALSATimerDeviceStatus</a></span><span class="refpurpose"> — A GObject-derived object to represent status of timer
-device.</span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSATimerDeviceParams.html">ALSATimerDeviceParams</a></span><span class="refpurpose"> — A GObject-derived object to represent parameter of timer
-device.</span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSATimerInstanceInfo.html">ALSATimerInstanceInfo</a></span><span class="refpurpose"> — A GObject-derived object to represent information of
-user instance</span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSATimerInstanceStatus.html">ALSATimerInstanceStatus</a></span><span class="refpurpose"> — A GObject-derived object to represent status of user
-instance</span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSATimerInstanceParams.html">ALSATimerInstanceParams</a></span><span class="refpurpose"> — A GObject-derived object to represent parameters of user
-instance</span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSATimerEvent.html">ALSATimerEvent</a></span><span class="refpurpose"> — A boxed object to represent event of timer</span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSATimerEventDataTick.html">ALSATimerEventDataTick</a></span><span class="refpurpose"> — A boxed object to represent event of timer with tick
-count</span>
-</dt>
-<dt>
-<span class="refentrytitle"><a href="ALSATimerEventDataTstamp.html">ALSATimerEventDataTstamp</a></span><span class="refpurpose"> — A boxed object to represent event of timer with
-tstamp</span>
-</dt>
-</dl></dd>
-<dt><span class="index"><a href="index-all.html">Index of all symbols</a></span></dt>
-<dt><span class="glossary"><a href="annotation-glossary.html">Annotation Glossary</a></span></dt>
-</dl></div>
-</div>
-<div class="footer">
-<hr>Generated by GTK-Doc V1.33.1</div>
+
+
+    </nav>
+    
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Namespace</h3>
+    <h1>ALSATimer &ndash; 0.0</h1>
+
+    <div class="description">
+      <p>alsatimer</p>
+    </div>
+
+    <div class="meta info">
+      <table>
+        <tr><td><em>Version</em></td><td>0.2.2</td></tr>
+        <tr><td><em>Authors</em></td><td>Takashi Sakamoto</td></tr>
+        <tr><td><em>License</em></td><td>LGPL-3.0-or-later</td></tr>
+        <tr><td><em>Website</em></td><td><a href="https://alsa-project.github.io/alsa-gobject-docs/alsatimer/" class="external">https://alsa-project.github.io/alsa-gobject-docs/alsatimer/</a></td></tr>
+        <tr><td><em>Source</em></td><td><a href="https://github.com/alsa-project/alsa-gobject" class="external">https://github.com/alsa-project/alsa-gobject</a></td></tr>
+      </table>
+    </div>
+
+    <div class="meta build toggle-wrapper">
+      <h4>Build</h4>
+
+      <div class="docblock">
+      <table>
+        <tr><td>C headers</td><td><code>alsatimer.h</code></td></tr>
+        <tr><td>pkg-config files</td><td><code>alsatimer</code></td></tr>
+      </table>
+      </div>
+    </div>
+  </header>
+
+  
+  <section>
+    <div class="toggle-wrapper">
+      <h4 id="dependencies" style="display:flex;">
+        Dependencies
+        <a href="#dependencies" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <table>
+        
+          
+          <tr>
+            <td><strong>GLib</strong>&mdash;2.0</td>
+            <td>The base utility library</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><a href="https://docs.gtk.org/glib/" class="external">Browse documentation</a></td>
+          </tr>
+          
+        
+          
+          <tr>
+            <td><strong>GObject</strong>&mdash;2.0</td>
+            <td>The base type system and object class</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><a href="https://docs.gtk.org/gobject/" class="external">Browse documentation</a></td>
+          </tr>
+          
+        
+        </table>
+      </div>
+    </div>
+  </section>
+  
+
+  
+
+  
+  <section>
+    <div class="toggle-wrapper">
+      <h4 id="extra" style="display:flex;">
+        Additional documentation
+        <a href="#extra" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          <li><a href="overview.html">Overview</a></li>
+        
+          <li><a href="classes_hierarchy.html">Classes Hierarchy</a></li>
+        
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  
+
+  
+  <section>
+    <div class="toggle-wrapper default-hide">
+      <h4 id="classes" class="section-header" style="display:flex;">
+        Classes
+        <a href="#classes" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <table style="display:block;">
+          <tbody>
+          
+          <tr class="section-item">
+            <td><a title="DeviceInfo" class="symbol" href="class.DeviceInfo.html">DeviceInfo</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="DeviceParams" class="symbol" href="class.DeviceParams.html">DeviceParams</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="DeviceStatus" class="symbol" href="class.DeviceStatus.html">DeviceStatus</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="InstanceInfo" class="symbol" href="class.InstanceInfo.html">InstanceInfo</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="InstanceParams" class="symbol" href="class.InstanceParams.html">InstanceParams</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="InstanceStatus" class="symbol" href="class.InstanceStatus.html">InstanceStatus</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="UserInstance" class="symbol" href="class.UserInstance.html">UserInstance</a></td>
+            
+          </tr>
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <section>
+    <div class="toggle-wrapper default-hide">
+      <h4 id="structs" class="section-header" style="display:flex;">
+        Structs
+        <a href="#structs" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <table style="display:block;">
+          <tbody>
+          
+          <tr class="section-item">
+            <td><a title="DeviceId" class="symbol" href="struct.DeviceId.html">DeviceId</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="EventDataTick" class="symbol" href="struct.EventDataTick.html">EventDataTick</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="EventDataTstamp" class="symbol" href="struct.EventDataTstamp.html">EventDataTstamp</a></td>
+            
+          </tr>
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section>
+    <div class="toggle-wrapper default-hide">
+      <h4 id="unions" class="section-header" style="display:flex;">
+        Unions
+        <a href="#unions" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <table style="display:block;">
+          <tbody>
+          
+          <tr class="section-item">
+            <td><a title="Event" class="symbol" href="union.Event.html">Event</a></td>
+            
+          </tr>
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <section>
+    <div class="toggle-wrapper default-hide">
+      <h4 id="enums" class="section-header" style="display:flex;">
+        Enumerations
+        <a href="#enums" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <table style="display:block;">
+          <tbody>
+          
+          <tr class="section-item">
+            <td><a title="Class" class="symbol" href="enum.Class.html">Class</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="EventDataType" class="symbol" href="enum.EventDataType.html">EventDataType</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="EventType" class="symbol" href="enum.EventType.html">EventType</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="SlaveClass" class="symbol" href="enum.SlaveClass.html">SlaveClass</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="SpecificGlobalDevice" class="symbol" href="enum.SpecificGlobalDevice.html">SpecificGlobalDevice</a></td>
+            
+          </tr>
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section>
+    <div class="toggle-wrapper default-hide">
+      <h4 id="bitfields" class="section-header" style="display:flex;">
+        Bitfields
+        <a href="#bitfields" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <table style="display:block;">
+          <tbody>
+          
+          <tr class="section-item">
+            <td><a title="DeviceInfoFlag" class="symbol" href="flags.DeviceInfoFlag.html">DeviceInfoFlag</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="InstanceParamFlag" class="symbol" href="flags.InstanceParamFlag.html">InstanceParamFlag</a></td>
+            
+          </tr>
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section>
+    <div class="toggle-wrapper default-hide">
+      <h4 id="domains" class="section-header" style="display:flex;">
+        Error Domains
+        <a href="#domains" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <table style="display:block;">
+          <tbody>
+          
+          <tr class="section-item">
+            <td><a title="UserInstanceError" class="symbol" href="error.UserInstanceError.html">UserInstanceError</a></td>
+            
+          </tr>
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <section>
+    <div class="toggle-wrapper default-hide">
+      <h4 id="functions" class="section-header" style="display:flex;">
+        Functions
+        <a href="#functions" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <table style="display:block;">
+          <tbody>
+          
+          <tr class="section-item">
+            <td><a title="get_device_id_list" class="symbol" href="func.get_device_id_list.html">get_device_id_list</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="get_device_info" class="symbol" href="func.get_device_info.html">get_device_info</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="get_device_status" class="symbol" href="func.get_device_status.html">get_device_status</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="get_devnode" class="symbol" href="func.get_devnode.html">get_devnode</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="get_sysname" class="symbol" href="func.get_sysname.html">get_sysname</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="get_tstamp_source" class="symbol" href="func.get_tstamp_source.html">get_tstamp_source</a></td>
+            
+          </tr>
+          
+          <tr class="section-item">
+            <td><a title="set_device_params" class="symbol" href="func.set_device_params.html">set_device_params</a></td>
+            
+          </tr>
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+</section>
+
+
+    
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
 </body>
 </html>

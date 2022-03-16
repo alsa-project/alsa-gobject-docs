@@ -1,0 +1,225 @@
+<!--
+SPDX-FileCopyrightText: 2021 GNOME Foundation
+
+SPDX-License-Identifier: Apache-2.0 OR GPL-3.0-or-later
+-->
+
+<!--
+SPDX-FileCopyrightText: 2021 GNOME Foundation
+
+SPDX-License-Identifier: Apache-2.0 OR GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ALSACtl.ElemAccessFlag</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+
+  
+  <meta property="og:title" content="ALSACtl.ElemAccessFlag"/>
+  <meta property="og:description" content="Reference for ALSACtl.ElemAccessFlag"/>
+  <meta name="twitter:title" content="ALSACtl.ElemAccessFlag"/>
+  <meta name="twitter:description" content="Reference for ALSACtl.ElemAccessFlag"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      
+      <div class="section namespace">
+        <h3><a href="index.html">ALSACtl</a></h3>
+        <p>API Version: 0.0</p>
+        
+        <p>Library Version: 0.2.2</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="flags.ElemAccessFlag.html">ElemAccessFlag</a>
+  </div>
+</div>
+
+
+
+
+    </nav>
+    
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Enumeration</h3>
+    <h1><a href="index.html">ALSACtl</a><span class="sep"></span>ElemAccessFlag</h1>
+  </header>
+
+  <section>
+    <div class="declaration toggle-wrapper">
+      <h4 style="display:flex;" id="declaration">
+        Declaration
+        <a href="#declaration" class="anchor"></a>
+        
+      </h4>
+
+      <div class="docblock">
+        <pre><code>flags ALSACtl.ElemAccessFlag</code></pre>
+      </div>
+    </div>
+
+    <div class="description toggle-wrapper">
+      <h4 style="display:flex;" id="description">
+        Description
+        <a href="#description" class="anchor"></a>
+        
+        <a class="srclink" title="go to source location" href="https://github.com/alsa-project/alsa-gobject/blob/master/src/ctl/alsactl-enum-types.h#L49">[src]</a>
+        
+      </h4>
+
+      <div class="docblock">
+      <p>A set of flags for access information of the&nbsp;element.</p>
+      </div>
+
+      <div class="docblock">
+        <table class="attributes">
+          
+          
+          
+        </table>
+      </div>
+
+      
+    </div>
+
+    <div class="members toggle-wrapper">
+      <h4 id="members">
+        Members
+        <a href="#members" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      <table class="enum-members">
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      
+        <tr>
+          <td><a id="read" href="#read"><code title="Value: 1">ALSACTL_ELEM_ACCESS_FLAG_READ</code></a></td>
+          <td><p>The element supports operation to get its&nbsp;values.</p></td>
+        </tr>
+      
+        <tr>
+          <td><a id="write" href="#write"><code title="Value: 2">ALSACTL_ELEM_ACCESS_FLAG_WRITE</code></a></td>
+          <td><p>The element supports operation to change its&nbsp;values.</p></td>
+        </tr>
+      
+        <tr>
+          <td><a id="volatile" href="#volatile"><code title="Value: 4">ALSACTL_ELEM_ACCESS_FLAG_VOLATILE</code></a></td>
+          <td><p>The state of element is mutable independent of operating&nbsp;system.</p></td>
+        </tr>
+      
+        <tr>
+          <td><a id="tlv_read" href="#tlv_read"><code title="Value: 16">ALSACTL_ELEM_ACCESS_FLAG_TLV_READ</code></a></td>
+          <td><p>The element supports operation to get Type-Length-Value&nbsp;data.</p></td>
+        </tr>
+      
+        <tr>
+          <td><a id="tlv_write" href="#tlv_write"><code title="Value: 32">ALSACTL_ELEM_ACCESS_FLAG_TLV_WRITE</code></a></td>
+          <td><p>The element supports operation to change Type-Length-Value&nbsp;data.</p></td>
+        </tr>
+      
+        <tr>
+          <td><a id="tlv_command" href="#tlv_command"><code title="Value: 64">ALSACTL_ELEM_ACCESS_FLAG_TLV_COMMAND</code></a></td>
+          <td><p>The element supports operation to use Type-Length-Value data as any&nbsp;command.</p></td>
+        </tr>
+      
+        <tr>
+          <td><a id="inactive" href="#inactive"><code title="Value: 256">ALSACTL_ELEM_ACCESS_FLAG_INACTIVE</code></a></td>
+          <td><p>The element is not activated&nbsp;yet.</p></td>
+        </tr>
+      
+        <tr>
+          <td><a id="lock" href="#lock"><code title="Value: 512">ALSACTL_ELEM_ACCESS_FLAG_LOCK</code></a></td>
+          <td><p>The element is under locked state from any write&nbsp;operation.</p></td>
+        </tr>
+      
+        <tr>
+          <td><a id="owner" href="#owner"><code title="Value: 1024">ALSACTL_ELEM_ACCESS_FLAG_OWNER</code></a></td>
+          <td><p>The element is owned by the&nbsp;process.</p></td>
+        </tr>
+      
+        <tr>
+          <td><a id="tlv_callback" href="#tlv_callback"><code title="Value: 268435456">ALSACTL_ELEM_ACCESS_FLAG_TLV_CALLBACK</code></a></td>
+          <td><p>The element supports specific operation to process Type-Length-Value&nbsp;data.</p></td>
+        </tr>
+      
+        <tr>
+          <td><a id="user" href="#user"><code title="Value: 536870912">ALSACTL_ELEM_ACCESS_FLAG_USER</code></a></td>
+          <td><p>The element is maintained by any user application, instead of kernel&nbsp;driver.</p></td>
+        </tr>
+      
+      </table>
+      </div>
+    </div>
+
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      <li class="toc-list-item"><a href="#members"><span class="link-text">Members</span></a></li>
+      
+
+      
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>
